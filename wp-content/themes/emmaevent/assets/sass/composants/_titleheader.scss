@@ -1,0 +1,24 @@
+.header__title {
+  text-align: center;
+
+  h1 {
+    width: 810px;
+    margin: 120px auto 25px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+
+    @media only screen and (max-width: 900px) {
+      width: 470px;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 370px;   
+      margin: 230px auto 25px; 
+    }
+  }
+}
+
+.header__cta {
+  text-align: center;
+  margin-top: 40px;
+}

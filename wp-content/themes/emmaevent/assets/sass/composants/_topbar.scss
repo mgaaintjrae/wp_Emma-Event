@@ -1,0 +1,27 @@
+  .top__bar {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid #ebebeb;
+    padding: 12px 69px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .top__bar__contact {
+      display: flex;
+      li {
+        padding-right: 24px;
+      }
+    }
+
+    .top__bar__socials{
+
+
+
+    }
+
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
