@@ -4,6 +4,14 @@ require_once('inc/assets.php');
 require_once('inc/apparence.php');
 require_once('inc/menus.php');
 
+
+function emmaevent_icon(string $name): string {
+  $spriteUrl = get_template_directory_uri() . '/assets/img/facebook.svg';
+  return <<<HTML
+  <svg class="icon"><use xlink:href="{$spriteUrl}#{$name}"></use></svg>
+  HTML;
+}
+
 // This function enqueues the Normalize.css for use. The first parameter is a name for the stylesheet, the second is the URL. Here we
 // use an online version of the css file.
 function emmaevent_add_normalize_CSS()

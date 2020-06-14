@@ -1,10 +1,4 @@
 <?php
-// add_action('after_setup_theme', function () {
-//   register_nav_menus(array(
-//     'header', __('Main navigation', 'emmaevent'),
-//     'footer', __('Footer navigation', 'emmaevent')
-//   ));
-// });
 
 function emmaevent_add_Main_Nav()
 {
@@ -15,8 +9,10 @@ function emmaevent_add_Main_Nav()
 }
 add_action('init', 'emmaevent_add_Main_Nav');
 
+require_once('widgets/social.php');
 
 add_action('widgets_init', function () {
+  register_widget(Emmaevent_Social_Widget::class);
   register_sidebar([
     'id' => 'footer',
     'name' => __('Footer', 'emmaevent'),
@@ -26,3 +22,6 @@ add_action('widgets_init', function () {
     'after_widget' => '</div>'
   ]);
 });
+
+
+
