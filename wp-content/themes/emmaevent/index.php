@@ -88,7 +88,8 @@
     </section> -->
 
     <!-- Galerie slider -->
-
+    <?php //echo do_shortcode('[metaslider id="29"]'); ?>
+    <?php echo do_shortcode('[masterslider id="1"]'); ?>
   </main>
   
 <?php get_footer(); ?>
