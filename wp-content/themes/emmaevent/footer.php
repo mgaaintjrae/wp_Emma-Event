@@ -1,12 +1,14 @@
 <footer class="footer">
+  
     <section class="footer__up">
-      <div class="footer__col">
+    <?php dynamic_sidebar('footer') ?>
+      <!-- <div class="footer__col">
         <h4 class="footer__title">A Propos d'Emma Event</h4>
         <ul>
           <li><a href="#" class="menu__footer__up">A propos</a></li>
           <li><a href="#" class="menu__footer__up">Mentions légales</a></li>
         </ul>
-      </div>
+      </div> -->
       <div class="footer__col">
         <h4 class="footer__title">Prochain événement</h4>
         <p>Facebook</p>
@@ -30,13 +32,20 @@
 
           <div class="position__center">
             <nav class="nav">
-              <ul class="nav__menu">
+            <?php
+            wp_nav_menu([
+              'theme_location' => 'footer',
+              'container' => false,
+              'menu_class' => 'nav__menu'
+            ]);
+            ?> 
+              <!-- <ul class="nav__menu">
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#" aria-current="page">A propos</a></li>
                 <li><a href="#">Evénements</a></li>
                 <li><a href="#">Galerie</a></li>
                 <li><a href="#">Contact</a></li>
-              </ul>
+              </ul> -->
             </nav>
           </div>
 

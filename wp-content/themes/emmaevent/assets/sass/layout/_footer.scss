@@ -22,8 +22,9 @@
       .menu__footer__up {
         font-size: 15px;
       }
-      .menu__footer__up:hover{
-        color:$dore;
+
+      .menu__footer__up:hover {
+        color: $dore;
       }
 
       .footer__title {}
@@ -52,6 +53,7 @@
 
           .nav__menu {
             display: flex;
+            text-transform: uppercase;
 
             li {
               padding: 0 15px;
@@ -60,9 +62,9 @@
                 color: #816536;
               }
 
-              a:hover {
-                color: $dore;
-              }
+              // a:hover {
+              //   color: $dore;
+              // }
             }
           }
         }
@@ -78,33 +80,43 @@
   }
 }
 
-  .footer a {
-    transition: color .3s;
+.footer a {
+  transition: color .3s;
+}
+
+.footer{
+  .position__center{
+    .nav a:hover,
+    .nav a[aria-current] {
+      color: $dore;
+    }
   }
+}
+
+
+.footer__col+.footer__col {
+  margin-top: space(1);
+  flex: 1;
+}
+
+.footer__title {
+  margin-bottom: space(2);
+}
+
+// .footer__credits {
+//   text-align: right;
+// }
+
+@include up(720) {
+  .footer__up {}
 
   .footer__col+.footer__col {
-    margin-top: space(1);
-    flex:1;
+    margin-top: 0;
+    margin-left: 64px;
   }
 
-  .footer__title {
-    margin-bottom: space(2);
+  .footer__col:last-child {
+    margin-left: 64px;
+    flex: 1
   }
-
-  // .footer__credits {
-  //   text-align: right;
-  // }
-
-  @include up(720) {
-    .footer__up {}
-
-    .footer__col+.footer__col {
-      margin-top: 0;
-      margin-left: 64px;
-    }
-
-    .footer__col:last-child {
-      margin-left: 64px;
-      flex:1
-    }
-  }
+}
