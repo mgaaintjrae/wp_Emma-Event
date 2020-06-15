@@ -4,10 +4,8 @@
   border-bottom: 1px solid #ebebeb;
   position: relative;
   transition: background-color .3s ease;
-
   .grid {
-    height: 100%;    
-
+    height: 100%;
     .position__left__logo {
       height: 82px; 
       margin-left: 38px;     
@@ -20,14 +18,12 @@
       height: 100%;
     }
   }
-
   @media only screen and (max-width: 1200px) {
     .grid {
       // width: 950px;
       width: auto;
     }
   }
-
   .position__center:before{
     content: "";
     display: inline-block;
@@ -40,8 +36,7 @@
       height: 100%;
       // margin-left: 15px;
     }
-  }  
-
+  } 
   .nav__menu {
     display: flex;
     justify-content: center;
@@ -50,19 +45,15 @@
     font-weight: 600;
     text-transform: uppercase;
   }
-
   .nav__menu>*+* {
-    margin-left: space(5);
+    margin-left: space(4);
   }
-
   .nav{
     margin-right: 185px;
   }
-
   .nav a {
     transition: color .3s;
   }
-
   .nav a:hover,
   .nav a[aria-current] {
     color: $emeraude;
@@ -77,11 +68,9 @@
     height: 37px;
     z-index: 51;
   }
-
   .nav__burger span {
     position: relative;
   }
-
   .nav__burger span,
   .nav__burger span::after,
   .nav__burger span::before {
@@ -92,50 +81,40 @@
     display: block;
     transition: transform .4s, background .2s;
   }
-
   .nav__burger span::after,
   .nav__burger span::before {
     position: absolute;
   }
-
   .nav__burger span::before {
     transform-origin: 0 50%;
     top: -6px;
   }
-
   .nav__burger span::after {
     bottom: -6px;
     transform-origin: 0 50%;
   }
-
   .nav__burger.is-active {
     span {
       background: transparent;
     }
-
     span::before {
       transform: translateY(-2px) rotate(45deg);
     }
-
     span::after {
       transform: rotate(-45deg);
     }
   }
-
   @include down(440) {
     .grid{
       display: flex;
       align-items: center;
     }
-
     .position__left__logo{
       margin-left: 25%;
     }
-
     .nav__burger {
       display: block;
     }
-
     .nav__menu {
       position: fixed;
       z-index: 50;
@@ -152,13 +131,11 @@
       pointer-events: none;
       transition: opacity .3s;
     }
-
-    // .nav__menu>* {
-    //   transform: translateY(-10px);
-    //   transition: transform .3s, opacity .3s;
-    //   opacity: 0;
-    // }
-
+    .nav__menu>* {
+      transform: translateY(-10px);
+      transition: transform .3s, opacity .3s;
+      opacity: 0;
+    }
 
     @each $i in 2,
     3,
@@ -167,7 +144,6 @@
         transition-delay: $i * .05s;
       }
     }
-
     .nav__menu.is-active {
       pointer-events: auto;
       display: flex;
@@ -179,7 +155,6 @@
         transform: translateY(0px);
       }
     }
-
     .nav__menu>*+* {
       margin-left: 0;
       margin-top: space(4);
@@ -194,5 +169,4 @@
       justify-content: flex-end;
     }
   }
-
 }
