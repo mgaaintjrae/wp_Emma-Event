@@ -77,7 +77,8 @@ h4 {
 %title-secondary,
 .title-secondary{
   font-family: $f-alex;
-  font-weight: bold;
+  color: $emeraude;
+  // font-weight: bold;
   font-size: 30px;
   line-height: 1.15;
 
@@ -88,7 +89,7 @@ h4 {
 
 %h3 {
   font-family: $f-alex;
-  font-weight: bold;
+  // font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
 
@@ -126,15 +127,18 @@ h4 {
     grid-template-columns: 1fr;
     justify-items: flex-start;
     grid-gap: .5em;
-    margin-left: 1.5em;
+    // margin-left: 1.5em;
+
+    display: flex;
+    margin-left: 0;
   }
   li {
-    padding-left: space(3);
-    position: relative;
+    // padding-left: space(3);
+    position: relative;    
   }
   ul li::before {
     content: '';
-    display: block;
+    display: none;
     width: 8px;
     height: 8px;
     border-radius: 8px;
@@ -156,7 +160,8 @@ h4 {
     left: -10px;
   }
   *:last-child {
-    margin-bottom: 0 !important;
+    // margin-bottom: 0 !important;
+    margin-bottom: 16px;
   }
   blockquote {
     font-size: 1.2em;
@@ -170,5 +175,8 @@ h4 {
     font-weight: 300;
     font-size: .9rem;
     font-style: italic;
+  }
+  .wp-block-buttons {
+margin-bottom: 1.5em;
   }
 }

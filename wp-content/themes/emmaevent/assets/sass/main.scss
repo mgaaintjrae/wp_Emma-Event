@@ -29,22 +29,24 @@ body{
 
 // Imports
 // ==================
-@import "./base/spacing";
-@import "./base/pagination";
 @import "./base/form";
+@import "./base/pagination";
+@import "./base/spacing";
 
 @import "./composants/btn";
+@import "./composants/comments";
 @import "./composants/nav";
+@import "./composants/sidebar";
 @import "./composants/titleheader";
 @import "./composants/topbar";
-@import "./composants/sidebar";
 
 @import "./layout/footer";
 @import "./layout/header";
 
 @import "./pages/home";
-@import "./pages/single";
+@import "./pages/news";
 @import "./pages/page";
+@import "./pages/single";
 
 @import "./sections/company";
 @import "./sections/events";

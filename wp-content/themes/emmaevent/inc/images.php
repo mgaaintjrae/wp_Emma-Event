@@ -1,7 +1,7 @@
 <?php
 add_action('after_setup_theme', function () {
   // Définir la taille des images mises en avant
-set_post_thumbnail_size(2000, 400, true);
+  set_post_thumbnail_size(375,375,true);
 });
 
 
