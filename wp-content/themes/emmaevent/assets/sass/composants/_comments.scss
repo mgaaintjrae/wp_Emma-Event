@@ -16,6 +16,17 @@
   grid-template-columns: 60px 1fr;
   grid-gap: space(2);
 }
+.comment .edit-link,
+.comment .reply {
+  font-weight: 300;
+  font-size: 0.8em;
+
+}
+.comment .edit-link::before,
+.comment .reply::before {
+  content: ' | ';
+
+}
 .comment__avatar {
   width: 60px;
   height: 60px;
