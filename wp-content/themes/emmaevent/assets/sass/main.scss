@@ -30,16 +30,21 @@ body{
 // Imports
 // ==================
 @import "./base/spacing";
+@import "./base/pagination";
+@import "./base/form";
 
 @import "./composants/btn";
 @import "./composants/nav";
 @import "./composants/titleheader";
 @import "./composants/topbar";
+@import "./composants/sidebar";
 
 @import "./layout/footer";
 @import "./layout/header";
 
 @import "./pages/home";
+@import "./pages/single";
+@import "./pages/page";
 
 @import "./sections/company";
 @import "./sections/events";
