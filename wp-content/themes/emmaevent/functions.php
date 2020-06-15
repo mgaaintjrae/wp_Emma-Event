@@ -14,11 +14,8 @@ function emmaevent_icon(string $name): string {
   HTML;
 }
 
-// This function enqueues the Normalize.css for use. The first parameter is a name for the stylesheet, the second is the URL. Here we
-// use an online version of the css file.
-function emmaevent_add_normalize_CSS()
-{
-  wp_enqueue_style('normalize-styles', "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+function emmaevent_paginate(): string {
+  return '<div class="pagination">' . paginate_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]) . '</div>';
 }
 
 
