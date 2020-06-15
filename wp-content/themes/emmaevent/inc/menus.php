@@ -30,6 +30,3 @@ add_action('widgets_init', function () {
     'after_widget' => '</div>'
   ]);
 });
-
-
-
