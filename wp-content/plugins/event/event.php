@@ -6,9 +6,9 @@
  * Author: Priscilla Roy ITfy
  */
 add_action('init', function () {
-    register_post_type('property', [
-        'label' => __('Property', 'event'),
-        'menu_icon' => 'dashicons-calendar-alt',
+    register_post_type('event', [
+        'label' => __('Events', 'event'),
+        'menu_icon' => 'dashicons-heart',
         'labels' => [
             'name'                     => __('Events', 'event'),
             'singular_name'            => __('Event', 'event'),
@@ -33,14 +33,16 @@ add_action('init', function () {
             'item_scheduled'           => __( 'Event scheduled.', 'event' ),
             'item_updated'             => __( 'Event updated.', 'event' ),
         ],
+        'has_archive' => true,
         'public' => true,
         'hierarchical' => false,
         'exclude_from_search' => false,
         'show_in_rest' => false,
-        'taxonomies' => ['property_type'],
+        'rewrite'            => array( 'slug' => 'event' ),
+        'taxonomies' => ['event_type'],
         'supports' => ['title', 'editor', 'excerpt', 'thumbnail']
     ]);
-    register_taxonomy('property_type', 'property', [
+    register_taxonomy('event_type', 'event', [
         'meta_box_cb' => 'post_categories_meta_box',
         'labels' => [
         'name'                       => __( 'Types', 'event' ),
@@ -65,5 +67,9 @@ add_action('init', function () {
     ]);    
 });
 
+
 register_activation_hook(__FILE__, 'flush_rewrite_rules');
 register_deactivation_hook(__FILE__, 'flush_rewrite_rules');
+
+
+
