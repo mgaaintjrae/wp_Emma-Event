@@ -54,3 +54,16 @@
   grid-gap: space(6);
   margin-bottom: space(10);
 }
+
+// Form
+// ==========================================================================
+.form-2column .comment-notes,
+.form-2column .comment-form-cookies-consent,
+.form-2column .form-submit {
+  grid-column: 1/-1;
+}
+.comment .comment{
+  margin-top: 1em;
+  margin-left:75px;
+}
+

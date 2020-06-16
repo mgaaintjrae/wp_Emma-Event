@@ -19,6 +19,12 @@ function emmaevent_paginate(): string {
   return '<div class="pagination">' . paginate_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]) . '</div>';
 }
 
+function emmaevent_paginate_comments(): void {
+  echo '<div class="pagination">';
+  paginate_comments_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]);
+  echo '</div>';
+}
+
 
 
 

@@ -5,18 +5,19 @@
   display: inline-flex;
   align-items: center;
   text-align: center;
-  color: white;
+  color: $dore;
   padding: 14px space(3);
   background: transparent;
-  border: 2px solid white;
-  box-sizing: border-box;
-  
+  border: 2px solid $dore;
+  box-sizing: border-box;  
   transition: .3s;
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus,
 .btn:active  {  
-  color: $dore;
+  background-color: $dore;
+  color: #FFf;
 }
 .btn svg {
   width: 16px;
