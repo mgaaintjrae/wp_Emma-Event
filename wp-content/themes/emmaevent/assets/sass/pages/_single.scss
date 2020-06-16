@@ -1,19 +1,19 @@
 // Header
 // ==========================================================================
-.bien__title {
+.event__title {
   @extend %big-title;
   margin-bottom: space(1);
 }
 
-.bien__location {
+.event__location {
   font-weight: 300;
 }
 
-.bien__price {
+.event__price {
   // color: $orange;
   // font-weight: 600;
 
-  .bien__meta {
+  .event__meta {
     font-size: 22px;
 
     &>*+* {
@@ -31,11 +31,11 @@
 
   }
 
-  .bien__form {
+  .event__form {
     margin-top: space(7);
   }
 
-  .bien__actions {
+  .event__actions {
     display: flex;
     margin-top: space(7);
 
@@ -44,7 +44,7 @@
     }
   }
 
-  .bien__photos {
+  .event__photos {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -70,60 +70,60 @@
     }
   }
 
-  .bien__photos img {
+  .event__photos img {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  .bien-header>*+* {
+  .event-header>*+* {
     margin-top: space(8);
   }
 
   // Body
   // ==========================================================================
-  .bien-body {
+  .event-body {
     margin-top: space(10);
   }
 
-  .bien-body__title {
+  .event-body__title {
     @extend %title-secondary;
     margin-bottom: space(3);
   }
 
   // Options
   // ==========================================================================
-  .bien-options {
-    border-radius: 10px;
-    padding: space(1) space(3);
-    background-color: #F7F7F7;
-    color: #000;
-    margin-top: space(6);
-    font-weight: 600;
-    display: flex;
-    flex-wrap: wrap;
-  }
+  // .event-options {
+  //   border-radius: 10px;
+  //   padding: space(1) space(3);
+  //   background-color: #F7F7F7;
+  //   color: #000;
+  //   margin-top: space(6);
+  //   font-weight: 600;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
 
-  .bien-option {
-    margin: space(1) space(2);
-    display: inline-flex;
-    // margin-right: space(4);
-  }
+  // .event-option {
+  //   margin: space(1) space(2);
+  //   display: inline-flex;
+  //   // margin-right: space(4);
+  // }
 
-  .bien-options img {
-    height: 30px;
-    margin-right: space(2);
-  }
+  // .event-options img {
+  //   height: 30px;
+  //   margin-right: space(2);
+  // }
 
   @include up(1100) {
-    .bien-header {
+    .event-header {
       display: grid;
       grid-template-columns: 520px 1fr;
       grid-gap: space(6);
       align-items: center;
     }
 
-    .bien-header>*+* {
+    .event-header>*+* {
       margin-top: 0;
     }
   }
