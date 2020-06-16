@@ -29,19 +29,7 @@
     </div>
 
     <aside class="sidebar">
-      <?php dynamic_sidebar('blog'); ?>
-      <!--<div class="sidebar__widget">
-        <div class="sidebar__title">Recherche</div>
-        <form action="#" class="form-group form-search">
-          <input type="search" placeholder="Rechercher une actualité">
-          <button type="submit">
-            <svg class="icon">
-              <use xlink:href="sprite.14d9fd56.svg#search"></use>
-            </svg>
-          </button>
-        </form>
-      </div>-->
-
+      <?php dynamic_sidebar('blog'); ?>     
     </aside>
   </div>
 

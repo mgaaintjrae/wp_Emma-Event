@@ -10,8 +10,7 @@
                     if (!empty($categories)) :
                     ?>
                         <a class="news__tag" href="<?php get_term_link($categories[0]) ?>"><?= $categories[0]->name ?></a>
-                    <?php endif ?>
-                    <a class="news__tag" href="news.html">Bons plans</a>
+                    <?php endif ?>                    
                     <div class="news__date"><?= sprintf(__('Published on %s', 'emmaevent'), get_the_date()) ?></div>
                 </div>
             </header>
