@@ -4,7 +4,15 @@
  * Description: Gestion des évènements de Emma Event
  * Version: 0.1
  * Author: Priscilla Roy ITfy
+ * Text Domain: event
+ * Domain Path: /languages
  */
+defined('ABSPATH') or die('rien à voir');
+
+add_action('plugins_loaded', function () {
+    load_plugin_textdomain('event', false, basename(dirname(__FILE__)) . '/languages');
+});
+
 add_action('init', function () {
     register_post_type('event', [
         'label' => __('Events', 'event'),
@@ -38,7 +46,9 @@ add_action('init', function () {
         'hierarchical' => false,
         'exclude_from_search' => false,
         'show_in_rest' => false,
-        'rewrite'            => array( 'slug' => 'event' ),
+        'rewrite'            => [
+            'slug' => _x('events', 'URL', 'event')
+        ],
         'taxonomies' => ['event_type'],
         'supports' => ['title', 'editor', 'excerpt', 'thumbnail']
     ]);
