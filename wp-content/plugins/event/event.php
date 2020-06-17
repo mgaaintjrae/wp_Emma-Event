@@ -49,10 +49,10 @@ add_action('init', function () {
         'rewrite'            => [
             'slug' => _x('events', 'URL', 'event')
         ],
-        'taxonomies' => ['event_type'],
+        'taxonomies' => ['events'],
         'supports' => ['title', 'editor', 'excerpt', 'thumbnail']
     ]);
-    register_taxonomy('event_type', 'event', [
+    register_taxonomy('events', 'event', [
         'meta_box_cb' => 'post_categories_meta_box',
         'labels' => [
         'name'                       => __( 'Types', 'event' ),
