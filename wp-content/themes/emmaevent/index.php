@@ -2,7 +2,8 @@
 
 <div class="container">
 
-  <h1 class="page-title">
+  <h2 class="page-title">
+  <?php get_the_category(); ?>
     <?php if (is_category()) : ?>
       <?php single_cat_title() ?>
     <?php elseif (is_search()) : ?>
@@ -10,13 +11,17 @@
     <?php else : ?>
       <?php single_post_title() ?>
     <?php endif ?>
-  </h1>
+    <?php $events= get_terms(['taxonomy' => 'events']); ?>
+    <?php foreach($events as $event): ?>
+      <?= is_tax('events', $event->term_id)?><?= $event->name ?>
+    <?php endforeach; ?>
+  </h2>
 
   <div class="page-sidebar">
     <div>
       <div class="news-list">
         <?php if (have_posts()) : ?>
-          <?php while (have_posts()) : the_post(); ?>
+          <?php while (have_posts()) : the_post(); ?>          
             <?php get_template_part('template-parts/post'); ?>
           <?php endwhile; ?>
 
@@ -28,9 +33,9 @@
       </div>
     </div>
 
-    <aside class="sidebar">
-      <?php dynamic_sidebar('blog'); ?>     
-    </aside>
+    <!--<aside class="sidebar">
+      <?php //dynamic_sidebar('blog'); ?>     
+    </aside>-->
   </div>
 
 </div>

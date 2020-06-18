@@ -12,3 +12,12 @@ add_filter('nav_menu_css_class', function (array $classes): array {
   }
   return $classes;
 });
+
+// Remove HATML in Contact form 7
+add_filter('wpcf7_form_elements', function(string $content) {
+  $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+  $content = str_replace('<br />', '', $content);      
+  $content = str_replace('<p>', '', $content);      
+  $content = str_replace('</p>', '', $content);      
+  return $content;
+});

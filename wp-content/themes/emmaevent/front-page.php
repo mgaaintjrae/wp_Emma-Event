@@ -10,7 +10,9 @@
           <div class="company__title">          
           <?php the_post_thumbnail('event-thumbnail'); ?>          
           <?php the_content(); ?>            
-          </div>          
+          </div>
+        </div>
+      </div>          
     </section>
 
     <!-- Events -->
@@ -63,8 +65,7 @@
       </a>
     </section> -->
 
-    <!-- Galerie slider -->
-    <?php //echo do_shortcode('[metaslider id="29"]'); ?>
+    <!-- Galerie slider -->    
     <?php echo do_shortcode('[masterslider id="1"]'); ?>
   </main>
   

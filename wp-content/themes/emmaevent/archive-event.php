@@ -1,18 +1,14 @@
 <?php get_header() ?>
 
-<div class="container page-events">
-    <!--<div class="search-form">-->
-  <h1 class="search-form__title">Evénements</h1>
-  <p>Retrouver tous mes événements en <strong>Ile de France</strong></p>
+<h1 class="search-form__title">Evénements</h1>
+<div>Retrouver tous mes événements en <strong>Ile de France</strong></div>
+
+<div class="container page-events events__grid">  
   
 <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
-      <a class="event " href="<?php the_permalink() ?>" title="<?= esc_attr(get_the_title()) ?>">
-  <div class="event__image">
-    <?php the_post_thumbnail('event-thumbnail-large') ?>   
-    </div>     
-  </a>  
-<?php $i++; endwhile; ?>
+       <?php get_template_part('template-parts/event'); ?>
+<?php endwhile; ?>
 <?php endif; ?> 
 
 </div>

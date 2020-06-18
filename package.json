@@ -1,0 +1,11 @@
+{
+  "name": "wp_emma-event.fr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mgaaintjrae/wp_Emma-Event.git",
+  "author": "mgaaintjrae <pr.priscilla.roy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "maildev": "^1.1.0"
+  }
+}

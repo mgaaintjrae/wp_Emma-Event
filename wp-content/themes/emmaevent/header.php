@@ -1,42 +1,11 @@
-<!--<!DOCTYPE html>
-<html <?php //language_attributes(); 
-      ?>>
-
-<head>
-  <title><?php //bloginfo('name'); 
-          ?> &raquo; <?php //is_front_page() ? bloginfo('description') : wp_title(''); 
-                                              ?></title>
-  <meta charset="<?php //bloginfo('charset'); 
-                  ?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?php //bloginfo('stylesheet_url'); 
-                                ?>">
-  <?php //wp_head(); 
-  ?>
-</head>
-
-<body <?php //body_class(); 
-      ?>>
-  <?php //wp_body_open(); 
-  ?>
-  <header class="header">
-  <a href="<?php //echo home_url( '/' ); 
-            ?>">
-      <img src="<?php //echo get_template_directory_uri(); 
-                ?>/assets/img/logo.svg" alt="Logo">
-    </a>
-  </header>
-  <?php //wp_nav_menu(array('theme_location' => 'header-menu')); 
-  ?> -->
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?>>
 
 <head>
-  <meta charset="UTF-8">
+<meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
   <?php wp_head(); ?>
 </head>
 
