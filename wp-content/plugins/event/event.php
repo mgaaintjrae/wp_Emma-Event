@@ -45,7 +45,7 @@ add_action('init', function () {
         'public' => true,
         'hierarchical' => false,
         'exclude_from_search' => false,
-        'show_in_rest' => false,
+        'show_in_rest' => false,        
         'rewrite'            => [
             'slug' => _x('events', 'URL', 'event')
         ],
@@ -73,7 +73,11 @@ add_action('init', function () {
         'items_list_navigation'      => __( 'Types list navigation' , 'event'),
         'items_list'                 => __( 'Types list' , 'event'),
         'back_to_items'              => __( '&larr; Back to Types' , 'event'),
-        ]
+        ],
+        'show_admin_column' => true,
+        'rewrite'            => [
+            'slug' => _x('events', 'URL')
+        ],
     ]);    
 });
 
