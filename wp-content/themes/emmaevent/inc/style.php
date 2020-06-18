@@ -4,6 +4,7 @@ add_filter('next_posts_link_attributes', function (string $attrs): string {
 });
 
 add_filter('nav_menu_css_class', function (array $classes): array {
+
   if(is_singular('event') || is_post_type_archive('event') || is_tax('events')) {
     $classes = array_filter($classes, function (string $class) {
       return $class !== 'current_page_parent';
