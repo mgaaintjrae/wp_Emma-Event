@@ -1,0 +1,25 @@
+.elementor .elementor-element ul.elementor-icon-list-items{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.elementor-17 .elementor-element.elementor-element-525456a0 .elementor-icon-list-item{
+    justify-content: center;
+}
+.elementor-widget .elementor-icon-list-icon{
+    display: flex;
+    align-self: center;
+}
+
+.page-title {
+    @extend %big-title;
+    margin-bottom: space(6);
+  }
+// Form
+//==============
+form .form-group .form-control{
+    border: 1px solid $dore;
+}
+form button .btn{
+    width: 100% !important;
+}
