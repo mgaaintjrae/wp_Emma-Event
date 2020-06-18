@@ -23,16 +23,19 @@
   
   .event__title{
     padding-bottom: 150px;
-  }
-  .events__grid{
-    display: flex;  
-    justify-content: space-between;
-    .event {
-      padding:20px;
-    }
+  }  
+}
+.events__grid{
+  display: flex;  
+  justify-content: space-between;    
 
-    @media only screen and (max-width: 900px) {
-      flex-direction: column;
-    }
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
   }
+}
+
+// Events
+// ==================
+.event__image{
+  padding: 20px;
 }
