@@ -17,7 +17,7 @@ $f-raleway: 'Raleway', sans-serif;
 %big-title {
   font-family: $f-alex;  
   font-size: 64px;
-  line-height: 1.15;
+  line-height: 0.5;
   color: $emeraude;
 
   @media only screen and (max-width: 500px) {
@@ -37,7 +37,6 @@ h1{
     font-size: 50px;    
   }
 }
-
 h2{
   font-family: $f-alex;  
   font-size: 60px;
@@ -48,7 +47,6 @@ h2{
     font-size: 42px;
   }
 }
-
 h3 {
   font-family: $f-alex;
   color: grey;  
@@ -60,25 +58,21 @@ h3 {
     font-size: 32px;
   }
 }
-
 h4 {
   font-family: $f-raleway;
   color: white; 
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 18px;
- 
+  font-size: 18px; 
 
   @include down(500) {
     font-size: 32px;
   }
 }
-
 %title-secondary,
 .title-secondary{
   font-family: $f-alex;
-  color: $emeraude;
-  // font-weight: bold;
+  color: $emeraude;  
   font-size: 30px;
   line-height: 1.15;
 
@@ -86,10 +80,8 @@ h4 {
     font-size: 42px;
   }
 }
-
 %h3 {
   font-family: $f-alex;
-  // font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
 
@@ -128,7 +120,6 @@ h4 {
     justify-items: flex-start;
     grid-gap: .5em;
     // margin-left: 1.5em;
-
     // display: flex;
     margin-left: 0;
   }

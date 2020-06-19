@@ -2,17 +2,8 @@
 // ==========================================================================
 .event__title {
   @extend %big-title;
-  margin-bottom: space(1);
+  // margin-bottom: space(1);
 }
-
-.event__location {
-  font-weight: 300;
-}
-
-.event__price {
-  // color: $orange;
-  // font-weight: 600;
-
   .event__meta {
     font-size: 22px;
 
@@ -91,30 +82,7 @@
     margin-bottom: space(3);
   }
 
-  // Options
-  // ==========================================================================
-  // .event-options {
-  //   border-radius: 10px;
-  //   padding: space(1) space(3);
-  //   background-color: #F7F7F7;
-  //   color: #000;
-  //   margin-top: space(6);
-  //   font-weight: 600;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-
-  // .event-option {
-  //   margin: space(1) space(2);
-  //   display: inline-flex;
-  //   // margin-right: space(4);
-  // }
-
-  // .event-options img {
-  //   height: 30px;
-  //   margin-right: space(2);
-  // }
-
+  
   @include up(1100) {
     .event-header {
       display: grid;
@@ -127,7 +95,7 @@
       margin-top: 0;
     }
   }
-}
+
 
 .current_page_parent{
   color: $emeraude;

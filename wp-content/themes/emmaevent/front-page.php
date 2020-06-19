@@ -9,11 +9,26 @@
         <div class="company">          
           <div class="company__title">          
           <?php the_post_thumbnail('event-thumbnail'); ?>          
-          <?php the_content(); ?>            
+          <h2 class="page-title">
+            Présentation
+            <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trefle">
+          </h2>            
           </div>
+          <?php the_content(); ?>
         </div>
+        
       </div>          
     </section>
+
+    <!-- Fantasy -->
+    <div class="fantasy">
+    <div class="deco__left">
+      <!--<img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png" alt="branche feuilles">-->
+    </div>
+    <div class="deco__right">
+    <!--<img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png" alt="branche feuilles">-->
+    </div>
+    </div>
 
     <!-- Events -->
     <?php if(have_rows('recent_events')): while(have_rows('recent_events')): the_row() ?>
@@ -22,10 +37,12 @@
         <div class="event__title">
           <h2><?php the_sub_field('title') ?></h2>
           <?php the_sub_field('image') ?>
-          <img src="<?= get_field('divider_trefle'); ?>" alt="divider trèfle">          
-        </div>        
-        <?php the_sub_field('description') ?>      
-        
+          <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trèfle">          
+        </div>
+        <div class="event__content">
+        <?php the_sub_field('description') ?>  
+        </div>      
+            
         <div class="events__grid">
         <?php
         $query = new WP_Query([

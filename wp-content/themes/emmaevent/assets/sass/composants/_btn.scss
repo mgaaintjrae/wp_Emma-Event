@@ -13,9 +13,20 @@
   transition: .3s;
   cursor: pointer;
 }
+.cta__btn-white{
+  color: white;
+  border: 2px solid white;
+}
+.cta__btn-white:hover,
+.cta__btn-white:focus,
+.cta__btn-white:active{
+  color: white;
+  border: 2px solid $dore;
+  background-color: $dore;
+}
 .btn:hover,
 .btn:focus,
-.btn:active  {  
+.btn:active {  
   background-color: $dore;
   color: #FFf;
 }

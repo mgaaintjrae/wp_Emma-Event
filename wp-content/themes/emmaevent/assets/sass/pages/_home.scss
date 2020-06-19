@@ -9,3 +9,71 @@
     width: 100%;
   }
 }
+
+// Section presentation
+//=====================
+.home .company{
+  text-align: center;
+  padding: 0 69px;
+  margin-bottom: 90px; 
+}
+
+// Fantasy
+//=========
+.fantasy .deco__left{
+//   background-image: url('http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png');
+//   background-position: center;
+
+}
+// .fantasy .deco__right{
+//   background-image: url('http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png');
+//   background-position: center;
+// }
+
+// Section events
+//=====================
+.container__event{
+  text-align: center;
+  background-image: url(http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/bg_feuilles.png),url(http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png);
+  background-size: auto, 29%;
+  background-repeat: repeat, no-repeat;
+  background-position: center, left top;
+  height: 940px;
+  padding: 0 69px;
+  
+  
+  @media only screen and (max-width: 900px) {
+    height: 2045px;
+  }
+}
+.events{
+  max-width: 1370px;
+  width: 100%;
+  height: 750px;
+  padding: 70px 0;
+  background-size: cover;
+  margin: 0 auto;   
+}
+.events .event__title{
+  
+}
+.events .event__content{
+  padding: 70px;
+}  
+.events__grid{
+  display: flex;  
+  justify-content: space-between;    
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+.events .event-title{
+  
+}
+
+// Events
+// ==================
+.event__image{
+  padding: 20px;
+}
