@@ -17,3 +17,47 @@
 header .news_header{
   height: auto;
 }
+
+// About
+//============
+.sections .container {
+  display: block;
+  position: relative;
+} 
+.sections .container .page-title{  
+  display: flex;
+    flex-direction: column;    
+    align-items: center;
+    align-self: center;
+    z-index: 1;
+    position: absolute;
+    text-align: center;    
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 38%;
+    width: 40%;
+    line-height: 1.7;
+    font-size: 60px;
+}
+.sections .news-list{
+  grid-template-columns: 50% 1fr;
+  padding: 0 69px;
+}
+.sections .news-list figure{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sections .news-list p{
+  display: flex;
+  align-items: center;
+  display: grid;
+  
+}
+.sections .news-list p.next{
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-column: 1 / 3;
+}

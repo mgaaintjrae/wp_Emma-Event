@@ -56,8 +56,16 @@
   }
   .nav a:hover,
   .nav a[aria-current] {
-    color: $emeraude;
+    color: $dore;
   }
+
+  // Nav Header special
+  // ==================
+.about .menu__area .nav__menu,
+.contact .menu__area .nav ul,
+.event .menu__area .nav ul{
+  color: white;
+}
 
   // Burger
   // ==================

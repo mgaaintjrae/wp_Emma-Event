@@ -59,7 +59,7 @@
 
     <div class="header__title">
       <h1>Emma Event Wedding Planner</h1>
-      <img src="assets/img/divider_coeur.svg" alt="divider coeur white">
+      <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg" alt="divider coeur white">
     </div>
     <div class="header__cta">
       <a href="#" class="cta__btn-white btn">CONTACTEZ-MOI</a>
