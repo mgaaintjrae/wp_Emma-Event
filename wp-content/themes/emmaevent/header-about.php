@@ -11,7 +11,7 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <header class="home">    
+  <header class="about">    
 
     <div class="menu__area">
       <div class="grid">
@@ -42,7 +42,7 @@
 
     <div class="header__title">
       <h1>A propos</h1>
-      <img src="assets/img/divider_coeur.svg" alt="divider coeur white">
+      <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg" alt="divider coeur white">
     </div>
     <div class="header__content">
       <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>

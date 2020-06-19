@@ -1,17 +1,17 @@
 <?php get_header('about'); ?>
 
 <main class="sections">
-    <!-- Contact -->
-    <section>
-      <div class="container">
-        <div class="company">          
+    <!-- About -->
+    <section>      
+        <div class="container company">          
           <div class="company__title">          
           <?php the_post_thumbnail('event-thumbnail'); ?>          
           <h2 class="page-title">
             <?php the_title(); ?>
+            <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="">
           </h2>
-        </div>
-      </div>          
+          </div>
+        </div>             
     </section> 
   
     <section>
