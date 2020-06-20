@@ -12,10 +12,11 @@
 
     .position__left__logo {
       height: 82px;
-      margin-left: 38px;
-      padding: 0 24px;
-      position: relative;
-      float: left;
+      // margin-left: 38px;
+      // padding: 0 24px;
+      padding: 0;
+      // position: relative;
+      // float: left;
       display: flex;
       align-items: center;
       width: 200px;
@@ -47,7 +48,7 @@
 
   .nav__menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-size: 13px;
     font-weight: 600;
@@ -68,7 +69,7 @@
     }
 
     li {
-      display: inline-block;
+      // display: inline-block;
       position: relative;
       text-align: left; // Reset text alignment
 
@@ -83,7 +84,7 @@
       li {
         display: block;
         padding: 9px 0;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #EBEBEB;
 
         &.focus,
         &:hover {
@@ -132,9 +133,9 @@
   }
   ul {    
     ul {
-      background-color: rgba(255,255,255,0.75);
+      background-color: white;
     }
-  }  
+  }
 
   // Nav Header special
   // ==================
@@ -270,3 +271,7 @@
     }
   }
 }
+
+  // Sticky menu
+  //==============
+ 

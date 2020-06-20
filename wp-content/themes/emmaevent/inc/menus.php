@@ -9,6 +9,7 @@ function emmaevent_add_Main_Nav()
 }
 add_action('init', 'emmaevent_add_Main_Nav');
 
+
 require_once('widgets/social.php');
 
 add_action('widgets_init', function () {

@@ -11,7 +11,7 @@
           <?php the_post_thumbnail('event-thumbnail'); ?>          
           <h2 class="page-title">
             <?php the_title(); ?>
-            <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trefle">
+            <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trefle">
           </h2>
           </div>
         </div>             

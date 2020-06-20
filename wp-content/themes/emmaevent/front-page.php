@@ -11,7 +11,7 @@
           <?php the_post_thumbnail('event-thumbnail'); ?>          
           <h2 class="page-title">
             Présentation
-            <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trefle">
+            <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trefle">
           </h2>            
           </div>
           <?php the_content(); ?>
@@ -23,10 +23,10 @@
     <!-- Fantasy -->
     <div class="fantasy">
     <div class="deco__left">
-      <!--<img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png" alt="branche feuilles">-->
+      <!--<img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png" alt="branche feuilles">-->
     </div>
     <div class="deco__right">
-    <!--<img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png" alt="branche feuilles">-->
+    <!--<img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png" alt="branche feuilles">-->
     </div>
     </div>
 
@@ -37,7 +37,7 @@
         <div class="event__title">
           <h2><?php the_sub_field('title') ?></h2>
           <?php the_sub_field('image') ?>
-          <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trèfle">          
+          <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trèfle">          
         </div>
         <div class="event__content">
         <?php the_sub_field('description') ?>  

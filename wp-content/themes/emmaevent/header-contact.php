@@ -42,7 +42,7 @@
 
     <div class="header__title">
       <h1>Contact</h1>
-      <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg" alt="divider coeur white">
+      <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg" alt="divider coeur white">
     </div>
     <div class="header__content">
       <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>

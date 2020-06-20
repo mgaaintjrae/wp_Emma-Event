@@ -49,18 +49,19 @@
             wp_nav_menu([
               'theme_location' => 'header',
               'container' => false,
-              'menu_class' => 'nav__menu'
-            ]);
+              'menu_class' => 'nav__menu',
+              'div_class'=> 'marker'
+             ]);
             ?>
           </nav>
         </div>
-        
+
       </div>
     </div>
 
     <div class="header__title">
       <h1>Emma Event Wedding Planner</h1>
-      <img src="http://localhost/wp_emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg" alt="divider coeur white">
+      <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg" alt="divider coeur white">
     </div>
     <div class="header__cta">
       <a href="#" class="cta__btn-white btn">CONTACTEZ-MOI</a>

@@ -28,7 +28,7 @@
 
         <div class="position__right__credit">
           <div class="footer__credits">
-            <p>Made with<span><img src="assets/img/heart.svg" alt="icone coeur"></span> by <a href="https://priscillaroy.fr" class="developer">Priscilla Roy</a></p>
+            <p>Made with<span><img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/heart.svg" alt="icone coeur"></span> by <a href="https://priscillaroy.fr" class="developer">Priscilla Roy</a></p>
           </div>
         </div>
       </div>
