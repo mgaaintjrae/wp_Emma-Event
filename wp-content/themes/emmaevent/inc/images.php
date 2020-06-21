@@ -4,7 +4,7 @@ add_action('after_setup_theme', function () {
   set_post_thumbnail_size(375,375,true);
   add_image_size('event-carousel', 800, 600, true);
   add_image_size('event-thumbnail', 575, 575, true);
-  add_image_size('event-thumbnail-large', 875, 220, true);  
+  add_image_size('event-thumbnail-large', 1200, 320, true);  
   
 });
 

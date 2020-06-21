@@ -27,7 +27,8 @@
 .btn:hover,
 .btn:focus,
 .btn:active {  
-  background-color: $dore;
+  background-color: $dore;  
+  // border: 2px solid white;
   color: #FFf;
 }
 .btn svg {

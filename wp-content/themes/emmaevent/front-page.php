@@ -1,65 +1,68 @@
 <?php get_header(); ?>
 
-<?php while(have_posts()): the_post() ?>
+<?php while (have_posts()) : the_post() ?>
 
-  <main class="sections">
+<main class="sections">
     <!-- Company presentation -->
     <section>
-      <div class="container">
-        <div class="company">          
-          <div class="company__title">          
-          <?php the_post_thumbnail('event-thumbnail'); ?>          
-          <h2 class="page-title">
-            Présentation
-            <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trefle">
-          </h2>            
-          </div>
-          <?php the_content(); ?>
+        <div class="container">
+            <div class="company">
+                <div class="company__title">
+                    <?php the_post_thumbnail('event-thumbnail'); ?>
+                    <h2 class="page-title">
+                        Présentation
+                        <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg"
+                            alt="divider trefle">
+                    </h2>
+                </div>
+                <?php the_content(); ?>
+            </div>
+
         </div>
-        
-      </div>          
     </section>
 
     <!-- Fantasy -->
     <div class="fantasy">
-    <div class="deco__left">
-      <!--<img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png" alt="branche feuilles">-->
-    </div>
-    <div class="deco__right">
-    <!--<img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png" alt="branche feuilles">-->
-    </div>
+        <div class="deco__left">
+            <!--<img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png" alt="branche feuilles">-->
+        </div>
+        <div class="deco__right">
+            <!--<img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png" alt="branche feuilles">-->
+        </div>
     </div>
 
     <!-- Events -->
-    <?php if(have_rows('recent_events')): while(have_rows('recent_events')): the_row() ?>
+    <?php if (have_rows('recent_events')) : while (have_rows('recent_events')) : the_row() ?>
     <section class="container__event">
-      <div class="events">
-        <div class="event__title">
-          <h2><?php the_sub_field('title') ?></h2>
-          <?php the_sub_field('image') ?>
-          <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg" alt="divider trèfle">          
+        <div class="event">
+            <div class="event__title">
+                <h2><?php the_sub_field('title') ?></h2>
+                <?php the_sub_field('image') ?>
+                <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg"
+                    alt="divider trèfle">
+            </div>
+            <div class="event__content">
+                <?php the_sub_field('description') ?>
+            </div>
+
+            <div class="events__grid">
+                <?php
+							$query = new WP_Query([
+								'post_type' => 'event',
+								'posts_per_page' => 3
+							]);
+
+							while ($query->have_posts()) {
+								$query->the_post();
+								get_template_part('template-parts/event');
+							}
+							wp_reset_postdata();
+							?>
+            </div>
         </div>
-        <div class="event__content">
-        <?php the_sub_field('description') ?>  
-        </div>      
-            
-        <div class="events__grid">
-        <?php
-        $query = new WP_Query([
-          'post_type' => 'event',
-          'posts_per_page' => 3
-        ]);        
-        
-        while($query->have_posts()){
-          $query->the_post();
-          get_template_part('template-parts/event');
-        }
-        wp_reset_postdata(); 
-        ?>     
-        </div>
-      </div>
     </section>
-    <?php endwhile; endif; ?>
+    <?php endwhile;
+		endif; ?>
 
 
     <!-- <section class="container quote">
@@ -82,9 +85,9 @@
       </a>
     </section> -->
 
-    <!-- Galerie slider -->    
+    <!-- Galerie slider -->
     <?php echo do_shortcode('[masterslider id="1"]'); ?>
-  </main>
-  
+</main>
+
 <?php endwhile; ?>
 <?php get_footer(); ?>

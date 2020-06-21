@@ -10,6 +10,9 @@
   }
 }
 
+.home .sections .container .page-title {
+  top: 25%;
+}
 // Section presentation
 //=====================
 .home .company{
@@ -45,35 +48,4 @@
   @media only screen and (max-width: 900px) {
     height: 2045px;
   }
-}
-.events{
-  max-width: 1370px;
-  width: 100%;
-  height: 750px;
-  padding: 70px 0;
-  background-size: cover;
-  margin: 0 auto;   
-}
-.events .event__title{
-  
-}
-.events .event__content{
-  padding: 70px;
-}  
-.events__grid{
-  display: flex;  
-  justify-content: space-between;    
-
-  @media only screen and (max-width: 900px) {
-    flex-direction: column;
-  }
-}
-.events .event-title{
-  
-}
-
-// Events
-// ==================
-.event__image{
-  padding: 20px;
 }
