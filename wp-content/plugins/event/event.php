@@ -50,7 +50,7 @@ add_action('init', function () {
             'slug' => _x('events', 'URL', 'event')
         ],
         'taxonomies' => ['events'],
-        'supports' => ['title', 'editor', 'excerpt', 'thumbnail']
+        'supports' => ['title', 'author', 'editor', 'excerpt', 'thumbnail']
     ]);
     register_taxonomy('events', 'event', [
         'meta_box_cb' => 'post_categories_meta_box',
@@ -73,8 +73,8 @@ add_action('init', function () {
         'items_list_navigation'      => __( 'Types list navigation' , 'event'),
         'items_list'                 => __( 'Types list' , 'event'),
         'back_to_items'              => __( '&larr; Back to Types' , 'event'),
-        ],
-        'show_admin_column' => true,
+        ],        
+        'show_admin_column' => true,        
         'rewrite'            => [
             'slug' => _x('events', 'URL')
         ],
@@ -86,4 +86,16 @@ register_activation_hook(__FILE__, 'flush_rewrite_rules');
 register_deactivation_hook(__FILE__, 'flush_rewrite_rules');
 
 
-
+add_filter('manage_posts_columns', 'posts_columns', 5);
+add_action('manage_posts_custom_column', 'posts_custom_columns', 5, 2);
+ 
+function posts_columns($defaults){
+    $defaults['riv_post_thumbs'] = __('Image');
+    return $defaults;
+}
+ 
+function posts_custom_columns($column_name, $id){
+    if($column_name === 'riv_post_thumbs'){
+        echo the_post_thumbnail( array(100,100) ) ;
+    }
+}
