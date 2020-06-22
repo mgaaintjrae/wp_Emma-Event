@@ -13,62 +13,89 @@
 
 // Header Page
 //================
-.about {
+.about{
   width: 100%;
   height: 600px;
-  margin: 0 auto;
+  margin: 0 auto;  
   background: rgb(214, 168, 89);
   background-image: radial-gradient(circle, rgba(214, 168, 89, .5) 0%, rgba(2, 61, 43, 1) 100%), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/mitchell-orr_header_about.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.contact {
+.contact {  
   width: 100%;
   height: 600px;
-  margin: 0 auto;
+  margin: 0 auto; 
   background: rgb(214, 168, 89);
-  background-image: radial-gradient(circle, rgba(214, 168, 89, .5) 0%, rgba(2, 61, 43, 1) 100%), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/header_contact.jpg');
+  background-image: radial-gradient(circle, rgba(214, 168, 89, .5) 0%, rgba(2, 61, 43, 1) 100%), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/header_contact.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; 
 }
-.events {
+.events { 
   width: 100%;
   height: 600px;
-  margin: 0 auto;
+  margin: 0 auto;  
   background: rgb(214, 168, 89);
   background-image: radial-gradient(circle, rgba(214, 168, 89, .5) 0%, rgba(2, 61, 43, 1) 100%), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/asad-atol_events.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;  
 }
-.galery {
+.galery {  
   width: 100%;
   height: 600px;
-  margin: 0 auto;
+  margin: 0 auto; 
   background: rgb(214, 168, 89);
   background-image: radial-gradient(circle, rgba(214, 168, 89, .5) 0%, rgba(2, 61, 43, 1) 100%), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/pink-and-white-flowers_galery.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;  
+}
+.mentions{
+  width: 100%;
+  height: 600px;
+  margin: 0 auto; 
+  background-image: radial-gradient(circle, rgba(214, 168, 89, .5) 0%, rgba(2, 61, 43, 1) 100%), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/pink-flowers_mentions.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+.sitemap{
+  width: 100%;
+  height: 600px;
+  margin: 0 auto; 
+  background-image: radial-gradient(circle, rgba(214, 168, 89, .5) 0%, rgba(2, 61, 43, 1) 100%), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/flowers-lavender_sitemap.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 .about .menu__area,
 .contact .menu__area,
 .events .menu__area,
-.galery .menu__area {
+.galery .menu__area,
+.mentions .menu__area,
+.sitemap .menu__area,
+.archive .menu__area {
   background-color: transparent;
 }
 .about .header__title h1,
 .contact .header__title h1,
 .events .header__title h1,
-.galery .header__title h1 {
+.galery .header__title h1,
+.mentions .header__title h1,
+.sitemap .header__title h1,
+.archive .header__title h1 {
   margin: 120px auto 0px;
 }
 .about .header__content,
 .contact .header__content,
 .events .header__content,
-.galery .header__content {
+.galery .header__content,
+.mentions .header__content,
+.sitemap .header__content,
+.archive .header__content {
   color: white;
   text-align: center;
   font-size: 25px;
@@ -76,7 +103,10 @@
 .about .header__content p,
 .contact .header__content p,
 .events .header__content p,
-.galery .header__content p {
+.galery .header__content p,
+.mentions .header__content p,
+.sitemap .header__content p,
+.archive .header__content p {
   line-height: 2.7;
 }
 

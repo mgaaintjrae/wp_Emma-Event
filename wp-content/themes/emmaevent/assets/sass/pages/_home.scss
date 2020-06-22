@@ -37,15 +37,15 @@
 //=====================
 .container__event{
   text-align: center;
-  background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/bg_feuilles.png'),url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png');
-  background-size: auto, 29%;
-  background-repeat: repeat, no-repeat;
-  background-position: center, left top;
+  background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/bg_feuilles.png');
+  background-size: auto;
+  background-repeat: repeatt;
+  background-position: center;
   height: 940px;
   padding: 0 69px;
   
   
   @media only screen and (max-width: 900px) {
-    height: 2045px;
+    height: auto;
   }
 }

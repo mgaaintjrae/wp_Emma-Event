@@ -54,13 +54,11 @@ header .news_header {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 38%;
+  top: 40%;
   width: 40%;
   line-height: 1.7;
-  font-size: 60px;
+  font-size: 50px;
 }
-
-
 .sections .news-list {
   grid-template-columns: 50% 1fr;
   padding: 0 69px;
@@ -96,12 +94,36 @@ header .news_header {
   background-size: cover;
   margin: 0 auto;   
   text-align: center;
-  padding: 0 69px;
+  // padding: 0 69px;
   margin-bottom: 90px;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+    margin-bottom: 0;
+  }
 }
 
-.event .event__content{
-  padding: 70px;
+.event {
+  @media only screen and (max-width: 900px) {
+    // padding: 70px 69px;
+    // height: 1720px;
+  }
+  
+}  
+.event__content {
+  @media only screen and (max-width: 900px) {
+    padding: 70px 0;
+  }
+  
+}  
+.container__event {
+  @media only screen and (min-width: 900px) {
+    height: auto;
+    padding: 70px 69px;
+  }
+  
 }  
 .events__grid{
   display: flex;  

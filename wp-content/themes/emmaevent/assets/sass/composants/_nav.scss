@@ -1,20 +1,23 @@
 .menu__area {
     background-color: rgba(255, 255, 255, 0.75);
-    height: 82px;
+    height: 80px;
     border-bottom: 1px solid #ebebeb;
     position: relative;
     transition: background-color 0.3s ease;
     display: flex;
     align-items: center;
+    z-index: 9999;
 
     .grid {
+        display: flex;
+  align-items: center;
         height: 100%;
 
         .position__left__logo {
             height: 82px;
             // margin-left: 38px;
             // padding: 0 24px;
-            padding: 0;
+            padding-left: 65px;
             // position: relative;
             // float: left;
             display: flex;
@@ -27,25 +30,23 @@
     @media only screen and (max-width: 1200px) {
         .grid {
             // width: 950px;
-            width: auto;
+            // width: auto;
         }
     }
 
-    .position__center:before {
-        // content: "";
-        // display: inline-block;
-        // vertical-align: middle;
-        // height: 100%;
-
-        .nav {
-            position: relative;
-            display: inline-block;
-            vertical-align: middle;
-            height: 100%;
-            margin-left: 15px;
-        }
-    }
-
+    // .position__center:before {
+    //     content: "";
+    //     display: inline-block;
+    //     vertical-align: middle;
+    //     height: 100%;
+    //     .nav {
+    //         position: relative;
+    //         display: inline-block;
+    //         vertical-align: middle;
+    //         height: 100%;
+    //         margin-left: 15px;
+    //     }
+    // }
     .nav__menu {
         display: flex;
         justify-content: flex-end;
@@ -57,7 +58,6 @@
         padding: 0;
         width: 100%;
         text-align: center;
-
         ul {
             min-width: 150px;
             height: 170px;
@@ -67,7 +67,6 @@
             top: -999em;
             left: -999em;
         }
-
         li {
             display: inline-block;
             position: relative;
@@ -80,7 +79,6 @@
                     left: auto;
                 }
             }
-
             li {
                 display: block;
                 padding: 9px 0;
@@ -97,23 +95,19 @@
             }
         }
     }
-
     .nav__menu > * + * {
         margin-left: space(4);
     }
-
     .nav {
         margin-right: 185px;
         width: 100%;
     }
-
     .nav a {
         transition: color 0.3s;
         display: block;
         white-space: nowrap;
         padding: 10px 15px;
     }
-
     .nav a:hover,
     .nav a[aria-current] {
         color: $dore;
@@ -140,6 +134,8 @@
 .archive .events .menu-item-object-event,
 .page .contact .menu-item-object-event,
 .page .about .menu-item-object-event,
+.page .sitemap .menu-item-object-event,
+.page .mentions .menu-item-object-event,
 .page .galery .menu-item-object-event {
     > a {
         &::before {
@@ -159,7 +155,10 @@
 .about .menu__area .nav__menu,
 .contact .menu__area .nav ul,
 .events .menu__area .nav ul,
-.galery .menu__area .nav ul {
+.galery .menu__area .nav ul,
+.archive .menu__area .nav ul,
+.sitemap .menu__area .nav ul,
+.mentions .menu__area .nav ul {
     color: white;
 }
 
@@ -167,8 +166,8 @@
 // ==================
 .nav__burger {
     display: none;
-    // margin-left: auto;
-    // margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     height: 37px;
     z-index: 51;
 }
@@ -217,14 +216,15 @@
     }
 }
 
-@include down(440) {
+@include down(900) {
     .grid {
         display: flex;
         align-items: center;
+        padding: 12px 10px 0px 10px;
     }
 
     .position__left__logo {
-        margin-left: 25%;
+        // margin-left: 25%;
     }
 
     .nav__burger {
@@ -265,6 +265,8 @@
         display: flex;
         animation: menuIn 1s;
         opacity: 1;
+        justify-content: center;
+        font-size: 22px;
 
         & > * {
             opacity: 1;
@@ -278,11 +280,31 @@
     }
 }
 
-@include up(1000) {
-    .home .nav__menu {
-        margin-left: 0;
-        max-width: calc(517px - 32px);
-        width: calc(51% - 72px);
-        justify-content: flex-end;
+// @include up(1000) {
+//     .home .nav__menu {
+//         margin-left: 0;
+//         max-width: calc(517px - 32px);
+//         width: calc(51% - 72px);
+//         justify-content: flex-end;
+//     }
+// }
+
+@media only screen and (max-width: 1200px) {
+    .grid {
+        // width: 950px;
+        // width: auto;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .menu__area .nav {
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 1350px) {
+    .position__center {
+        margin-left: 300px;
+    }
+}
+
+// // Sticky menu
+// //=============
