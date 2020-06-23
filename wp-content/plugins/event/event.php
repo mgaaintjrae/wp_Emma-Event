@@ -89,6 +89,8 @@ register_deactivation_hook(__FILE__, 'flush_rewrite_rules');
 add_filter('manage_posts_columns', 'posts_columns', 5);
 add_action('manage_posts_custom_column', 'posts_custom_columns', 5, 2);
  
+
+// ajout image column admin
 function posts_columns($defaults){
     $defaults['riv_post_thumbs'] = __('Image');
     return $defaults;

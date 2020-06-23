@@ -2,8 +2,12 @@
     <div class="event__image">
         <?php the_post_thumbnail('event-thumbnail') ?>
     </div>
-    <?php $events = get_terms(['taxonomy' => 'events']); ?>
     <div class="event__body">
-        <h3 class="event__category"><?= get_queried_object()->name ?></h3>
+        <?php $type = the_field('type');
+                    if( $type ):?>
+        <?php foreach( $types as $type): ?>
+        <h3 class="event__type"><?= $type ?></h3>
+        <?php endforeach; ?>
+        <?php endif; ?>
     </div>
 </a>

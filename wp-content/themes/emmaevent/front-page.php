@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
-<?php while (have_posts()) : the_post() ?>
-
 <main class="sections">
     <!-- Company presentation -->
     <section>
+        <?php while (have_posts()) : the_post() ?>
         <div class="container">
             <div class="company">
                 <div class="company__title">
@@ -19,6 +18,7 @@
             </div>
 
         </div>
+        <?php endwhile; ?>
     </section>
 
     <!-- Fantasy -->
@@ -52,17 +52,16 @@
 								'posts_per_page' => 3
 							]);
 
-							while ($query->have_posts()) {
-								$query->the_post();
-								get_template_part('template-parts/event');
-							}
-							wp_reset_postdata();
-							?>
+              if (have_posts()) : ?>
+                <?php while ($query->have_posts()) : $query->the_post(); ?>
+                <?php get_template_part('template-parts/event'); ?>
+                <?php wp_reset_postdata(); ?>
+                <?php endwhile; endif; ?>
             </div>
         </div>
     </section>
-    <?php endwhile;
-		endif; ?>
+    <?php endwhile; ?>
+    <?php endif; ?>
 
 
     <!-- <section class="container quote">
@@ -85,9 +84,9 @@
       </a>
     </section> -->
 
-    <!-- Galerie slider -->
+    <!-- Slider -->
     <?php echo do_shortcode('[masterslider id="1"]'); ?>
 </main>
 
-<?php endwhile; ?>
+
 <?php get_footer(); ?>
