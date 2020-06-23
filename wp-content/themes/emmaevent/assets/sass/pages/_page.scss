@@ -5,9 +5,15 @@
 
 .page-about .page-sidebar {
     display: grid;
-    // grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: space(10);
     align-items: flex-start;
+    padding: 70px 69px;
+}
+.page-about .thumbnail{
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 .page-sidebar__galery {
     display: grid;
@@ -23,9 +29,13 @@
     grid-gap: space(10);
 }
 
-@include up(1030) {
-    .page-about .page-sidebar {
-        // grid-template-columns: 1fr 300px;
+@include down(900) {
+    .page-about .page-sidebar{
+        display: flex;
+        flex-direction: column;
+    }
+    .page-about .news-list {
+padding-top: 70px;
     }
 }
 
@@ -75,8 +85,8 @@ header .news_header {
     }
 }
 .sections .page-about .news-list {
-    grid-template-columns: 50% 1fr;
-    padding: 0 69px;
+    // grid-template-columns: 50% 1fr;
+    // padding: 0 69px;
 }
 
 .sections .news-list figure {
@@ -118,26 +128,11 @@ header .news_header {
         margin-bottom: 0;
     }
 }
+// Page archive
+// =================
 .events__content {
     text-align: center;
-}
-
-.event {
-    @media only screen and (max-width: 900px) {
-        // padding: 70px 69px;
-        // height: 1720px;
-    }
-}
-.event__content {
-    @media only screen and (max-width: 900px) {
-        padding: 70px 0;
-    }
-}
-.container__event {
-    @media only screen and (min-width: 900px) {
-        height: auto;
-        padding: 70px 69px;
-    }
+    padding: 70px 69px;
 }
 .events__grid {
     display: flex;
@@ -150,10 +145,98 @@ header .news_header {
 .events .event-title {
 }
 
+// Events front-page
+// ======================
+.event {
+    @media only screen and (max-width: 900px) {
+        // padding: 70px 69px;
+        // height: 1720px;
+    }
+}
+.event__content {
+    // @media only screen and (max-width: 900px) {
+    padding: 70px 0;
+    // }
+}
+.home .container__event {
+    @media only screen and (max-width: 900px) {
+        height: auto;
+        padding: 70px 69px;
+    }
+}
 .event__image {
     padding: 20px;
 }
-.page-events .event__body{
+.page-events .event__body {
     font-family: $f-alex;
     text-transform: capitalize;
 }
+
+// Overlay events
+// =================
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.content .content-overlay {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    position: absolute;
+    height: 94%;
+    width: 90%;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay {
+    opacity: 1;
+}
+.content-image {
+    width: 100%;
+}
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.content:hover .content-details {
+    top: 75%;
+    left: 50%;
+    opacity: 1;
+}
+.content-details .event__body {
+    color: $dore;
+    font-family: $f-alex;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.fadeIn-bottom {
+    top: 80%;
+}
+// Zoom hover effect
+
