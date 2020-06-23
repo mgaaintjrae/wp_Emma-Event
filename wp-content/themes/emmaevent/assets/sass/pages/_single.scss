@@ -4,22 +4,9 @@
   @extend %big-title;
   // margin-bottom: space(1);
 }
-  .event__meta {
-    font-size: 22px;
-
-    &>*+* {
-      margin-top: space(1);
-    }
-
-    @include up(500) {
-      display: flex;
-
-      &>*+* {
-        margin-top: 0;
-        margin-left: space(2);
-      }
-    }
-
+  .event__type {
+    margin-top: space(4);
+    text-transform: capitalize;       
   }
 
   .event__form {
@@ -74,7 +61,8 @@
   // Body
   // ==========================================================================
   .event-body {
-    margin-top: space(10);
+    // margin-top: space(10);
+    padding: 30px 69px;
   }
 
   .event-body__title {
@@ -85,10 +73,11 @@
   
   @include up(1100) {
     .event-header {
-      display: grid;
-      grid-template-columns: 520px 1fr;
-      grid-gap: space(6);
-      align-items: center;
+      // display: grid;
+      // grid-template-columns: 520px 1fr;
+      // grid-gap: space(6);
+      // align-items: center;
+      padding: 0 69px;
     }
 
     .event-header>*+* {

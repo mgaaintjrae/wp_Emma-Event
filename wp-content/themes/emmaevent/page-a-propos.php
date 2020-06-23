@@ -19,13 +19,12 @@
         </div>
     </section>
 
-    <section>
+    <section class="page-about">
         <div class="page-sidebar">
             <div class="thumbnail">
                 <?php the_post_thumbnail('event-thumbnail-large'); ?>
             </div>
             <div class="news-list">
-
                 <?php the_content(); ?>
             </div>
         </div>

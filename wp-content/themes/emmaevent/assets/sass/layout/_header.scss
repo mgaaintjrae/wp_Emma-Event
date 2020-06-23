@@ -99,6 +99,9 @@
   color: white;
   text-align: center;
   font-size: 25px;
+  padding: 0 69px;
+
+  
 }
 .about .header__content p,
 .contact .header__content p,
@@ -110,3 +113,14 @@
   line-height: 2.7;
 }
 
+@include down(720){
+  .about .header__content,
+.contact .header__content,
+.events .header__content,
+.galery .header__content,
+.mentions .header__content,
+.sitemap .header__content,
+.archive .header__content {  
+  font-size: 18px;
+}
+}

@@ -6,6 +6,7 @@
     transition: background-color 0.3s ease;
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 9999;
 
     .grid {
@@ -14,7 +15,7 @@
         height: 100%;
 
         .position__left__logo {
-            height: 82px;
+            // height: 82px;
             // margin-left: 38px;
             // padding: 0 24px;
             padding-left: 65px;
@@ -302,7 +303,7 @@
 }
 @media only screen and (min-width: 1350px) {
     .position__center {
-        margin-left: 300px;
+        // margin-left: 300px;
     }
 }
 
