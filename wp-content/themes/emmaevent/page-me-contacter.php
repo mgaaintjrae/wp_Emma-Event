@@ -19,7 +19,7 @@
             </div>
     </section>
 
-    <section>
+    <section class="contact__form">
         <div class="page-sidebar">
             <div class="thumbnail">
                 <?php the_post_thumbnail('event-thumbnail-large'); ?>
@@ -29,6 +29,7 @@
             </div>
         </div>
     </section>
+    
 </main>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>
