@@ -3,7 +3,7 @@
 
         <div class="event__image content-image">
             <div class="content-overlay"></div>
-            <figure><?php the_post_thumbnail('event-thumbnail') ?></figure>
+            <?php the_post_thumbnail('event-thumbnail') ?>
         </div>
         <div class="content-details fadeIn-bottom">
             <div class="event__body content-title">

@@ -24,7 +24,28 @@
 							]);
                 if (have_posts()) : ?>
                 <?php while ($query->have_posts()) : $query->the_post(); ?>
-                <?php get_template_part('template-parts/event'); ?>
+                <div class="content">
+                    <a class="event " href="<?php the_permalink() ?>" title="<?= esc_attr(get_the_title()) ?>">
+
+                        <div class="event__image content-image">
+                            <div class="content-overlay"></div>
+                            <?php the_post_thumbnail('event-thumbnail-large') ?>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <div class="event__body content-title">
+                                <?php $type = the_field('type');
+                    if( $type ):?>
+                                <?php foreach( $types as $type): ?>
+                                <h3 class="event__type">
+                                    <?php $type ?>
+                                </h3>
+                                <?php endforeach; ?>
+                                <?php endif; ?>
+                            </div>
+                            <p class="content-text"><?php the_excerpt(); ?></p>
+                        </div>
+                    </a>
+                </div>
                 <?php wp_reset_postdata(); ?>
                 <?php endwhile; ?>
                 <?php endif; ?>

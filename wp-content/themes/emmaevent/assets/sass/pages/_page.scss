@@ -10,7 +10,7 @@
     align-items: flex-start;
     padding: 70px 69px;
 }
-.page-about .thumbnail{
+.page-about .thumbnail {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -30,12 +30,12 @@
 }
 
 @include down(900) {
-    .page-about .page-sidebar{
+    .page-about .page-sidebar {
         display: flex;
         flex-direction: column;
     }
     .page-about .news-list {
-padding-top: 70px;
+        padding-top: 70px;
     }
 }
 
@@ -134,13 +134,17 @@ header .news_header {
     text-align: center;
     padding: 70px 69px;
 }
-.events__grid {
+.home .events__grid{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 
     @media only screen and (max-width: 900px) {
         flex-direction: column;
     }
+}
+.archive .events__grid {
+    display: flex;    ;
+    flex-direction: column;
 }
 .events .event-title {
 }
@@ -181,6 +185,13 @@ header .news_header {
     margin: auto;
     overflow: hidden;
 }
+.archive .content {
+    position: relative;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
 .content .content-overlay {
     background: rgb(255, 255, 255);
     background: linear-gradient(
@@ -191,6 +202,25 @@ header .news_header {
     position: absolute;
     height: 94%;
     width: 90%;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+.archive .content .content-overlay {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    position: absolute;
+    height: 94%;
+    width: 100%;
     left: 20px;
     top: 0;
     bottom: 0;
@@ -227,16 +257,34 @@ header .news_header {
     left: 50%;
     opacity: 1;
 }
+.archive .content:hover .content-details {
+    top: 65%;
+    left: 50%;
+    opacity: 1;
+}
 .content-details .event__body {
     color: $dore;
     font-family: $f-alex;
     font-weight: 500;
-    margin-bottom: 0.5em;
+    // margin-bottom: 0.5em;
     text-transform: capitalize;
     font-size: 50px;
 }
+.archive .content-details .event__body {
+    color: $emeraude;
+    font-family: $f-alex;
+    font-weight: 500;
+    // margin-bottom: 0.5em;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.content-details p{
+    color: $dore;    
+    font-size: 0.8em;
+    padding: 0px 69px;
+  }
 .fadeIn-bottom {
     top: 80%;
 }
-// Zoom hover effect
 
+// Zoom hover effect

@@ -49,13 +49,13 @@
               'div_class'=> 'marker'
              ]);
             ?>
-            <button class="nav__burger">
-                    <span></span>
-                </button>
+                        <button class="nav__burger">
+                            <span></span>
+                        </button>
                     </nav>
-                    
+
                 </div>
-                
+
             </div>
         </div>
 
@@ -65,7 +65,7 @@
                 alt="divider coeur white">
         </div>
         <div class="header__cta">
-            <a href="#" class="cta__btn-white btn">CONTACTEZ-MOI</a>
+            <a href="<?php the_permalink(17) ?>" class="cta__btn-white btn">CONTACTEZ-MOI</a>
         </div>
 
     </header>

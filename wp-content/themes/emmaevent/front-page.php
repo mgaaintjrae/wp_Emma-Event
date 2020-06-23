@@ -59,29 +59,34 @@
                 <?php endwhile; endif; ?>
             </div>
         </div>
+
+        <a href="<?= get_post_type_archive_link( 'event' ); ?>" class="btn">Voir tous les événements</a>
+
     </section>
     <?php endwhile; ?>
     <?php endif; ?>
 
 
-    <!-- <section class="container quote">
-      <div class="quote__title">Ce que pensent mess clients</div>
-      <div class="quote__body">
-        <div class="quote__image">
-          <img src="#" alt="">
-          <div class="quote__author">Stephanie</div>
-        </div>
-        <blockquote>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, aspernatur sit provident eius, sint, itaque rem blanditiis perferendis quod doloremque maiores architecto. Amet dolore itaque dolores esse facere sint error.</p>
-        </blockquote>
-      </div>
+    <!-- <section class=" container quote">
+            <div class="quote__title">Ce que pensent mess clients</div>
+            <div class="quote__body">
+                <div class="quote__image">
+                    <img src="#" alt="">
+                    <div class="quote__author">Stephanie</div>
+                </div>
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, aspernatur sit provident eius,
+                        sint, itaque rem blanditiis perferendis quod doloremque maiores architecto. Amet dolore itaque
+                        dolores esse facere sint error.</p>
+                </blockquote>
+            </div>
 
-      <a class="quote__action btn" href="#">
-        Mon événement
-        <svg class="icon">
-          <use xlink:href="sprite.14d9fd56.svg#arrow"></use>
-        </svg>
-      </a>
+            <a class="quote__action btn" href="#">
+                Mon événement
+                <svg class="icon">
+                    <use xlink:href="sprite.14d9fd56.svg#arrow"></use>
+                </svg>
+            </a>
     </section> -->
 
     <!-- Slider -->
