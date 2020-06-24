@@ -49,6 +49,11 @@ header .news_header {
 }
 .sections .company__title {
     text-align: center;
+    position: relative;
+}
+.page-events .company__title {
+    text-align: center;
+    position: relative !important;
 }
 .sections .container .page-title {
     display: flex;
@@ -64,7 +69,11 @@ header .news_header {
     top: 40%;
     width: 40%;
     line-height: 1.7;
-    font-size: 50px;
+    font-size: 60px;
+}
+.page-events .page-title {    
+    margin: 101px auto !important;
+    
 }
 @include down(550) {
     .sections .container .page-title {
@@ -81,7 +90,7 @@ header .news_header {
 }
 @include down(900) {
     .page-events .page-title {
-        top: 9% !important;
+        // top: 9% !important;
     }
 }
 .sections .page-about .news-list {
@@ -162,10 +171,11 @@ header .news_header {
     padding: 70px 0;
     // }
 }
-.home .container__event {
-    @media only screen and (max-width: 900px) {
+
+    @include down(900) {
+        .home .container__event {
         height: auto;
-        padding: 70px 69px;
+        padding: 70px 50px;
     }
 }
 .event__image {
@@ -279,7 +289,7 @@ header .news_header {
     font-size: 50px;
 }
 .content-details p{
-    color: $dore;    
+    color: $emeraude;    
     font-size: 0.8em;
     padding: 0px 69px;
   }

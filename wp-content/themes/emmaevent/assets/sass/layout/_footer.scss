@@ -15,7 +15,7 @@
 }
 @include down(720) {
     .footer__up {
-        padding: 70px 69px;
+        padding: 70px 50px;
         border-bottom: 1px solid #816536;
     }
     .footer .grid {
@@ -30,6 +30,7 @@
     }
     .footer__credits {
         padding: 15px 0;
+        font-size: 12px;
     }
 }
 .menu__footer__up {
@@ -66,6 +67,7 @@
 .nav__footer__menu li a {
     color: #816536;
 }
+
 .nav__footer__menu > * + * {
     margin-left: space(4);
 }
@@ -140,6 +142,16 @@
     .nav__footer__menu > * + * {
         margin-left: 0;
         // margin-top: space(3);
+    }
+   
+}
+
+@include down(720){
+    .nav__footer__menu li{
+        padding: 0;
+    }
+    .position__left__logo{
+        padding-top: 25px;
     }
 }
 

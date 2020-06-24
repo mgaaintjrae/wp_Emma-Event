@@ -68,6 +68,7 @@
     // grid-template-columns: 100% 1fr;
     display: flex;
     flex-direction: column;
+    padding: 30px 50px;
   }
   .contact__form .news-list ul li{
     padding: 10px 0px;
@@ -80,6 +81,7 @@
   margin-right: 0;
   padding: 1% 36%;
 }
+
 }
 @media only screen and (min-width: 901px) and (max-width:1201px){
   .contact__form form{
