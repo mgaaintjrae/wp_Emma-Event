@@ -13,22 +13,55 @@
     <?php wp_body_open(); ?>
     <header class="home">
 
-        <div class="top__bar">
-            <ul class="top__bar__contact">
-                <li>Appel au 00 00 00 00 00</li>
-                <li>184 rue du bois fleurie 78000 Paris</li>
-                <li><a href="mailto:emma@event.com" title="me contacter">emma@event.com</a></li>
-            </ul>
-            <ul class="top__bar__socials">
-                <li>Me suivre</li>
-                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                    </a></li>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                    </a></li>
-            </ul>
-        </div>
+        <nav class="topbar">
+            <div class="topbar__container">
+                <ul class="topbar__infos">
+                    <li>
+                        <svg class="icon">
+                            <use
+                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#phone">
+                            </use>
+                        </svg>00 00 00 00 00
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use
+                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#map">
+                            </use>
+                        </svg>78000 Paris</li>
+                    <li>
+                        <svg class="icon">
+                            <use
+                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#envelop">
+                            </use>
+                        </svg>
+                        <a href=" mailto:emma@event.com" title="me contacter">emma@event.com</a>
+                    </li>
+                </ul>
+                <ul class="topbar__socials">
+                    <li class="topbar__links">Me suivre :</li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <svg class="icon">
+                                <use
+                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            title="Instagram">
+                            <svg class="icon">
+                                <use
+                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="menu__area">
             <div class="grid">
