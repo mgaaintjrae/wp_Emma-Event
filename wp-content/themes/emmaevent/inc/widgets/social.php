@@ -30,17 +30,12 @@ class Emmaevent_Social_Widget extends WP_Widget {
     foreach($this->fields as $field => $label) {
       $value = $instance[$field] ?? '';
       ?>
-      <p>
-        <label for="<?= $this->get_field_id($field) ?>"><?= esc_html($label) ?></label>
-        <input
-        type="text"
-        class="widefat"
-        name="<?= $this->get_field_name($field) ?>"
-        id="<?= $this->get_field_id($field) ?>"
-        value="<?= esc_attr($value) ?>"
-        >
-      </p>
-      <?php
+<p>
+    <label for="<?= $this->get_field_id($field) ?>"><?= esc_html($label) ?></label>
+    <input type="text" class="widefat" name="<?= $this->get_field_name($field) ?>"
+        id="<?= $this->get_field_id($field) ?>" value="<?= esc_attr($value) ?>">
+</p>
+<?php
     }
   }
   
@@ -52,5 +47,5 @@ class Emmaevent_Social_Widget extends WP_Widget {
         $output[$field] = $newInstance[$field];
     }
     return $output;
-  }
+  }  
 }
