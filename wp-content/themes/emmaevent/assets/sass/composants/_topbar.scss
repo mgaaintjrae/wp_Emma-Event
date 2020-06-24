@@ -1,27 +1,83 @@
-  .top__bar {
+// .top__bar {
+//   background-color: rgba(255, 255, 255, 0.75);
+//   border-bottom: 1px solid #ebebeb;
+//   padding: 12px 69px;
+//   font-size: 11px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   .top__bar__contact {
+//     display: flex;
+//     li {
+//       padding-right: 24px;
+//     }
+//   }
+
+//   .top__bar__socials{
+
+//   }
+
+//   @media only screen and (max-width: 900px) {
+//     display: none;
+//   }
+// }
+
+.topbar {
     background-color: rgba(255, 255, 255, 0.75);
     border-bottom: 1px solid #ebebeb;
-    padding: 12px 69px;
+    // padding: 12px 69px;
     font-size: 11px;
+}
+.topbar ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.topbar li {
+    margin: 0 10px;
+}
+.topbar li,
+.topbar a {
+    display: flex;
+    height: 40px;
     align-items: center;
+    transition: color .3s;
+}
+.topbar svg {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+.topbar__socials .topbar__links {
+    margin-left: auto;
+}
+.topbar a:hover,
+.topbar__socials li a:hover {
+  color: $dore;
+}
 
-    .top__bar__contact {
-      display: flex;
-      li {
-        padding-right: 24px;
-      }
-    }
-
-    .top__bar__socials{
-
-
-
-    }
-
-    @media only screen and (max-width: 900px) {
-      display: none;
-    }
+@include up(600px){
+  .topbar{
+    font-size: 13px;
   }
+  .topbar__container{
+    margin: 0 20px;
+    display:flex;
+    justify-content: space-between;
+  }  
+}
 
+@include up(900px){
+  .topbar__container{
+    margin: 0 59px;
+  }
+  .topbar svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  .topbar .topbar__infos li{
+    margin: 0 30px;
+  }
+}

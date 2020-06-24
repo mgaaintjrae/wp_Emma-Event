@@ -14,21 +14,23 @@
     display: flex;
     align-items: center;
     height: 100%;
-    flex: auto;
-    
+    flex: auto;    
 }
 
-.position__left__logo {
-    // height: 82px;
-    // margin-left: 38px;
-    // padding: 0 24px;
-    padding-left: 65px;
-    // position: relative;
-    // float: left;
+
+.position__left__logo {    
+    padding-left: 65px;   
     display: flex;
     align-items: center;
     width: 200px;
     height: 100%;
+}
+@include up(900){
+    header .position__center{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .nav__menu {
@@ -207,15 +209,12 @@ ul {
         align-items: center;
         padding: 12px 10px 0px 10px;
     }
-
-    .position__left__logo {
-        // margin-left: 25%;
-    }
-
     .nav__burger {
         display: block;
     }
-
+    header .menu__area {
+        padding: 0;
+    }
     .nav__menu {
         position: fixed;
         z-index: 0;
@@ -232,7 +231,6 @@ ul {
         pointer-events: none;
         transition: opacity 0.3s;
     }
-
     .nav__menu > * {
         transform: translateY(-10px);
         transition: transform 0.3s, opacity 0.3s;
@@ -241,13 +239,11 @@ ul {
     .menu__area .nav__menu li {
         margin: 10px;
     }
-
     @each $i in 2, 3, 4 {
         .nav__menu > *:nth-child(#{$i}n) {
             transition-delay: $i * 0.05s;
         }
     }
-
     .nav__menu.is-active {
         pointer-events: auto;
         display: flex;
@@ -271,33 +267,22 @@ ul {
     .menu__area .nav a {
         color: #777777;
     }
-}
-
-// @include up(1000) {
-//     .home .nav__menu {
-//         margin-left: 0;
-//         max-width: calc(517px - 32px);
-//         width: calc(51% - 72px);
-//         justify-content: flex-end;
-//     }
-// }
-
-@media only screen and (max-width: 1200px) {
-    .grid {
-        // width: 950px;
-        // width: auto;
+    .menu__area .position__center{
+        margin-left: auto;
+    }
+    .menu__area .grid{
+        margin: 0 30px;
     }
 }
+
+
 @media only screen and (max-width: 1200px) {
     .menu__area .nav {
         margin: 0;
     }
 }
-@media only screen and (min-width: 1350px) {
-    .position__center {
-        // margin-left: 300px;
-    }
-}
+
+
 
 // // Sticky menu
 // //=============
