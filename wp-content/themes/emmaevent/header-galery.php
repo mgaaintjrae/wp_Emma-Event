@@ -10,6 +10,21 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <!-- ====== Preloader ======  -->
+    <div class="loading">
+        <div class="load-circle">
+        </div>
+    </div>
+    <!-- ====== End Preloader ======  -->
+
+    <!-- ====== button-top ======  -->
+    <div class="button-top" data-scroll-nav="0">
+        <svg class="icon">
+            <use xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#arrow-up">
+            </use>
+        </svg>
+    </div>
+    <!-- ======End button-top ======  -->
     <?php wp_body_open(); ?>
     <header class="galery">
 

@@ -45,8 +45,9 @@
     background-size: auto;
     background-repeat: repeatt;
     background-position: center;
-    height: 940px;
+    height: auto;
     padding: 0 69px;
+    padding-bottom: 70px;
 
     @media only screen and (max-width: 900px) {
         height: auto;
@@ -55,6 +56,35 @@
 
 // Slider
 // ==========
-.ms-info .header__cta{
-    margin-top: 10px;
+.slider__container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+.slider__title h2 {
+    text-align: center;
+    color: white;
+    line-height: 1.7;
+}
+.slider__content {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+@include down(450) {
+    .slider__content {
+        position: absolute;
+        top: 0%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }

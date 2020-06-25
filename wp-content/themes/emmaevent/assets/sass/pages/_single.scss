@@ -84,12 +84,19 @@
       margin-top: 0;
     }
   }
-
-
 .current_page_parent{
   color: $emeraude;
 }
-
 .nav__footer__menu .current_page_parent{
   color: $dore;
+}
+.event__back{
+  margin-left: 69px;
+    margin-bottom: 70px;
+}
+.event__back .btn svg{
+  margin-right: 16px;
+}
+.event__back .btn{
+  padding-right: 69px;
 }

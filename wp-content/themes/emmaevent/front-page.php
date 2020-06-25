@@ -90,7 +90,21 @@
     </section> -->
 
     <!-- Slider -->
-    <?php echo do_shortcode('[masterslider id="1"]'); ?>
+    <section>
+        <div class="slider__container">
+            <?php masterslider(1); ?>
+            <div class="slider__content">
+                <div class="slider__title">
+                    <h2>Emma Event</h2>
+                </div>
+                <div class="slider__cta" style="text-align: center;">
+                    <a class="cta__btn-white btn" href="http://emma-event.fr/me-contacter">CONTACTEZ-MOI</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </main>
 
 

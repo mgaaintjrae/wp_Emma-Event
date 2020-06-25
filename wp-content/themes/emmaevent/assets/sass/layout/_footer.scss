@@ -6,17 +6,11 @@
     margin-right: auto;
 }
 .footer__up {
-    padding: 70px 69px;
-    border-bottom: 1px solid #816536;
-
-    @media only screen and (max-width: 900px) {
-        // flex-direction: column;
-    }
+    padding: 70px 69px;  
 }
 @include down(720) {
     .footer__up {
-        padding: 70px 50px;
-        border-bottom: 1px solid #816536;
+        padding: 70px 50px;        
     }
     .footer .grid {
         display: flex;
@@ -40,17 +34,22 @@
     color: $dore;
 }
 
-@media only screen and (max-width: 1200px) {
+@include down(1200) {
     .footer .grid {
         padding: 10px 50px;
     }
 }
-@media only screen and (max-width: 900px) {
+@include down(900) {
     footer .grid {
         padding: 5px 59px;
     }
 }
-
+.footer__border{
+    border-top: 1px solid #816536;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .position__left__logo {
     width: 150px;
     align-items: center;
@@ -142,8 +141,7 @@
     .nav__footer__menu > * + * {
         margin-left: 0;
         // margin-top: space(3);
-    }
-   
+    }   
 }
 
 @include down(720){
@@ -159,32 +157,7 @@
     .grid {
         display: flex;
         align-items: center;
-    }
-    .position__left__logo {
-        // margin-left: 25%;
-    }
-    .nav__footer__menu {
-        // position: fixed;
-        // z-index: 50;
-        // background: rgba(255, 255, 255, 0.75);
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // bottom: 0;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // font-size: 24px;
-        // opacity: 0;
-        // pointer-events: none;
-        // transition: opacity .3s;
-    }
-    .nav__footer__menu > * {
-        // transform: translateY(-10px);
-        // transition: transform .3s, opacity .3s;
-        // opacity: 0;
-    }
-
+    }   
     @each $i in 2, 3, 4 {
         .nav__footer__menu > *:nth-child(#{$i}n) {
             transition-delay: $i * 0.05s;
@@ -203,6 +176,5 @@
     }
 }
 .nav__footer__menu > * + * {
-    margin-left: 0;
-    // margin-top: space(3);
+    margin-left: 0;    
 }

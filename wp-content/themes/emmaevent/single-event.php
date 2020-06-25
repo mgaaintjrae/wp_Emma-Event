@@ -26,6 +26,23 @@
             </div>
         </div>
 
+        <div class="event__back">
+            <div class="event__hover">
+                <?php if(is_single()) : ?>
+                <a href="<?= get_post_type_archive_link( 'taxonomy' ); ?>" class="btn" title="Retour">
+                    <svg class="icon">
+                        <use
+                            xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#arrow-left">
+                        </use>
+                    </svg>Retour</a>
+                <?php endif; ?>
+            </div>
+
+
+
+        </div>
+
+
     </div>
     <?php endwhile; ?>
 
