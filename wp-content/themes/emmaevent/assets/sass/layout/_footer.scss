@@ -1,16 +1,19 @@
-.footer {
+ .footer {
     background-color: $emeraude;
     color: white;
-
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
 }
 .footer__up {
-    padding: 70px 69px;  
+    padding: 70px 69px;
+}
+.nav__footer__menu {
+    width: 0;
 }
 @include down(720) {
     .footer__up {
-        padding: 70px 50px;        
+        padding: 70px 50px;
     }
     .footer .grid {
         display: flex;
@@ -44,20 +47,17 @@
         padding: 5px 59px;
     }
 }
-.footer__border{
+.footer__border {
     border-top: 1px solid #816536;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
-.position__left__logo {
+.footer .position__left__logo {
     width: 150px;
     align-items: center;
     height: 100%;
     padding: 10px;
-}
-.footer .position__center {
-    flex: 1;
 }
 
 .nav__footer__menu li {
@@ -89,7 +89,6 @@
 }
 .footer__col + .footer__col {
     margin-top: space(1);
-    flex: 1;
 }
 .footer__title {
     margin-bottom: space(2);
@@ -107,6 +106,22 @@
     width: 24px;
     height: 24px;
 }
+.footer .icon use {
+    fill: white;
+    transition: color 0.3s;
+}
+.footer .icon use:hover {
+    fill: $dore;
+    transition: color 0.3s;
+}
+.header .icon use {
+    fill: #fff;
+    transition: color 0.3s;
+}
+.header .icon use:hover {
+    fill: $dore;
+    transition: color 0.3s;
+}
 @include up(720) {
     .footer__col + .footer__col {
         margin-top: 0;
@@ -114,7 +129,6 @@
     }
     .footer__col:last-child {
         margin-left: 64px;
-        flex: 1;
     }
     .footer__title {
         // margin-bottom: space(2);
@@ -123,7 +137,7 @@
     }
     .footer__up {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
     .footer .grid {
         font-size: 13px;
@@ -141,14 +155,17 @@
     .nav__footer__menu > * + * {
         margin-left: 0;
         // margin-top: space(3);
-    }   
+    }
+    .position__right__credit {
+        margin-left: auto;
+    }
 }
 
-@include down(720){
-    .nav__footer__menu li{
+@include down(720) {
+    .nav__footer__menu li {
         padding: 0;
     }
-    .footer .position__left__logo{
+    .footer .position__left__logo {
         padding-top: 25px;
     }
 }
@@ -157,7 +174,7 @@
     .grid {
         display: flex;
         align-items: center;
-    }   
+    }
     @each $i in 2, 3, 4 {
         .nav__footer__menu > *:nth-child(#{$i}n) {
             transition-delay: $i * 0.05s;
@@ -176,5 +193,5 @@
     }
 }
 .nav__footer__menu > * + * {
-    margin-left: 0;    
+    margin-left: 0;
 }
