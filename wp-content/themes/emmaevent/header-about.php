@@ -10,6 +10,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
     <!-- ====== Preloader ======  -->
     <div class="loading">
         <div class="load-circle">
@@ -25,6 +26,7 @@
         </svg>
     </div>
     <!-- ======End button-top ======  -->
+
     <?php wp_body_open(); ?>
     <header class="about">
 
@@ -38,7 +40,7 @@
                 </div>
 
                 <div class="position__center">
-                    <nav class="nav">
+                    <nav class="nav" role="navigation">
                         <?php
             wp_nav_menu([
               'theme_location' => 'header',
@@ -49,9 +51,6 @@
                     </nav>
                 </div>
 
-                <button class="nav__burger">
-                    <span></span>
-                </button>
             </div>
         </div>
 

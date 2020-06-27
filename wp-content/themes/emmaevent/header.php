@@ -96,12 +96,10 @@
               'theme_location' => 'header',
               'container' => false,
               'menu_class' => 'nav__menu',
-              'div_class'=> 'marker'
+              'div_class'=> 'marker'              
              ]);
             ?>
-                        <button class="nav__burger">
-                            <span></span>
-                        </button>
+
                     </nav>
 
                 </div>

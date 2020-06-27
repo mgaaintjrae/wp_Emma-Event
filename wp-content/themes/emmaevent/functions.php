@@ -11,7 +11,7 @@ require_once('inc/comments.php');
 
 
 function emmaevent_icon(string $name): string {
-  $spriteUrl = get_template_directory_uri() . '/assets/img/facebook.svg';
+  $spriteUrl = get_template_directory_uri() . '/assets/img/svg/sprite.svg';
   return <<<HTML
   <svg class="icon"><use xlink:href="{$spriteUrl}#{$name}"></use></svg>
   HTML;
@@ -26,4 +26,6 @@ function emmaevent_paginate_comments(): void {
   paginate_comments_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]);
   echo '</div>';
 }
+
+
 

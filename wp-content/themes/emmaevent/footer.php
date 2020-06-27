@@ -28,8 +28,9 @@
 
                 <div class="position__right__credit">
                     <div class="footer__credits">
-                        <p>Made with ❤ by <a href="https://priscillaroy.fr" class="developer" target="_blank">Priscilla
-                                Roy</a></p>
+                        <p>Made with ❤ by <a href="https://priscillaroy.fr" class="developer" target="_blank"
+                                rel="noopener noreferrer">Priscilla Roy</a>
+                        </p>
                     </div>
                 </div>
             </div>
