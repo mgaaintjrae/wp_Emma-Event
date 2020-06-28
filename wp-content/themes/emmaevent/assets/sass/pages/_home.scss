@@ -22,24 +22,14 @@
     }
 }
 
-// Fantasy
-//=========
-.fantasy .deco__left {
-    //   background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png');
-    //   background-position: center;
-}
-// .fantasy .deco__right{
-//   background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png');
-//   background-position: center;
-// }
-
 // Section events
 //=====================
 .container__event {
+    position: relative;
     text-align: center;
     background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/bg_feuilles.png');
     background-size: auto;
-    background-repeat: repeatt;
+    background-repeat: repeat;
     background-position: center;
     height: auto;
     padding: 0 69px;
@@ -50,6 +40,76 @@
     }
 }
 
+// Fantasy
+//=========
+.fantasy {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -200px;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+.fantasy .deco__left {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    left: -42%;
+    //     max-width: 100%;
+    //     display: block;
+    //     height: auto;
+    //     background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png'), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png');
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    //     bottom: 0;
+    //     top: -93%;
+    //     right: 0;
+    //     left: -40%;
+}
+.fantasy .deco__right {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 42%;
+    //     max-width: 100%;
+    //     display: block;
+    //     height: auto;
+    //     background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png');
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    //     top: -93%;
+    //     bottom: 0;
+    //     right: 0px;
+    //     left: 78%;
+}
+@include down(900) {
+    .fantasy .deco__left {
+        width: 50%;
+        top: 30px;
+        left: -13%;
+    }
+    .fantasy .deco__right {
+        width: 50%;
+        top: 30px;
+        right: 0;
+        left: 63%;
+    }
+}
+@include down(660) {
+    .fantasy {
+        top: -128px;
+    }
+}
 // Slider
 // ==========
 .slider__container {

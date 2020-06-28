@@ -21,19 +21,22 @@
         <?php endwhile; ?>
     </section>
 
-    <!-- Fantasy -->
-    <div class="fantasy">
-        <div class="deco__left">
-            <!--<img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png" alt="branche feuilles">-->
-        </div>
-        <div class="deco__right">
-            <!--<img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png" alt="branche feuilles">-->
-        </div>
-    </div>
+
 
     <!-- Events -->
     <?php if (have_rows('recent_events')) : while (have_rows('recent_events')) : the_row() ?>
     <section class="container__event">
+        <!-- Fantasy -->
+        <div class="fantasy">
+            <div class="deco__left">
+                <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png"
+                    alt="branche feuilles">
+            </div>
+            <div class="deco__right">
+                <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png"
+                    alt="branche feuilles">
+            </div>
+        </div>
         <div class="event">
             <div class="event__title">
                 <h2><?php the_sub_field('title') ?></h2>
