@@ -1,10 +1,11 @@
-<?php get_header(); ?>
+<?php get_header('single--event'); ?>
 
-<?php while(have_posts()): the_post(); ?>
-<main>
-    <div class="container">
-        <header class="event-header">
-            <div>
+
+<main class="sections">
+    <?php while(have_posts()): the_post(); ?>
+    <section>
+        <div class="container">
+            <div class="event-header">
                 <h2 class="event__title"><?php the_title(); ?></h2>
                 <h3 class="event__type">Evénement :
                     <?php $type = the_field('type');
@@ -13,38 +14,55 @@
                     <a href="<?php the_permalink($type) ?>"><?= esc_attr($type) ?></a></h3>
                 <?php endforeach; ?>
                 <?php endif ?>
-                <div class="thumbnail">
+                <div class="thumbnail event__photos">
                     <?php the_post_thumbnail('event-thumbnail-large'); ?>
                 </div>
-
             </div>
-        </header>
 
-        <div class="event-body">
-            <div class="formatted">
-                <?php the_content(); ?>
+            <div class="event-body">
+                <div class="formatted">
+                    <?php the_content(); ?>
+                    <p>Publié le <?php the_time('d F Y'); ?> par <a href="<?php the_permalink(11) ?>"
+                            title=" à propos de moi">Emma-Event</a>
+                    </p>
+                    <?php get_template_part('template-parts/share'); ?>
+                </div>
+
+                <div class="post-navigation">
+                    <?php
+                the_post_navigation(
+                    array(
+                'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post :', 'emmaevent' ) .
+                    '</span> ' .
+                '<span class="screen-reader-text">' . __( 'Next post:', 'emmaevent' ) . '</span> <br />' .
+                '<span class="post-title">%title</span>',
+                'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post :', 'emmaevent' ) .
+                    '</span> ' .
+                '<span class="screen-reader-text">' . __( 'Previous post:', 'emmaevent' ) . '</span> <br />' .
+                '<span class="post-title">%title</span>',
+                )
+                );
+                ?>
+                </div>
             </div>
+
+            <div class="event__back">
+                <div class="event__hover">
+                    <?php if(is_single()) : ?>
+                    <a href="<?php the_permalink($type); ?>" class="btn" title="Retour aux événements">
+                        <svg class="icon">
+                            <use
+                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#arrow-left">
+                            </use>
+                        </svg>Retour</a>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php endwhile; ?>
+
+
+
         </div>
-
-        <div class="event__back">
-            <div class="event__hover">
-                <?php if(is_single()) : ?>
-                <a href="<?= get_post_type_archive_link( 'taxonomy' ); ?>" class="btn" title="Retour">
-                    <svg class="icon">
-                        <use
-                            xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#arrow-left">
-                        </use>
-                    </svg>Retour</a>
-                <?php endif; ?>
-            </div>
-
-
-
-        </div>
-
-
-    </div>
-    <?php endwhile; ?>
-
+    </section>
 </main>
 <?php get_footer(); ?>
