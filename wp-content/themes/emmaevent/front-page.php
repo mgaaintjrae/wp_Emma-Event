@@ -61,9 +61,14 @@
                 <?php wp_reset_postdata(); ?>
                 <?php endwhile; endif; ?>
             </div>
+
+
+        </div>
+        <div class="events__link">
+            <a href="<?= get_post_type_archive_link( 'event' ); ?>" class="btn">Voir tous les événements</a>
         </div>
 
-        <a href="<?= get_post_type_archive_link( 'event' ); ?>" class="btn">Voir tous les événements</a>
+
 
     </section>
     <?php endwhile; ?>

@@ -139,7 +139,8 @@ ul {
 .page .about .menu-item-object-event,
 .page .sitemap .menu-item-object-event,
 .page .mentions .menu-item-object-event,
-.page .galery .menu-item-object-event {
+.page .galery .menu-item-object-event,
+.single .menu-item-object-event {
     > a {
         &::before {
             content: '';
@@ -161,7 +162,8 @@ ul {
 .galery .menu__area .nav ul,
 .archive .menu__area .nav ul,
 .sitemap .menu__area .nav ul,
-.mentions .menu__area .nav ul {
+.mentions .menu__area .nav ul,
+.single .menu__area .nav ul {
     color: white;
 }
 

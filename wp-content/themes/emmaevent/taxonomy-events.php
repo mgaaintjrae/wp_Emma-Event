@@ -1,32 +1,33 @@
 <?php get_header(); ?>
 
+<main>
+    <div class="container">
 
+        <h1 class="page-title"><?= get_queried_object()->name ?></h1>
+        <p><?= get_queried_object()->description ?></p>
 
-<div class="container">
+        <div class="page-sidebar">
+            <div>
+                <div class="news-list">
+                    <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    <?php get_template_part('template-parts/post'); ?>
+                    <?php endwhile; ?>
 
-<h1 class="page-title"><?= get_queried_object()->name ?></h1>
-<p><?= get_queried_object()->description ?></p>
-  
-  <div class="page-sidebar">
-    <div>
-      <div class="news-list">
-        <?php if (have_posts()) : ?>
-          <?php while (have_posts()) : the_post(); ?>          
-            <?php get_template_part('template-parts/post'); ?>
-          <?php endwhile; ?>
+                    <?= emmaevent_paginate() ?>
 
-          <?= emmaevent_paginate() ?>
+                    <?php else : ?>
+                    <h2><?= __('No posts found', 'emmaevent') ?></h2>
+                    <?php endif; ?>
+                </div>
+            </div>
 
-        <?php else : ?>
-          <h2><?= __('No posts found', 'emmaevent') ?></h2>
-        <?php endif; ?>
-      </div>
-    </div>
-
-    <!--<aside class="sidebar">
+            <!--<aside class="sidebar">
       <?php //dynamic_sidebar('blog'); ?>     
     </aside>-->
-  </div>
+        </div>
 
-</div>
+    </div>
+</main>
+
 <?php get_footer(); ?>

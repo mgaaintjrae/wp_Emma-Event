@@ -55,7 +55,7 @@
 
     <?php if (get_query_var('paged', 1) > 1) : ?>
     <?= emmaevent_paginate() ?>
-    <?php elseif ($nextPostLink = get_next_posts_link(__('Plus d\'événements +', 'emmaevent'))) : ?>
+    <?php elseif ($nextPostLink = get_next_posts_link(__('More events +', 'emmaevent'))) : ?>
     <div class="pagination">
         <?= $nextPostLink  ?>
     </div>

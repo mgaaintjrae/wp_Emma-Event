@@ -38,13 +38,14 @@
     @media only screen and (max-width: 900px) {
         height: auto;
     }
+    .events__link {
+        position: relative;
+    }
 }
 
 // Fantasy
 //=========
 .fantasy {
-    display: flex;
-    justify-content: space-between;
     position: absolute;
     top: -200px;
     bottom: 0px;
@@ -59,18 +60,7 @@
     position: absolute;
     top: 0;
     right: 0%;
-    left: -42%;
-    //     max-width: 100%;
-    //     display: block;
-    //     height: auto;
-    //     background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png'), url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png');
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     position: absolute;
-    //     bottom: 0;
-    //     top: -93%;
-    //     right: 0;
-    //     left: -40%;
+    left: -42%;    
 }
 .fantasy .deco__right {
     width: 100%;
@@ -79,18 +69,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: 42%;
-    //     max-width: 100%;
-    //     display: block;
-    //     height: auto;
-    //     background-image: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png');
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     position: absolute;
-    //     top: -93%;
-    //     bottom: 0;
-    //     right: 0px;
-    //     left: 78%;
+    left: 42%;    
 }
 @include down(900) {
     .fantasy .deco__left {

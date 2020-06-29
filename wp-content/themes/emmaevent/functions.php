@@ -10,6 +10,7 @@ require_once('inc/query/event.php');
 require_once('inc/comments.php');
 
 
+
 function emmaevent_icon(string $name): string {
   $spriteUrl = get_template_directory_uri() . '/assets/img/svg/sprite.svg';
   return <<<HTML
@@ -24,8 +25,7 @@ function emmaevent_paginate(): string {
 function emmaevent_paginate_comments(): void {
   echo '<div class="pagination">';
   paginate_comments_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]);
-  echo '</div>';
-}
+  echo '</div>';}
 
 
 

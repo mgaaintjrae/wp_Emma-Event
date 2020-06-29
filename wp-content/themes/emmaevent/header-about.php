@@ -34,7 +34,7 @@
             <div class="grid">
 
                 <div class="position__left__logo">
-                    <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Homepage', 'emmaevent') ?>">
+                    <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Emma-Event', 'emmaevent') ?>">
                         <img src="<?= get_theme_mod('logo header') ?>" alt="logo">
                     </a>
                 </div>
