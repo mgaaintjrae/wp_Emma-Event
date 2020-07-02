@@ -18,17 +18,17 @@ $titre = strip_tags(get_the_title());
         onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"><i
             class="fa fa-instagram"></i></a> -->
 
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?= $lien ?>&title=<?= $titre ?>" target="_blank"
-        class="btn-social btn-linkedin" title="sur LinkedIn"
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=JuizSocialPostSharer&amp;url=<?= $lien ?>&title=<?= $titre ?>"
+        target="_blank" class="btn-social btn-linkedin" title="sur LinkedIn"
         onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"><i
             class="fa fa-linkedin"></i></a>
 
-    <a href="https://twitter.com/share?url=<?= $lien ?>text=<?= $titre ?>&via=VOTRE-NOM-TWITTER" target="_blank"
-        class="btn-social btn-twitter"
+    <a href="https://twitter.com/intent/tweet?source=webclient&amp;original_referer=<?= $lien ?>text=<?= $titre ?>"
+        target=" _blank" class="btn-social btn-twitter"
         onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"><i
             class="fa fa-twitter" title="sur Twitter"></i></a>
 
-    <a href="mailto:info@example.com?&subject=&body=http://emma-event.fr" target="_blank" class="btn-social btn-email"
+    <a href="mailto:?&subject=<?= $titre ?>&body=<?= $lien ?>" target="_blank" class="btn-social btn-email"
         title="par mail"><i class="fa fa-envelope"></i></a>
 
 
