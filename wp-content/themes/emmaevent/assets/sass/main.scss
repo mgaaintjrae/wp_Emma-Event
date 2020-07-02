@@ -33,6 +33,7 @@ body{
 @import "./base/pagination";
 @import "./base/spacing";
 
+@import "./composants/breadcrumb";
 @import "./composants/btn";
 @import "./composants/comments";
 @import "./composants/nav";
@@ -43,6 +44,7 @@ body{
 
 @import "./layout/footer";
 @import "./layout/header";
+@import "./layout/login";
 
 @import "./pages/home";
 @import "./pages/news";

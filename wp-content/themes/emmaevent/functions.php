@@ -8,6 +8,7 @@ require_once('inc/style.php');
 require_once('inc/query/posts.php');
 require_once('inc/query/event.php');
 require_once('inc/comments.php');
+require_once('inc/connexion.php');
 
 
 
@@ -19,13 +20,10 @@ function emmaevent_icon(string $name): string {
 }
 
 function emmaevent_paginate(): string {
-  return '<div class="pagination">' . paginate_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]) . '</div>';
+  return '<div class="pagination">' . paginate_links(['prev_text' => emmaevent_icon('arrow-right'), 'next_text' => emmaevent_icon('arrow-left')]) . '</div>';
 }
 
 function emmaevent_paginate_comments(): void {
   echo '<div class="pagination">';
   paginate_comments_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]);
   echo '</div>';}
-
-
-
