@@ -65,3 +65,14 @@
         </div>
 
     </header>
+
+    <?php
+if ( function_exists('yoast_breadcrumb') ) {
+yoast_breadcrumb('<div class="container" id="breadcrumbs"> Vous êtes ici : ','</div>');
+}
+?>
+
+    <!-- <svg class="icon">
+        <use xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#home">
+        </use>
+    </svg> -->
