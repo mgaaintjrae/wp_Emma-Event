@@ -56,8 +56,11 @@
 
         <div class="header__title">
             <h1>A propos</h1>
-            <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg"
-                alt="divider coeur white">
+            <svg class="icon">
+                <use
+                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_coeur">
+                </use>
+            </svg>
         </div>
         <div class="header__content">
             <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>
