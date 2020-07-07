@@ -1,3 +1,15 @@
+@charset "UTF-8";
+/*
+Theme Name: Emma Event
+Theme URI: https://wordpress.org/themes/twentynineteen/
+Author: Priscilla Roy ITfy
+Author URI: https://wordpress.org/
+Requires at least: 5.4
+Requires PHP: 5.3
+Version: 0.1
+Text Domain: emmaevent
+*/
+
 // Variables
 // ==================
 $emeraude: #023D2B;
@@ -39,6 +51,7 @@ body{
 @import "./composants/nav";
 @import "./composants/share";
 @import "./composants/sidebar";
+@import "./composants/slider";
 @import "./composants/titleheader";
 @import "./composants/topbar";
 
