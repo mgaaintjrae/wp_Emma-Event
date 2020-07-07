@@ -34,7 +34,7 @@
             <div class="grid">
 
                 <div class="position__left__logo">
-                    <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Emma-Event', 'emmaevent') ?>">
+                    <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Homepage', 'emmaevent') ?>">
                         <img src="<?= get_theme_mod('logo header') ?>" alt="logo">
                     </a>
                 </div>
@@ -56,8 +56,11 @@
 
         <div class="header__title">
             <h1>Evénements Privés</h1>
-            <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg"
-                alt="divider coeur white">
+            <svg class="icon">
+                <use
+                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_coeur">
+                </use>
+            </svg>
         </div>
         <div class="header__content">
             <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>

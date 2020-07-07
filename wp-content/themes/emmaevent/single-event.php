@@ -25,8 +25,11 @@
                     <p>Publié le <?php the_time('d F Y'); ?> par <a href="<?php the_permalink(11) ?>"
                             title=" à propos de moi">Emma-Event</a>
                     </p>
+                    <!-- Section share -->
                     <?php get_template_part('template-parts/share'); ?>
                 </div>
+
+
 
                 <div class="post-navigation">
                     <?php
@@ -49,7 +52,7 @@
             <div class="event__back">
                 <div class="event__hover">
                     <?php if(is_single()) : ?>
-                    <a href="<?php the_permalink($type); ?>" class="btn" title="Retour aux événements">
+                    <a href="./" class="btn" title="Retour aux événements">
                         <svg class="icon">
                             <use
                                 xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#arrow-left">

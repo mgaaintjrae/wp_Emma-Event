@@ -109,8 +109,11 @@
 
         <div class="header__title">
             <h1>Emma Event <br> Wedding Planner</h1>
-            <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_coeur.svg"
-                alt="divider coeur white">
+            <svg class="icon">
+                <use
+                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_coeur">
+                </use>
+            </svg>
         </div>
         <div class="header__cta">
             <a href="<?php the_permalink(17) ?>" class="cta__btn-white btn">CONTACTEZ-MOI</a>

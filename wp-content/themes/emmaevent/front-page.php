@@ -7,14 +7,22 @@
         <div class="container">
             <div class="company">
                 <div class="company__title">
-                    <?php the_post_thumbnail('event-thumbnail'); ?>
+                    <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/courone_fleurs.png"
+                        alt="couronne de fleurs" height="575" width="575">
                     <h2 class="page-title">
                         Présentation
-                        <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg"
-                            alt="divider trefle">
+                        <svg class="icon">
+                            <use
+                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_trefle">
+                            </use>
+                        </svg>
                     </h2>
                 </div>
-                <?php the_content(); ?>
+                <?php the_post_thumbnail('event-thumbnail-large'); ?>
+                <div class="event-body">
+                    <?php the_content(); ?>
+                </div>
+
             </div>
 
         </div>
@@ -26,25 +34,31 @@
     <!-- Events -->
     <?php if (have_rows('recent_events')) : while (have_rows('recent_events')) : the_row() ?>
     <section class="container__event">
+
         <!-- Fantasy -->
         <div class="fantasy">
             <div class="deco__left">
                 <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png"
-                    alt="branche feuilles">
+                    alt="branche feuilles" width="545" height="442">
             </div>
             <div class="deco__right">
                 <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png"
-                    alt="branche feuilles">
+                    alt="branche feuilles" width="545" height="442">
             </div>
         </div>
+
         <div class="event">
             <div class="event__title">
                 <h2><?php the_sub_field('title') ?></h2>
                 <?php the_sub_field('image') ?>
-                <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg"
-                    alt="divider trèfle">
+                <svg class="icon">
+                    <use
+                        xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_trefle">
+                    </use>
+                </svg>
             </div>
             <div class="event__content">
+                <div class="fantasy-2"></div>
                 <?php the_sub_field('description') ?>
             </div>
 
@@ -61,9 +75,8 @@
                 <?php wp_reset_postdata(); ?>
                 <?php endwhile; endif; ?>
             </div>
-
-
         </div>
+
         <div class="events__link">
             <a href="<?= get_post_type_archive_link( 'event' ); ?>" class="btn">Voir tous les événements</a>
         </div>
@@ -73,7 +86,6 @@
     </section>
     <?php endwhile; ?>
     <?php endif; ?>
-
 
     <!-- <section class=" container quote">
             <div class="quote__title">Ce que pensent mess clients</div>
@@ -106,10 +118,9 @@
                     <h2>Emma Event</h2>
                 </div>
                 <div class="slider__cta" style="text-align: center;">
-                    <a class="cta__btn-white btn" href="http://emma-event.fr/me-contacter">CONTACTEZ-MOI</a>
+                    <a class="cta__btn-white btn" href="<?php the_permalink(17); ?>">CONTACTEZ-MOI</a>
                 </div>
             </div>
-
         </div>
     </section>
 
