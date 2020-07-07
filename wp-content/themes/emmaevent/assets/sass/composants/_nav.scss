@@ -166,74 +166,6 @@ ul {
 .single .menu__area .nav ul {
     color: white;
 }
-
-// Burger
-// ==================
-// .nav__burger {
-//     display: none;
-//     margin-left: auto;
-//     // margin-right: auto;
-//     margin-right: 0;
-//     height: 37px;
-//     z-index: 51;
-// }
-// .archive .nav__burger,
-// .about .nav__burger,
-// .galery .nav__burger,
-// .contact .nav__burger {
-//     color: white;
-// }
-// .archive .nav__burger.is-active,
-// .about .nav__burger.is-active,
-// .galery .nav__burger.is-active,
-// .contact .nav__burger.is-active {
-//     color: black;
-// }
-
-// .nav__burger span {
-//     position: relative;
-// }
-
-// .nav__burger span,
-// .nav__burger span::after,
-// .nav__burger span::before {
-//     content: '';
-//     width: 20px;
-//     height: 2px;
-//     background-color: currentColor;
-//     display: block;
-//     transition: transform 0.4s, background 0.2s;
-// }
-
-// .nav__burger span::after,
-// .nav__burger span::before {
-//     position: absolute;
-// }
-
-// .nav__burger span::before {
-//     transform-origin: 0 50%;
-//     top: -6px;
-// }
-
-// .nav__burger span::after {
-//     bottom: -6px;
-//     transform-origin: 0 50%;
-// }
-
-// .nav__burger.is-active {
-//     span {
-//         background: transparent;
-//     }
-
-//     span::before {
-//         transform: translateY(-2px) rotate(45deg);
-//     }
-
-//     span::after {
-//         transform: rotate(-45deg);
-//     }
-// }
-
 @include down(770) {
     .menu__area {
         padding: 0 40px;
@@ -242,9 +174,6 @@ ul {
         display: flex;
         align-items: center;
     }
-    // .nav__burger {
-    //     display: block;
-    // }
     .nav__menu {
         position: fixed;
         z-index: 0;
@@ -273,19 +202,6 @@ ul {
             transition-delay: $i * 0.05s;
         }
     }
-    // .nav__menu.is-active {
-    //     pointer-events: auto;
-    //     display: flex;
-    //     animation: menuIn 1s;
-    //     opacity: 1;
-    //     justify-content: center;
-    //     font-size: 22px;
-
-    //     & > * {
-    //         opacity: 1;
-    //         transform: translateY(0px);
-    //     }
-    // }
     .nav__menu > * + * {
         margin-left: 0;
         margin-top: space(4);
@@ -332,11 +248,17 @@ ul {
 @include down(770) {
     button#responsive-menu-button {
         z-index: 999999 !important;
-        top: 139px !important;
+        // top: 139px !important;
         right: 13px !important;
     }
     .page button#responsive-menu-button {
         top: 60px !important;
+    }
+    .home button#responsive-menu-button {
+        top: 105px !important;
+        @include down(600) {
+            top: 140px !important;
+        }
     }
     #responsive-menu-container {
         z-index: 99999 !important;
@@ -360,7 +282,3 @@ ul {
 
 // Sticky menu
 //=============
-.fixed {
-    position: fixed;
-    top: 0;
-}

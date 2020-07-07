@@ -1,4 +1,4 @@
- .footer {
+.footer {
     background-color: $emeraude;
     color: white;
     margin-left: auto;
@@ -131,7 +131,6 @@
         margin-left: 64px;
     }
     .footer__title {
-        // margin-bottom: space(2);
         display: flex;
         justify-content: space-around;
     }
@@ -154,7 +153,6 @@
     }
     .nav__footer__menu > * + * {
         margin-left: 0;
-        // margin-top: space(3);
     }
     .position__right__credit {
         margin-left: auto;
@@ -169,7 +167,6 @@
         padding-top: 25px;
     }
 }
-
 @include down(440) {
     .grid {
         display: flex;

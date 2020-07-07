@@ -1,7 +1,6 @@
 .topbar {
     background-color: rgba(255, 255, 255, 0.75);
-    border-bottom: 1px solid #ebebeb;
-    // padding: 12px 69px;
+    border-bottom: 1px solid #ebebeb;    
     font-size: 11px;
 }
 .topbar ul {
@@ -48,7 +47,6 @@
         justify-content: space-between;
     }
 }
-
 @include up(900px) {
     .topbar__container {
         margin: 0 33px;

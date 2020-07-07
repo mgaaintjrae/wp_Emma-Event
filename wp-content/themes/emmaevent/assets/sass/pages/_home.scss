@@ -42,6 +42,10 @@
         position: relative;
     }
 }
+.event .event__title svg {
+    width: 100px;
+    height: 15px;
+}
 
 // Fantasy
 //=========
@@ -60,7 +64,7 @@
     position: absolute;
     top: 0;
     right: 0%;
-    left: -42%;    
+    left: -42%;
 }
 .fantasy .deco__right {
     width: 100%;
@@ -69,7 +73,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: 42%;    
+    left: 42%;
 }
 @include down(900) {
     .fantasy .deco__left {
@@ -89,37 +93,28 @@
         top: -128px;
     }
 }
-// Slider
-// ==========
-.slider__container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-}
-.slider__title h2 {
-    text-align: center;
-    color: white;
-    line-height: 1.7;
-}
-.slider__content {
+
+.event__content .fantasy-2 {
+    overflow: hidden;
+    width: 35%;
+    height: 35%;
+    background: url('http://emma-event.fr/wp-content/themes/emmaevent/assets/img/gui_blanc_left.png');
+    background-size: 100% 100%;
+    float: left;
+    shape-outside: circle();
     position: absolute;
-    top: 20%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-@include down(450) {
-    .slider__content {
-        position: absolute;
-        top: 0%;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    top: 25%;
+    right: 0%;
+    left: -7%;
+    z-index: 1;
+    @include down(900) {
+        width: 50%;
+        height: 20%;
+        top: 19%;
+    }
+    @include down(660) {
+        width: 50%;
+        height: 10%;
+        top: 44%;
     }
 }

@@ -1,6 +1,6 @@
 // Header
 // ==========================================================================
-.event__title {
+.event-header .event__title {
     @extend %big-title;
     margin-bottom: space(6);
     margin-top: space(10);
@@ -16,7 +16,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 13px rgba(0,0,0,0.35);
 }
 .event__photos img {
     display: block;
@@ -31,7 +31,7 @@
 // ==========================================================================
 .event-body {
     margin-top: space(6);
-    padding: 30px 69px;
+    // padding: 30px 69px;
 }
 .event-body__title {
     @extend %title-secondary;

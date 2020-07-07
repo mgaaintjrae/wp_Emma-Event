@@ -8,8 +8,9 @@
     border: none;
     padding: 0;
     text-transform: none;
-color: $dore;
+    color: $dore;
+    transition: all 0.1s;
 }
-#breadcrumbs a:hover{
-font-weight: bold;
+#breadcrumbs a:hover {
+    font-weight: bold;
 }
