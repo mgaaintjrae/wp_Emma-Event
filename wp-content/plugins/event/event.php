@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Event Plugin
  * Description: Gestion des évènements de Emma Event
- * Version: 0.1
+ * Version: 1.0
  * Author: Priscilla Roy ITfy
  * Text Domain: event
  * Domain Path: /languages
