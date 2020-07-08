@@ -30,7 +30,7 @@
     <?php wp_body_open(); ?>
     <header class="about">
 
-        <div class="menu__area">
+        <div class="menu__area" id="nav">
             <div class="grid">
 
                 <div class="position__left__logo">
@@ -50,7 +50,6 @@
             ?>
                     </nav>
                 </div>
-
             </div>
         </div>
 

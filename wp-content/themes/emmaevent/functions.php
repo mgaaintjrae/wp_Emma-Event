@@ -20,7 +20,7 @@ function emmaevent_icon(string $name): string {
 }
 
 function emmaevent_paginate(): string {
-  return '<div class="pagination">' . paginate_links(['prev_text' => emmaevent_icon('arrow-right'), 'next_text' => emmaevent_icon('arrow-left')]) . '</div>';
+  return '<div class="pagination">' . paginate_links(['prev_text' => emmaevent_icon('arrow-right-emeraude'), 'next_text' => emmaevent_icon('arrow-left-emeraude')]) . '</div>';
 }
 
 function emmaevent_paginate_comments(): void {

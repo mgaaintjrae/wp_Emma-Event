@@ -31,10 +31,6 @@
         <div class="menu__area">
             <div class="grid">
 
-                <button class="nav__burger">
-                    <span></span>
-                </button>
-
                 <div class="position__left__logo">
                     <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Homepage', 'emmaevent') ?>">
                         <img src="<?= get_theme_mod('logo header') ?>" alt="logo">

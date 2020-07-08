@@ -48,10 +48,6 @@
             ?>
                     </nav>
                 </div>
-
-                <button class="nav__burger">
-                    <span></span>
-                </button>
             </div>
         </div>
 

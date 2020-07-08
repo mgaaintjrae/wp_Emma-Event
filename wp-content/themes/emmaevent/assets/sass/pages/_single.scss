@@ -33,6 +33,10 @@
     margin-top: space(6);
     // padding: 30px 69px;
 }
+.single-event .event-body{
+margin-top: space(6);
+    padding: 30px 69px;
+}
 .event-body__title {
     @extend %title-secondary;
     margin-bottom: space(3);

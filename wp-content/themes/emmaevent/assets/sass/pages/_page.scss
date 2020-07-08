@@ -2,7 +2,9 @@
     @extend %big-title;
     margin-bottom: space(6);
 }
-.page-about .page-sidebar {
+.page-about .page-sidebar,
+.archive .page-sidebar,
+.sitemap__content {
     padding: 70px 69px;
 }
 .page-about .thumbnail {
@@ -19,6 +21,10 @@
     background-position-x: center;
     margin: 30px;
     border: 15px solid $dore;
+    @include down(550) {
+        width: 300px;
+        height: 300px;
+    }
 }
 .page-sidebar__galery {
     display: grid;
@@ -32,7 +38,12 @@
     display: grid;
     // grid-template-columns: 1fr;
     grid-gap: space(10);
+    padding-bottom: 59px;
 }
+.news-list__galery hr {
+    width: 300px;
+}
+
 @include down(900) {
     .page-about .page-sidebar {
         display: flex;
@@ -100,16 +111,9 @@ header .news_header {
     justify-content: center;
     align-items: center;
 }
-.sections .news-list p {
-    // display: flex;
-    // align-items: center;
-    // display: grid;
-}
 .page-about .sections .news-list p.next {
     display: flex;
     align-items: center;
-    // display: grid;
-    // grid-column: 1 / 3;
 }
 
 // Events
@@ -292,7 +296,11 @@ header .news_header {
 
 // Zoom hover effect
 .news-list {
+    padding: 0;   
+}
+.page-about .news-list {
     padding: 0;
+    text-align: center;
 }
 .news-list:last-child {
     padding-bottom: 60px;
@@ -331,8 +339,8 @@ header .news_header {
 
 // Sitemap
 // ============
-.sitemap__content ul {
-    margin-bottom: 1.5em;
+.sitemap__content h2 {
+    // margin-bottom: .5em;
 }
 .sitemap__content a {
     display: inline;
@@ -348,3 +356,7 @@ header .news_header {
 .sitemap__taxonomy {
     margin-left: 1.5em;
 }
+
+
+
+

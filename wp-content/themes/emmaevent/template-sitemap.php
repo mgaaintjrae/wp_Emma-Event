@@ -13,11 +13,14 @@ get_header('sitemap'); ?>
             <div class="company">
                 <div class="company__title">
                     <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/courone_fleurs.png"
-                        alt="couronne de fleurs">
+                        alt="couronne de fleurs" height="575" width="575">
                     <h2 class="page-title">
                         <?php the_title(); ?>
-                        <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/divider_trefle.svg"
-                            alt="divider trefle">
+                        <svg class="icon">
+                            <use
+                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_trefle">
+                            </use>
+                        </svg>
                     </h2>
                 </div>
             </div>
@@ -52,15 +55,15 @@ get_header('sitemap'); ?>
           // affiche le titre du CPT
           $pt = get_post_type_object( $post_type );
 
-          echo '<a>' . $pt->labels->name . '</a>';
-            
+          echo '<a href="' . esc_attr(get_term_link($pt)) . '" title="Evénements">' . $pt->labels->name . '</a>';
 
-          // Récupérer la taxonomie dans une variable
-          $taxonomy = 'events';
-          // Variable avec le get_terms
-          $tax_terms = get_terms($taxonomy, array('hide_empty' => false), 'exclude=');
-          }
-?>
+// Récupérer la taxonomie dans une variable
+                $taxonomy = 'events';
+                
+                // Variable avec le get_terms
+                $tax_terms = get_terms($taxonomy, array('hide_empty' => false), 'exclude=');
+                }
+                ?>
             </li>
             <li>
                 <ul class="sitemap__taxonomy">
@@ -87,7 +90,7 @@ get_header('sitemap'); ?>
             </li>
             <li>
                 <a href="<?php the_permalink(41); ?>"
-                    title="Mentions légales"><?php _e('legal disclaimer', 'emmaevent'); ?></a>
+                    title="Mentions légales"><?php _e('Legal disclaimer', 'emmaevent'); ?></a>
             </li>
         </ul>
         <!-- <ul>

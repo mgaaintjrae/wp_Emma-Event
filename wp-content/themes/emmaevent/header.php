@@ -30,80 +30,79 @@
     <?php wp_body_open(); ?>
     <header class="home">
 
-        <nav class="topbar">
-            <div class="topbar__container">
-                <ul class="topbar__infos">
-                    <li>
-                        <svg class="icon">
-                            <use
-                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#phone">
-                            </use>
-                        </svg>00 00 00 00 00
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use
-                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#map">
-                            </use>
-                        </svg>78000 Paris</li>
-                    <li>
-                        <svg class="icon">
-                            <use
-                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#envelop">
-                            </use>
-                        </svg>
-                        <a href=" mailto:emma@event.com" title="me contacter">emma@event.com</a>
-                    </li>
-                </ul>
-                <ul class="topbar__socials">
-                    <li class="topbar__links">Me suivre :</li>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
+        <div id="navhome">
+            <nav class="topbar">
+                <div class="topbar__container">
+                    <ul class="topbar__infos">
+                        <li>
                             <svg class="icon">
                                 <use
-                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#facebook">
+                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#phone">
                                 </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                            title="Instagram">
+                            </svg>00 00 00 00 00
+                        </li>
+                        <li>
                             <svg class="icon">
                                 <use
-                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#instagram">
+                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#map">
+                                </use>
+                            </svg>78000 Paris</li>
+                        <li>
+                            <svg class="icon">
+                                <use
+                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#envelop">
                                 </use>
                             </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="menu__area">
-            <div class="grid">
-
-                <div class="position__left__logo">
-                    <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Emma-Event', 'emmaevent') ?>">
-                        <img src="<?= get_theme_mod('logo header') ?>" alt="logo">
-                    </a>
+                            <a href=" mailto:emma@event.com" title="me contacter">emma@event.com</a>
+                        </li>
+                    </ul>
+                    <ul class="topbar__socials">
+                        <li class="topbar__links">Me suivre :</li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                                title="Facebook">
+                                <svg class="icon">
+                                    <use
+                                        xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                title="Instagram">
+                                <svg class="icon">
+                                    <use
+                                        xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
 
-                <div class="position__center">
-                    <nav class="nav">
-                        <?php
+            <div class="menu__area">
+                <div class="grid">
+
+                    <div class="position__left__logo">
+                        <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Emma-Event', 'emmaevent') ?>">
+                            <img src="<?= get_theme_mod('logo header') ?>" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="position__center">
+                        <nav class="nav">
+                            <?php
             wp_nav_menu([
               'theme_location' => 'header',
               'container' => false,
-              'menu_class' => 'nav__menu',
-              'div_class'=> 'marker'              
+              'menu_class' => 'nav__menu'              
              ]);
             ?>
-
-                    </nav>
-
+                        </nav>
+                    </div>
                 </div>
-
             </div>
         </div>
 

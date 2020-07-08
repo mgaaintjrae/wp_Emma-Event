@@ -1,10 +1,18 @@
-
-// document.querySelector('.nav__burger').addEventListener('click', function () {
-//     document.querySelector('.nav__menu').classList.toggle('is-active');
-//     document.querySelector('.nav__burger').classList.toggle('is-active');
-// })
-
-
-
+// Form
+jQuery(document).ready(function () {
+    jQuery('input[type="text"]').focus(function () {
+        if (this.value == this.defaultValue) {
+            this.value = '';
+        }
+        if (this.value != this.defaultValue) {
+            this.select();
+        }
+    });
+    jQuery('input[type="text"]').blur(function () {
+        if (this.value == '') {
+            this.value = this.defaultValue;
+        }
+    });
+});
 
 
