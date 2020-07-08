@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-06-29 21:35+0200\n"
-"PO-Revision-Date: 2020-06-29 22:09+0200\n"
+"POT-Creation-Date: 2020-07-08 13:33+0200\n"
+"PO-Revision-Date: 2020-07-08 13:34+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -25,117 +25,9 @@ msgstr ""
 "Il semble que rien n'ait été trouvé à cet endroit. Peut-être essayer une "
 "recherche ?"
 
-#: archive-event.php:58
+#: archive-event.php:61
 msgid "More events +"
 msgstr "Plus d'événements +"
-
-#: assets/sass/node_modules/yargs-parser/index.js:367
-#, javascript-format
-msgid "Not enough arguments following: %s"
-msgstr "Pas assez d'arguments suivants: %s"
-
-#: assets/sass/node_modules/yargs-parser/index.js:541
-#, javascript-format
-msgid "Invalid JSON config file: %s"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:92
-msgid "Positionals:"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:192
-#: assets/sass/node_modules/yargs/lib/usage.js:194
-msgid "command"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:203
-msgid "Commands:"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:223
-#: assets/sass/node_modules/yargs/lib/usage.js:458
-msgid "default:"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:225
-msgid "aliases:"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:288
-msgid "boolean"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:289
-msgid "count"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:290
-#: assets/sass/node_modules/yargs/lib/usage.js:291
-msgid "string"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:292
-msgid "array"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:293
-msgid "number"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:297
-msgid "required"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:298
-msgid "choices:"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:317
-msgid "Examples:"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/usage.js:436
-msgid "generated-value"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/validation.js:29
-#: assets/sass/node_modules/yargs/lib/validation.js:52
-#, javascript-format
-msgid "Not enough non-option arguments: got %s, need at least %s"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/validation.js:40
-#, javascript-format
-msgid "Too many non-option arguments: got %s, maximum of %s"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/validation.js:147
-msgid "Invalid values:"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/validation.js:150
-#, javascript-format
-msgid "Argument: %s, Given: %s, Choices: %s"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/validation.js:180
-#, javascript-format
-msgid "Argument check failed: %s"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/validation.js:256
-msgid "Implications failed:"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/validation.js:295
-#, javascript-format
-msgid "Arguments %s and %s are mutually exclusive"
-msgstr ""
-
-#: assets/sass/node_modules/yargs/lib/validation.js:316
-#, javascript-format
-msgid "Did you mean %s?"
-msgstr "Voulez-vous dire %s?"
 
 #: comments.php:8
 #, php-format
@@ -146,20 +38,20 @@ msgstr ""
 msgid "Leave a reply"
 msgstr "Laisser un commentaire"
 
-#: footer.php:12 header-contact.php:39 header-events.php:39
-#: header-galery.php:39 header-mentions.php:39 header-sitemap.php:35
+#: footer.php:12 header-contact.php:35 header-events-mariages.php:37
+#: header-events-prives.php:37 header-events-professionnels.php:37
+#: header-events.php:39 header-galery.php:35 header-mentions.php:35
+#: header-single--event.php:37 header-sitemap.php:35
 msgid "Homepage"
 msgstr "Page d'accueil"
 
-#: header-about.php:37 header-events-mariages.php:37
-#: header-events-prives.php:37 header-events-professionnels.php:37
-#: header-single--event.php:37 header.php:87
+#: header-about.php:37 header.php:89
 msgid "Emma-Event"
 msgstr ""
 
 #: inc/apparence.php:5 inc/apparence.php:22
 msgid "Theme appearance"
-msgstr "Aspect de thème"
+msgstr "Apparence du thème"
 
 #: inc/apparence.php:13
 msgid "Logo header"
@@ -167,11 +59,11 @@ msgstr "Logo En-tête"
 
 #: inc/apparence.php:30
 msgid "Logo footer"
-msgstr "Logo Pieds de page"
+msgstr "Logo Pied de page"
 
 #: inc/comments.php:3
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: inc/comments.php:4
 msgid "Email"
@@ -179,7 +71,7 @@ msgstr ""
 
 #: inc/menus.php:19
 msgid "Footer"
-msgstr ""
+msgstr "Pied de page"
 
 #: inc/menus.php:27
 msgid "Blog sidebar"
@@ -210,8 +102,8 @@ msgstr "Titre"
 msgid "Search results for \"%s\""
 msgstr "Résultats de recherche pour \"%s\""
 
-#: index.php:31 taxonomy-events-mariages.php:36 taxonomy-events-prives.php:36
-#: taxonomy-events-professionnels.php:36 taxonomy-events.php:21
+#: index.php:31 taxonomy-events-mariages.php:39 taxonomy-events-prives.php:39
+#: taxonomy-events-professionnels.php:39 taxonomy-events.php:20
 msgid "No posts found"
 msgstr "Post non trouvée"
 
@@ -219,19 +111,19 @@ msgstr "Post non trouvée"
 msgid "Search post"
 msgstr "Rechercher des événements"
 
-#: single-event.php:35
+#: single-event.php:38
 msgid "Next Post :"
 msgstr "Article suivant :"
 
-#: single-event.php:37
+#: single-event.php:40
 msgid "Next post:"
 msgstr "Article suivant:"
 
-#: single-event.php:39
+#: single-event.php:42
 msgid "Previous Post :"
 msgstr "Article précédent :"
 
-#: single-event.php:41
+#: single-event.php:44
 msgid "Previous post:"
 msgstr "Article précédent:"
 
@@ -248,3 +140,48 @@ msgstr "%1$s à %2$s"
 #: template-parts/comment.php:14
 msgid "Edit"
 msgstr "Modifier"
+
+#: template-sitemap.php:31
+msgid "Author"
+msgstr "Auteur"
+
+#: template-sitemap.php:40
+msgid "Pages"
+msgstr ""
+
+#: template-sitemap.php:43
+msgid "Home"
+msgstr "Accueil"
+
+#: template-sitemap.php:46
+msgid "About"
+msgstr "A propos"
+
+#: template-sitemap.php:75
+#, php-format
+msgid " Voir tous les événements dans %s"
+msgstr ""
+
+#: template-sitemap.php:83
+msgid "Galery"
+msgstr "Galerie"
+
+#: template-sitemap.php:86
+msgid "Contact"
+msgstr ""
+
+#: template-sitemap.php:89
+msgid "Sitemap"
+msgstr "Plan de site"
+
+#: template-sitemap.php:93
+msgid "Legal disclaimer"
+msgstr "Mentions légales"
+
+#, javascript-format
+#~ msgid "Not enough arguments following: %s"
+#~ msgstr "Pas assez d'arguments suivants: %s"
+
+#, javascript-format
+#~ msgid "Did you mean %s?"
+#~ msgstr "Voulez-vous dire %s?"
