@@ -21,7 +21,7 @@
     <!-- ====== button-top ======  -->
     <div class="button-top" data-scroll-nav="0">
         <svg class="icon">
-            <use xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#arrow-up">
+            <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#arrow-up">
             </use>
         </svg>
     </div>
@@ -56,8 +56,7 @@
         <div class="header__title">
             <h1>Evénements Professionnels</h1>
             <svg class="icon">
-                <use
-                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_coeur">
+                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>
             </svg>
         </div>

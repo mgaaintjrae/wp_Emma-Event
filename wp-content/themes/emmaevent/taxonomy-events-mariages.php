@@ -6,12 +6,12 @@
     <section>
         <div class="container">
             <div class="company__title">
-                <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/courone_fleurs.png"
-                    alt="couronne de fleurs" height="575" width="575">
+                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png" alt="couronne de fleurs"
+                    height="575" width="575">
                 <h2 class="page-title"><?= get_queried_object()->name ?>
                     <svg class="icon">
                         <use
-                            xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_trefle">
+                            xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_trefle">
                         </use>
                     </svg>
                 </h2>

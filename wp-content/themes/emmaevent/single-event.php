@@ -55,7 +55,7 @@
                     <a href="./" class="btn" title="Retour aux événements">
                         <svg class="icon">
                             <use
-                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#arrow-left">
+                                xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#arrow-left">
                             </use>
                         </svg>Retour</a>
                     <?php endif; ?>

@@ -21,7 +21,7 @@
     <!-- ====== button-top ======  -->
     <div class="button-top" data-scroll-nav="0">
         <svg class="icon">
-            <use xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#arrow-up">
+            <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#arrow-up">
             </use>
         </svg>
     </div>
@@ -36,21 +36,19 @@
                     <ul class="topbar__infos">
                         <li>
                             <svg class="icon">
-                                <use
-                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#phone">
+                                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#phone">
                                 </use>
                             </svg>00 00 00 00 00
                         </li>
                         <li>
                             <svg class="icon">
-                                <use
-                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#map">
+                                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#map">
                                 </use>
                             </svg>78000 Paris</li>
                         <li>
                             <svg class="icon">
                                 <use
-                                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#envelop">
+                                    xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#envelop">
                                 </use>
                             </svg>
                             <a href=" mailto:emma@event.com" title="me contacter">emma@event.com</a>
@@ -63,7 +61,7 @@
                                 title="Facebook">
                                 <svg class="icon">
                                     <use
-                                        xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#facebook">
+                                        xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#facebook">
                                     </use>
                                 </svg>
                             </a>
@@ -73,7 +71,7 @@
                                 title="Instagram">
                                 <svg class="icon">
                                     <use
-                                        xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#instagram">
+                                        xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#instagram">
                                     </use>
                                 </svg>
                             </a>
@@ -109,8 +107,7 @@
         <div class="header__title">
             <h1>Emma Event <br> Wedding Planner</h1>
             <svg class="icon">
-                <use
-                    xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_coeur">
+                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>
             </svg>
         </div>

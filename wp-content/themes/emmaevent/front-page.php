@@ -7,13 +7,13 @@
         <div class="container">
             <div class="company">
                 <div class="company__title">
-                    <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/courone_fleurs.png"
+                    <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png"
                         alt="couronne de fleurs" height="575" width="575">
                     <h2 class="page-title">
                         Présentation
                         <svg class="icon">
                             <use
-                                xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_trefle">
+                                xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_trefle">
                             </use>
                         </svg>
                     </h2>
@@ -38,11 +38,11 @@
         <!-- Fantasy -->
         <div class="fantasy">
             <div class="deco__left">
-                <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_left.png"
+                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/branche_feuilles_left.png"
                     alt="branche feuilles" width="545" height="442">
             </div>
             <div class="deco__right">
-                <img src="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/branche_feuilles_right.png"
+                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/branche_feuilles_right.png"
                     alt="branche feuilles" width="545" height="442">
             </div>
         </div>
@@ -52,8 +52,7 @@
                 <h2><?php the_sub_field('title') ?></h2>
                 <?php the_sub_field('image') ?>
                 <svg class="icon">
-                    <use
-                        xlink:href="http://emma-event.fr/wp-content/themes/emmaevent/assets/img/svg/sprite.svg#divider_trefle">
+                    <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_trefle">
                     </use>
                 </svg>
             </div>
