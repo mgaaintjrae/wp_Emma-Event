@@ -30,7 +30,7 @@
     <?php wp_body_open(); ?>
     <header class="home">
 
-        <div id="navhome">
+        <div class="navhome">
             <nav class="topbar">
                 <div class="topbar__container">
                     <ul class="topbar__infos">

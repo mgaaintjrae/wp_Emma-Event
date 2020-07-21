@@ -28,7 +28,7 @@
     <?php wp_body_open(); ?>
     <header class="events">
 
-        <div class="menu__area">
+        <div class="navhome menu__area" id="nav">
             <div class="grid">
 
                 <button class="nav__burger">

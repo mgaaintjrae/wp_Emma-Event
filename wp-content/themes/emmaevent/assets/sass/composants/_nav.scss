@@ -283,33 +283,18 @@ ul {
 //=============
 // All pages
 @include up(770) {
-    .menu__area {
+    .navhome {
         position: fixed;
         top: 32px;
         width: 100%;
         display: block;
         transition: top 0.8s;
     }
-    .menu__area.sticky {
-        background: rgb(0, 0, 0);
-        background: -moz-linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.49933476808692223) 0%,
-            rgba(214, 168, 89, 0.3984944319524685) 100%
-        );
-        background: -webkit-linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.49933476808692223) 0%,
-            rgba(214, 168, 89, 0.3984944319524685) 100%
-        );
-        background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.49933476808692223) 0%,
-            rgba(214, 168, 89, 0.3984944319524685) 100%
-        );
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#d6a859",GradientType=1);
-        border-bottom: 1px solid #000;
+
+    #nav.sticky {
+        background-color: rgba(2, 61, 43, 0.5);        
+    }
+    #navGold.sticky {
+        background-color:#d6a85986;        
     }
 }
-
-// Home

@@ -30,7 +30,7 @@
     <?php wp_body_open(); ?>
     <header class="pro">
 
-        <div class="menu__area">
+        <div class="navhome menu__area" id="navGold">
             <div class="grid">
 
                 <div class="position__left__logo">

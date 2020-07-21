@@ -37,7 +37,7 @@
     background-position: center;
 }
 .contact {
-padding: 1px;
+    padding: 1px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -69,7 +69,7 @@ padding: 1px;
     background-position: center;
 }
 .galery {
-padding: 1px;
+    padding: 1px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -85,7 +85,7 @@ padding: 1px;
     background-position: center;
 }
 .mentions {
-padding: 1px;
+    padding: 1px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -100,7 +100,7 @@ padding: 1px;
     background-position: center;
 }
 .sitemap {
-padding: 1px;
+    padding: 1px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -134,7 +134,7 @@ padding: 1px;
     background-position: center;
 }
 .private {
-padding: 1px;
+    padding: 1px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -150,7 +150,7 @@ padding: 1px;
     background-position: center;
 }
 .pro {
-padding: 1px;
+    padding: 1px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -166,7 +166,7 @@ padding: 1px;
     background-position: center;
 }
 .single--event {
-padding: 1px;
+    padding: 1px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -200,9 +200,17 @@ padding: 1px;
 .sitemap .header__title h1,
 .archive .header__title h1,
 .single .header__title h1 {
-    margin: 120px auto 0px;
+    // margin: 120px auto 0px;
+padding-top: 120px;
     @include up(770) {
-        margin: 170px auto 0px;
+        // margin: 170px auto 0px;
+padding-top: 170px;
+    }
+}
+.header__title h1 {
+    @include up(770) {
+        // margin: 250px auto 0px;
+padding-top: 250px;
     }
 }
 .about .header__content,
