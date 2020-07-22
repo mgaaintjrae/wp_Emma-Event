@@ -7,6 +7,9 @@
 .sitemap__content {
     padding: 70px 69px;
 }
+.page-about {
+    padding-bottom: 150px;
+}
 .page-about .thumbnail {
     display: flex;
     align-self: center;
@@ -34,7 +37,7 @@
 }
 .news-list__galery {
     text-align: center;
-    padding: 0 69px;
+    padding: 0 10px;
     display: grid;
     // grid-template-columns: 1fr;
     grid-gap: space(10);
@@ -296,11 +299,11 @@ header .news_header {
 
 // Zoom hover effect
 .news-list {
-    padding: 0;   
+    padding: 0;
 }
 .page-about .news-list {
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 .news-list:last-child {
     padding-bottom: 60px;
@@ -356,7 +359,3 @@ header .news_header {
 .sitemap__taxonomy {
     margin-left: 1.5em;
 }
-
-
-
-

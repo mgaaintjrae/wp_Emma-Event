@@ -29,10 +29,10 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollpos = window.pageYOffset;
     if (prevScrollpos > currentScrollpos) {
-        document.querySelector('.navhome').style.top = '32px';
+        document.querySelector('.navhome').style.top = '0px';
         document.querySelector('.navhome').style.zIndex = 1;              
     } else {
-        document.querySelector('.navhome').style.top = '-100px';
+        document.querySelector('.navhome').style.top = '-190px';
         document.querySelector('.navhome').classList.add('sticky');
     }
 

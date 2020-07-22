@@ -34,6 +34,12 @@
                     </div>
                 </div>
             </div>
+
+            <div class="copyright">
+                <p>
+                    EMMA EVENT © 2020 TOUS DROITS RESERVES
+                </p>
+            </div>
         </div>
     </section>
 </footer>

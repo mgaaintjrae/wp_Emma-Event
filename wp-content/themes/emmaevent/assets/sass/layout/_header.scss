@@ -201,17 +201,14 @@
 .archive .header__title h1,
 .single .header__title h1 {
     // margin: 120px auto 0px;
-padding-top: 120px;
+    padding-top: 210px;
     @include up(770) {
         // margin: 170px auto 0px;
-padding-top: 170px;
+        padding-top: 170px;
     }
 }
 .header__title h1 {
-    @include up(770) {
-        // margin: 250px auto 0px;
-padding-top: 250px;
-    }
+padding-top: 300px;    
 }
 .about .header__content,
 .contact .header__content,

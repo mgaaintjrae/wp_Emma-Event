@@ -30,7 +30,7 @@
     <?php wp_body_open(); ?>
     <header class="wedding">
 
-        <div class="navhome menu__area" id="navGold">
+        <div class="navhome menu__area" id="navEvent">
             <div class="grid">
 
                 <div class="position__left__logo">

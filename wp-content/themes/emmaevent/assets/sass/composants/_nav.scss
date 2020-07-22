@@ -226,8 +226,8 @@ ul {
     .archive .grid,
     .galery .grid,
     .contact .grid {
-        display: flex;
-        flex-direction: row-reverse;
+        // display: flex;
+        // flex-direction: row-reverse;
     }
     .position__left__logo {
         padding-left: 0;
@@ -247,16 +247,16 @@ ul {
 @include down(770) {
     button#responsive-menu-button {
         z-index: 999999 !important;
-        // top: 139px !important;
         right: 13px !important;
     }
-    .page button#responsive-menu-button {
-        top: 60px !important;
+    .page button#responsive-menu-button,
+    .archive button#responsive-menu-button {
+        top: 10px !important;
     }
     .home button#responsive-menu-button {
-        top: 105px !important;
+        top: 55px !important;
         @include down(600) {
-            top: 140px !important;
+            top: 93px !important;
         }
     }
     #responsive-menu-container {
@@ -282,19 +282,22 @@ ul {
 // Sticky menu
 //=============
 // All pages
-@include up(770) {
-    .navhome {
-        position: fixed;
-        top: 32px;
-        width: 100%;
-        display: block;
-        transition: top 0.8s;
-    }
+// @include up(770) {
+.navhome {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: block;
+    transition: top 0.8s;
+}
 
-    #nav.sticky {
-        background-color: rgba(2, 61, 43, 0.5);        
-    }
-    #navGold.sticky {
-        background-color:#d6a85986;        
+#nav.sticky {
+    background-color: rgba(2, 61, 43, 0.5);
+}
+#navEvent.sticky {
+    background-color: rgba(255, 255, 255, 0.75);
+    ul {
+        color: #777777;
     }
 }
+// }
