@@ -88,8 +88,8 @@
     <?php //endif; ?>
 
     <!-- Prestations -->
-    <section class="container__event">
-
+    <section class="container__presta">
+        <?php while (have_posts()) : the_post() ?>
         <!-- Fantasy -->
         <div class="fantasy">
             <div class="deco__left">
@@ -103,102 +103,84 @@
         </div>
         <!-- Fantasy end -->
 
-        <div class="presta__title">
-            <h2><?php the_sub_field('title') ?></h2>
-            <?php the_sub_field('image') ?>
-            <svg class="icon">
-                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_trefle">
-                </use>
-            </svg>
-        </div>
+        <div class="prestation">
+            <div class="presta__title">
+                <h2>Nos Formules</h2>
+                <?php //the_sub_field('image') ?>
+                <svg class="icon">
+                    <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_trefle">
+                    </use>
+                </svg>
+            </div>
 
-        <div class="presta__content">
-            <?php the_sub_field('description') ?>
-        </div>
+            <div class="presta__content">
+                <?php the_content(); ?>
+            </div>
 
-        <div class="presta__grid">
+            <div class="presta__grid grid">
 
-            <div class="hover09 column">
                 <div>
-                    <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-                    <span>
-                        <p>
-                            AVANT :
-                            Rendez-vous de présentation et étude des besoins
-                            Recherche et sélection des prestataires
-                            Accompagnement et conseil dans l’organisation
-                            Organisation des visites (lieux, traiteur, DJ…)
-                            Scénographie (invitations, thème, papeterie, art floral, mise en lumière…)
-                            Mise en place des outils de gestion (retroplanning, fiche prestataires, dossier client…)
-                            PENDANT :
-                            Brief final
-                            Accueil et gestion sur place (invités, prestataires)
-                            Mise en place et coordination de l’évènement
-                            Gestions des imprévus éventuels
-                            APRES :
-                            Finalisation des prestations (Photographe, vidéaste)
-                            Retour de noce (Brunch, petit déjeuner, food truck, BBQ…)
-                            Gestion des remerciements
-
-                            Tarif : à partir de 3000€
-                        </p>
-                    </span>
+                    <figure class="effect-bubba"><img src="https://picsum.photos/300/400?image=244" alt="" />
+                        <figcaption>
+                            <h3>Le <span>A à Z</span></h3>
+                            <p>Cette formule s'adresse à ceux qui courent après le temps, qui sont totalement
+                                stressé ou
+                                tout
+                                simplement à ceux qui veulent déléguer. Abordez votre évènement en toute
+                                sérénité,
+                                nous
+                                vous
+                                conseillons et accompagnons pour chaque étape.</p>
+                            <a href="#" title="En savoir plus">Voir plus</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div>
-                    <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-                    <span>
-                        <p>AVANT :
-                            Rendez-vous de présentation et étude des besoins
-                            Recherche et sélection des prestataires manquants
-                            Conseil et finalisation de l’organisation de votre évènement
-                            Mise en place des outils de gestion (retroplanning, fiche prestataires, dossier client…)
-                            PENDANT :
-                            Brief final
-                            Accueil et gestion sur place (invités, prestataires)
-                            Mise en place et coordination de l’évènement
-                            Gestions des éventuels imprévus
-                            APRES : (en option)
-                            Finalisation des prestations (Photographe, vidéaste)
-                            Retour de noce (Brunch, petit déjeuner, food truck, BBQ…)
-                            Gestion des remerciements
+                    <figure class="effect-bubba"><img src="https://picsum.photos/300/400?image=1024" alt="" />
 
-                            Tarif : à partir de 2000€
-                        </p>
-                    </span>
+                        <figcaption>
+                            <h3>
+                                <span>Partielle</span>
+                            </h3>
+                            <p>
+                                Cette formule sera pour vous si vous avez déjà des prestataires sélectionnés et que vous
+                                souhaitez être accompagnés sur les derniers détails de votre évènement.
+                            </p>
+                            <a href="#" title="En savoir plus">Voir plus</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div>
-                    <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-                    <span>
-                        <p>
-                            JOUR J :
-                            Cette formule s’adresse à ceux qui ont juste une envie… savourer leur grand jour, profiter
-                            de
-                            l’instant présent et se laisser aller. Nous coordonnons tout pour que l’imprévu n’est pas sa
-                            place dans votre évènement
-                            AVANT :
-                            Rendez-vous avec les mariés
-                            Liste, rendez-vous téléphonique et brief avec les prestataires
-                            Mise en place d’un rétroplanning
-                            PENDANT :
-                            Brief final
-                            Accueil et gestion sur place (invités, prestataires)
-                            Mise en place et coordination de l’évènement
-                            Gestions des éventuels imprévus
-
-                            Tarif : 1300€
-                        </p>
-                    </span>
+                    <figure class="effect-bubba"><img src="https://picsum.photos/300/400?image=611" alt="" />
+                        <figcaption>
+                            <h3>
+                                Le <span>Jour J</span>
+                            </h3>
+                            <p>
+                                Cette formule s'adresse à ceux qui ont juste une envie… savourer leur grand jour
+                                profiter de l'instant présent et se laisser aller. Nous coordonnons tout pour que
+                                l'imprévu n'est pas sa place dans votre évènement.
+                            </p>
+                            <a href="#" title="En savoir plus">Voir plus</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div>
-                    <figure><img src="https://picsum.photos/300/200?image=612" /></figure>
-                    <span>
-                        <p>
-                            A LA CARTE
-                        </p>
-                    </span>
+                    <figure class="effect-bubba"><img src="https://picsum.photos/300/400?image=612" alt="" />
+                        <figcaption>
+                            <h3>
+                                À <span>La Carte</span>
+                            </h3>
+                            <p>
+                                Cette formule s'adresse à ceux qui ....
+                            </p>
+                            <a href="#" title="En savoir plus">Voir plus</a>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
+        <?php endwhile; ?>
     </section>
     <!-- Prestations end -->
 
