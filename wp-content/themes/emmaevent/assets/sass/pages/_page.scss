@@ -119,9 +119,10 @@ header .news_header {
     align-items: center;
 }
 
-// Events
+// Events & Prestation
 //=============
-.event {
+.event,
+.prestation {
     max-width: 1370px;
     width: 100%;
     height: auto;
@@ -152,6 +153,11 @@ header .news_header {
         flex-direction: column;
     }
 }
+.home .presta__grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 .archive .events__grid {
     display: flex;
     flex-direction: column;
@@ -159,7 +165,8 @@ header .news_header {
 
 // Events front-page
 // ======================
-.event__content {
+.event__content,
+.presta__content {
     padding: 70px 0;
 }
 

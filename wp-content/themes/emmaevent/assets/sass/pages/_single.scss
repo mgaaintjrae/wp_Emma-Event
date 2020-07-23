@@ -1,6 +1,7 @@
 // Header
 // ==========================================================================
-.event-header .event__title {
+.event-header .event__title,
+.presta__title {
     @extend %big-title;
     margin-bottom: space(6);
     margin-top: space(10);
