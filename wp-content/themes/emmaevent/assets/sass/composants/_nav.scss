@@ -19,8 +19,9 @@
 .position__left__logo {
     display: flex;
     align-items: center;
-    max-width: 170px;
+    max-width: 100px;
     height: 100%;
+    padding-top: 10px;
 }
 @include up(900) {
     header .position__center {
