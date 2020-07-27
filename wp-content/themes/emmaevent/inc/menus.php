@@ -14,6 +14,15 @@ require_once('widgets/social.php');
 
 add_action('widgets_init', function () {
   register_widget(Emmaevent_Social_Widget::class);
+  
+// register_sidebar([
+//     'id' => 'homepage',
+//     'name' => __('Homepage', 'emmaevent'),
+//     'before_title' => '<div class="slider__title">',
+//     'after_title' => '</div>',
+//     'before_widget' => '<div class="slider__widget">',
+//     'after_widget' => '</div>'
+//   ]);
   register_sidebar([
     'id' => 'footer',
     'name' => __('Footer', 'emmaevent'),
@@ -21,7 +30,7 @@ add_action('widgets_init', function () {
     'after_title' => '</h4>',
     'before_widget' => '<div class="footer__col">',
     'after_widget' => '</div>'
-  ]);
+  ]);  
   register_sidebar([
     'id' => 'blog',
     'name' => __('Blog sidebar', 'emmaevent'),
