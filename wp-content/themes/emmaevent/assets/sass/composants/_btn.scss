@@ -35,6 +35,11 @@
     color: white;
     border: 2px solid white;
 }
+.cta__btn-gold {
+    color: white;
+    border: 2px solid $dore;
+    background-color: $dore;
+}
 .cta__btn-white:hover,
 .cta__btn-white:focus,
 .cta__btn-white:active {
@@ -42,11 +47,16 @@
     border: 2px solid $dore;
     background-color: $dore;
 }
+.cta__btn-gold:hover,
+.cta__btn-gold:focus,
+.cta__btn-gold:active {
+    background-color: #efbe6a !important;
+    border: 2px solid #efbe6a !important;
+}
 .btn:hover,
 .btn:focus,
 .btn:active {
     background-color: $dore;
-    // border: 2px solid white;
     color: #fff;
 }
 .btn svg {

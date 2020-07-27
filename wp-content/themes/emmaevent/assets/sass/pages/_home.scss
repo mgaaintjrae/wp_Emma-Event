@@ -65,7 +65,7 @@
     margin: 10px 1%;
     min-width: 300px;
     max-width: 400px;
-    max-height: 360px;
+    max-height: 400px;
     width: 48%;
     background: #fff;
     text-align: center;
@@ -220,6 +220,15 @@ figure.effect-bubba:hover img {
     right: 0%;
     left: -42%;
 }
+.fantasy__about .deco__left {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    top: 185%;
+    right: 0%;
+    left: -10%;
+}
 .fantasy .deco__right {
     width: 100%;
     height: auto;
@@ -229,10 +238,25 @@ figure.effect-bubba:hover img {
     right: 0;
     left: 42%;
 }
+@include down(1024) {
+    .fantasy__about  {
+            position: absolute;
+    top: -200px;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    }
+}
 @include down(900) {
     .fantasy .deco__left {
         width: 50%;
         top: 30px;
+        left: -13%;
+    }
+    .fantasy__about .deco__left {
+        width: 60%;
+        top: 240%;
         left: -13%;
     }
     .fantasy .deco__right {
@@ -245,6 +269,9 @@ figure.effect-bubba:hover img {
 @include down(660) {
     .fantasy {
         top: -128px;
+    }
+    .fantasy__about .deco__left {
+        top: 400%;
     }
 }
 
