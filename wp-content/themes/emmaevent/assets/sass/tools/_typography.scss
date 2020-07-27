@@ -122,7 +122,14 @@ h4 {
     }
 }
 
-.formatted {    
+// signature
+//===============
+.signature {
+    font-family: $f-alex;
+    font-size: 30px;
+}
+
+.formatted {
     p,
     blockquote,
     ul,
