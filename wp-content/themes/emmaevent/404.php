@@ -1,17 +1,23 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main">
+    <main id="notfound" class="site-main">
 
-        <div class="error-404 not-found">
-            <header class="page-header">
-                <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'emmaevent' ); ?></h1>
+        <div class="error-404 notfound">
+            <header class="notfound-404">
+                <h1 class="page-title"><?php _e( '404', 'emmaevent' ); ?></h1>
             </header><!-- .page-header -->
 
             <div class="page-content">
-                <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'emmaevent' ); ?>
-                </p>
-                <?php get_search_form(); ?>
+                <h2>
+                    <?php _e( 'Oops, The Page you are looking for can\'t be found!', 'emmaevent' ); ?>
+                </h2>
+                <form class="notfound-search">
+                    <input type="text" placeholder="Search...">
+                    <button type="button">Recherchez</button>
+                </form>
+                <a href="<?php the_permalink(19); ?>" title="Page d'accueil"><span
+                        class="arrow"></span><?php _e('Return To Homepage', 'emmaevent'); ?></a>
             </div><!-- .page-content -->
         </div><!-- .error-404 -->
 
