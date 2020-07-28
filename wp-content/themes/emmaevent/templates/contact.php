@@ -36,8 +36,65 @@ get_header('contact'); ?>
             <div class="thumbnail">
                 <?php the_post_thumbnail('event-thumbnail-large'); ?>
             </div>
-            <div class="news-list">
+            <div class="content">
                 <?php the_content(); ?>
+            </div>
+            <div class="news-list">
+                <?php echo do_shortcode( '[contact-form-7 id="161" title="Formulaire de contact"]' ); ?>
+
+                <div class="info">
+                    <div class="item">
+                        <svg class="icon">
+                            <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#phoneGold">
+                            </use>
+                        </svg>
+                        <h6>Téléphone :
+                            </br>
+                            <span>06 25 37 34 34</span>
+                        </h6>
+                    </div>
+                    <div class="item">
+                        <svg class="icon">
+                            <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#mapGold">
+                            </use>
+                        </svg>
+                        <h6>Adresse :
+                            </br>
+                            <span>72000
+                                </br>
+                                Paris
+                            </span>
+                        </h6>
+                    </div>
+                    <div class="item">
+                        <svg class="icon">
+                            <use
+                                xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#envelopGold">
+                            </use>
+                        </svg>
+                        <h6>Mail :
+                            </br>
+                            <span>emmaevent@odns.fr</span>
+                        </h6>
+                    </div>
+                    <!-- Social icon-->
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <svg class="icon">
+                                <use
+                                    xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#fbGold">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <svg class="icon">
+                                <use
+                                    xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#instaGold">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
