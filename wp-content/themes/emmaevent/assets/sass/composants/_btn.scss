@@ -30,6 +30,13 @@
     transition: 0.3s;
     cursor: pointer;
     border: none;
+@include down(1024){
+    margin-top: 75px;
+}
+}
+
+.btn-form:hover{
+background: #efbe6a;
 }
 .cta__btn-white {
     color: white;

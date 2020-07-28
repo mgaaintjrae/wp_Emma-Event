@@ -28,10 +28,11 @@ get_header(); ?>
                 </h2>
             </div>
             <?php the_post_thumbnail('event-thumbnail-large'); ?>
-            <?php the_content(); ?>
+
             <div class="event-body">
-                <?php endwhile; ?>
+                <?php the_content(); ?>
             </div>
+            <?php endwhile; ?>
         </div>
     </section>
 

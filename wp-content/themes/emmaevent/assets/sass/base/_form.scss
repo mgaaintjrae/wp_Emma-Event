@@ -10,10 +10,6 @@
 
 // Contact
 // =============
-.contact__form .wpcf7 {
-    margin-left: auto;
-    margin-right: auto;
-}
 .contact__form .news-list ul {
     border: 1px solid #d6a859;
     display: flex;
@@ -31,13 +27,15 @@
     font-size: 15px;
 }
 .contact__form .news-list {
-    // grid-template-columns: 50% 1fr;
     display: flex;
+    justify-content: space-around;
     padding: 30px 69px;
 }
 .contact__form .form-group {
     height: 60px;
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
 }
 .contact__form .form-control {
     border: 1px solid $dore;
@@ -54,13 +52,17 @@
     justify-content: flex-end;
     font-size: 15px;
 }
-.contact__form form{
-// padding-right: 80px;
+.wpcf7 .wpcf7-radio label input {
+    opacity: 0;
+    color: $dore !important;
+    opacity: 1;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    margin-top: -15px;
 }
-
 @include down(900) {
     .contact__form .news-list {
-        // grid-template-columns: 100% 1fr;
         display: flex;
         flex-direction: column;
         padding: 30px 50px;
@@ -70,7 +72,6 @@
     }
     .contact__form form {
         margin-bottom: 35px;
-
     }
     .contact__form .news-list ul {
         margin-left: 0;
@@ -117,15 +118,15 @@ textarea.form-control {
     height: 0;
     position: absolute;
 }
-.form-check{
-cursor: pointer;
+.form-check {
+    cursor: pointer;
+    margin-right: 15px;
 }
 .form-check label {
     display: inline-flex;
     align-items: center;
     font-family: $f-alex;
     font-size: 20px;
-    // font-weight: bold;
     position: relative;
 }
 .form-check label::before {
@@ -150,13 +151,25 @@ cursor: pointer;
     border: 1px solid #ee3f1a;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
-span.wpcf7-list-item{
-    margin: .5em 0 .5em 1em !important;
+span.wpcf7-list-item {
+    margin: 0.5em 0 0.5em 1em !important;
 }
-.wpcf7 form.invalid .wpcf7-response-output{
+.wpcf7 form.invalid .wpcf7-response-output {
     border-color: $dore !important;
+    color: red;
 }
-
+.contact__form .content {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+@include down(900) {
+    .contact__form .content {
+        max-width: 400px;
+    }
+}
 // Form
 // ==================
 .form-group {
@@ -171,11 +184,13 @@ span.wpcf7-list-item{
     align-items: center;
     font-weight: 600;
     font-size: 16px;
-    color: #7a6865;
+    color: #777777;
     min-width: 90px;
-    padding-left: space(2);
     order: -1;
     transition: color 0.3s;
+    @include down(1024) {
+        margin-top: 65px;
+    }
 }
 .form-control {
     border: none;
@@ -183,7 +198,7 @@ span.wpcf7-list-item{
     outline: none;
     font-size: 15px;
     background-color: transparent;
-padding: 16px;
+    padding: 16px;
 }
 select.form-control {
     appearance: none;
@@ -195,7 +210,6 @@ select.form-control + label::before {
     position: absolute;
     top: 50%;
     right: space(2);
-    background: url(../images/select.svg);
     width: 12px;
     height: 8px;
     margin-top: -2px;
@@ -211,7 +225,6 @@ select.form-control + label::before {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #f9f9f9;
     border-radius: 4px;
 }
 .form-group .form-control:focus + label::after {
@@ -221,7 +234,49 @@ select.form-control + label::before {
     box-shadow: 0px 1px 3px rgba(238, 238, 238, 0.85);
     border-radius: 4px;
 }
-
+.wpcf7-not-valid-tip {
+    font-size: 13px;
+}
+// Infos
+//===========
+.contact__form .info {
+    margin-left: 20px;
+    text-align: center;
+    color: #777777;
+    border: 1px solid $dore;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @include down(900) {
+        margin-left: 0;
+    }
+}
+.contact__form .info .item {
+    margin-bottom: 50px;
+}
+.contact__form .info .item .icon {
+    width: 5%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.contact__form .info .item h6 {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+.contact__form .info .item h6 span {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.contact__form .info .social-icon svg {
+    margin: 0 15px;
+    width: 5%;
+}
+.contact__form .info .social-icon a svg:hover {
+    fill: #efbe6a;
+    transition: color 0.3s;
+}
 
 // Bloc de recherche
 // ==================

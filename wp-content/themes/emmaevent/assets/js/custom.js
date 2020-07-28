@@ -42,5 +42,10 @@ window.onscroll = function () {
 });
 
 
+// Sub menu
+document.addEventListener('DOMContentLoaded',function(){
+document.querySelector('.sub-menu').classList.add('height');
+});
+
 
 
