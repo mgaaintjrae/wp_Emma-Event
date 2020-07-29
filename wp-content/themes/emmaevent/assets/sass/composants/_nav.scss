@@ -106,6 +106,14 @@
 .nav a[aria-current] {
     color: $dore;
 }
+.archive .sticky .menu-item-object-event,
+.archive .sticky .menu-item-object-custom,
+.page-template .sticky .menu-item-object-event,
+.page-template .sticky .menu-item-object-custom,
+.page-template .menu-item-object-custom,
+.page-template .menu-item-object-event,
+.home .menu-item-object-event,
+.home .menu-item-object-custom,
 .menu-item-object-event,
 .menu-item-object-custom {
     > a {
@@ -121,7 +129,29 @@
     }
 }
 .archive .menu-item-object-event,
-.archive .menu-item-object-custom {
+.archive .menu-item-object-custom,
+.archive .events .menu-item-object-event,
+.page .contact .menu-item-object-event,
+.page .about .menu-item-object-event,
+.page .sitemap .menu-item-object-event,
+.page .mentions .menu-item-object-event,
+.page .galery .menu-item-object-event,
+.single .menu-item-object-event,
+.archive .events .menu-item-object-custom,
+.page .contact .menu-item-object-custom,
+.page .about .menu-item-object-custom,
+.page .sitemap .menu-item-object-custom,
+.page .mentions .menu-item-object-custom,
+.page .galery .menu-item-object-custom,
+.single .menu-item-object-custom,
+.page-template-service-complete .menu-item-object-custom,
+.page-template-service-complete .menu-item-object-event,
+.page-template-service-partiel .menu-item-object-custom,
+.page-template-service-partiel .menu-item-object-event,
+.page-template-service-day-j .menu-item-object-custom,
+.page-template-service-day-j .menu-item-object-event,
+.page-template-service-card .menu-item-object-custom,
+.page-template-service-card .menu-item-object-event {
     > a {
         &::before {
             content: '';
@@ -139,32 +169,6 @@ ul {
         background-color: white;
     }
 }
-.archive .events .menu-item-object-event,
-.page .contact .menu-item-object-event,
-.page .about .menu-item-object-event,
-.page .sitemap .menu-item-object-event,
-.page .mentions .menu-item-object-event,
-.page .galery .menu-item-object-event,
-.single .menu-item-object-event,
-.archive .events .menu-item-object-custom,
-.page .contact .menu-item-object-custom,
-.page .about .menu-item-object-custom,
-.page .sitemap .menu-item-object-custom,
-.page .mentions .menu-item-object-custom,
-.page .galery .menu-item-object-custom,
-.single .menu-item-object-custom {
-    > a {
-        &::before {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            border: 4px solid transparent;
-            border-top-color: white;
-        }
-    }
-}
 
 // Nav Header special
 // ==================
@@ -175,7 +179,11 @@ ul {
 .archive .menu__area .nav ul,
 .sitemap .menu__area .nav ul,
 .mentions .menu__area .nav ul,
-.single .menu__area .nav ul {
+.single .menu__area .nav ul,
+.service-complete .menu__area .nav ul,
+.service-partiel .menu__area .nav ul,
+.service-day-j .menu__area .nav ul,
+.service-card .menu__area .nav ul {
     color: white;
 }
 @include down(770) {
@@ -232,10 +240,9 @@ ul {
     .archive .menu__area .grid,
     .galery .menu__area .grid,
     .contact .menu__area .grid {
-        // margin: 0 30px;
         padding-right: 0;
         padding-left: 0;
-    }   
+    }
     .position__left__logo {
         padding-left: 0;
     }
@@ -275,17 +282,17 @@ ul {
     #responsive-menu-container #responsive-menu-title a {
         font-size: 37px !important;
     }
-#responsive-menu-container #responsive-menu li.responsive-menu-item a{
-    border-bottom: 1px solid #EBEBEB !important;
-}
-    #responsive-menu-container li:nth-child(1) {
-        // margin-top: 80px !important;
+    #responsive-menu-container #responsive-menu li.responsive-menu-item a {
+        border-bottom: 1px solid #ebebeb !important;
     }
-.responsive-menu-open #responsive-menu-container.slide-right{
-box-shadow: 10px 3px 35px black;
-}
-    .menu-item-object-event > a::before {
-        display: none;
+    .responsive-menu-open #responsive-menu-container.slide-right {
+        box-shadow: 10px 3px 35px black;
+    }
+    .menu-item-object-event,
+    .menu-item-object-custom {
+        > a::before {
+            display: none;
+        }
     }
     .page button#responsive-menu-button .responsive-menu-box {
         color: $dore !important;
@@ -302,7 +309,6 @@ box-shadow: 10px 3px 35px black;
     display: block;
     transition: top 0.8s;
 }
-
 #nav.sticky {
     background-color: rgba(2, 61, 43, 0.5);
 }
@@ -310,20 +316,5 @@ box-shadow: 10px 3px 35px black;
     background-color: rgba(255, 255, 255, 0.75);
     ul {
         color: #777777;
-    }
-}
-.sticky {
-    .archive .events .menu-item-object-custom {
-        > a {
-            &::before {
-                content: '';
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                border: 4px solid transparent;
-                border-top-color: #777777;
-            }
-        }
     }
 }

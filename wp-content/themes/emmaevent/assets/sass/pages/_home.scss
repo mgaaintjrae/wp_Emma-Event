@@ -51,7 +51,6 @@
 
 // Section Prestations
 //=========
-
 .grid {
     position: relative;
     margin: 0 auto;
@@ -204,6 +203,7 @@ figure.effect-bubba a.hover:hover {
     color: $dore;
     transition: 0.5s;
 }
+
 // Fantasy
 //=========
 .fantasy {
@@ -271,7 +271,7 @@ figure.effect-bubba a.hover:hover {
 }
 @include down(660) {
     .fantasy {
-        top: -128px;
+        top: -100px;
     }
     .fantasy__about .deco__left {
         top: 400%;
