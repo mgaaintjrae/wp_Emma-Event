@@ -164,6 +164,7 @@ span.wpcf7-list-item {
     max-width: 700px;
     margin: auto;
     overflow: hidden;
+font-weight: 500;
 }
 @include down(900) {
     .contact__form .content {
