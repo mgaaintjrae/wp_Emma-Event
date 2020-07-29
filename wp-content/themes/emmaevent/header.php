@@ -38,7 +38,7 @@
                             <svg class="icon">
                                 <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#phone">
                                 </use>
-                            </svg>00 00 00 00 00
+                            </svg>06 25 37 34 34
                         </li>
                         <li>
                             <svg class="icon">
@@ -105,7 +105,7 @@
         </div>
 
         <div class="header__title">
-            <h1>Emma Event <br> Wedding Planner</h1>
+            <h1>Emma Event <br> Wedding & Event Planner</h1>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>

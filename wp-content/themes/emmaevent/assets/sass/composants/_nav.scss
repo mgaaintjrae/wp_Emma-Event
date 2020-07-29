@@ -275,9 +275,15 @@ ul {
     #responsive-menu-container #responsive-menu-title a {
         font-size: 37px !important;
     }
+#responsive-menu-container #responsive-menu li.responsive-menu-item a{
+    border-bottom: 1px solid #EBEBEB !important;
+}
     #responsive-menu-container li:nth-child(1) {
-        margin-top: 80px !important;
+        // margin-top: 80px !important;
     }
+.responsive-menu-open #responsive-menu-container.slide-right{
+box-shadow: 10px 3px 35px black;
+}
     .menu-item-object-event > a::before {
         display: none;
     }

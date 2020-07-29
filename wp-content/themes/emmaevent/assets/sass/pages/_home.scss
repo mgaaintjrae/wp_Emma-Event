@@ -64,7 +64,7 @@
     overflow: hidden;
     margin: 10px 1%;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 310px;
     max-height: 400px;
     width: 48%;
     background: #fff;
@@ -165,8 +165,8 @@ figure.effect-bubba h3 {
     -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
 }
-figure.effect-bubba p {
-    padding: 15px 0.5em;
+figure.effect-bubba p {    
+    padding: 15px 0;
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -200,7 +200,10 @@ figure.effect-bubba:hover img {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-
+figure.effect-bubba a.hover:hover {
+    color: $dore;
+    transition: 0.5s;
+}
 // Fantasy
 //=========
 .fantasy {
@@ -239,13 +242,13 @@ figure.effect-bubba:hover img {
     left: 42%;
 }
 @include down(1024) {
-    .fantasy__about  {
-            position: absolute;
-    top: -200px;
-    bottom: 0px;
-    right: 0;
-    left: 0;
-    overflow: hidden;
+    .fantasy__about {
+        position: absolute;
+        top: -200px;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        overflow: hidden;
     }
 }
 @include down(900) {

@@ -39,6 +39,9 @@ footer, header, hgroup, menu, nav, section {
 ol, ul {
   list-style: none;
 }
+body .sections ul{
+  list-style: block;
+}
 blockquote, q {
   quotes: none;
 }
