@@ -63,66 +63,102 @@ get_header(); ?>
             </div>
 
             <div class="presta__grid grid">
+                <div>
+                    <?php
+                $id1 = 246;
+                $billet1 = get_post($id1);
+                $title1 = $billet1->post_title;
+                $lien1 = get_permalink($id1);
+                $excerpt1 = $billet1->post_excerpt;
+                $urlImage1 = get_post_thumbnail_id(246);
+                $urlImage1 = wp_get_attachment_image_src($urlImage1,'service-thumbnail');
+                $urlImage1 = $urlImage1[0];
+                ?>
+                    <figure class="effect-bubba"><img src="<?= $urlImage1 ?>" alt="" />
+                        <figcaption>
+                            <h3>
+                                <?= $title1 ?>
+                            </h3>
+                            <p>
+                                <?= $excerpt1 ?>
+                                </br></br>
+                                <a class="hover" href="<?= $lien1 ?>" title="En savoir plus">En savoir +</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
 
                 <div>
-                    <figure class="effect-bubba"><img src="https://picsum.photos/300/400?image=244" alt="" />
+                    <?php
+                    $id2 = 252;
+                    $billet2 = get_post($id2);
+                    $title2 = $billet2->post_title;
+                    $lien2 = get_permalink($id2); 
+                    $excerpt2 = $billet2->post_excerpt;
+                    $urlImage2 = get_post_thumbnail_id(252);
+                    $urlImage2 = wp_get_attachment_image_src($urlImage2,'service-thumbnail');
+                    $urlImage2 = $urlImage2[0];
+                    ?>
+                    <figure class="effect-bubba"><img src="<?= $urlImage2 ?>" alt="" />
                         <figcaption>
-                            <h3>Le <span>A à Z</span></h3>
-                            <p>Cette formule s'adresse à ceux qui courent après le temps, qui sont totalement
-                                stressé ou
-                                tout
-                                simplement à ceux qui veulent déléguer. Abordez votre évènement en toute
-                                sérénité,
-                                nous
-                                vous
-                                conseillons et accompagnons pour chaque étape.</p>
-                            <a href="<?php the_permalink(246) ?>" title="En savoir plus">Voir plus</a>
+                            <h3>
+                                <?= $title2 ?>
+                            </h3>
+                            <p>
+                                <?= $excerpt2 ?>
+                                </br></br>
+                                <a class="hover" href="<?= $lien2 ?>" title="En savoir plus">En savoir +</a>
+                            </p>
                         </figcaption>
                     </figure>
                 </div>
-                <div>
-                    <figure class="effect-bubba"><img src="https://picsum.photos/300/400?image=1024" alt="" />
 
+                <div>
+                    <?php
+                    $id3 = 254;
+                    $billet3 = get_post($id3);
+                    $title3 = $billet3->post_title;
+                    $lien3 = get_permalink($id3); 
+                    $excerpt3 = $billet3->post_excerpt;
+                    $urlImage3 = get_post_thumbnail_id(254);
+                    $urlImage3 = wp_get_attachment_image_src($urlImage3,'service-thumbnail');
+                    $urlImage3 = $urlImage3[0];
+                    ?>
+                    <figure class="effect-bubba"><img src="<?= $urlImage3 ?>" alt="" />
                         <figcaption>
                             <h3>
-                                Le <span>Partiel</span>
+                                <?= $title3 ?>
                             </h3>
                             <p>
-                                Cette formule sera pour vous si vous avez déjà des prestataires sélectionnés et
-                                que
-                                vous
-                                souhaitez être accompagnés sur les derniers détails de votre évènement.
+                                <?= $excerpt3 ?>
+                                </br></br>
+                                <a class="hover" href="<?= $lien3 ?>" title="En savoir plus">En savoir +</a>
                             </p>
-                            <a href="<?php the_permalink(252) ?>" title="En savoir plus">Voir plus</a>
                         </figcaption>
                     </figure>
                 </div>
+
                 <div>
-                    <figure class="effect-bubba"><img src="https://picsum.photos/300/400?image=611" alt="" />
+                    <?php
+                    $id4 = 256;
+                    $billet4 = get_post($id4);
+                    $title4 = $billet4->post_title;
+                    $lien4 = get_permalink($id4); 
+                    $excerpt4 = $billet4->post_excerpt;
+                    $urlImage4 = get_post_thumbnail_id(256);
+                    $urlImage4 = wp_get_attachment_image_src($urlImage4,'service-thumbnail');
+                    $urlImage4 = $urlImage4[0];
+                    ?>
+                    <figure class="effect-bubba"><img src="<?= $urlImage4 ?>" alt="" />
                         <figcaption>
                             <h3>
-                                Le <span>Jour J</span>
+                                <?= $title4 ?>
                             </h3>
                             <p>
-                                Cette formule s'adresse à ceux qui ont juste une envie… savourer leur grand jour
-                                profiter de l'instant présent et se laisser aller. Nous coordonnons tout pour
-                                que
-                                l'imprévu n'est pas sa place dans votre évènement.
+                                <?= $excerpt4 ?>
+                                </br></br>
+                                <a class="hover" href="<?= $lien4 ?>" title="En savoir plus">En savoir +</a>
                             </p>
-                            <a href="<?php the_permalink(254) ?>" title="En savoir plus">Voir plus</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure class="effect-bubba"><img src="https://picsum.photos/300/400?image=612" alt="" />
-                        <figcaption>
-                            <h3>
-                                À <span>La Carte</span>
-                            </h3>
-                            <p>
-                                Cette formule s'adresse à ceux qui ....
-                            </p>
-                            <a href="<?php the_permalink(256) ?>" title="En savoir plus">Voir plus</a>
                         </figcaption>
                     </figure>
                 </div>
