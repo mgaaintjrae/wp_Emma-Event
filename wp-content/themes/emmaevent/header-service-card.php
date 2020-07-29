@@ -28,7 +28,7 @@
     <!-- ======End button-top ======  -->
 
     <?php wp_body_open(); ?>
-    <header class="about">
+    <header class="service-card">
 
         <div class="navhome menu__area" id="navEvent">
             <div class="grid">
