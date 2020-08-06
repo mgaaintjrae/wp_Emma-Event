@@ -1,0 +1,32 @@
+.blocks-gallery-grid .blocks-gallery-item figure,
+.wp-block-gallery .blocks-gallery-item figure {
+  margin-left: auto;
+  margin-right: auto;
+}
+.blocks-gallery-grid figcaption .social-icon {
+  display: flex;
+  padding: 15px 165px;
+  @include down(1300){
+      padding: 15px 80px;
+  }
+  @include down(900) {
+    padding: 15px;
+  }
+  @include down(500) {
+    padding: 10px 40px;
+  }
+}
+.blocks-gallery-grid figcaption h3 {
+@include down(900) {  
+    font-size: 30px !important;
+  }
+@include down(500) {  
+    font-size: 21px !important;
+    padding: 0 !important;
+  }
+}
+
+.blocks-gallery-grid figcaption .social-icon a:hover {
+  color: $dore;
+  transition: 0.3s;
+}
