@@ -33,6 +33,7 @@ get_header('service-card'); ?>
                         </h2>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section class="page-service container">

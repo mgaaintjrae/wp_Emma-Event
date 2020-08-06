@@ -33,6 +33,7 @@ get_header('service-partiel'); ?>
                         </h2>
                     </div>
                 </div>
+            </div>
         </section>
 
     <section class="page-service container">

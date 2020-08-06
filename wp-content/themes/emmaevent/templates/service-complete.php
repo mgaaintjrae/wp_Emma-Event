@@ -31,6 +31,7 @@ get_header('service-complete'); ?>
                     </h2>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="page-service container">

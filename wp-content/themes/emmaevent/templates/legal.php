@@ -7,7 +7,7 @@
 * @since Emma Event 1.0
 */
 
-get_header('mentions'); ?>
+get_header('legal'); ?>
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -29,10 +29,11 @@ get_header('mentions'); ?>
                     </h2>
                 </div>
             </div>
+        </div>
     </section>
 
     <section>
-        <div class="page-sidebar">
+        <div class="page-sidebar container">
             <div class="thumbnail">
                 <?php the_post_thumbnail('event-thumbnail-large'); ?>
             </div>

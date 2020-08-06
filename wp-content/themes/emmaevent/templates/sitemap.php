@@ -24,6 +24,7 @@ get_header('sitemap'); ?>
                     </h2>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="container page-sidebar sitemap__content">

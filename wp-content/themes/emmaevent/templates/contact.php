@@ -29,6 +29,7 @@ get_header('contact'); ?>
                     </h2>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="contact__form">
