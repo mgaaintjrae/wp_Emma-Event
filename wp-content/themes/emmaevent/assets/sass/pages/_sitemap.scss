@@ -1,0 +1,29 @@
+.sitemap__content {
+  background-image: url("assets/img/Emma-Event-organisation-de-mariage--mariage-ile-de-france--cupcake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: top;
+}
+.sitemap__content ul {
+    background-color: transparent !important;
+  }
+.sitemap__content a {
+  display: inline;
+  border: none;
+  padding: 0;
+  text-transform: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.sitemap__content a:hover {
+  color: $dore;
+}
+.sitemap__taxonomy {
+ 
+}
+.sitemap__title{
+    margin: .5em;
+    padding: 0 !important;
+}
+

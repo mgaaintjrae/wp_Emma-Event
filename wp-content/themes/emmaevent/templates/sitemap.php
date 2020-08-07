@@ -5,7 +5,7 @@ Template Name: Sitemap
 
 get_header('sitemap'); ?>
 
-<main class="sections">
+<main class="sections sitemap__bg">
 
     <!-- Plan du site -->
     <section>
@@ -29,7 +29,7 @@ get_header('sitemap'); ?>
 
     <section class="container page-sidebar sitemap__content">
         <!-- Author -->
-        <h2 class="sitemap__title"><?php _e('Author', 'emmaevent'); ?></h2>
+        <h3 class="sitemap__title"><?php _e('Author', 'emmaevent'); ?></h3>
         <ul>
             <?php wp_list_authors( array(
               'exclude_admin' => false
@@ -38,7 +38,7 @@ get_header('sitemap'); ?>
         </ul>
 
         <!-- Pages -->
-        <h2 class="sitemap__title"><?php _e('Pages', 'emmaevent'); ?></h2>
+        <h3 class="sitemap__title"><?php _e('Pages', 'emmaevent'); ?></h3>
         <ul>
             <li>
                 <a href="<?php the_permalink(19); ?>" title="Page d'accueil"><?php _e('Home', 'emmaevent'); ?></a>
@@ -56,7 +56,7 @@ get_header('sitemap'); ?>
           // affiche le titre du CPT
           $pt = get_post_type_object( $post_type );
 
-          echo '<a href="' . esc_attr(get_term_link($pt)) . '" title="Evénements">' . $pt->labels->name . '</a>';
+          echo '<a href="' . esc_attr(get_term_link($pt)) . '" title="Événements">' . $pt->labels->name . '</a>';
 
 // Récupérer la taxonomie dans une variable
                 $taxonomy = 'events';
@@ -79,6 +79,9 @@ get_header('sitemap'); ?>
                     }
                     ?>
                 </ul>
+            </li>
+            <li>
+                <a href="<?php the_permalink(156); ?>" title="Prestations"><?php _e('Prestations', 'emmaevent'); ?></a>
             </li>
             <li>
                 <a href="<?php the_permalink(156); ?>" title="Galerie"><?php _e('Galery', 'emmaevent'); ?></a>
@@ -104,9 +107,6 @@ get_header('sitemap'); ?>
         </ul> -->
 
         <!-- Events CPT -->
-
-
-
 
     </section>
 
