@@ -76,6 +76,16 @@
                                 </svg>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://www.pinterest.fr/" target="_blank" rel="noopener noreferrer"
+                                title="Pinterest">
+                                <svg class="icon">
+                                    <use
+                                        xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#pinterest">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

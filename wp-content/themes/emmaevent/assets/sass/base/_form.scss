@@ -277,7 +277,7 @@ select.form-control + label::before {
     margin: 0 15px;
     width: 5%;
     @include down(900) {
-        width: 10%;
+        width: 7%;
     }
 }
 

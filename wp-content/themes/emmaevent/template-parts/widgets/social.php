@@ -1,7 +1,8 @@
 <?php
 $networks = [
   'facebook' => 'Facebook',
-  'instagram' => 'Instagram'
+  'instagram' => 'Instagram',
+  'pinterest' => 'Pinterest'
 ];
 ?>
 <div class="footer__social">

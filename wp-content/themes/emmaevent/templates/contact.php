@@ -94,6 +94,13 @@ get_header('contact'); ?>
                                 </use>
                             </svg>
                         </a>
+                        <a href="https://pinterest.fr/" target="_blank" rel="noopener noreferrer" title="Pinterest">
+                            <svg class="icon">
+                                <use
+                                    xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#pinteGold">
+                                </use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>

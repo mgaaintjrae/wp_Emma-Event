@@ -9,7 +9,8 @@ class Emmaevent_Social_Widget extends WP_Widget {
     $this->fields = [
       'title' => __('Title', 'emmaevent'),      
       'facebook' => 'Facebook',
-      'instagram' => 'Instagram'
+      'instagram' => 'Instagram',
+      'pinterest' => 'Pinterest'
     ];
   }
 
