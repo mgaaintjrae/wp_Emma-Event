@@ -92,7 +92,8 @@ h3 {
 
     @include down(500) {
         font-size: 32px;
-    }
+        line-height: 1;
+    }    
 }
 h4 {
     font-family: $f-raleway;

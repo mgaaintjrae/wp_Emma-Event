@@ -17,7 +17,7 @@ get_header('about'); ?>
     <section>
         <div class="container company">
             <div class="company__title">
-                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png" alt="couronne de fleurs"
+                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png" loading="lazy" alt="couronne de fleurs"
                     height="575" width="575">
                 <h2 class="page-title">
                     <?php the_title(); ?>

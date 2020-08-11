@@ -12,7 +12,7 @@
             <div class="grid">
                 <div class="position__left__logo">
                     <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Homepage', 'emmaevent') ?>">
-                        <img src="<?= get_theme_mod('logo footer') ?>" alt="logo">
+                        <img src="<?= get_theme_mod('logo footer') ?>" loading="lazy" alt="logo">
                     </a>
                 </div>
 

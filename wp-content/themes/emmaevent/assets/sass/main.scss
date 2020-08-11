@@ -49,8 +49,6 @@ body{
 @import "./composants/btn";
 @import "./composants/comments";
 @import "./composants/nav";
-@import "./composants/nav-next";
-@import "./composants/nav-previous";
 @import "./composants/share";
 @import "./composants/sidebar";
 @import "./composants/slider";
@@ -63,10 +61,13 @@ body{
 
 @import "./pages/404";
 @import "./pages/contact";
+@import "./pages/gallery";
 @import "./pages/home";
+@import "./pages/legal";
 @import "./pages/news";
 @import "./pages/page";
 @import "./pages/single";
+@import "./pages/sitemap";
 
 
 

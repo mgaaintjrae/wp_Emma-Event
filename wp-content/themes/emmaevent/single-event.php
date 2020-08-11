@@ -1,7 +1,7 @@
 <?php get_header('single--event'); ?>
 
 
-<main class="sections">
+<main class="sections" role="main">
     <?php while(have_posts()): the_post(); ?>
     <section>
         <div class="container">
@@ -62,9 +62,6 @@
                 </div>
             </div>
             <?php endwhile; ?>
-
-
-
         </div>
     </section>
 </main>

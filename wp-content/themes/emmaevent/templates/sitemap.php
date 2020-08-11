@@ -13,7 +13,7 @@ get_header('sitemap'); ?>
             <div class="company">
                 <div class="company__title">
                     <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png"
-                        alt="couronne de fleurs" height="575" width="575">
+                    loading="lazy" alt="couronne de fleurs" height="575" width="575">
                     <h2 class="page-title">
                         <?php the_title(); ?>
                         <svg class="icon">

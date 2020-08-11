@@ -1,11 +1,11 @@
 <?php get_header('events') ?>
 
-<main class="sections">
+<main class="sections" role="main">
     <!-- Events -->
     <section>
         <div class="container page-events">
             <div class="company__title">
-                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png" alt="couronne de fleurs"
+                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png" loading="lazy" alt="couronne de fleurs"
                     height="575" width="575">
                 <h2 class="page-title">Evénements
                     <svg class="icon">
@@ -15,7 +15,7 @@
                     </svg>
                 </h2>
             </div>
-            <div class=" events__content">
+            <div class="events__content">
                 <p>Retrouver tous mes événements en <strong>Ile de France</strong></p>
             </div>
 
@@ -28,27 +28,24 @@
                 if (have_posts()) : ?>
                 <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <div class="content">
-                    <a class="event " href="<?php the_permalink() ?>" title="<?= esc_attr(get_the_title()) ?>">
-
-                        <div class="event__image content-image">
-                            <div class="content-overlay"></div>
-                            <?php the_post_thumbnail('event-thumbnail-large') ?>
-                        </div>
-                        <div class="content-details fadeIn-bottom">
-                            <div class="event__body content-title">
+                    <figure class="effect-lily">
+                        <?php the_post_thumbnail('event-thumbnail-large') ?>
+                        <figcaption>
+                            <h3 class="event__body">
                                 <?php $type = the_field('type');
                     if( $type ):?>
-                                <?php foreach( $types as $type): ?>
-                                <h3 class="event__type">
-                                    <?php $type ?>
-                                </h3>
+                                <?php foreach( $types as $type): ?>                                
+                                    <?php $type ?>                                                                
                                 <?php endforeach; ?>
                                 <?php endif; ?>
-                            </div>
-                            <p class="content-text"><?php the_excerpt(); ?></p>
-                        </div>
-                    </a>
-                </div>
+                                
+                            </h3>   
+                                <?php the_excerpt(); ?>                      
+                                <p class="content-text"><a class="event" href="<?php the_permalink() ?>"
+                                title="<?= esc_attr(get_the_title()) ?>">Voir l'événement</a></p>
+                        </figcaption>
+                    </figure>
+                </div>                
                 <?php wp_reset_postdata(); ?>
                 <?php endwhile; ?>
                 <?php endif; ?>

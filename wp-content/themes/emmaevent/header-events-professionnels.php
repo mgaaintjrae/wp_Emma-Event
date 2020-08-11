@@ -35,7 +35,7 @@
 
                 <div class="position__left__logo">
                     <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Homepage', 'emmaevent') ?>">
-                        <img src="<?= get_theme_mod('logo header') ?>" alt="logo">
+                        <img src="<?= get_theme_mod('logo header') ?>" loading="lazy" alt="logo Emma-Event">
                     </a>
                 </div>
 

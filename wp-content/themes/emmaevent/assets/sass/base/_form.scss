@@ -164,7 +164,7 @@ span.wpcf7-list-item {
     max-width: 700px;
     margin: auto;
     overflow: hidden;
-font-weight: 500;
+    font-weight: 500;
 }
 @include down(900) {
     .contact__form .content {
@@ -190,7 +190,7 @@ font-weight: 500;
     order: -1;
     transition: color 0.3s;
     @include down(1024) {
-        margin-top: 65px;
+        margin-top: 80px;
     }
 }
 .form-control {
@@ -260,6 +260,9 @@ select.form-control + label::before {
     width: 5%;
     height: 30px;
     margin-bottom: 20px;
+    @include down(900) {
+        width: 10%;
+    }
 }
 .contact__form .info .item h6 {
     font-size: 16px !important;
@@ -273,10 +276,9 @@ select.form-control + label::before {
 .contact__form .info .social-icon svg {
     margin: 0 15px;
     width: 5%;
-}
-.contact__form .info .social-icon a svg:hover {
-    fill: #efbe6a;
-    transition: color 0.3s;
+    @include down(900) {
+        width: 10%;
+    }
 }
 
 // Bloc de recherche

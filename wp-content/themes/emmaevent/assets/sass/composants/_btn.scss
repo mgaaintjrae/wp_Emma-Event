@@ -12,6 +12,10 @@
     box-sizing: border-box;
     transition: 0.3s;
     cursor: pointer;
+    @include down(400) {
+        font-size: 12px;
+        padding: 10px space(2);
+    }
 }
 .btn-form {
     width: 100%;
@@ -30,13 +34,12 @@
     transition: 0.3s;
     cursor: pointer;
     border: none;
-@include down(1024){
-    margin-top: 75px;
+    @include down(1024) {
+        margin-top: 90px;
+    }
 }
-}
-
-.btn-form:hover{
-background: #efbe6a;
+.btn-form:hover {
+    background: #efbe6a;
 }
 .cta__btn-white {
     color: white;

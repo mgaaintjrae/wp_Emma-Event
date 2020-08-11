@@ -6,7 +6,7 @@
     <section>
         <div class="container">
             <div class="company__title">
-                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png" alt="couronne de fleurs"
+                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png" loading="lazy" alt="couronne de fleurs"
                     height="575" width="575">
                 <h2 class="page-title"><?= get_queried_object()->name ?>
                     <svg class="icon">
