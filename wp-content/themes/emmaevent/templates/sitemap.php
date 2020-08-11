@@ -5,7 +5,7 @@ Template Name: Sitemap
 
 get_header('sitemap'); ?>
 
-<main class="sections sitemap__bg">
+<main class="sections sitemap__bg" role="main">
 
     <!-- Plan du site -->
     <section>
@@ -96,18 +96,7 @@ get_header('sitemap'); ?>
                 <a href="<?php the_permalink(41); ?>"
                     title="Mentions légales"><?php _e('Legal disclaimer', 'emmaevent'); ?></a>
             </li>
-        </ul>
-        <!-- <ul>
-            <?php
-            // wp_list_pages( array( 
-              // 'exclude' => '',
-              // 'title_li' => '',
-              // )); 
-            ?>
-        </ul> -->
-
-        <!-- Events CPT -->
-
+        </ul>        
     </section>
 
 </main>
