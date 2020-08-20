@@ -44,20 +44,20 @@
                             <svg class="icon">
                                 <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#map">
                                 </use>
-                            </svg>78000 Paris</li>
+                            </svg>Paris & Région Parisienne</li>
                         <li>
                             <svg class="icon">
                                 <use
                                     xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#envelop">
                                 </use>
                             </svg>
-                            <a href=" mailto:emma@event.com" title="me contacter">emma@event.com</a>
+                            <a href=" mailto:emma@event.com" title="me contacter">emmanuelle.berthereau@emma-event.fr</a>
                         </li>
                     </ul>
                     <ul class="topbar__socials">
                         <li class="topbar__links">Me suivre :</li>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.facebook.com/Emma-Event-114495040301571" target="_blank" rel="noopener noreferrer"
                                 title="Facebook">
                                 <svg class="icon">
                                     <use
@@ -67,7 +67,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.instagram.com/emma_event/?hl=fr" target="_blank" rel="noopener noreferrer"
                                 title="Instagram">
                                 <svg class="icon">
                                     <use
@@ -77,7 +77,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.pinterest.fr/" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.pinterest.fr/emmanuelleberthereau/" target="_blank" rel="noopener noreferrer"
                                 title="Pinterest">
                                 <svg class="icon">
                                     <use
