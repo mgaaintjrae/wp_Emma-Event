@@ -5,11 +5,11 @@
 }
 .topbar ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
 }
 .topbar li {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .topbar li,
 .topbar a {
@@ -17,11 +17,14 @@
     height: 40px;
     align-items: center;
     transition: color 0.3s;
+    @include down(400){
+        height: 27px;
+    }
 }
 .topbar svg {
     width: 12px;
     height: 12px;
-    margin-right: 8px;
+    margin-right: 4px;
 }
 .topbar__socials .topbar__links {
     margin-left: auto;
@@ -54,7 +57,7 @@
     .topbar svg {
         width: 16px;
         height: 16px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     .topbar .topbar__infos li {
         margin: 0 30px;

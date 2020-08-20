@@ -37,7 +37,8 @@ get_header('galery'); ?>
                 <div class="thumbnail">
                     <?php the_post_thumbnail('event-thumbnail-large'); ?>
                 </div>
-                <?php the_content(); ?>
+                <?php the_content(); ?>   
+                             
             </div>
         </div>
     </section>
