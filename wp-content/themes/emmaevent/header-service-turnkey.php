@@ -61,7 +61,16 @@
             </svg>
         </div>
         <div class="header__content">
-            <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>
+        <div class="header__citation">
+                <svg class="icon">
+                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#quote">
+                    </use>
+                </svg>
+                <p>Le bonheur est la seule chose qui se double si on le partage.</p>
+            </div>
+            <div class="header__author">
+                <p> - Albert Schweitzer </p>
+            </div>
         </div>
 
     </header>
