@@ -28,7 +28,7 @@
 			return features;
 		} )();
 
-		$( 'div.wpcf7 > form' ).each( function() {
+		$( 'div.wpcf7-form > form' ).each( function() {
 			var $form = $( this );
 			wpcf7.initForm( $form );
 

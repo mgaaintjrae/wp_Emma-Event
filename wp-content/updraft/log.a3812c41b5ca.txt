@@ -298,3 +298,11 @@
 0024.810 (0) The backup apparently succeeded and is now complete
 0024.812 (0) No email will/can be sent - the user has not configured an email address.
 0024.814 (0) La sauvegarde a réussie. Elle est maintenant terminée.
+0000.000 (1) Opened log file at time: Fri, 21 Aug 2020 12:17:09 +0000 on http://local.emma-event.fr
+0000.003 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.26 WP: 5.5 PHP: 7.3.3 (apache2handler, Windows NT DESKTOP-G3FDJ50 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.1.38-MariaDB WPLANG: fr_FR Server: Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 42.7M | 6M) multisite: N openssl: OpenSSL 1.1.1a  20 Nov 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.006 (1) Free space on disk containing Updraft's temporary directory: 31245.1 MB
+0000.007 (1) This backup task (a3812c41b5ca) is either complete or began over 2 days ago: ending (1598012229.9811, ) (existing jobdata keys: )
+0000.000 (1) Opened log file at time: Fri, 21 Aug 2020 12:18:21 +0000 on http://local.emma-event.fr
+0000.002 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.26 WP: 5.5 PHP: 7.3.3 (apache2handler, Windows NT DESKTOP-G3FDJ50 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.1.38-MariaDB WPLANG: fr_FR Server: Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 41.5M | 6M) multisite: N openssl: OpenSSL 1.1.1a  20 Nov 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 (1) Free space on disk containing Updraft's temporary directory: 31146.8 MB
+0000.016 (1) This backup task (a3812c41b5ca) is either complete or began over 2 days ago: ending (1598012301.4952, ) (existing jobdata keys: )

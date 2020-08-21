@@ -22,7 +22,7 @@ foreach( get_post_types( array('public' => true) ) as $post_type ) {
   if ( in_array( $post_type, array('post','page','attachment') ) ) {
     continue;
   }
-  
+
   $pt = get_post_type_object( $post_type );
 
   echo '<h2>' . $pt->labels->name . '</h2>';
@@ -37,7 +37,7 @@ foreach( get_post_types( array('public' => true) ) as $post_type ) {
 ?>
 
 <!-- BLOG -->
-<!-- <h2>Posts</h2>
+<!-- <h3>Posts</h3>
         <?php
         // $cats = get_categories('exclude=');
         // foreach ($cats as $cat) {
@@ -53,4 +53,4 @@ foreach( get_post_types( array('public' => true) ) as $post_type ) {
         // }
         // echo '</ul>';
         // }
-        ?> -->
+        ?> --> 

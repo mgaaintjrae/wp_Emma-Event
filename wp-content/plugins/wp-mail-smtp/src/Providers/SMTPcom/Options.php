@@ -23,7 +23,6 @@ class Options extends OptionsAbstract {
 	 * Options constructor.
 	 *
 	 * @since 2.0.0
-	 * @since 2.3.0 Added supports parameter.
 	 */
 	public function __construct() {
 
@@ -62,20 +61,13 @@ class Options extends OptionsAbstract {
 		}
 
 		parent::__construct(
-			[
+			array(
 				'logo_url'    => wp_mail_smtp()->assets_url . '/images/providers/smtp-com.svg',
 				'slug'        => self::SLUG,
 				'title'       => esc_html__( 'SMTP.com', 'wp-mail-smtp' ),
 				'description' => $description,
 				'recommended' => true,
-				'supports'    => [
-					'from_email'       => true,
-					'from_name'        => true,
-					'return_path'      => false,
-					'from_email_force' => true,
-					'from_name_force'  => true,
-				],
-			]
+			)
 		);
 	}
 

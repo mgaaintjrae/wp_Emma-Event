@@ -452,7 +452,6 @@ class QM_Dispatcher_Html extends QM_Dispatcher {
 			'Netbeans'           => 'netbeans',
 			'PhpStorm'           => 'phpstorm',
 			'Sublime Text'       => 'sublime',
-			'TextMate'           => 'textmate',
 			'Visual Studio Code' => 'vscode',
 		);
 
@@ -621,7 +620,7 @@ class QM_Dispatcher_Html extends QM_Dispatcher {
 		$start_memory = memory_get_usage();
 
 		try {
-			$var = unserialize( serialize( $var ) ); // phpcs:ignore
+			$var = unserialize( serialize( $var ) ); // @codingStandardsIgnoreLine
 		} catch ( Exception $e ) {
 			return $e;
 		}

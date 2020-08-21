@@ -8,9 +8,9 @@
 namespace Yoast\WP\SEO\Actions\Indexation;
 
 use wpdb;
-use Yoast\WP\Lib\Model;
 use Yoast\WP\SEO\Helpers\Post_Type_Helper;
 use Yoast\WP\SEO\Models\Indexable;
+use Yoast\WP\Lib\Model;
 use Yoast\WP\SEO\Repositories\Indexable_Repository;
 
 /**
@@ -128,6 +128,7 @@ class Indexable_Post_Indexation_Action implements Indexation_Action_Interface {
 	 */
 	protected function get_query( $count, $limit = 1 ) {
 		$public_post_types = $this->post_type_helper->get_public_post_types();
+		$placeholders      = \implode( ', ', \array_fill( 0, \count( $public_post_types ), '%s' ) );
 		$indexable_table   = Model::get_table_name( 'Indexable' );
 		$replacements      = $public_post_types;
 
@@ -145,13 +146,7 @@ class Indexable_Post_Indexation_Action implements Indexation_Action_Interface {
 			"
 			SELECT $select
 			FROM {$this->wpdb->posts}
-			WHERE ID NOT IN (
-				SELECT object_id
-				FROM $indexable_table
-				WHERE object_type = 'post'
-				AND permalink_hash IS NOT NULL
-			)
-			AND post_type IN (" . \implode( ', ', \array_fill( 0, \count( $public_post_types ), '%s' ) ) . ")
+			WHERE ID NOT IN (SELECT object_id FROM $indexable_table WHERE object_type = 'post') AND post_type IN ($placeholders)
 			$limit_query",
 			$replacements
 		);

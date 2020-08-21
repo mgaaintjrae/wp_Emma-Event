@@ -3,7 +3,6 @@
 namespace WPMailSMTP\Providers\Sendinblue;
 
 use WPMailSMTP\Debug;
-use WPMailSMTP\MailCatcherInterface;
 use WPMailSMTP\Providers\MailerAbstract;
 use WPMailSMTP\WP;
 
@@ -51,7 +50,7 @@ class Mailer extends MailerAbstract {
 	 *
 	 * @since 1.6.0
 	 *
-	 * @param MailCatcherInterface $phpmailer The MailCatcher object.
+	 * @param \WPMailSMTP\MailCatcher $phpmailer
 	 */
 	public function __construct( $phpmailer ) {
 
@@ -306,18 +305,21 @@ class Mailer extends MailerAbstract {
 			$response = $api->get_smtp_client()->sendTransacEmail( $this->get_body() );
 
 			$this->process_response( $response );
-		} catch ( \SendinBlue\Client\ApiException $e ) {
+		}
+		catch ( \SendinBlue\Client\ApiException $e ) {
 			$error = json_decode( $e->getResponseBody() );
-
-			if ( json_last_error() === JSON_ERROR_NONE && ! empty( $error ) ) {
-				$message = '[' . sanitize_key( $error->code ) . ']: ' . esc_html( $error->message );
-			} else {
-				$message = $e->getMessage();
+			if ( json_last_error() === JSON_ERROR_NONE ) {
+				Debug::set(
+					'Mailer: Sendinblue' . "\r\n" .
+					'[' . sanitize_key( $error->code ) . ']: ' . esc_html( $error->message )
+				);
 			}
-
-			Debug::set( 'Mailer: Sendinblue' . PHP_EOL . $message );
-		} catch ( \Exception $e ) {
-			Debug::set( 'Mailer: Sendinblue' . PHP_EOL . $e->getMessage() );
+		}
+		catch ( \Exception $e ) {
+			Debug::set(
+				'Mailer: Sendinblue' . "\r\n" .
+				$e->getMessage()
+			);
 
 			return;
 		}

@@ -300,7 +300,6 @@ padding-top: 300px;
     text-align: center;
     font-size: 25px;
     padding: 0 69px;
-    margin-top: 45px;
 }
 .about .header__content p,
 .contact .header__content p,
@@ -314,7 +313,7 @@ padding-top: 300px;
 .service-partiel .header__content p,
 .service-day-j .header__content p,
 .service-card .header__content p {
-    line-height: 1.7;
+    line-height: 2.7;
 }
 
 @include down(720) {
@@ -335,17 +334,8 @@ padding-top: 300px;
     .header__content,
     .event-header {
         padding: 0 40px !important;
-        margin-top: 15px !important;
     }
 }
-.header__content .icon{
-    height: 30px;
-}
-.header__author{
-    font-style: italic;
-    font-size: large;
-}
-
 
 // Preloader
 // ============

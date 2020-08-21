@@ -59,16 +59,7 @@
             </svg>
         </div>
         <div class="header__content">
-        <div class="header__citation">                
-            <svg class="icon">
-                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#quote">
-                </use>
-            </svg>
-            <p>Le plaisir se ramasse, la joie se cueille et le bonheur se cultive.</p>
-                        </div>            
-            <div class="header__author">
-                <p> - Bouddha </p> 
-            </div>
+            <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>
         </div>
 
     </header>

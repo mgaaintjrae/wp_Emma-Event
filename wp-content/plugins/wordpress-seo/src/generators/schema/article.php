@@ -24,17 +24,11 @@ class Article extends Abstract_Schema_Piece {
 			return false;
 		}
 
-		// If we cannot output a publisher, we shouldn't output an Article.
 		if ( $this->context->site_represents === false ) {
 			return false;
 		}
 
-		// If we cannot output an author, we shouldn't output an Article.
-		if ( ! $this->helpers->schema->article->is_author_supported( $this->context->indexable->object_sub_type ) ) {
-			return false;
-		}
-
-		if ( $this->context->schema_article_type !== 'None' ) {
+		if ( $this->helpers->schema->article->is_article_post_type( $this->context->indexable->object_sub_type ) ) {
 			$this->context->main_schema_id = $this->context->canonical . Schema_IDs::ARTICLE_HASH;
 
 			return true;
@@ -49,23 +43,18 @@ class Article extends Abstract_Schema_Piece {
 	 * @return array $data Article data.
 	 */
 	public function generate() {
-		$data = [
-			'@type'            => $this->context->schema_article_type,
+		$comment_count = \get_comment_count( $this->context->id );
+		$data          = [
+			'@type'            => 'Article',
 			'@id'              => $this->context->canonical . Schema_IDs::ARTICLE_HASH,
 			'isPartOf'         => [ '@id' => $this->context->canonical . Schema_IDs::WEBPAGE_HASH ],
 			'author'           => [ '@id' => $this->helpers->schema->id->get_user_schema_id( $this->context->post->post_author, $this->context ) ],
 			'headline'         => $this->helpers->schema->html->smart_strip_tags( $this->helpers->post->get_post_title_with_fallback( $this->context->id ) ),
 			'datePublished'    => $this->helpers->date->format( $this->context->post->post_date_gmt ),
 			'dateModified'     => $this->helpers->date->format( $this->context->post->post_modified_gmt ),
+			'commentCount'     => $comment_count['approved'],
 			'mainEntityOfPage' => [ '@id' => $this->context->canonical . Schema_IDs::WEBPAGE_HASH ],
 		];
-
-		// If the comments are open -or- there are comments approved, show the count.
-		$comments_open = \comments_open( $this->context->id );
-		$comment_count = \get_comment_count( $this->context->id );
-		if ( $comments_open || $comment_count['approved'] > 0 ) {
-			$data['commentCount'] = $comment_count['approved'];
-		}
 
 		if ( $this->context->site_represents_reference ) {
 			$data['publisher'] = $this->context->site_represents_reference;

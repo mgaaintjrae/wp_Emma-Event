@@ -1,0 +1,69 @@
+.comments {
+  margin-top: space(8);
+}
+.comments__title {
+  @extend %h3;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #F4ECEC;
+  margin-bottom: 1.5rem;
+}
+.comments .avatar {
+  width: 60px;
+  height: 60px;
+}
+.comment {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-gap: space(2);
+}
+.comment .edit-link,
+.comment .reply {
+  font-weight: 300;
+  font-size: 0.8em;
+
+}
+.comment .edit-link::before,
+.comment .reply::before {
+  content: ' | ';
+
+}
+.comment__avatar {
+  width: 60px;
+  height: 60px;
+}
+.comment__username {
+  font-weight: bold;
+}
+.comment__date {
+  font-weight: 300;
+  font-size: .8em;
+}
+.comment__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: space(2);
+}
+.comment__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: space(1);
+}
+.comments__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: space(6);
+  margin-bottom: space(10);
+}
+
+// Form
+// ==========================================================================
+.form-2column .comment-notes,
+.form-2column .comment-form-cookies-consent,
+.form-2column .form-submit {
+  grid-column: 1/-1;
+}
+.comment .comment{
+  margin-top: 1em;
+  margin-left:75px;
+}
+

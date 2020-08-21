@@ -1,0 +1,96 @@
+.btn {
+    font-family: $f-raleway;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    color: $dore;
+    padding: 14px space(3);
+    background: transparent;
+    border: 2px solid $dore;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+    @include down(400) {
+        font-size: 12px;
+        padding: 10px space(2);
+    }
+}
+.btn-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $f-raleway;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 14px space(3);
+    background: $dore;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    @include down(1024) {
+        margin-top: 90px;
+    }
+}
+.btn-form:hover {
+    background: #efbe6a;
+}
+.cta__btn-white {
+    color: white;
+    border: 2px solid white;
+}
+.cta__btn-gold {
+    color: white;
+    border: 2px solid $dore;
+    background-color: $dore;
+}
+.cta__btn-white:hover,
+.cta__btn-white:focus,
+.cta__btn-white:active {
+    color: white;
+    border: 2px solid $dore;
+    background-color: $dore;
+}
+.cta__btn-gold:hover,
+.cta__btn-gold:focus,
+.cta__btn-gold:active {
+    background-color: #efbe6a !important;
+    border: 2px solid #efbe6a !important;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: $dore;
+    color: #fff;
+}
+.btn svg {
+    width: 16px;
+    height: 16px;
+    margin-left: space(2);
+    transition: transform 0.3s;
+}
+.btn:hover svg {
+    transform: translateX(3px);
+}
+.btn-filled {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #fff;
+    background: linear-gradient(180deg, #fe694a 0%, #fa4c29 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: linear-gradient(180deg, #fe653e 0%, #fa371b 100%);
+    }
+}

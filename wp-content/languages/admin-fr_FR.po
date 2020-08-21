@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 07:58:45+0000\n"
+"PO-Revision-Date: 2020-08-21 10:14:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1332,7 +1332,7 @@ msgstr "<a href=\"https://fr.wordpress.org/support/article/tools-screen/\">Docum
 
 #: wp-admin/options.php:351
 msgid "This page allows direct access to your site settings. You can break things here. Please be cautious!"
-msgstr "Cette page donne un accès direct aux réglages de votre site. Vous pouvez casser des chose ici, donc faites attention !"
+msgstr "Cette page donne un accès direct aux réglages de votre site. Vous pouvez casser des choses ici, donc faites attention !"
 
 #. translators: %s: The option/setting.
 #: wp-admin/options.php:299
@@ -2386,7 +2386,7 @@ msgstr "Des communications sécurisées entre serveurs sont nécessaires pour de
 
 #: wp-admin/includes/class-wp-site-health.php:1508
 msgid "Learn more about why you should use HTTPS"
-msgstr "Découvrez pourquoi vous devriez utiliser HTTPS"
+msgstr "Apprenez pourquoi vous devriez utiliser HTTPS"
 
 #. translators: Documentation explaining HTTPS and why it should be used.
 #: wp-admin/includes/class-wp-site-health.php:1507
@@ -3483,7 +3483,7 @@ msgstr "En tant que nouvel utilisateur ou utilisatrice de WordPress, vous devrie
 #. translators: First page content.
 #: wp-admin/includes/upgrade.php:313
 msgid "The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community."
-msgstr "La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise."
+msgstr "La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules supers pour la communauté bouzemontoise."
 
 #. translators: First page content.
 #: wp-admin/includes/upgrade.php:308
@@ -3493,7 +3493,7 @@ msgstr "...ou quelque chose comme cela :"
 #. translators: First page content.
 #: wp-admin/includes/upgrade.php:303
 msgid "Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)"
-msgstr "Bonjour ! Je suis un mécanicien qui aspire à devenir acteur, et voici mon site. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi qu’être surpris par la pluie soudaine lors de longues balades sur la plage au coucher du soleil)."
+msgstr "Bonjour ! Je suis un mécanicien qui aspire à devenir acteur, et voici mon site. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka (ainsi qu’être surpris par la pluie soudaine lors de longues balades sur la plage au coucher du soleil)."
 
 #. translators: First page content.
 #: wp-admin/includes/upgrade.php:298
@@ -5102,7 +5102,7 @@ msgstr "Désactiver %s du réseau"
 
 #: wp-admin/user-new.php:238
 msgid "By default, new users will receive an email letting them know they&#8217;ve been added as a user for your site. This email will also contain a password reset link. Uncheck the box if you don&#8217;t want to send the new user a welcome email."
-msgstr "Par défaut, les nouveaux utilisateurs recevront un message leur indiquant leur ajout en tant que membre de votre site. Ce message contiendra également un lien de réinitialisation de leur mot de passe. Décochez la case si vous souhaitez ne pas envoyer de message de bienvenue."
+msgstr "Par défaut, les nouveaux utilisateurs recevront un message leur indiquant leur ajout en tant que membre de votre site. Ce message contiendra également un lien de réinitialisation de leur mot de passe. Décochez la case si vous ne souhaitez pas envoyer de message de bienvenue."
 
 #: wp-admin/user-new.php:236
 msgid "New users are automatically assigned a password, which they can change after logging in. You can view or edit the assigned password by clicking the Show Password button. The username cannot be changed once the user has been added."
@@ -5303,7 +5303,7 @@ msgstr "Cela remplacera le contenu actuel de l’éditeur par la dernière versi
 
 #: wp-admin/includes/template.php:1922
 msgid "Close media attachment panel"
-msgstr "Fermer le panneau des fichiers attachés."
+msgstr "Fermer le panneau des fichiers joints."
 
 #: wp-admin/includes/ms.php:1054
 msgid "Info"
@@ -5666,11 +5666,11 @@ msgstr "Aide au recadrage d’image"
 
 #: wp-admin/includes/image-edit.php:129
 msgid "scale height"
-msgstr "Redimensionner en hauteur"
+msgstr "redimensionner en hauteur"
 
 #: wp-admin/includes/image-edit.php:126
 msgid "scale width"
-msgstr "Redimensionner en largeur"
+msgstr "redimensionner en largeur"
 
 #: wp-admin/includes/image-edit.php:124
 msgid "New dimensions:"
@@ -5835,7 +5835,7 @@ msgstr "La hauteur suggérée est de %s."
 #. translators: %s: Size in pixels.
 #: wp-admin/includes/class-custom-image-header.php:585
 msgid "Suggested width is %s."
-msgstr "La taille suggérée est de %s."
+msgstr "La largeur suggérée est de %s."
 
 #. translators: %s: Size in pixels.
 #: wp-admin/includes/class-custom-image-header.php:572
@@ -5985,7 +5985,7 @@ msgstr "Configurer la connexion à votre base de données"
 
 #: wp-admin/setup-config.php:163
 msgid "Before getting started"
-msgstr "Avant de se lancer"
+msgstr "Avant de commencer"
 
 #: wp-admin/maint/repair.php:159
 msgid "WordPress database repair"
@@ -6163,7 +6163,7 @@ msgstr "Avertissement"
 #: wp-admin/includes/network.php:325 wp-admin/includes/network.php:427
 #: wp-admin/includes/network.php:615 wp-admin/includes/network.php:667
 msgid "Warning:"
-msgstr "Attention&nbsp;:"
+msgstr "Attention :"
 
 #: wp-admin/includes/ms.php:983
 msgid "Once you hit &#8220;Confirm Deletion&#8221;, these users will be permanently removed."
@@ -6287,7 +6287,7 @@ msgstr "Filtrer la liste des éléments"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:821
 msgid "Network Only"
-msgstr "Réseau seul"
+msgstr "Réseau uniquement"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:817
 msgid "Network Active"
@@ -6381,7 +6381,7 @@ msgstr "Le brouillon de la page a été mis à jour."
 #. translators: %s: Scheduled date for the page.
 #: wp-admin/edit-form-advanced.php:205
 msgid "Page scheduled for: %s."
-msgstr "Page programmée pour le %s."
+msgstr "Page planifiée pour le %s."
 
 #: wp-admin/edit-form-advanced.php:203
 msgid "Page submitted."
@@ -6467,7 +6467,7 @@ msgstr "Vous avez indiqué que cet utilisateur devait être supprimé :"
 #. translators: %s: User's display name.
 #: wp-admin/user-edit.php:696
 msgid "Log %s out of all locations."
-msgstr "Déconnecter %s de tous les supports/appareils."
+msgstr "Déconnecter %s de tous les emplacements."
 
 #: wp-admin/user-edit.php:684
 msgid "Did you lose your phone or leave your account logged in at a public computer? You can log out everywhere else, and stay logged in here."
@@ -6492,7 +6492,7 @@ msgstr "Annuler la modification du mot de passe"
 
 #: wp-admin/user-edit.php:672 wp-admin/user-edit.php:682
 msgid "Log Out Everywhere Else"
-msgstr "Me déconnecter partout ailleurs"
+msgstr "Déconnecter partout ailleurs"
 
 #. translators: The non-breaking space prevents 1Password from thinking the
 #. text "log in" should trigger a password save prompt.

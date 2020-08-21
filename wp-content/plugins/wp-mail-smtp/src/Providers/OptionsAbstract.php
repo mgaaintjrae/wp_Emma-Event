@@ -55,21 +55,11 @@ abstract class OptionsAbstract implements OptionsInterface {
 	protected $options;
 
 	/**
-	 * An array with mailer supported setting fields.
-	 *
-	 * @since 2.3.0
-	 *
-	 * @var array
-	 */
-	protected $supports;
-
-	/**
 	 * ProviderAbstract constructor.
 	 *
 	 * @since 1.0.0
-	 * @since 2.3.0 Added supports parameter.
 	 *
-	 * @param array $params The mailer options parameters.
+	 * @param array $params
 	 */
 	public function __construct( $params ) {
 
@@ -129,8 +119,6 @@ abstract class OptionsAbstract implements OptionsInterface {
 		if ( ! empty( $params['logo_url'] ) ) {
 			$this->logo_url = esc_url_raw( $params['logo_url'] );
 		}
-
-		$this->supports = ( ! empty( $params['supports'] ) ) ? $params['supports'] : $this->get_supports_defaults();
 
 		$this->options = new Options();
 	}
@@ -485,34 +473,5 @@ abstract class OptionsAbstract implements OptionsInterface {
 		</p>
 
 		<?php
-	}
-
-	/**
-	 * Return the defaults for the mailer supported settings.
-	 *
-	 * @since 2.3.0
-	 *
-	 * @return array
-	 */
-	public function get_supports_defaults() {
-
-		return [
-			'from_email'       => true,
-			'from_name'        => true,
-			'return_path'      => true,
-			'from_email_force' => true,
-			'from_name_force'  => true,
-		];
-	}
-
-	/**
-	 * Get the mailer supported settings.
-	 *
-	 * @since 2.3.0
-	 *
-	 * @return array
-	 */
-	public function get_supports() {
-		return apply_filters( 'wp_mail_smtp_providers_provider_get_supports', $this->supports, $this );
 	}
 }

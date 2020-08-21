@@ -1,0 +1,98 @@
+// Header
+// ==========================================================================
+.event-header .event__title,
+.presta__title {
+    @extend %big-title;
+    margin-bottom: space(6);
+    margin-top: space(10);
+    text-align: center;
+}
+.event__type {
+    margin-bottom: space(6);
+    text-transform: capitalize;
+    text-align: center;
+}
+.event__photos {
+    margin-top: space(6);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.35);
+}
+.event__photos img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.event-header > * + * {
+    margin-top: space(8);
+}
+
+// Body
+// ==========================================================================
+.event-body {
+    margin-top: space(6);
+    // padding: 30px 69px;
+}
+.single-event .event-body {
+    margin-top: space(6);
+    padding: 30px 70px;
+    @include down(900){
+        padding: 30px 30px;
+    }
+}
+.event-body__title {
+    @extend %title-secondary;
+    margin-bottom: space(3);
+}
+.event-body a:hover {
+    color: $dore;
+}
+@include up(1100) {
+    .event-header {
+        // display: grid;
+        // grid-template-columns: 520px 1fr;
+        // grid-gap: space(6);
+        // align-items: center;
+        padding: 0 69px;
+    }
+
+    .event-header > * + * {
+        margin-top: 0;
+    }
+}
+.current_page_parent {
+    color: $emeraude;
+}
+.nav__footer__menu .current_page_parent {
+    color: $dore;
+}
+.event__back {
+    margin-left: 69px;
+    margin-bottom: 70px;
+}
+.event__back .btn svg {
+    margin-right: 16px;
+}
+.event__back .btn {
+    padding-right: 69px;
+}
+
+// Post navigation
+// =================
+.single-event .post-navigation {
+    margin-top: space(8);
+}
+.single-event .screen-reader-text {
+    display: none;
+}
+.single-event .nav-links {
+    display: flex;
+    justify-content: space-between;
+    @include down(400) {
+        justify-content: center;
+    }
+}
+.single-event .nav-next {
+    text-align: right;
+}

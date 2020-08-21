@@ -59,16 +59,7 @@
             </svg>
         </div>
         <div class="header__content">
-            <div class="header__citation">                
-            <svg class="icon">
-                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#quote">
-                </use>
-            </svg>
-            <p>Il n'y a qu'un seul bonheur dans cette vie, celui d'aimer et d'être aimé.</p>
-                        </div>            
-            <div class="header__author">
-                <p> - George Sand </p> 
-            </div>
+            <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>
         </div>
 
     </header>

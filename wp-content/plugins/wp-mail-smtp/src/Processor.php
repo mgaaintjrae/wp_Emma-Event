@@ -22,6 +22,15 @@ class Processor {
 	protected $wp_mail_from;
 
 	/**
+	 * Processor constructor.
+	 *
+	 * @since 1.0.0
+	 */
+	public function __construct() {
+		$this->hooks();
+	}
+
+	/**
 	 * Assign all hooks to proper places.
 	 *
 	 * @since 1.0.0
@@ -137,19 +146,28 @@ class Processor {
 		$forced     = $options->get( 'mail', 'from_email_force' );
 		$from_email = $options->get( 'mail', 'from_email' );
 
-		if ( ! empty( $reply_to ) || empty( $this->wp_mail_from ) ) {
+		if ( ! empty( $reply_to ) ) {
 			return false;
 		}
 
-		if ( $mailer === 'gmail' ) {
+		if ( in_array( $mailer, array( 'gmail', 'outlook' ), true ) ) {
 			$forced = true;
-		} elseif ( in_array( $mailer, [ 'outlook', 'zoho' ], true ) ) {
-			$sender     = $options->get( $mailer, 'user_details' );
+
+			switch ( $mailer ) {
+				case 'gmail':
+					$sender = wp_mail_smtp()->get_providers()->get_auth( 'gmail' )->get_user_info();
+					break;
+
+				case 'outlook':
+					$sender = $options->get( 'outlook', 'user_details' );
+					break;
+			}
+
 			$from_email = ! empty( $sender['email'] ) ? $sender['email'] : '';
-			$forced     = true;
 		}
 
 		if (
+			empty( $this->wp_mail_from ) ||
 			$from_email === $this->wp_mail_from ||
 			! $forced
 		) {
@@ -195,7 +213,7 @@ class Processor {
 	 * @since 1.3.0 Forcing email rewrite if option is selected.
 	 * @since 1.7.0 Default email may be empty, so pay attention to that as well.
 	 *
-	 * @param string $wp_email The email address passed by the filter.
+	 * @param string $wp_email
 	 *
 	 * @return string
 	 */
@@ -204,11 +222,11 @@ class Processor {
 		$options    = new Options();
 		$forced     = $options->get( 'mail', 'from_email_force' );
 		$from_email = $options->get( 'mail', 'from_email' );
-		$def_email  = WP::get_default_email();
+		$def_email  = $this->get_default_email();
 
 		// Save the "original" set WP email from address for later use.
 		if ( $wp_email !== $def_email ) {
-			$this->wp_mail_from = filter_var( $wp_email, FILTER_VALIDATE_EMAIL );
+			$this->wp_mail_from = $wp_email;
 		}
 
 		// Return FROM EMAIL if forced in settings.
@@ -290,7 +308,7 @@ class Processor {
 	 *
 	 * @since 1.9.0
 	 *
-	 * @return MailCatcherInterface
+	 * @return \WPMailSMTP\MailCatcher
 	 */
 	public function get_phpmailer() {
 
@@ -298,7 +316,8 @@ class Processor {
 
 		// Make sure the PHPMailer class has been instantiated.
 		if ( ! is_object( $phpmailer ) || ! is_a( $phpmailer, 'PHPMailer' ) ) {
-			$phpmailer = wp_mail_smtp()->generate_mail_catcher( true ); // phpcs:ignore
+			require_once ABSPATH . WPINC . '/class-phpmailer.php';
+			$phpmailer = new MailCatcher( true ); // phpcs:ignore
 		}
 
 		return $phpmailer;
@@ -311,7 +330,7 @@ class Processor {
 	 *
 	 * @since 2.1.1
 	 *
-	 * @param MailCatcherInterface $phpmailer The PHPMailer object.
+	 * @param \PHPMailer $phpmailer The PHPMailer object.
 	 */
 	private function set_default_reply_to( $phpmailer ) {
 

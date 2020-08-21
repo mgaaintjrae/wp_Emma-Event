@@ -3,7 +3,7 @@
 namespace WPMailSMTP\Providers\Gmail;
 
 use WPMailSMTP\Debug;
-use WPMailSMTP\MailCatcherInterface;
+use WPMailSMTP\MailCatcher;
 use WPMailSMTP\Providers\MailerAbstract;
 
 /**
@@ -37,11 +37,10 @@ class Mailer extends MailerAbstract {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param MailCatcherInterface $phpmailer The MailCatcher object.
+	 * @param \WPMailSMTP\MailCatcher $phpmailer
 	 */
 	public function __construct( $phpmailer ) {
-
-	    parent::__construct( $phpmailer );
+		parent::__construct( $phpmailer );
 
 		if ( ! $this->is_php_compatible() ) {
 			return;
@@ -53,12 +52,14 @@ class Mailer extends MailerAbstract {
 	 *
 	 * @since 1.2.0
 	 *
-	 * @param MailCatcherInterface $phpmailer The MailCatcher object.
+	 * @param \WPMailSMTP\MailCatcher $phpmailer
 	 */
 	public function process_phpmailer( $phpmailer ) {
-
-	    // Make sure that we have access to PHPMailer class methods.
-		if ( ! wp_mail_smtp()->is_valid_phpmailer( $phpmailer ) ) {
+		// Make sure that we have access to MailCatcher class methods.
+		if (
+			! $phpmailer instanceof MailCatcher &&
+			! $phpmailer instanceof \PHPMailer
+		) {
 			return;
 		}
 
@@ -78,23 +79,25 @@ class Mailer extends MailerAbstract {
 		$auth    = new Auth();
 		$message = new \Google_Service_Gmail_Message();
 
-		// Set the authorized Gmail email address as the "from email" if the set email is not on the list of aliases.
-		$possible_from_emails = $auth->get_user_possible_send_from_addresses();
+		/*
+		 * Right now Gmail doesn't allow to redefine From and Sender email headers.
+		 * It always uses the email address that was used to connect to its API.
+		 * With code below we are making sure that Email Log archive and single Email Log
+		 * have the save value for From email header.
+		 */
+		$gmail_creds = $auth->get_user_info();
 
-		if ( ! in_array( $this->phpmailer->From, $possible_from_emails, true ) ) {
-			$user_info = $auth->get_user_info();
-
-			if ( ! empty( $user_info['email'] ) ) {
-				$this->phpmailer->From   = $user_info['email'];
-				$this->phpmailer->Sender = $user_info['email'];
-			}
+		if ( ! empty( $gmail_creds['email'] ) ) {
+			$this->phpmailer->From   = $gmail_creds['email'];
+			$this->phpmailer->Sender = $gmail_creds['email'];
 		}
 
 		try {
-			// Prepare a message for sending if any changes happened above.
+			// Prepare a message for sending.
 			$this->phpmailer->preSend();
 
-			// Get the raw MIME email using MailCatcher data. We need to make base64URL-safe string.
+			// Get the raw MIME email using MailCatcher data.
+			// We need here to make base64URL-safe string.
 			$base64 = str_replace(
 				[ '+', '/', '=' ],
 				[ '-', '_', '' ],

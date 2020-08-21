@@ -9,7 +9,6 @@ class QM_Collector_Theme extends QM_Collector {
 
 	public $id                  = 'response';
 	protected $got_theme_compat = false;
-	protected $query_templates = array();
 
 	public function __construct() {
 		parent::__construct();
@@ -96,13 +95,7 @@ class QM_Collector_Theme extends QM_Collector {
 			if ( function_exists( $conditional ) && function_exists( $get_template ) && call_user_func( $conditional ) ) {
 				$filter = str_replace( '_', '', $template );
 				add_filter( "{$filter}_template_hierarchy", array( $this, 'filter_template_hierarchy' ), PHP_INT_MAX );
-				$loaded_template  = call_user_func( $get_template );
-				$default_template = locate_template( $this->query_templates );
-
-				if ( $default_template !== $loaded_template ) {
-					$this->data['template_altered'] = true;
-				}
-
+				call_user_func( $get_template );
 				remove_filter( "{$filter}_template_hierarchy", array( $this, 'filter_template_hierarchy' ), PHP_INT_MAX );
 			}
 		}
@@ -127,8 +120,6 @@ class QM_Collector_Theme extends QM_Collector {
 	}
 
 	public function filter_template_hierarchy( array $templates ) {
-		$this->query_templates = $templates;
-
 		if ( ! isset( $this->data['template_hierarchy'] ) ) {
 			$this->data['template_hierarchy'] = array();
 		}

@@ -159,7 +159,7 @@ class QM_Collector_Request extends QM_Collector {
 		if ( is_admin() ) {
 			if ( isset( $_SERVER['REQUEST_URI'] ) ) {
 				$home_path = trim( parse_url( home_url(), PHP_URL_PATH ), '/' );
-				$request   = wp_unslash( $_SERVER['REQUEST_URI'] ); // phpcs:ignore
+				$request   = wp_unslash( $_SERVER['REQUEST_URI'] ); // @codingStandardsIgnoreLine
 
 				$this->data['request']['request'] = str_replace( "/{$home_path}/", '', $request );
 			} else {
@@ -265,7 +265,7 @@ class QM_Collector_Request extends QM_Collector {
 		}
 
 		if ( isset( $_SERVER['REQUEST_METHOD'] ) ) {
-			$this->data['request_method'] = strtoupper( wp_unslash( $_SERVER['REQUEST_METHOD'] ) ); // phpcs:ignore
+			$this->data['request_method'] = strtoupper( wp_unslash( $_SERVER['REQUEST_METHOD'] ) ); // @codingStandardsIgnoreLine
 		} else {
 			$this->data['request_method'] = '';
 		}

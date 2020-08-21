@@ -1,0 +1,221 @@
+// Variables
+// ==================
+$f-alex: 'Alex Brush', sans-serif;
+$f-raleway: 'Raleway', sans-serif;
+
+// Font face
+// ==================
+@include font-face(
+    'Raleway',
+    'assets/fonts/Raleway-Light',
+    300,
+    null,
+    woff2 woff ttf svg eot
+);
+@include font-face(
+    'Raleway',
+    'assets/fonts/Raleway-Regular',
+    400,
+    null,
+    woff2 woff ttf svg eot
+);
+@include font-face(
+    'Raleway',
+    'assets/fonts/Raleway-Medium',
+    500,
+    null,
+    woff2 woff ttf svg eot
+);
+@include font-face(
+    'Raleway',
+    'assets/fonts/Raleway-SemiBold',
+    600,
+    null,
+    woff2 woff ttf svg eot
+);
+@include font-face(
+    'Raleway',
+    'assets/fonts/Raleway-Bold',
+    700,
+    null,
+    woff2 woff ttf svg eot
+);
+@include font-face(
+    'Alex Brush',
+    'assets/fonts/AlexBrush-Regular',
+    400,
+    null,
+    woff2 woff ttf svg eot
+);
+
+// Style
+// ==================
+%big-title {
+    font-family: $f-alex;
+    font-size: 64px;
+    line-height: 0.5;
+    color: $emeraude;
+
+    @include down(500) {
+        font-size: 40px;
+    }
+}
+
+h1 {
+    font-family: $f-alex;
+    font-size: 120px;
+    line-height: 1.15;
+
+    @include down(900) {
+        font-size: 100px;
+    }
+    @media only screen and (max-width: 700px) {
+        font-size: 60px;
+    }
+}
+h2 {
+    font-family: $f-alex;
+    font-size: 60px;
+    line-height: 1.15;
+    color: $emeraude;
+
+    @include down(500) {
+        font-size: 42px;
+    }
+}
+h3 {
+    font-family: $f-alex;
+    color: grey;
+    font-size: 40px;
+    line-height: 1.15;
+    padding: 0 28px;
+
+    @include down(500) {
+        font-size: 32px;
+        line-height: 1;
+    }    
+}
+h4 {
+    font-family: $f-raleway;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+%title-secondary,
+.title-secondary {
+    font-family: $f-alex;
+    color: $emeraude;
+    font-size: 30px;
+    line-height: 1.15;
+
+    @include up(500) {
+        font-size: 42px;
+    }
+}
+%h3 {
+    font-family: $f-alex;
+    font-size: 20px;
+    line-height: 1.15;
+
+    @include up(500) {
+        font-size: 32px;
+    }
+}
+
+// signature
+//===============
+.signature {
+    font-family: $f-alex;
+    font-size: 35px;
+}
+
+.formatted {
+    p,
+    blockquote,
+    ul,
+    ol {
+        margin-bottom: 1.5em;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 1rem;
+    }
+    h2 {
+        @extend %title-secondary;
+    }
+    h3 {
+        font-family: $f-alex;
+        font-size: 25px;
+        line-height: 1.15;
+
+        @include up(500) {
+            font-size: 35px;
+        }
+    }
+    h4 {
+        font-weight: bold;
+        font-family: $f-alex;
+    }
+    ul,
+    ol {
+        // display: grid;
+        grid-template-columns: 1fr;
+        justify-items: flex-start;
+        grid-gap: 0.5em;
+        // margin-left: 1.5em;
+        // display: flex;
+        margin-left: 0;
+    }
+    li {
+        // padding-left: space(3);
+        position: relative;
+    }
+    ul li::before {
+        content: '';
+        display: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background: currentColor;
+        position: absolute;
+        top: 12px;
+        left: 0;
+    }
+    ol {
+        counter-reset: ol;
+    }
+    ol li {
+        counter-increment: ol;
+    }
+    ol li::before {
+        content: counter(ol) '.';
+        position: absolute;
+        top: 0;
+        left: -10px;
+    }
+    *:last-child {
+        // margin-bottom: 0 !important;
+        margin-bottom: 16px;
+    }
+    blockquote {
+        font-size: 1.2em;
+        border-left: 4px solid currentColor;
+        padding-left: 1em;
+    }
+    blockquote p {
+        margin-bottom: 1rem;
+    }
+    blockquote cite {
+        font-weight: 300;
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+    .wp-block-buttons {
+        margin-bottom: 1.5em;
+    }
+}

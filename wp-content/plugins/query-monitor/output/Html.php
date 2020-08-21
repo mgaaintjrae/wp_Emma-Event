@@ -459,8 +459,6 @@ abstract class QM_Output_Html extends QM_Output {
 				return 'atom://open/?url=file://%f&line=%l';
 			case 'sublime':
 				return 'subl://open/?url=file://%f&line=%l';
-			case 'textmate':
-				return 'txmt://open/?url=file://%f&line=%l';
 			case 'netbeans':
 				return 'nbopen://%f:%l';
 			default:
@@ -505,7 +503,7 @@ abstract class QM_Output_Html extends QM_Output {
 		 * @link https://querymonitor.com/blog/2019/02/clickable-stack-traces-and-function-names-in-query-monitor/
 		 * @since 3.0.0
 		 *
-		 * @param string[] $file_map Array of file path mappings. Keys are the source paths and values are the replacement paths.
+		 * @param array $file_map Array of file path mappings.
 		 */
 		return apply_filters( 'qm/output/file_path_map', array() );
 	}

@@ -1,0 +1,82 @@
+0000.059 (R) [notice] Recherche de l'archive db : nom du fichier : backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-db.gz
+0000.060 (R) [notice] L'archive devrait peser :  259.4 KB: OK
+0000.065 (R) [notice] Recherche de l'archive plugins : nom du fichier : backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-plugins.zip
+0000.066 (R) [notice] L'archive devrait peser :  28030.7 KB: OK
+0000.068 (R) [notice] Recherche de l'archive themes : nom du fichier : backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-themes.zip
+0000.070 (R) [notice] L'archive devrait peser :  11194.5 KB: OK
+0000.074 (R) [notice] Recherche de l'archive uploads : nom du fichier : backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-uploads.zip
+0000.075 (R) [notice] L'archive devrait peser :  47404.7 KB: OK
+0000.077 (R) [notice] Recherche de l'archive others : nom du fichier : backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-others.zip
+0000.078 (R) [notice] L'archive devrait peser :  1068.5 KB: OK
+0000.081 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.084 (R) [notice] Décompression de la sauvegarde… (backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-db.gz, 0.3 Mb)
+0000.095 (R) [notice] Restauration de la base de données (cela peut prendre du temps si votre site est volumineux - en cas de timeout (ce qui arrive si votre hébergeur limite vos ressources), vous devrez utiliser une autre méthode comme phpMyAdmin…
+0000.229 (R) [notice] Activation du mode maintenance&#8230;
+0000.240 (R) [notice] Sauvegarde de : http://local.emma-event.fr
+0000.242 (R) [notice] URL de contenu : http://local.emma-event.fr/wp-content
+0000.242 (R) [notice] URL des téléversements : http://local.emma-event.fr/wp-content/uploads
+0000.242 (R) [notice] Ancien préfixe des tables : wp_emmaevent_
+0000.243 (R) [notice] Information sur le site : multisite = 0
+0000.244 (R) [notice] New table prefix: wp_emmaevent_
+0000.267 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_options
+0000.407 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_users
+0000.466 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_usermeta
+0000.517 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_actionscheduler_actions
+0000.576 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_actionscheduler_claims
+0000.629 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_actionscheduler_groups
+0000.682 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_actionscheduler_logs
+0000.741 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_commentmeta
+0000.793 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_comments
+0000.840 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_links
+0000.899 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_postmeta
+0001.010 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_posts
+0001.132 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_term_relationships
+0001.216 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_term_taxonomy
+0001.300 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_termmeta
+0001.367 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_terms
+0001.391 (R) [notice] Database queries processed: 50 in 1.29 seconds
+0001.415 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_yoast_seo_links
+0001.465 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_yoast_seo_meta
+0001.516 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_duplicator_packages
+0001.567 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_masterslider_options
+0001.612 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_masterslider_sliders
+0001.655 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_responsive_menu
+0001.709 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_smush_dir_images
+0001.753 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_vxcf_leads
+0001.792 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_vxcf_leads_detail
+0001.839 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_vxcf_leads_notes
+0001.889 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_wpmailsmtp_tasks_meta
+0001.940 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_yoast_indexable
+0002.011 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_yoast_indexable_hierarchy
+0002.065 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_yoast_migrations
+0002.123 (R) [notice] Traitement de la table (InnoDB):  wp_emmaevent_yoast_primary_term
+0002.203 (R) [notice] Désactivation du mode maintenance&#8230;
+0002.204 (R) [notice] Finished: lines processed: 95 in 2.11 seconds
+0002.206 (R) [notice] Nettoyage…
+0002.228 (R) [notice] Décompression de la sauvegarde… (backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-plugins.zip, 27.4 MB)
+0003.257 (R) [notice] Progression de la décompression : 1002 sur 7521 fichiers (122.7 KB, plugins/advanced-custom-fields/assets/font/acf.woff)
+0018.327 (R) [notice] Progression de la décompression : 1736 sur 7521 fichiers (16.7 MB, plugins/master-slider/public/assets/js/jquery.easing.min.js)
+0030.318 (R) [notice] Progression de la décompression : 2737 sur 7521 fichiers (20.4 MB, plugins/responsive-menu/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/use/aliases.test)
+0046.404 (R) [notice] Progression de la décompression : 3329 sur 7521 fichiers (40.4 MB, plugins/updraftplus/templates/wp-admin/settings/existing-backups-table.php)
+0062.307 (R) [notice] Progression de la décompression : 4119 sur 7521 fichiers (61.2 MB, plugins/updraftplus/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Http/IoEmittingEntityBody.php)
+0074.495 (R) [notice] Progression de la décompression : 5120 sur 7521 fichiers (65.7 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Plugin/Cache/RevalidationInterface.php)
+0090.313 (R) [notice] Progression de la décompression : 6115 sur 7521 fichiers (70.1 MB, plugins/wordpress-seo/inc/health-check-page-comments.php)
+0106.354 (R) [notice] Progression de la décompression : 7009 sur 7521 fichiers (80.1 MB, plugins/wp-mail-smtp/vendor/google/auth/src/CredentialsLoader.php)
+0117.372 (R) [notice] Progression de la décompression : 7521 sur 7521 fichiers (84.6 MB, plugins/wp-mail-smtp/wp_mail_smtp.php)
+0117.376 (R) [notice] Mise de côté des anciennes données…
+0119.168 (R) [notice] Déplacement de la sauvegarde décompressée…
+0120.337 (R) [notice] Nettoyage…
+0120.343 (R) [notice] Décompression de la sauvegarde… (backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-themes.zip, 10.9 MB)
+0126.377 (R) [notice] Progression de la décompression : 458 sur 458 fichiers (16.3 MB, themes/twentytwenty/templates/template-full-width.php)
+0126.379 (R) [notice] Mise de côté des anciennes données…
+0126.422 (R) [notice] Déplacement de la sauvegarde décompressée…
+0126.549 (R) [notice] Nettoyage…
+0126.557 (R) [notice] Décompression de la sauvegarde… (backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-uploads.zip, 46.3 MB)
+0130.646 (R) [notice] Progression de la décompression : 530 sur 530 fichiers (46.3 MB, uploads/wp-migrate-db/index.php)
+0130.651 (R) [notice] Mise de côté des anciennes données…
+0130.840 (R) [notice] Déplacement de la sauvegarde décompressée…
+0131.045 (R) [notice] Nettoyage…
+0131.056 (R) [notice] Décompression de la sauvegarde… (backup_2020-08-20-1631_Emma_Event_Wedding_amp_Event_a3812c41b5ca-others.zip, 1 MB)
+0131.609 (R) [notice] Progression de la décompression : 59 sur 59 fichiers (3.8 MB, languages/themes/twentytwenty-fr_FR.po)
+0131.618 (R) [notice] Nettoyage…
+0131.650 (R) [notice] Restore successful!

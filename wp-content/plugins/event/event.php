@@ -43,7 +43,6 @@ add_action('init', function () {
         ],
         'has_archive' => true,
         'public' => true,
-        // 'show_in_nav_menus' => true,
         'hierarchical' => false,
         'exclude_from_search' => false,
         'show_in_rest' => false,        
@@ -51,7 +50,7 @@ add_action('init', function () {
             'slug' => _x('events', 'URL', 'event')
         ],
         'taxonomies' => ['events'],
-        'supports' => ['title', 'author', 'editor', 'excerpt', 'thumbnail', 'revisions', 'page-attributes']
+        'supports' => ['title', 'author', 'editor', 'excerpt', 'thumbnail']
     ]);
     register_taxonomy('events', 'event', [
         'meta_box_cb' => 'post_categories_meta_box',
@@ -77,7 +76,7 @@ add_action('init', function () {
         ],        
         'show_admin_column' => true,        
         'rewrite'            => [
-            'slug' => _x('events', 'URL', 'event')
+            'slug' => _x('events', 'URL')
         ],
     ]);    
 });

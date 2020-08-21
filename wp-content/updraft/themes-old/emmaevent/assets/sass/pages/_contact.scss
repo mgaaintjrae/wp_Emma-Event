@@ -1,0 +1,12 @@
+.page-title {
+    @extend %big-title;
+    margin-bottom: space(6);
+}
+// Form
+//==============
+form .form-group .form-control {
+    border: 1px solid $dore;
+}
+form button .btn {
+    width: 100% !important;
+}

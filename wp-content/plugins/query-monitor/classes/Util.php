@@ -315,7 +315,7 @@ class QM_Util {
 		if ( self::is_ajax() ) {
 			return true;
 		}
-		if ( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) && 'xmlhttprequest' === strtolower( $_SERVER['HTTP_X_REQUESTED_WITH'] ) ) { // phpcs:ignore
+		if ( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) && 'xmlhttprequest' === strtolower( $_SERVER['HTTP_X_REQUESTED_WITH'] ) ) { // @codingStandardsIgnoreLine
 			return true;
 		}
 		return false;
@@ -340,12 +340,12 @@ class QM_Util {
 			return false;
 		}
 
-		// phpcs:disable
+		// @codingStandardsIgnoreStart
 		$num_sites = $wpdb->get_var( "
 			SELECT COUNT(*)
 			FROM {$wpdb->site}
 		" );
-		// phpcs:enable
+		// @codingStandardsIgnoreEnd
 
 		return ( $num_sites > 1 );
 	}
