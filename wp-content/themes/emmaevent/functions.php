@@ -10,6 +10,7 @@ require_once('inc/query/posts.php');
 require_once('inc/query/event.php');
 require_once('inc/comments.php');
 require_once('inc/connexion.php');
+require_once('inc/plugin.php');
 
 
 

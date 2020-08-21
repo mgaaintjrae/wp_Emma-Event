@@ -37,12 +37,10 @@ get_header('galery'); ?>
                 <div class="thumbnail">
                     <?php the_post_thumbnail('event-thumbnail-large'); ?>
                 </div>
-                <?php the_content(); ?>   
-                             
+                <?php the_content(); ?>
             </div>
         </div>
     </section>
 </main>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>
-<!-- <script async defer data-pin-hover="true" data-pin-tall="true" data-pin-round="true" src="//assets.pinterest.com/js/pinit.js"></script> -->
