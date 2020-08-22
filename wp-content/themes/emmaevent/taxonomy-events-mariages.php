@@ -42,11 +42,11 @@
         </div>
     </section>
 
-    <section>
-        <!-- <aside class="sidebar">
+    <!-- <section>
+        <aside class="sidebar">
                 <?php //dynamic_sidebar('blog'); ?>
-            </aside> -->
-    </section>
+            </aside> 
+    </section> -->
 </main>
 
 <?php get_footer(); ?>

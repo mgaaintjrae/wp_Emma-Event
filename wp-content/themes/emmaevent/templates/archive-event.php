@@ -32,13 +32,13 @@ get_header('events') ?>
                 <?php
 							$query = new WP_Query([
 								'post_type' => 'event',
-								'posts_per_page' => 4
+								'posts_per_page' => 2
 							]);
                 if (have_posts()) : ?>
                 <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <div class="content">
                     <figure class="effect-lily">
-                        <?php the_post_thumbnail('event-thumbnail-large') ?>
+                        <?php the_post_thumbnail('event-thumbnail') ?>
                         <figcaption>
                             <h3 class="event__body">
                                 <?php $type = the_field('type');

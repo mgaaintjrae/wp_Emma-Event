@@ -52,7 +52,7 @@
             <div class="event__back">
                 <div class="event__hover">
                     <?php if(is_single()) : ?>
-                    <a href="./" class="btn" title="Retour aux événements">
+                    <a href="<?php the_permalink(227) ?>" class="btn" title="Retour aux événements">
                         <svg class="icon">
                             <use
                                 xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#arrow-left">
