@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Events
+*/
+
+get_header('events'); ?>
 
 <main>
     <div class="container">

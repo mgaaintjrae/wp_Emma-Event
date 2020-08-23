@@ -1,6 +1,7 @@
 <?php
 require_once('inc/supports.php');
 require_once('inc/assets.php');
+require_once('inc/author.php');
 require_once('inc/apparence.php');
 require_once('inc/adminbar.php');
 require_once('inc/menus.php');
@@ -29,3 +30,6 @@ function emmaevent_paginate_comments(): void {
   echo '<div class="pagination">';
   paginate_comments_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]);
   echo '</div>';}
+
+
+

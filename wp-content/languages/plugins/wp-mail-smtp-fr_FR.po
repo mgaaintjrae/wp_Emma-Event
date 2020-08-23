@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WP Mail SMTP by WPForms - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-19 15:57:03+0000\n"
+"PO-Revision-Date: 2020-08-23 07:59:45+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,55 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - WP Mail SMTP by WPForms - Stable (latest release)\n"
+
+#: src/SiteHealth.php:140
+msgid "None selected"
+msgstr "Aucun sélectionné"
+
+#: src/SiteHealth.php:124
+msgid "M j, Y @ g:ia"
+msgstr "j F Y à H:i"
+
+#: src/SiteHealth.php:123
+msgid "Lite install date"
+msgstr "Date d’installation de la version Lite"
+
+#: src/Providers/Zoho/Options.php:41
+msgid "We're sorry, the Zoho Mail mailer is not available on your plan. Please upgrade to the PRO plan to unlock all these awesome features."
+msgstr "Nous sommes désolé, le service Zoho Mail n’est pas disponible avec votre formule. Veuillez passer à la formule PRO pour débloquer toutes les super fonctionnalités."
+
+#: src/Providers/Zoho/Options.php:25
+msgid "Zoho Mail"
+msgstr "Zoho Mail"
+
+#: src/Admin/Pages/MiscTab.php:207
+msgid "By allowing us to track usage data we can better help you because we know with which WordPress configurations, themes and plugins we should test."
+msgstr "En nous autorisant à suivre votre utilisation, nous pouvons vous aider au mieux en connaissant les configurations WordPress, thèmes et extensions que nous devons tester."
+
+#: src/Admin/Pages/MiscTab.php:199
+msgid "Allow Usage Tracking"
+msgstr "Autoriser le suivi d’utilisation"
+
+#: src/Admin/Education.php:80
+msgid "Dismiss this message."
+msgstr "Ignorer ce message."
+
+#. translators: %s - WPMailSMTP.com Upgrade page URL.
+#: src/Admin/Education.php:69
+msgid "You’re using WP Mail SMTP Lite. To unlock more features consider <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">upgrading to Pro</a>."
+msgstr "Vous utilisez WP Mail SMTP Lite. Pour débloquer plus de fonctionnalités, envisagez de passer à la version <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Pro</a>."
+
+#: src/Admin/Notifications.php:445
+msgid "Next message"
+msgstr "Message suivant"
+
+#: src/Admin/Notifications.php:444
+msgid "Previous message"
+msgstr "Message précédent"
+
+#: src/Admin/Notifications.php:441
+msgid "Dismiss this message"
+msgstr "Ignorer ce message"
 
 #: src/Admin/Pages/About.php:262
 msgid "Plugin icon"
@@ -428,6 +477,11 @@ msgstr "Obtenir la clé API"
 #: src/Providers/PepipostAPI/Options.php:35
 msgid "Read our <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Pepipost documentation</a> to learn how to configure Pepipost and improve your email deliverability."
 msgstr "Consultez notre <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">documentation Pepipost</a> pour apprendre à configurer le service et améliorer votre délivrabilité."
+
+#. translators: %1$s - URL to pepipost.com site.
+#: src/Providers/PepipostAPI/Options.php:32
+msgid "<a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Pepipost</a> is a transactional email service. Every month Pepipost delivers over 8 billion emails from 20,000+ customers. Their mission is to reliably send emails in the most efficient way and at the most disruptive pricing ever. Pepipost provides users 30,000 free emails the first 30 days."
+msgstr "<a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Pepipost</a> est un service d’envoi d’e-mails transactionnels. Tous les mois, Pepipost délivre plus de 8 milliards d’e-mails de plus de 20 000 clients. Leur mission est d’envoyer avec fiabilité et efficacité des e-mails avec des prix défiant toute concurrence. Pepipost offre 30 000 e-mails gratuits pendant 30 jours."
 
 #: src/Admin/Area.php:402
 msgid "Download"

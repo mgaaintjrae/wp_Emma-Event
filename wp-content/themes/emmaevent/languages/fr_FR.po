@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-08-21 20:58+0200\n"
-"PO-Revision-Date: 2020-08-21 21:05+0200\n"
+"POT-Creation-Date: 2020-08-23 13:42+0200\n"
+"PO-Revision-Date: 2020-08-23 13:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: 404.php:8
 msgid "404"
-msgstr ""
+msgstr "404"
 
 #: 404.php:13
 msgid "Oops, The Page you are looking for can't be found!"
@@ -26,6 +26,10 @@ msgstr "Oups, la page que vous recherchez est introuvable !"
 #: 404.php:20
 msgid "Return To Homepage"
 msgstr "Retour à la page d’accueil"
+
+#: archive-event.php:63
+msgid "More events +"
+msgstr "Plus d'événements +"
 
 #: comments.php:8
 #, php-format
@@ -101,9 +105,8 @@ msgstr "Titre"
 msgid "Search results for \"%s\""
 msgstr "Résultats de recherche pour \"%s\""
 
-#: index.php:31 taxonomy-events-prives.php:39
-#: taxonomy-events-professionnels.php:39 taxonomy-events.php:20
-#: templates/taxonomy-events-mariages.php:48
+#: index.php:31 taxonomy-events-mariages.php:44 taxonomy-events-prives.php:39
+#: taxonomy-events-professionnels.php:39 taxonomy-events.php:25
 msgid "No posts found"
 msgstr "Articles non trouvés"
 
@@ -140,10 +143,6 @@ msgstr "%1$s à %2$s"
 #: template-parts/comment.php:14
 msgid "Edit"
 msgstr "Modifier"
-
-#: templates/archive-event.php:67
-msgid "More events +"
-msgstr "Plus d'événements +"
 
 #~ msgid "Oops! That page can&rsquo;t be found."
 #~ msgstr "Oups ! Cette page est introuvable."
