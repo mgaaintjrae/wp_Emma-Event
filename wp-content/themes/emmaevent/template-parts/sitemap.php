@@ -17,6 +17,10 @@
     )); ?>
 </ul>
 
+<<<<<<< HEAD
+=======
+<!-- CPT -->
+>>>>>>> old-state
 <?php
 foreach( get_post_types( array('public' => true) ) as $post_type ) {
   if ( in_array( $post_type, array('post','page','attachment') ) ) {
@@ -36,6 +40,10 @@ foreach( get_post_types( array('public' => true) ) as $post_type ) {
 }
 ?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> old-state
 <!-- BLOG -->
 <!-- <h3>Posts</h3>
         <?php

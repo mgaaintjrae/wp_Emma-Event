@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> old-state
 <?php
 // desactivate update plugin Event
 function stop_plugin_update( $value ) {

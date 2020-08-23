@@ -18,8 +18,8 @@ add_action('widgets_init', function () {
   register_sidebar([
     'id' => 'footer',
     'name' => __('Footer', 'emmaevent'),
-    'before_title' => '<h2 class="footer__title">',
-    'after_title' => '</h2>',
+    'before_title' => '<h4 class="footer__title">',
+    'after_title' => '</h4>',
     'before_widget' => '<div class="footer__col">',
     'after_widget' => '</div>'
   ]);  

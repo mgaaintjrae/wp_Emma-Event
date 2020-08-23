@@ -12,7 +12,10 @@ require_once('inc/query/event.php');
 require_once('inc/comments.php');
 require_once('inc/connexion.php');
 require_once('inc/plugin.php');
+<<<<<<< HEAD
 
+=======
+>>>>>>> old-state
 
 
 function emmaevent_icon(string $name): string {

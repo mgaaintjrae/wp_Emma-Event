@@ -1,8 +1,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2020-08-23 13:42+0200\n"
 "PO-Revision-Date: 2020-08-23 13:42+0200\n"
+=======
+"POT-Creation-Date: 2020-08-23 17:21+0200\n"
+"PO-Revision-Date: 2020-08-23 17:22+0200\n"
+>>>>>>> old-state
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,6 +22,7 @@ msgstr ""
 
 #: 404.php:8
 msgid "404"
+<<<<<<< HEAD
 msgstr "404"
 
 #: 404.php:13
@@ -28,6 +34,21 @@ msgid "Return To Homepage"
 msgstr "Retour à la page d’accueil"
 
 #: archive-event.php:63
+=======
+msgstr ""
+
+#: 404.php:13
+msgid "Oops, The Page you are looking for can't be found!"
+msgstr ""
+
+#: 404.php:20
+#, fuzzy
+#| msgid "Homepage"
+msgid "Return To Homepage"
+msgstr "Page d'accueil"
+
+#: archive-event.php:58
+>>>>>>> old-state
 msgid "More events +"
 msgstr "Plus d'événements +"
 
@@ -146,6 +167,7 @@ msgstr "Modifier"
 
 #~ msgid "Oops! That page can&rsquo;t be found."
 #~ msgstr "Oups ! Cette page est introuvable."
+<<<<<<< HEAD
 
 #~ msgid ""
 #~ "It looks like nothing was found at this location. Maybe try a search?"
@@ -159,6 +181,21 @@ msgstr "Modifier"
 #~ msgid "Home"
 #~ msgstr "Accueil"
 
+=======
+
+#~ msgid ""
+#~ "It looks like nothing was found at this location. Maybe try a search?"
+#~ msgstr ""
+#~ "Il semble que rien n'ait été trouvé à cet endroit. Peut-être essayer une "
+#~ "recherche ?"
+
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+#~ msgid "Home"
+#~ msgstr "Accueil"
+
+>>>>>>> old-state
 #~ msgid "About"
 #~ msgstr "A propos"
 
