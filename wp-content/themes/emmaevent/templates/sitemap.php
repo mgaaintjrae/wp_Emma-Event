@@ -28,75 +28,7 @@ get_header('sitemap'); ?>
     </section>
 
     <section class="container page-sidebar sitemap__content">
-        <!-- Author -->
-        <h3 class="sitemap__title"><?php _e('Author', 'emmaevent'); ?></h3>
-        <ul>
-            <?php wp_list_authors( array(
-              'exclude_admin' => false
-                )); 
-            ?>
-        </ul>
-
-        <!-- Pages -->
-        <h3 class="sitemap__title"><?php _e('Pages', 'emmaevent'); ?></h3>
-        <ul>
-            <li>
-                <a href="<?php the_permalink(19); ?>" title="Page d'accueil"><?php _e('Home', 'emmaevent'); ?></a>
-            </li>
-            <li>
-                <a href="<?php the_permalink(11); ?>" title="Qui je suis ?"><?php _e('About', 'emmaevent'); ?></a>
-            </li>
-            <li>
-                <?php
-        foreach( get_post_types( array('public' => true) ) as $post_type ) {
-          if ( in_array( $post_type, array('post','page','attachment') ) ) {
-          continue;
-          }
-
-          // affiche le titre du CPT
-          $pt = get_post_type_object( $post_type );
-
-          echo '<a href="' . esc_attr(get_term_link($pt)) . '" title="Événements">' . $pt->labels->name . '</a>';
-
-// Récupérer la taxonomie dans une variable
-                $taxonomy = 'events';
-                
-                // Variable avec le get_terms
-                $tax_terms = get_terms($taxonomy, array('hide_empty' => false), 'exclude=');
-                }
-                ?>
-            </li>
-            <li>
-                <ul class="sitemap__taxonomy">
-
-                    <?php
-                    // La boucle d'affichage des titres de taxonomy liés au CPT
-                    foreach ($tax_terms as $tax_term) {
-                    echo '<p>' . '<a href="' . esc_attr(get_term_link($tax_term, $taxonomy)) . '"
-                            title="' . sprintf( __( " Voir tous les événements dans %s" ), $tax_term->name ) . '" ' .
-                            '>' . $tax_term->name.'</a> </p>
-                    ';
-                    }
-                    ?>
-                </ul>
-            </li>
-            <li>
-                <a href="<?php the_permalink(156); ?>" title="Prestations"><?php _e('Prestations', 'emmaevent'); ?></a>
-            </li>
-            <li>
-                <a href="<?php the_permalink(156); ?>" title="Galerie"><?php _e('Galery', 'emmaevent'); ?></a>
-            </li>
-            <li>
-                <a href="<?php the_permalink(17); ?>" title="Contactez-moi"><?php _e('Contact', 'emmaevent'); ?></a>
-            </li>
-            <li>
-                <a href="<?php the_permalink(206); ?>" title="Plan du site"><?php _e('Sitemap', 'emmaevent'); ?></a>
-            </li>
-            <li>
-                <a href="<?php the_permalink(41); ?>"
-                    title="Mentions légales"><?php _e('Legal disclaimer', 'emmaevent'); ?></a>
-            </li>
-        </ul>        
+    <?php get_template_part('/template-parts/sitemap'); ?>
     </section>
 
 </main>

@@ -1,31 +1,35 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-07-08 13:33+0200\n"
-"PO-Revision-Date: 2020-07-08 13:34+0200\n"
+"POT-Creation-Date: 2020-08-23 17:21+0200\n"
+"PO-Revision-Date: 2020-08-23 17:22+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: __;_x:1,2c;_n;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:8
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oups ! Cette page est introuvable."
-
-#: 404.php:12
-msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgid "404"
 msgstr ""
-"Il semble que rien n'ait été trouvé à cet endroit. Peut-être essayer une "
-"recherche ?"
 
-#: archive-event.php:61
+#: 404.php:13
+msgid "Oops, The Page you are looking for can't be found!"
+msgstr ""
+
+#: 404.php:20
+#, fuzzy
+#| msgid "Homepage"
+msgid "Return To Homepage"
+msgstr "Page d'accueil"
+
+#: archive-event.php:58
 msgid "More events +"
 msgstr "Plus d'événements +"
 
@@ -38,14 +42,15 @@ msgstr ""
 msgid "Leave a reply"
 msgstr "Laisser un commentaire"
 
-#: footer.php:12 header-contact.php:35 header-events-mariages.php:37
+#: footer.php:14 header-contact.php:35 header-events-mariages.php:37
 #: header-events-prives.php:37 header-events-professionnels.php:37
-#: header-events.php:39 header-galery.php:35 header-mentions.php:35
+#: header-events.php:39 header-galery.php:35 header-legal.php:35
 #: header-single--event.php:37 header-sitemap.php:35
 msgid "Homepage"
 msgstr "Page d'accueil"
 
-#: header-about.php:37 header.php:89
+#: header-about.php:37 header-service-advice.php:37 header-service-day-j.php:37
+#: header-service-partiel.php:37 header-service-turnkey.php:37 header.php:97
 msgid "Emma-Event"
 msgstr ""
 
@@ -69,11 +74,11 @@ msgstr "Nom"
 msgid "Email"
 msgstr ""
 
-#: inc/menus.php:19
+#: inc/menus.php:20
 msgid "Footer"
 msgstr "Pied de page"
 
-#: inc/menus.php:27
+#: inc/menus.php:28
 msgid "Blog sidebar"
 msgstr ""
 
@@ -141,42 +146,32 @@ msgstr "%1$s à %2$s"
 msgid "Edit"
 msgstr "Modifier"
 
-#: template-sitemap.php:31
-msgid "Author"
-msgstr "Auteur"
+#~ msgid "Oops! That page can&rsquo;t be found."
+#~ msgstr "Oups ! Cette page est introuvable."
 
-#: template-sitemap.php:40
-msgid "Pages"
-msgstr ""
+#~ msgid ""
+#~ "It looks like nothing was found at this location. Maybe try a search?"
+#~ msgstr ""
+#~ "Il semble que rien n'ait été trouvé à cet endroit. Peut-être essayer une "
+#~ "recherche ?"
 
-#: template-sitemap.php:43
-msgid "Home"
-msgstr "Accueil"
+#~ msgid "Author"
+#~ msgstr "Auteur"
 
-#: template-sitemap.php:46
-msgid "About"
-msgstr "A propos"
+#~ msgid "Home"
+#~ msgstr "Accueil"
 
-#: template-sitemap.php:75
-#, php-format
-msgid " Voir tous les événements dans %s"
-msgstr ""
+#~ msgid "About"
+#~ msgstr "A propos"
 
-#: template-sitemap.php:83
-msgid "Galery"
-msgstr "Galerie"
+#~ msgid "Galery"
+#~ msgstr "Galerie"
 
-#: template-sitemap.php:86
-msgid "Contact"
-msgstr ""
+#~ msgid "Sitemap"
+#~ msgstr "Plan de site"
 
-#: template-sitemap.php:89
-msgid "Sitemap"
-msgstr "Plan de site"
-
-#: template-sitemap.php:93
-msgid "Legal disclaimer"
-msgstr "Mentions légales"
+#~ msgid "Legal disclaimer"
+#~ msgstr "Mentions légales"
 
 #, javascript-format
 #~ msgid "Not enough arguments following: %s"

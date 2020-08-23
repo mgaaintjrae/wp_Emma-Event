@@ -7,28 +7,7 @@
 .sitemap__content {
   padding: 70px 69px;
 }
-.page-about {
-  padding-bottom: 150px;
-}
-.page-about .thumbnail {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  width: 400px;
-  height: 400px;
-  background: url("assets/img/emma-min.jpg");
-  background-size: cover;
-  border-radius: 50%;
-  float: left;
-  shape-outside: circle();
-  background-position-x: center;
-  margin: 30px;
-  border: 8px solid $dore;
-  @include down(550) {
-    width: 250px;
-    height: 250px;
-  }
-}
+
 .page-sidebar__galery {
   display: grid;
   // grid-template-columns: 1fr;
@@ -47,16 +26,6 @@
 }
 .news-list__galery hr {
   width: 300px;
-}
-
-@include down(900) {
-  .page-about .page-sidebar {
-    display: flex;
-    flex-direction: column;
-  }
-  .page-about .news-list {
-    padding-top: 70px;
-  }
 }
 header .news_header {
   height: auto;
@@ -114,10 +83,6 @@ header .news_header {
 .sections .news-list figure {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.page-about .sections .news-list p.next {
-  display: flex;
   align-items: center;
 }
 

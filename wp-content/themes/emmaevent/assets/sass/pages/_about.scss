@@ -1,0 +1,35 @@
+.page-about {
+  padding-bottom: 150px;
+}
+.page-about .thumbnail {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  background: url("assets/img/emma-min.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  background-position-x: center;
+  margin: 30px;
+  border: 8px solid $dore;
+  @include down(550) {
+    width: 250px;
+    height: 250px;
+  }
+}
+@include down(900) {
+  .page-about .page-sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-about .news-list {
+    padding-top: 70px;
+  }
+}
+.page-about .sections .news-list p.next {
+    display: flex;
+    align-items: center;
+  }

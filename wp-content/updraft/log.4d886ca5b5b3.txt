@@ -1,0 +1,318 @@
+0000.000 (0) Opened log file at time: Sun, 23 Aug 2020 13:59:55 +0000 on http://local.emma-event.fr
+0000.004 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.26 WP: 5.4.2 PHP: 7.3.3 (apache2handler, Windows NT DESKTOP-G3FDJ50 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.1.38-MariaDB WPLANG: fr_FR Server: Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 50.8M | 6M) multisite: N openssl: OpenSSL 1.1.1a  20 Nov 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.007 (0) Free space on disk containing Updraft's temporary directory: 30709.2 MB
+0000.016 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.034 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.046 (0) Set semaphore last lock (fd) time to 2020-08-23 13:59:55
+0000.049 (0) Semaphore lock (fd) complete
+0000.057 (0) Backup run: resumption=0, nonce=4d886ca5b5b3, file_nonce=4d886ca5b5b3 begun at=1598191195 (0s ago), job type=backup
+0000.063 (0) Scheduling a resumption (1) after 300 seconds (1598191495) in case this run gets aborted
+0000.109 (0) Checking if we have a zip executable available
+0000.115 (0) Creation of backups of directories: beginning
+0000.126 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0003.158 (0) Total entities for the zip file: 984 directories, 6476 files (0 skipped as non-modified), 84.2 MB
+0003.165 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0003.924 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 100 files added (on-disk size: 183.1 KB)
+0004.349 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 200 files added (on-disk size: 183.1 KB)
+0005.481 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (7.3 MB, 265 (266) files added so far); re-opening (prior size: 183.1 KB)
+0006.354 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 300 files added (on-disk size: 2260 KB)
+0006.690 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 400 files added (on-disk size: 2260 KB)
+0007.849 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 500 files added (on-disk size: 2260 KB)
+0008.249 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 600 files added (on-disk size: 2260 KB)
+0008.440 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (6.3 MB, 338 (604) files added so far); re-opening (prior size: 2260 KB)
+0009.203 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 700 files added (on-disk size: 6505.8 KB)
+0009.513 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 800 files added (on-disk size: 6505.8 KB)
+0010.347 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 900 files added (on-disk size: 6505.8 KB)
+0010.973 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1000 files added (on-disk size: 6505.8 KB)
+0011.440 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.4 MB, 459 (1063) files added so far); re-opening (prior size: 6505.8 KB)
+0012.332 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1100 files added (on-disk size: 8282 KB)
+0012.945 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1200 files added (on-disk size: 8282 KB)
+0014.099 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1300 files added (on-disk size: 8282 KB)
+0014.465 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.6 MB, 256 (1319) files added so far); re-opening (prior size: 8282 KB)
+0015.816 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1400 files added (on-disk size: 8527 KB)
+0016.419 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1500 files added (on-disk size: 8527 KB)
+0016.983 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1600 files added (on-disk size: 8527 KB)
+0017.432 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.3 MB, 358 (1677) files added so far); re-opening (prior size: 8527 KB)
+0017.748 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1700 files added (on-disk size: 8736.1 KB)
+0018.787 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1800 files added (on-disk size: 8736.1 KB)
+0019.670 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 1900 files added (on-disk size: 8736.1 KB)
+0019.959 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2000 files added (on-disk size: 8736.1 KB)
+0020.446 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.1 MB, 355 (2032) files added so far); re-opening (prior size: 8736.1 KB)
+0022.345 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2100 files added (on-disk size: 10011.8 KB)
+0023.432 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (7.4 MB, 150 (2182) files added so far); re-opening (prior size: 10011.8 KB)
+0024.457 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2200 files added (on-disk size: 11862.4 KB)
+0025.405 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2300 files added (on-disk size: 11862.4 KB)
+0025.986 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2400 files added (on-disk size: 11862.4 KB)
+0026.437 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (12.2 MB, 271 (2453) files added so far); re-opening (prior size: 11862.4 KB)
+0028.062 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2500 files added (on-disk size: 15476.5 KB)
+0029.339 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2600 files added (on-disk size: 15476.5 KB)
+0030.494 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (16.6 MB, 245 (2698) files added so far); re-opening (prior size: 15476.5 KB)
+0031.971 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2700 files added (on-disk size: 19730.9 KB)
+0034.434 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.6 MB, 91 (2789) files added so far); re-opening (prior size: 19730.9 KB)
+0034.796 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2800 files added (on-disk size: 19932.3 KB)
+0036.034 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 2900 files added (on-disk size: 19932.3 KB)
+0037.253 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3000 files added (on-disk size: 19932.3 KB)
+0037.435 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.8 MB, 229 (3018) files added so far); re-opening (prior size: 19932.3 KB)
+0039.136 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3100 files added (on-disk size: 20207.8 KB)
+0040.309 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3200 files added (on-disk size: 20207.8 KB)
+0040.438 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.8 MB, 192 (3210) files added so far); re-opening (prior size: 20207.8 KB)
+0041.967 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3300 files added (on-disk size: 20555.8 KB)
+0043.438 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.7 MB, 187 (3397) files added so far); re-opening (prior size: 20555.8 KB)
+0043.836 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3400 files added (on-disk size: 20815.4 KB)
+0045.169 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3500 files added (on-disk size: 20815.4 KB)
+0046.396 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3600 files added (on-disk size: 20815.4 KB)
+0046.443 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.3 MB, 206 (3603) files added so far); re-opening (prior size: 20815.4 KB)
+0047.965 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3700 files added (on-disk size: 21216.1 KB)
+0048.649 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3800 files added (on-disk size: 21216.1 KB)
+0049.419 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 3900 files added (on-disk size: 21216.1 KB)
+0049.441 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1 MB, 300 (3903) files added so far); re-opening (prior size: 21216.1 KB)
+0050.757 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4000 files added (on-disk size: 21574.2 KB)
+0051.715 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4100 files added (on-disk size: 21574.2 KB)
+0052.441 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.1 MB, 291 (4194) files added so far); re-opening (prior size: 21574.2 KB)
+0052.859 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4200 files added (on-disk size: 22043.9 KB)
+0053.803 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4300 files added (on-disk size: 22043.9 KB)
+0054.853 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4400 files added (on-disk size: 22043.9 KB)
+0055.438 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.7 MB, 294 (4488) files added so far); re-opening (prior size: 22043.9 KB)
+0056.014 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4500 files added (on-disk size: 22566.8 KB)
+0056.794 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4600 files added (on-disk size: 22566.8 KB)
+0057.449 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4700 files added (on-disk size: 22566.8 KB)
+0058.151 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4800 files added (on-disk size: 22566.8 KB)
+0058.455 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.2 MB, 325 (4813) files added so far); re-opening (prior size: 22566.8 KB)
+0060.234 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 4900 files added (on-disk size: 22991.8 KB)
+0061.361 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5000 files added (on-disk size: 22991.8 KB)
+0061.432 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.7 MB, 193 (5006) files added so far); re-opening (prior size: 22991.8 KB)
+0062.324 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5100 files added (on-disk size: 23226 KB)
+0063.847 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5200 files added (on-disk size: 23226 KB)
+0064.441 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (6.5 MB, 272 (5278) files added so far); re-opening (prior size: 23226 KB)
+0065.586 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5300 files added (on-disk size: 25162.6 KB)
+0066.063 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5400 files added (on-disk size: 25162.6 KB)
+0066.261 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5500 files added (on-disk size: 25162.6 KB)
+0066.475 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5600 files added (on-disk size: 25162.6 KB)
+0067.435 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.1 MB, 392 (5670) files added so far); re-opening (prior size: 25162.6 KB)
+0068.330 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5700 files added (on-disk size: 25812.1 KB)
+0069.380 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5800 files added (on-disk size: 25812.1 KB)
+0070.167 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 5900 files added (on-disk size: 25812.1 KB)
+0070.434 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.7 MB, 251 (5921) files added so far); re-opening (prior size: 25812.1 KB)
+0071.772 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 6000 files added (on-disk size: 26745.2 KB)
+0073.111 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 6100 files added (on-disk size: 26745.2 KB)
+0073.442 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.9 MB, 204 (6125) files added so far); re-opening (prior size: 26745.2 KB)
+0074.909 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 6200 files added (on-disk size: 27054 KB)
+0076.444 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.4 MB, 147 (6272) files added so far); re-opening (prior size: 27054 KB)
+0077.515 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 6300 files added (on-disk size: 27432.9 KB)
+0078.994 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip.tmp: 6400 files added (on-disk size: 27432.9 KB)
+0079.432 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.4 MB, 168 (6440) files added so far); re-opening (prior size: 27432.9 KB)
+0080.851 (0) Created plugins zip (0) - 27864.6 KB in 80.7 s (345.2 KB/s) (sha1: 3a3ce61743aab186bc1da8806b7008d1cf28b556, sha256: 5d2296bde7435c33ae16f5792abfb0c543a13653d7eb820a8fa371eaedb85763)
+0080.858 (0) Beginning creation of dump of themes (split every: 400 MB)
+0080.991 (0) Total entities for the zip file: 72 directories, 387 files (0 skipped as non-modified), 16.4 MB
+0081.587 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0081.799 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0082.413 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0083.455 (0) Created themes zip (0) - 11195.3 KB in 2.6 s (4318.9 KB/s) (sha1: 60c9733f209636ca49f0b600cacd3ddb56306b04, sha256: cc387aa90e4cb2176a7ae0206aa4e184b5e261d7efde3613edc5464c4bd6d20f)
+0083.462 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0083.464 (0) Looking for candidates to backup in: C:\xampp\htdocs\wp_emma-event.fr/wp-content/uploads
+0083.466 (0) finding files: .htaccess: adding to list (1)
+0083.468 (0) finding files: 2012: adding to list (2)
+0083.470 (0) finding files: 2020: adding to list (3)
+0083.472 (0) finding files: crm_perks_uploads: adding to list (4)
+0083.474 (0) finding files: elementor: adding to list (5)
+0083.476 (0) finding files: emmaevent: adding to list (6)
+0083.478 (0) finding files: master-slider: adding to list (7)
+0083.480 (0) finding files: redux: adding to list (8)
+0083.482 (0) finding files: webp-express-test-conversion.webp: adding to list (9)
+0083.484 (0) finding files: wp-migrate-db: adding to list (10)
+0083.486 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0083.732 (0) Total entities for the zip file: 18 directories, 563 files (0 skipped as non-modified), 47.5 MB
+0084.337 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0084.757 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25 MB, 563 files batched, 165 (165) added so far); re-opening (prior size: 0 KB)
+0084.960 (0) A useful amount of data was added after this amount of zip processing: 1.5 s (normalised: 1.5 s, rate: 16771.4 KB/s)
+0084.965 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.5290908813477, normalised_time=1.5264122184264, max_time=84.961790084839, data points known=1, old_max_bytes=26214400, new_max_bytes=209715200)
+0085.128 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-uploads.zip.tmp: 200 files added (on-disk size: 25673.5 KB)
+0085.748 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-uploads.zip.tmp: 300 files added (on-disk size: 25673.5 KB)
+0086.243 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-uploads.zip.tmp: 400 files added (on-disk size: 25673.5 KB)
+0086.570 (0) Zip: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-uploads.zip.tmp: 500 files added (on-disk size: 25673.5 KB)
+0087.549 (0) Created uploads zip (0) - 48627 KB in 4.1 s (11980.6 KB/s) (sha1: 869c25dc31f25ca1a0ee67ace301d1adc00e9094, sha256: 3d217f2715035d7cc8b0b87c1f0254918da71b18275be98da0c1350ae01bf39a)
+0087.555 (0) Beginning backup of other directories found in the content directory (index: 0)
+0087.562 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0087.564 (0) Looking for candidates to backup in: C:\xampp\htdocs\wp_emma-event.fr/wp-content
+0087.573 (0) finding files: backups-dup-lite: skipping: excluded by options (glob)
+0087.576 (0) finding files: index.php: adding to list (1)
+0087.603 (0) finding files: languages: adding to list (2)
+0087.657 (0) finding files: plugins: skipping: this is the plugins directory
+0087.668 (0) finding files: themes: skipping: this is the themes directory
+0087.677 (0) finding files: updraft: skipping: this is the updraft directory
+0087.683 (0) finding files: upgrade: skipping: excluded by options
+0087.688 (0) finding files: uploads: skipping: this is the uploads directory
+0087.752 (0) Total entities for the zip file: 3 directories, 56 files (0 skipped as non-modified), 4 MB
+0088.277 (0) Created others zip (0) - 1127.5 KB in 0.6 s (1970.4 KB/s) (sha1: 939b4ce0677593583b2966f6a652be274872d200, sha256: 318bbf8efe0b6f1362b6e031c06d081c21cbcadb75f45d44f60bdeeb5c88d213)
+0088.319 (0) Saving backup status to database (elements: 8)
+0088.334 (0) Beginning creation of database dump (WordPress DB)
+0088.347 (0) Testing potential mysqldump binary: C:\Program Files\MySQL\MySQL Workbench 8.0 CE\mysqldump.exe
+0088.532 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_emmaevent_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n SET character_set_client = utf8mb4 ;\n (truncated - 1269 bytes total)
+0088.553 (0) Binary mysqldump: error (code: 2)
+0088.571 (0) Table wp_emmaevent_options: Total expected rows (approximate): 345
+0088.636 (0) Table wp_emmaevent_options: Rows added in this batch (start page: 0; next: finished): 350 in 0.06 seconds
+0088.644 (0) Table wp_emmaevent_options: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_options.table.gz - 207.5 KB)
+0088.655 (0) Table wp_emmaevent_users: Total expected rows (approximate): 3
+0088.666 (0) Table wp_emmaevent_users: Rows added in this batch (start page: 0; next: finished): 3 in 0.01 seconds
+0088.673 (0) Table wp_emmaevent_users: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_users.table.gz - 0.7 KB)
+0088.682 (0) Table wp_emmaevent_usermeta: Total expected rows (approximate): 92
+0088.693 (0) Table wp_emmaevent_usermeta: Rows added in this batch (start page: 0; next: finished): 92 in 0.01 seconds
+0088.699 (0) Table wp_emmaevent_usermeta: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_usermeta.table.gz - 1.9 KB)
+0088.709 (0) Table wp_emmaevent_actionscheduler_actions: Total expected rows (approximate): 7
+0088.721 (0) Table wp_emmaevent_actionscheduler_actions: Rows added in this batch (start page: 0; next: finished): 7 in 0.01 seconds
+0088.728 (0) Table wp_emmaevent_actionscheduler_actions: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_actionscheduler_actions.table.gz - 0.9 KB)
+0088.738 (0) Table wp_emmaevent_actionscheduler_claims: Total expected rows (approximate): 0
+0088.749 (0) Table wp_emmaevent_actionscheduler_claims: Rows added in this batch (start page: 0; next: finished): 0 in 0.01 seconds
+0088.756 (0) Table wp_emmaevent_actionscheduler_claims: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_actionscheduler_claims.table.gz - 0.4 KB)
+0088.765 (0) Table wp_emmaevent_actionscheduler_groups: Total expected rows (approximate): 1
+0088.773 (0) Table wp_emmaevent_actionscheduler_groups: Rows added in this batch (start page: 0; next: finished): 1 in 0.01 seconds
+0088.780 (0) Table wp_emmaevent_actionscheduler_groups: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_actionscheduler_groups.table.gz - 0.4 KB)
+0088.789 (0) Table wp_emmaevent_actionscheduler_logs: Total expected rows (approximate): 21
+0088.802 (0) Table wp_emmaevent_actionscheduler_logs: Rows added in this batch (start page: 0; next: finished): 21 in 0.01 seconds
+0088.810 (0) Table wp_emmaevent_actionscheduler_logs: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_actionscheduler_logs.table.gz - 0.7 KB)
+0088.822 (0) Table wp_emmaevent_commentmeta: Total expected rows (approximate): 0
+0088.833 (0) Table wp_emmaevent_commentmeta: Rows added in this batch (start page: 0; next: finished): 0 in 0.01 seconds
+0088.841 (0) Table wp_emmaevent_commentmeta: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_commentmeta.table.gz - 0.4 KB)
+0088.852 (0) Table wp_emmaevent_comments: Total expected rows (approximate): 5
+0088.869 (0) Table wp_emmaevent_comments: Rows added in this batch (start page: 0; next: finished): 5 in 0.01 seconds
+0088.879 (0) Table wp_emmaevent_comments: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_comments.table.gz - 1 KB)
+0088.889 (0) Table wp_emmaevent_links: Total expected rows (approximate): 0
+0088.899 (0) Table wp_emmaevent_links: Rows added in this batch (start page: 0; next: finished): 0 in 0.01 seconds
+0088.907 (0) Table wp_emmaevent_links: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_links.table.gz - 0.4 KB)
+0088.917 (0) Table wp_emmaevent_postmeta: Total expected rows (approximate): 1282
+0088.955 (0) Table wp_emmaevent_postmeta: Rows added in this batch (start page: 0; next: finished): 1301 in 0.04 seconds
+0088.974 (0) Table wp_emmaevent_postmeta: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_postmeta.table.gz - 29.7 KB)
+0088.993 (0) Table wp_emmaevent_posts: Total expected rows (approximate): 224
+0089.031 (0) Table wp_emmaevent_posts: Rows added in this batch (start page: 0; next: finished): 238 in 0.04 seconds
+0089.040 (0) Table wp_emmaevent_posts: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_posts.table.gz - 38.1 KB)
+0089.050 (0) Table wp_emmaevent_term_relationships: Total expected rows (approximate): 47
+0089.062 (0) Table wp_emmaevent_term_relationships: Rows added in this batch (start page: 0; next: finished): 47 in 0.01 seconds
+0089.069 (0) Table wp_emmaevent_term_relationships: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_term_relationships.table.gz - 0.5 KB)
+0089.079 (0) Table wp_emmaevent_term_taxonomy: Total expected rows (approximate): 20
+0089.091 (0) Table wp_emmaevent_term_taxonomy: Rows added in this batch (start page: 0; next: finished): 20 in 0.01 seconds
+0089.098 (0) Table wp_emmaevent_term_taxonomy: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_term_taxonomy.table.gz - 0.7 KB)
+0089.108 (0) Table wp_emmaevent_termmeta: Total expected rows (approximate): 0
+0089.117 (0) Table wp_emmaevent_termmeta: Rows added in this batch (start page: 0; next: finished): 0 in 0.01 seconds
+0089.123 (0) Table wp_emmaevent_termmeta: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_termmeta.table.gz - 0.4 KB)
+0089.134 (0) Table wp_emmaevent_terms: Total expected rows (approximate): 20
+0089.143 (0) Table wp_emmaevent_terms: Rows added in this batch (start page: 0; next: finished): 20 in 0.01 seconds
+0089.150 (0) Table wp_emmaevent_terms: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_terms.table.gz - 0.6 KB)
+0089.160 (0) Table wp_emmaevent_yoast_seo_links: Total expected rows (approximate): 41
+0089.169 (0) Table wp_emmaevent_yoast_seo_links: Rows added in this batch (start page: 0; next: finished): 41 in 0.01 seconds
+0089.176 (0) Table wp_emmaevent_yoast_seo_links: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_seo_links.table.gz - 1 KB)
+0089.185 (0) Table wp_emmaevent_yoast_seo_meta: Total expected rows (approximate): 195
+0089.195 (0) Table wp_emmaevent_yoast_seo_meta: Rows added in this batch (start page: 0; next: finished): 195 in 0.01 seconds
+0089.202 (0) Table wp_emmaevent_yoast_seo_meta: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_seo_meta.table.gz - 0.8 KB)
+0089.212 (0) Table wp_emmaevent_duplicator_packages: Total expected rows (approximate): 1
+0089.224 (0) Table wp_emmaevent_duplicator_packages: Rows added in this batch (start page: 0; next: finished): 1 in 0.01 seconds
+0089.231 (0) Table wp_emmaevent_duplicator_packages: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_duplicator_packages.table.gz - 2.3 KB)
+0089.242 (0) Table wp_emmaevent_masterslider_options: Total expected rows (approximate): 3
+0089.250 (0) Table wp_emmaevent_masterslider_options: Rows added in this batch (start page: 0; next: finished): 3 in 0.01 seconds
+0089.257 (0) Table wp_emmaevent_masterslider_options: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_masterslider_options.table.gz - 0.5 KB)
+0089.267 (0) Table wp_emmaevent_masterslider_sliders: Total expected rows (approximate): 1
+0089.276 (0) Table wp_emmaevent_masterslider_sliders: Rows added in this batch (start page: 0; next: finished): 1 in 0.01 seconds
+0089.283 (0) Table wp_emmaevent_masterslider_sliders: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_masterslider_sliders.table.gz - 3 KB)
+0089.292 (0) Table wp_emmaevent_responsive_menu: Total expected rows (approximate): 286
+0089.302 (0) Table wp_emmaevent_responsive_menu: Rows added in this batch (start page: 0; next: finished): 286 in 0.01 seconds
+0089.309 (0) Table wp_emmaevent_responsive_menu: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_responsive_menu.table.gz - 2.4 KB)
+0089.320 (0) Table wp_emmaevent_smush_dir_images: Total expected rows (approximate): 0
+0089.333 (0) Table wp_emmaevent_smush_dir_images: Rows added in this batch (start page: 0; next: finished): 0 in 0.01 seconds
+0089.340 (0) Table wp_emmaevent_smush_dir_images: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_smush_dir_images.table.gz - 0.4 KB)
+0089.352 (0) Table wp_emmaevent_vxcf_leads: Total expected rows (approximate): 6
+0089.366 (0) Table wp_emmaevent_vxcf_leads: Rows added in this batch (start page: 0; next: finished): 6 in 0.01 seconds
+0089.372 (0) Table wp_emmaevent_vxcf_leads: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_vxcf_leads.table.gz - 0.8 KB)
+0089.385 (0) Table wp_emmaevent_vxcf_leads_detail: Total expected rows (approximate): 36
+0089.395 (0) Table wp_emmaevent_vxcf_leads_detail: Rows added in this batch (start page: 0; next: finished): 36 in 0.01 seconds
+0089.404 (0) Table wp_emmaevent_vxcf_leads_detail: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_vxcf_leads_detail.table.gz - 0.8 KB)
+0089.416 (0) Table wp_emmaevent_vxcf_leads_notes: Total expected rows (approximate): 0
+0089.426 (0) Table wp_emmaevent_vxcf_leads_notes: Rows added in this batch (start page: 0; next: finished): 0 in 0.01 seconds
+0089.434 (0) Table wp_emmaevent_vxcf_leads_notes: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_vxcf_leads_notes.table.gz - 0.4 KB)
+0089.447 (0) Table wp_emmaevent_wpmailsmtp_tasks_meta: Total expected rows (approximate): 0
+0089.464 (0) Table wp_emmaevent_wpmailsmtp_tasks_meta: Rows added in this batch (start page: 0; next: finished): 0 in 0.01 seconds
+0089.472 (0) Table wp_emmaevent_wpmailsmtp_tasks_meta: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_wpmailsmtp_tasks_meta.table.gz - 0.3 KB)
+0089.484 (0) Table wp_emmaevent_yoast_indexable: Total expected rows (approximate): 139
+0089.511 (0) Table wp_emmaevent_yoast_indexable: Rows added in this batch (start page: 0; next: finished): 139 in 0.02 seconds
+0089.520 (0) Table wp_emmaevent_yoast_indexable: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_indexable.table.gz - 10.2 KB)
+0089.533 (0) Table wp_emmaevent_yoast_indexable_hierarchy: Total expected rows (approximate): 55
+0089.543 (0) Table wp_emmaevent_yoast_indexable_hierarchy: Rows added in this batch (start page: 0; next: finished): 55 in 0.01 seconds
+0089.551 (0) Table wp_emmaevent_yoast_indexable_hierarchy: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_indexable_hierarchy.table.gz - 0.6 KB)
+0089.564 (0) Table wp_emmaevent_yoast_migrations: Total expected rows (approximate): 17
+0089.578 (0) Table wp_emmaevent_yoast_migrations: Rows added in this batch (start page: 0; next: finished): 17 in 0.01 seconds
+0089.586 (0) Table wp_emmaevent_yoast_migrations: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_migrations.table.gz - 0.5 KB)
+0089.598 (0) Table wp_emmaevent_yoast_primary_term: Total expected rows (approximate): 1
+0089.611 (0) Table wp_emmaevent_yoast_primary_term: Rows added in this batch (start page: 0; next: finished): 1 in 0.01 seconds
+0089.619 (0) Table wp_emmaevent_yoast_primary_term: finishing file (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_primary_term.table.gz - 0.5 KB)
+0089.627 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_options.table.gz (1/31): adding to final database dump
+0089.664 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_users.table.gz (2/31): adding to final database dump
+0089.668 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_usermeta.table.gz (3/31): adding to final database dump
+0089.671 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_actionscheduler_actions.table.gz (4/31): adding to final database dump
+0089.674 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_actionscheduler_claims.table.gz (5/31): adding to final database dump
+0089.677 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_actionscheduler_groups.table.gz (6/31): adding to final database dump
+0089.680 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_actionscheduler_logs.table.gz (7/31): adding to final database dump
+0089.683 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_commentmeta.table.gz (8/31): adding to final database dump
+0089.685 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_comments.table.gz (9/31): adding to final database dump
+0089.687 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_links.table.gz (10/31): adding to final database dump
+0089.690 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_postmeta.table.gz (11/31): adding to final database dump
+0089.699 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_posts.table.gz (12/31): adding to final database dump
+0089.708 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_term_relationships.table.gz (13/31): adding to final database dump
+0089.711 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_term_taxonomy.table.gz (14/31): adding to final database dump
+0089.713 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_termmeta.table.gz (15/31): adding to final database dump
+0089.716 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_terms.table.gz (16/31): adding to final database dump
+0089.719 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_seo_links.table.gz (17/31): adding to final database dump
+0089.722 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_seo_meta.table.gz (18/31): adding to final database dump
+0089.724 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_duplicator_packages.table.gz (19/31): adding to final database dump
+0089.727 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_masterslider_options.table.gz (20/31): adding to final database dump
+0089.729 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_masterslider_sliders.table.gz (21/31): adding to final database dump
+0089.732 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_responsive_menu.table.gz (22/31): adding to final database dump
+0089.735 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_smush_dir_images.table.gz (23/31): adding to final database dump
+0089.738 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_vxcf_leads.table.gz (24/31): adding to final database dump
+0089.740 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_vxcf_leads_detail.table.gz (25/31): adding to final database dump
+0089.742 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_vxcf_leads_notes.table.gz (26/31): adding to final database dump
+0089.744 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_wpmailsmtp_tasks_meta.table.gz (27/31): adding to final database dump
+0089.747 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_indexable.table.gz (28/31): adding to final database dump
+0089.751 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_indexable_hierarchy.table.gz (29/31): adding to final database dump
+0089.754 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_migrations.table.gz (30/31): adding to final database dump
+0089.757 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db-table-wp_emmaevent_yoast_primary_term.table.gz (31/31): adding to final database dump
+0089.784 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db.gz: finished writing out complete database file (288 KB)
+0089.808 (0) Total database tables backed up: 31 (backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db.gz, size: 308402, sha1: 11bed37db8425c967b3d8f0a12f65d6d35ee488d, sha256: fa44560aa707af8634fbba084915e67940816b44472b57060cde217e07b0bce9)
+0089.820 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0089.822 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0089.824 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0089.826 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-others.zip: others: This file has not yet been successfully uploaded: will queue
+0089.828 (0) backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db.gz: db: This file has not yet been successfully uploaded: will queue
+0089.830 (0) Saving backup history. Total backup size: 87 MB
+0089.834 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0089.839 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0089.841 (0) No remote despatch: user chose no remote backup service
+0089.843 (0) Recording as successfully uploaded: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-plugins.zip
+0089.847 (0) Recording as successfully uploaded: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-themes.zip
+0089.850 (0) Recording as successfully uploaded: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-uploads.zip
+0089.854 (0) Recording as successfully uploaded: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-others.zip
+0089.857 (0) Recording as successfully uploaded: backup_2020-08-23-1559_Emma_Event_Wedding_amp_Event_4d886ca5b5b3-db.gz
+0089.863 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=5, retain_db=5
+0089.866 (0) Number of backup sets in history: 3; groups (db): 1
+0089.868 (0) Examining (for databases) backup set with group_id=0, nonce=4d886ca5b5b3, datestamp=1598191195 (Aug 23 2020 13:59:55)
+0089.870 (0) This backup set is the backup set just made, so will not be deleted.
+0089.870 (0) Examining (for databases) backup set with group_id=0, nonce=b40ed3131999, datestamp=1598087447 (Aug 22 2020 09:10:47)
+0089.870 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.871 (0) Examining (for databases) backup set with group_id=0, nonce=05847f6e33ff, datestamp=1598022017 (Aug 21 2020 15:00:17)
+0089.871 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.872 (0) Number of backup sets in history: 3; groups (files): 1
+0089.873 (0) Examining (for files) backup set with nonce=4d886ca5b5b3, datestamp=1598191195 (Aug 23 2020 13:59:55)
+0089.873 (0) This backup set is the backup set just made, so will not be deleted.
+0089.875 (0) This backup set is the backup set just made, so will not be deleted.
+0089.875 (0) This backup set is the backup set just made, so will not be deleted.
+0089.876 (0) This backup set is the backup set just made, so will not be deleted.
+0089.876 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.878 (0) Examining (for files) backup set with nonce=b40ed3131999, datestamp=1598087447 (Aug 22 2020 09:10:47)
+0089.878 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.878 (0) Examining (for files) backup set with nonce=05847f6e33ff, datestamp=1598022017 (Aug 21 2020 15:00:17)
+0089.878 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.878 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0089.884 (0) Resume backup (4d886ca5b5b3, 0): finish run
+0089.889 (0) Decremented the semaphore (fd) by 1
+0089.893 (0) Semaphore (fd) unlocked
+0089.895 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0089.952 (0) The backup apparently succeeded and is now complete
+0089.956 (0) No email will/can be sent - the user has not configured an email address.
+0089.966 (0) La sauvegarde a réussie. Elle est maintenant terminée.
