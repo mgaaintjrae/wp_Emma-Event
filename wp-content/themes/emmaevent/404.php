@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="notfound" class="site-main">
+    <main id="notfound" class="site-main" role="main">
 
         <div class="error-404 notfound">
             <header class="notfound-404">
@@ -12,10 +12,11 @@
                 <h2>
                     <?php _e( 'Oops, The Page you are looking for can\'t be found!', 'emmaevent' ); ?>
                 </h2>
-                <form class="notfound-search">
-                    <input type="text" placeholder="Search...">
-                    <button type="button">Recherchez</button>
-                </form>
+                <div class="notfound-search">
+                    <!-- <input type="text" placeholder="Search...">
+                    <button type="button">Recherchez</button> -->
+                    <?php get_search_form(); ?>
+                </div>
                 <a href="<?php the_permalink(19); ?>" title="Page d'accueil"><span
                         class="arrow"></span><?php _e('Return To Homepage', 'emmaevent'); ?></a>
             </div><!-- .page-content -->

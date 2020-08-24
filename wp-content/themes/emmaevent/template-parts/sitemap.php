@@ -1,19 +1,8 @@
 <!-- AUTHOR -->
-<h3>Auteure</h3>
+<h3 class="sitemap__title"><?php _e('Author', 'emmaevent'); ?></h3>
 <ul>
     <?php wp_list_authors(array(
         'exclude_admin' => false
-    )); ?>
-</ul>
-
-
-<!-- PAGES -->
-<h3>Pages</h3>
-<ul>
-    <?php
-    wp_list_pages(array(
-        'exclude' => '',
-        'title_li' => '',
     )); ?>
 </ul>
 
@@ -26,7 +15,7 @@ foreach( get_post_types( array('public' => true) ) as $post_type ) {
 
   $pt = get_post_type_object( $post_type );
 
-  echo '<h2>' . $pt->labels->name . '</h2>';
+  echo '<h3 class="sitemap__title">' . $pt->labels->name . '</h3>';
   echo '<ul>';
   query_posts('post_type=' . $post_type . '&posts_per_page=-1');
   while( have_posts() ) {
@@ -35,7 +24,20 @@ foreach( get_post_types( array('public' => true) ) as $post_type ) {
   }
   echo '</ul>';
 }
-?>
+?> 
+
+
+<!-- PAGES -->
+<h3 class="sitemap__title"><?php _e('Pages', 'emmaevent'); ?></h3>
+<ul>
+    <?php
+    wp_list_pages(array(
+        'exclude' => '',
+        'title_li' => '',
+    )); ?>
+</ul>
+
+
 
 
 <!-- BLOG -->

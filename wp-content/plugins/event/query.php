@@ -18,6 +18,6 @@ add_filter('nav_menu_css_class', function (array $classes, WP_Post $item): array
   return $classes;
 }, 11, 2);
 
-function event_is_type_url(string $url): bool {
-  return strpos($url, _x('events', 'URL', 'event') . '/' . _x('index.php?post_type=events&event_category=$matches[1]')) !== false;
-}
+// function event_is_type_url(string $url): bool {
+//   return strpos($url, _x('events', 'URL', 'event') . '/' . _x('index.php?post_type=events&event_category=$matches[1]')) !== false;
+// }

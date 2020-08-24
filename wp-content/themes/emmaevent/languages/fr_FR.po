@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-08-23 17:21+0200\n"
-"PO-Revision-Date: 2020-08-23 17:22+0200\n"
+"POT-Creation-Date: 2020-08-24 14:52+0200\n"
+"PO-Revision-Date: 2020-08-24 14:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -21,15 +21,13 @@ msgstr ""
 
 #: 404.php:13
 msgid "Oops, The Page you are looking for can't be found!"
-msgstr ""
+msgstr "Oups, la page que vous recherchez est introuvable !"
 
-#: 404.php:20
-#, fuzzy
-#| msgid "Homepage"
+#: 404.php:21
 msgid "Return To Homepage"
-msgstr "Page d'accueil"
+msgstr "Retour à la page d'accueil"
 
-#: archive-event.php:58
+#: archive-events.php:58
 msgid "More events +"
 msgstr "Plus d'événements +"
 
@@ -107,8 +105,10 @@ msgstr "Titre"
 msgid "Search results for \"%s\""
 msgstr "Résultats de recherche pour \"%s\""
 
-#: index.php:31 taxonomy-events-mariages.php:39 taxonomy-events-prives.php:39
-#: taxonomy-events-professionnels.php:39 taxonomy-events.php:20
+#: index.php:31 taxonomy-events_category-mariages.php:44
+#: taxonomy-events_category-prives.php:39
+#: taxonomy-events_category-professionnels.php:39
+#: taxonomy-events_category.php:20
 msgid "No posts found"
 msgstr "Post non trouvée"
 
@@ -116,19 +116,19 @@ msgstr "Post non trouvée"
 msgid "Search post"
 msgstr "Rechercher des événements"
 
-#: single-event.php:38
+#: single-events.php:42
 msgid "Next Post :"
 msgstr "Article suivant :"
 
-#: single-event.php:40
+#: single-events.php:44
 msgid "Next post:"
 msgstr "Article suivant:"
 
-#: single-event.php:42
+#: single-events.php:46
 msgid "Previous Post :"
 msgstr "Article précédent :"
 
-#: single-event.php:44
+#: single-events.php:48
 msgid "Previous post:"
 msgstr "Article précédent:"
 
@@ -146,6 +146,14 @@ msgstr "%1$s à %2$s"
 msgid "Edit"
 msgstr "Modifier"
 
+#: template-parts/sitemap.php:2
+msgid "Author"
+msgstr "Auteure"
+
+#: template-parts/sitemap.php:31
+msgid "Pages"
+msgstr ""
+
 #~ msgid "Oops! That page can&rsquo;t be found."
 #~ msgstr "Oups ! Cette page est introuvable."
 
@@ -154,9 +162,6 @@ msgstr "Modifier"
 #~ msgstr ""
 #~ "Il semble que rien n'ait été trouvé à cet endroit. Peut-être essayer une "
 #~ "recherche ?"
-
-#~ msgid "Author"
-#~ msgstr "Auteur"
 
 #~ msgid "Home"
 #~ msgstr "Accueil"
