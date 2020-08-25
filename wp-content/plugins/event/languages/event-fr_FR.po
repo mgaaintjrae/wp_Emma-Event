@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Event Plugin\n"
-"POT-Creation-Date: 2020-08-24 15:27+0200\n"
-"PO-Revision-Date: 2020-08-24 15:27+0200\n"
+"POT-Creation-Date: 2020-08-24 23:02+0200\n"
+"PO-Revision-Date: 2020-08-24 23:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -15,181 +15,181 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_x:1,2c;_n\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: event.php:93 event.php:121
+#: event.php:24 event.php:49
 msgid "Events"
 msgstr "Événements"
 
-#: event.php:94
+#: event.php:25
 msgid "Event"
 msgstr "Événement"
 
-#: event.php:95
+#: event.php:26
 msgid "Edit event"
 msgstr "Modifier un événement"
 
-#: event.php:96
+#: event.php:27
 msgid "New event"
 msgstr "Nouvel événement"
 
-#: event.php:97
+#: event.php:28
 msgid "View event"
 msgstr "Voir l'événement"
 
-#: event.php:98
+#: event.php:29
 msgid "View events"
 msgstr "Voir les événements"
 
-#: event.php:99
+#: event.php:30
 msgid "Search events"
 msgstr "Rechercher des événements"
 
-#: event.php:100
+#: event.php:31
 msgid "No events found."
 msgstr "Evénements non trouvés."
 
-#: event.php:101
+#: event.php:32
 msgid "No events found in Trash"
 msgstr "Aucun événement trouvé dans la corbeille"
 
-#: event.php:102
+#: event.php:33
 msgid "All events"
 msgstr "Tous les événements"
 
-#: event.php:103
+#: event.php:34
 msgid "Event archive"
 msgstr "Archive des événements"
 
-#: event.php:104
+#: event.php:35
 msgid "Event attributes"
 msgstr "Attributs de l'événement"
 
-#: event.php:105
+#: event.php:36
 msgid "Insert into Event"
 msgstr "Insérer un nouvel événement"
 
-#: event.php:106
+#: event.php:37
 msgid "Uploaded to this Event"
 msgstr "Téléchargé dans cet événement"
 
-#: event.php:107
+#: event.php:38
 msgid "Filter Events list"
 msgstr "Filtrer les événements"
 
-#: event.php:108
+#: event.php:39
 msgid "Events list navigation"
 msgstr "Navigation dans la liste des événements"
 
-#: event.php:109
+#: event.php:40
 msgid "Events list"
 msgstr "Liste des événements"
 
-#: event.php:110
+#: event.php:41
 msgid "Event published."
 msgstr "Evénement publié."
 
-#: event.php:111
+#: event.php:42
 msgid "Event published privately."
 msgstr "Événement mis en ligne en privé."
 
-#: event.php:112
+#: event.php:43
 msgid "Event reverted to draft."
 msgstr "Événement reconverti en brouillon."
 
-#: event.php:113
+#: event.php:44
 msgid "Event scheduled."
 msgstr "Événement planifié."
 
-#: event.php:114
+#: event.php:45
 msgid "Event updated."
 msgstr "Evénement mis à jour."
 
-#: event.php:122
+#: event.php:50
 msgid "All about the events"
 msgstr "Tous sur les événements"
 
-#: event.php:133 query.php:5
+#: event.php:59 query.php:5 query.php:22
 msgctxt "URL"
 msgid "events"
 msgstr "evenements"
 
-#: event.php:155
+#: event.php:73
 msgid "Categories"
 msgstr "Catégories"
 
-#: event.php:156
+#: event.php:74
 msgid "Category"
 msgstr "Catégorie"
 
-#: event.php:157
+#: event.php:75
 msgid "Search Categories"
 msgstr "Rechercher des catégories d'événements"
 
-#: event.php:158
+#: event.php:76
 msgid "Popular Categories"
 msgstr ""
 
-#: event.php:159
+#: event.php:77
 msgid "All Categories"
 msgstr "Toutes les catégories"
 
-#: event.php:160
+#: event.php:78
 msgid "Edit Category"
 msgstr "Modifier une catégorie"
 
-#: event.php:161
+#: event.php:79
 msgid "View Category"
 msgstr "Voir une catégorie"
 
-#: event.php:162
+#: event.php:80
 msgid "Update Category"
 msgstr "Mettre à jour une catégorie"
 
-#: event.php:163
+#: event.php:81
 msgid "Add New Category"
 msgstr "Ajouter une nouvelle catégorie"
 
-#: event.php:164
+#: event.php:82
 msgid "New Category Name"
 msgstr "Ajouter un nom de catégorie"
 
-#: event.php:165
+#: event.php:83
 msgid "Separate Categories with commas"
 msgstr ""
 
-#: event.php:166
+#: event.php:84
 msgid "Add or remove Categories"
 msgstr "Ajouter ou supprimer des catégories"
 
-#: event.php:167
+#: event.php:85
 msgid "Choose from the most used Categories"
 msgstr "Choisir parmi les types les catégories plus populaires"
 
-#: event.php:168
+#: event.php:86
 msgid "No Categories found."
 msgstr "Catégories non trouvées."
 
-#: event.php:169
+#: event.php:87
 msgid "No Categories"
 msgstr ""
 
-#: event.php:170
+#: event.php:88
 msgid "Categories list navigation"
 msgstr "Navigation dans la liste des catégories"
 
-#: event.php:171
+#: event.php:89
 msgid "Categories list"
 msgstr "Filtrer les catégories"
 
-#: event.php:172
+#: event.php:90
 msgid "&larr; Back to Categories"
 msgstr ""
 
-#: event.php:184
+#: event.php:97
 msgctxt "URL"
 msgid "eventscategory"
 msgstr "categorie-de-l-evenement"
 
-#: event.php:205
+#: event.php:114
 msgid "Image"
 msgstr "Image"
 

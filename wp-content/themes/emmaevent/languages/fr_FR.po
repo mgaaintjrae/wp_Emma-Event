@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-08-24 14:52+0200\n"
-"PO-Revision-Date: 2020-08-24 14:52+0200\n"
+"POT-Creation-Date: 2020-08-24 23:01+0200\n"
+"PO-Revision-Date: 2020-08-24 23:01+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -153,6 +153,10 @@ msgstr "Auteure"
 #: template-parts/sitemap.php:31
 msgid "Pages"
 msgstr ""
+
+#: templates/about.php:41 templates/contact.php:106
+msgid "Edit post"
+msgstr "Modifier la page"
 
 #~ msgid "Oops! That page can&rsquo;t be found."
 #~ msgstr "Oups ! Cette page est introuvable."
