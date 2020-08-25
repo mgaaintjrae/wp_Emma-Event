@@ -22,7 +22,7 @@
             <div class="events__grid">
                 <?php
 							$query = new WP_Query([
-								'post_type' => 'event',
+								'post_type' => 'events',
 								'posts_per_page' => 4
 							]);
                 if (have_posts()) : ?>
@@ -32,12 +32,7 @@
                         <?php the_post_thumbnail('event-thumbnail-large') ?>
                         <figcaption>
                             <h3 class="event__body">
-                                <?php $type = the_field('type');
-                    if( $type ):?>
-                                <?php foreach( $types as $type): ?>                                
-                                    <?php $type ?>                                                                
-                                <?php endforeach; ?>
-                                <?php endif; ?>
+                            <?php the_terms($post->ID, 'events_category'); ?>
                                 
                             </h3>   
                                 <?php the_excerpt(); ?>                      
