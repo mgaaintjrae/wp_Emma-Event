@@ -1,3 +1,12 @@
+.edit__post {
+  color: cornflowerblue;
+  font-size: initial;
+  text-align: center;
+}
+.edit__post a:hover {
+  color: blue;
+  transition: all 1s;
+}
 .page-title {
   @extend %big-title;
   margin-bottom: space(6);
@@ -20,7 +29,7 @@
   display: grid;
   grid-gap: space(10);
   padding-bottom: 59px;
-  @include down(900){
+  @include down(900) {
     padding: 0 20px;
   }
 }
@@ -229,17 +238,17 @@ header .news_header {
 }
 .content figure h3 {
   word-spacing: -0.15em;
-  font-weight: 800;  
+  font-weight: 800;
 }
-@include down(400) {  
+@include down(400) {
   .content figure p.event {
-    display: block;    
+    display: block;
   }
 }
 .content figure h3,
 .content figure p {
   margin: 0;
-  @include down(500){
+  @include down(500) {
     margin: -5px;
   }
 }
@@ -259,7 +268,7 @@ header .news_header {
   @include down(900) {
     font-size: 42.5%;
     margin-top: 0px;
-  }  
+  }
 }
 @include down(760) {
   .content figure p:nth-child(2) {
@@ -364,6 +373,3 @@ figure.effect-lily:hover p {
   transform: scale(1.3);
   border-radius: 4px;
 }
-
-
-
