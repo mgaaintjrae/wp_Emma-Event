@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-08-25 22:03+0200\n"
-"PO-Revision-Date: 2020-08-25 22:03+0200\n"
+"POT-Creation-Date: 2020-08-26 13:51+0200\n"
+"PO-Revision-Date: 2020-08-26 13:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -23,11 +23,11 @@ msgstr ""
 msgid "Oops, The Page you are looking for can't be found!"
 msgstr "Oups, la page que vous recherchez est introuvable !"
 
-#: 404.php:21
+#: 404.php:19
 msgid "Return To Homepage"
 msgstr "Retour à la page d'accueil"
 
-#: archive-events.php:53
+#: archive-events.php:57
 msgid "More events +"
 msgstr "Plus d'événements +"
 
@@ -116,23 +116,7 @@ msgstr "Post non trouvée"
 msgid "Search post"
 msgstr "Rechercher des événements"
 
-#: single-events.php:30
-msgid "Next Post :"
-msgstr "Article suivant :"
-
-#: single-events.php:32
-msgid "Next post:"
-msgstr "Article suivant:"
-
-#: single-events.php:34
-msgid "Previous Post :"
-msgstr "Article précédent :"
-
-#: single-events.php:36
-msgid "Previous post:"
-msgstr "Article précédent:"
-
-#: single-events.php:59 templates/about.php:41 templates/contact.php:106
+#: single-events.php:47 templates/about.php:41 templates/contact.php:106
 #: templates/galery.php:43 templates/legal.php:44
 #: templates/service-advice.php:54 templates/service-day-j.php:54
 #: templates/service-partiel.php:54 templates/service-turnkey.php:54
@@ -153,6 +137,14 @@ msgstr "%1$s à %2$s"
 msgid "Edit"
 msgstr "Modifier"
 
+#: template-parts/navigation.php:12
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Suivant <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/navigation.php:16
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Précédent"
+
 #: template-parts/sitemap.php:2
 msgid "Author"
 msgstr "Auteure"
@@ -160,6 +152,18 @@ msgstr "Auteure"
 #: template-parts/sitemap.php:31
 msgid "Pages"
 msgstr ""
+
+#~ msgid "Next Post :"
+#~ msgstr "Article suivant :"
+
+#~ msgid "Next post:"
+#~ msgstr "Article suivant:"
+
+#~ msgid "Previous Post :"
+#~ msgstr "Article précédent :"
+
+#~ msgid "Previous post:"
+#~ msgstr "Article précédent:"
 
 #~ msgid "Oops! That page can&rsquo;t be found."
 #~ msgstr "Oups ! Cette page est introuvable."
