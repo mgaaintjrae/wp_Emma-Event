@@ -103,7 +103,7 @@ get_header('contact'); ?>
                 </div>
                 <div class="edit__post">
                     <?php if (current_user_can('manage_options')) { ?>
-                        <a href="<?php echo get_edit_post_link(); ?>"><?php _e('Edit post', 'event'); ?></a>
+                        <a href="<?php echo get_edit_post_link(); ?>"><?php _e('Edit post', 'emmaevent'); ?></a>
                     <?php } ?>
                 </div>
             </section>

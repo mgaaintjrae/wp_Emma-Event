@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-08-24 23:01+0200\n"
-"PO-Revision-Date: 2020-08-24 23:01+0200\n"
+"POT-Creation-Date: 2020-08-25 22:03+0200\n"
+"PO-Revision-Date: 2020-08-25 22:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -27,7 +27,7 @@ msgstr "Oups, la page que vous recherchez est introuvable !"
 msgid "Return To Homepage"
 msgstr "Retour à la page d'accueil"
 
-#: archive-events.php:58
+#: archive-events.php:53
 msgid "More events +"
 msgstr "Plus d'événements +"
 
@@ -116,21 +116,28 @@ msgstr "Post non trouvée"
 msgid "Search post"
 msgstr "Rechercher des événements"
 
-#: single-events.php:42
+#: single-events.php:30
 msgid "Next Post :"
 msgstr "Article suivant :"
 
-#: single-events.php:44
+#: single-events.php:32
 msgid "Next post:"
 msgstr "Article suivant:"
 
-#: single-events.php:46
+#: single-events.php:34
 msgid "Previous Post :"
 msgstr "Article précédent :"
 
-#: single-events.php:48
+#: single-events.php:36
 msgid "Previous post:"
 msgstr "Article précédent:"
+
+#: single-events.php:59 templates/about.php:41 templates/contact.php:106
+#: templates/galery.php:43 templates/legal.php:44
+#: templates/service-advice.php:54 templates/service-day-j.php:54
+#: templates/service-partiel.php:54 templates/service-turnkey.php:54
+msgid "Edit post"
+msgstr "Modifier la page"
 
 #: single.php:14 template-parts/post.php:18
 #, php-format
@@ -153,10 +160,6 @@ msgstr "Auteure"
 #: template-parts/sitemap.php:31
 msgid "Pages"
 msgstr ""
-
-#: templates/about.php:41 templates/contact.php:106
-msgid "Edit post"
-msgstr "Modifier la page"
 
 #~ msgid "Oops! That page can&rsquo;t be found."
 #~ msgstr "Oups ! Cette page est introuvable."

@@ -11,9 +11,9 @@
     <?php else : ?>
       <?php single_post_title() ?>
     <?php endif ?>
-    <?php $events= get_terms(['taxonomy' => 'events']); ?>
+    <?php $events= get_terms(['taxonomy' => 'events_category']); ?>
     <?php foreach($events as $event): ?>
-      <?= is_tax('events', $event->term_id)?><?= $event->name ?>
+      <?= is_tax('events_category', $event->term_id)?><?= $event->name ?>
     <?php endforeach; ?>
   </h2>
 

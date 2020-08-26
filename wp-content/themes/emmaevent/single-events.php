@@ -17,39 +17,27 @@
                 <div class="event-body">
                     <div class="formatted">
                         <?php the_content(); ?>
-                        <p>Publié le <?php the_time('d F Y'); ?> par <a href="<?php the_permalink(11) ?>" title=" à propos de moi">Emma-Event</a>
+                        <p>Publié le <?php the_time('d F Y'); ?> par <a href="<?php the_permalink(11) ?>" title="à propos de moi">Emma-Event</a>
                         </p>
                         <!-- Section share -->
                         <?php get_template_part('template-parts/share'); ?>
                     </div>
 
                     <div class="post-navigation">
-                        <?php
-                        the_post_navigation(
-                            array(
-                                'next_text' => '<span class="meta-nav" aria-hidden="true">' . __('Next Post :', 'emmaevent') .
-                                    '</span> ' .
-                                    '<span class="screen-reader-text">' . __('Next post:', 'emmaevent') . '</span> <br />' .
-                                    '<span class="post-title">%title</span>',
-                                'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __('Previous Post :', 'emmaevent') .
-                                    '</span> ' .
-                                    '<span class="screen-reader-text">' . __('Previous post:', 'emmaevent') . '</span> <br />' .
-                                    '<span class="post-title">%title</span>',
-                            )
-                        );
-                        ?>
+                        <?php get_template_part('template-parts/navigation'); ?>
                     </div>
                 </div>
 
                 <div class="event__back">
                     <div class="event__hover">
-                        <?php if (is_single()) : ?>
+                   
+                        <?php //if (is_single()) : ?>
                             <a href="./" class="btn" title="Retour aux événements">
                                 <svg class="icon">
                                     <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#arrow-left">
                                     </use>
                                 </svg>Retour</a>
-                        <?php endif; ?>
+                        <?php //endif; ?>
                     </div>
                 </div>
             <?php endwhile; ?>

@@ -5,7 +5,7 @@ $titre = strip_tags(get_the_title());
 ?>
 
 <div class="event__share">
-    <h5 class="title-secondary">Partagez cet article !</h5>
+    <div class="title-secondary" >Partagez cet article !</div>
     <p>Cet article vous a plu ? N'hésitez pas à le partager !</p>
 
     <a href="https://www.facebook.com/sharer.php?u=<?= $lien ?>&t=<?= $titre ?>" target="_blank"

@@ -21,10 +21,12 @@
 
             <div class="events__grid">
                 <?php
+                
 							$query = new WP_Query([
 								'post_type' => 'events',
-								'posts_per_page' => 4
-							]);
+                                'posts_per_page' => 4,                                
+                            ]);
+                            
                 if (have_posts()) : ?>
                 <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <div class="content">
@@ -47,10 +49,13 @@
             </div>
         </div>
     </section>
+  
+    
 
     <?php if (get_query_var('paged', 1) > 1) : ?>
     <?= emmaevent_paginate() ?>
-    <?php elseif ($nextPostLink = get_next_posts_link(__('More events +', 'emmaevent'))) : ?>
+    <?php elseif ($nextPostLink = get_next_posts_link(__('More events +', 'emmaevent'))) : 
+        var_dump($nextPostLink); ?>
     <div class="pagination">
         <?= $nextPostLink  ?>
     </div>

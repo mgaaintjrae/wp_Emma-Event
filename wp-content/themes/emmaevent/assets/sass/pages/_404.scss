@@ -8,8 +8,8 @@
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .notfound {
@@ -29,12 +29,12 @@
   font-family: $f-alex cursive;
   font-size: 168px;
   margin: 0px;
-  color: #D6A859;
+  color: #d6a859;
   text-transform: uppercase;
 }
 
 .notfound h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
@@ -51,7 +51,7 @@
 }
 
 .notfound-search input {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   width: 100%;
   height: 40px;
   padding: 3px 15px;
@@ -63,15 +63,15 @@
 }
 
 .notfound-search button {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   position: absolute;
-  right: 0px;
+  right: -110px;
   top: 0px;
-  width: 120px;
+  width: 110px;
   height: 40px;
   text-align: center;
   border: none;
-  background: #D6A859;
+  background: #d6a859;
   cursor: pointer;
   padding: 0;
   color: #fff;
@@ -81,26 +81,29 @@
 }
 
 .notfound a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   display: inline-block;
   font-weight: 700;
   border-radius: 15px;
   text-decoration: none;
-  color: #023D2B;
+  color: #023d2b;
 }
 
-.notfound a>.arrow {
+.notfound a > .arrow {
   position: relative;
   top: -2px;
-  border: solid #023D2B;
+  border: solid #023d2b;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
   -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
-
+.form-search .icon {
+  height: 20px;
+  width: 20px;
+}
 @media only screen and (max-width: 767px) {
   .notfound .notfound-404 {
     height: 122px;
