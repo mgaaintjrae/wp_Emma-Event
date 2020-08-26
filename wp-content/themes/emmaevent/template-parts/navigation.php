@@ -10,9 +10,9 @@ $permalink = get_permalink($nid);
 ?>
 <div class="next-timeline">
     <?php next_post_link('%link', __('Next <span class="meta-nav">&rarr;</span>', 'emmaevent')); ?>
-    <div class="title-secondary"><a href="<?php echo $permalink; ?>"><?php echo $next_post->post_title; ?></a></div>
+    <div class="title-secondary"><?php echo $next_post->post_title; ?></div>
 </div>
 <div class="previous-timeline">
     <?php previous_post_link('%link', __('<span class="meta-nav">&larr;</span> Previous', 'emmaevent')); ?>
-    <div class="title-secondary"><a href="<?php echo $permalink; ?>"><?php echo $prev_post->post_title; ?></a></div>
+    <div class="title-secondary"><?php echo $prev_post->post_title; ?></div>
 </div>
