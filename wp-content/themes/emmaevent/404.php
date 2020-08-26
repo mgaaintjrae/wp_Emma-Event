@@ -12,9 +12,7 @@
                 <h2>
                     <?php _e( 'Oops, The Page you are looking for can\'t be found!', 'emmaevent' ); ?>
                 </h2>
-                <div class="notfound-search">
-                    <!-- <input type="text" placeholder="Search...">
-                    <button type="button">Recherchez</button> -->
+                <div class="notfound-search">                   
                     <?php get_search_form(); ?>
                 </div>
                 <a href="<?php the_permalink(19); ?>" title="Page d'accueil"><span
