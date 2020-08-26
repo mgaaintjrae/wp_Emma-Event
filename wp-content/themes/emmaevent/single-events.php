@@ -31,7 +31,7 @@
                 <div class="event__back">
                     <div class="event__hover">
                         <?php if (is_single()) : ?>
-                            <a href="./" class="btn" title="Retour aux événements">
+                            <a href="../" class="btn" title="Retour aux événements">
                                 <svg class="icon">
                                     <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#arrow-left">
                                     </use>
@@ -43,7 +43,7 @@
             </div>
             <div class="edit__post">
                 <?php if (current_user_can('manage_options')) { ?>
-                    <a href="<?php echo get_edit_post_link(); ?>"><?php _e('Edit post', 'event'); ?></a>
+                    <a href="<?php echo get_edit_post_link(); ?>"><?php _e('Edit post', 'emmaevent'); ?></a>
                 <?php } ?>
             </div>
         </section>

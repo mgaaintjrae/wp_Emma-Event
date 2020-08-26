@@ -16,3 +16,4 @@ $permalink = get_permalink($nid);
     <?php previous_post_link('%link', __('<span class="meta-nav">&larr;</span> Previous', 'emmaevent')); ?>
     <div class="title-secondary"><?php echo $prev_post->post_title; ?></div>
 </div>
+

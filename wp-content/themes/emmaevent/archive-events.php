@@ -49,8 +49,7 @@
             </div>
         </div>
     </section>
-  
-    
+       
 
     <?php if (get_query_var('paged', 1) > 1) : ?>
     <?= emmaevent_paginate() ?>
