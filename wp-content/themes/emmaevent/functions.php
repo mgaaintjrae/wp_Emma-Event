@@ -22,10 +22,10 @@ function emmaevent_icon(string $name): string {
 }
 
 function emmaevent_paginate(): string {
-  return '<div class="pagination">' . paginate_links(['prev_text' => emmaevent_icon('arrow-right-emeraude'), 'next_text' => emmaevent_icon('arrow-left-emeraude')]) . '</div>';
+  return '<div class="pagination">' . paginate_links(['prev_text' => emmaevent_icon('back'), 'next_text' => emmaevent_icon('next')]) . '</div>';
 }
 
 function emmaevent_paginate_comments(): void {
   echo '<div class="pagination">';
   paginate_comments_links(['prev_text' => emmaevent_icon('arrow'), 'next_text' => emmaevent_icon('arrow')]);
-  echo '</div>';}
+  echo '</div>';} 
