@@ -8,7 +8,7 @@
  * @since Emma Event 1.0
  */
 
-get_header('about'); ?>
+get_header('services'); ?>
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
@@ -30,14 +30,18 @@ get_header('about'); ?>
                 </div>
             </section>
 
-            <section class="page-about">
-                <div class="page-sidebar">
-                    <div class="thumbnail"></div>
-                    <div class="news-list">
-                        <?php the_content(); ?>                        
+            <section class="page-service container">
+                <div class="page-sidebar prestation">                    
+                    <div class="thumbnail">
+                        <?php the_post_thumbnail('event-thumbnail-large'); ?>
                     </div>
+                    <div class="news-list">
+                        <?php the_content(); ?>
+                    </div>                    
                 </div>
             </section>
+
+
         </main>
 <?php endwhile;
 endif; ?>
