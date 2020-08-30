@@ -176,7 +176,8 @@ get_header(); ?>
         <!-- Slider -->
         <section>
             <div class="slider__container">
-                <?php masterslider(1); ?>
+                <?php// masterslider(1); ?>
+                <?php echo do_shortcode('[metaslider id="29"]'); ?>
                 <div class="slider__content">
                     <div class="slider__title">
                         <h2>Emma Event</h2>

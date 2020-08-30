@@ -13,14 +13,14 @@
 }
 .page-about .page-sidebar,
 .archive .page-sidebar,
-.sitemap__content,
-.single-events .event-body {
+.sitemap__content {
   padding: 70px 69px;
-  @include down(400){
+}
+@include down(400) {
+  .single-events .event-body {
     padding: 0;
   }
 }
-
 .page-sidebar__galery {
   display: grid;
   // grid-template-columns: 1fr;
