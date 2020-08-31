@@ -1,9 +1,12 @@
 <!-- AUTHOR -->
 <h3 class="sitemap__title"><?php _e('Author', 'emmaevent'); ?></h3>
+<!-- <ul>
+    <?php //wp_list_authors(array(
+        //'exclude_admin' => false
+    //)); ?>
+</ul> -->
 <ul>
-    <?php wp_list_authors(array(
-        'exclude_admin' => false
-    )); ?>
+    Emmanuelle Berthereau
 </ul>
 
 <!-- CPT -->

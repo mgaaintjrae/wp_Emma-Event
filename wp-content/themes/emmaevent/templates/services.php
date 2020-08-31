@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Services
  * Template Post Type: post, page
@@ -31,16 +32,21 @@ get_header('services'); ?>
             </section>
 
             <section class="page-service container">
-                <div class="page-sidebar prestation">                    
+                <div class="page-sidebar prestation">
                     <div class="thumbnail">
                         <?php the_post_thumbnail('event-thumbnail-large'); ?>
                     </div>
                     <div class="news-list">
                         <?php the_content(); ?>
-                    </div>                    
+                    </div>
                 </div>
             </section>
-
+            
+            <div class="edit__post">
+                <?php if (current_user_can('manage_options')) { ?>
+                    <a href="<?php echo get_edit_post_link(); ?>"><?php _e('Edit post', 'emmaevent'); ?></a>
+                <?php } ?>
+            </div>
 
         </main>
 <?php endwhile;

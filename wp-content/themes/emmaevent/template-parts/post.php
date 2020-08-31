@@ -3,9 +3,10 @@
     <a href="<?php the_permalink() ?>" title="<?= esc_attr(get_the_title()) ?>" class="news__image">
         <?php the_post_thumbnail() ?>
         <?php else: ?>
-        <img width="375" height="375"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vg8AAlEBZ0IDjCQAAAAASUVORK5CYII=">
-        <?php endif ?>
+        <!-- <img width="375" height="375"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vg8AAlEBZ0IDjCQAAAAASUVORK5CYII="> 
+            -->Insérer une image mise en avant
+        <?php endif ?> 
     </a>
     <div class="news__body">
         <div class="news__header">
