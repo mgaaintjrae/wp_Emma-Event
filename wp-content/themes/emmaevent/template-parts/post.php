@@ -5,7 +5,7 @@
         <?php else: ?>
         <!-- <img width="375" height="375"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vg8AAlEBZ0IDjCQAAAAASUVORK5CYII="> 
-            -->Insérer une image mise en avant
+            -->Aucune image
         <?php endif ?> 
     </a>
     <div class="news__body">

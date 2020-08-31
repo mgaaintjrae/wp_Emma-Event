@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-08-26 13:51+0200\n"
-"PO-Revision-Date: 2020-08-26 13:52+0200\n"
+"POT-Creation-Date: 2020-08-31 17:45+0200\n"
+"PO-Revision-Date: 2020-08-31 17:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -27,7 +27,7 @@ msgstr "Oups, la page que vous recherchez est introuvable !"
 msgid "Return To Homepage"
 msgstr "Retour à la page d'accueil"
 
-#: archive-events.php:57
+#: archive-events.php:56
 msgid "More events +"
 msgstr "Plus d'événements +"
 
@@ -48,7 +48,8 @@ msgid "Homepage"
 msgstr "Page d'accueil"
 
 #: header-about.php:37 header-service-advice.php:37 header-service-day-j.php:37
-#: header-service-partiel.php:37 header-service-turnkey.php:37 header.php:97
+#: header-service-partiel.php:37 header-service-turnkey.php:37
+#: header-services.php:37 header.php:97
 msgid "Emma-Event"
 msgstr ""
 
@@ -112,18 +113,36 @@ msgstr "Résultats de recherche pour \"%s\""
 msgid "No posts found"
 msgstr "Post non trouvée"
 
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour : \"%s\""
+
+#: search.php:25
+msgid "Nothing Found"
+msgstr "Aucun résultat"
+
+#: search.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Désolé, mais rien ne correspond à vos termes de recherche. Veuillez "
+"réessayer avec d'autres mots-clés."
+
 #: searchform.php:2
 msgid "Search post"
 msgstr "Rechercher des événements"
 
-#: single-events.php:47 templates/about.php:41 templates/contact.php:106
+#: single-events.php:46 templates/about.php:41 templates/contact.php:106
 #: templates/galery.php:43 templates/legal.php:44
 #: templates/service-advice.php:54 templates/service-day-j.php:54
 #: templates/service-partiel.php:54 templates/service-turnkey.php:54
+#: templates/services.php:47
 msgid "Edit post"
 msgstr "Modifier la page"
 
-#: single.php:14 template-parts/post.php:18
+#: single.php:14 template-parts/post.php:19
 #, php-format
 msgid "Published on %s"
 msgstr "Publié le %s"
@@ -149,7 +168,7 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Précédent"
 msgid "Author"
 msgstr "Auteure"
 
-#: template-parts/sitemap.php:31
+#: template-parts/sitemap.php:34
 msgid "Pages"
 msgstr ""
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<main class="container" role="main">
 
   <h2 class="page-title">
   <?php get_the_category(); ?>
@@ -38,5 +38,5 @@
     </aside>-->
   </div>
 
-</div>
+</main>
 <?php get_footer(); ?>
