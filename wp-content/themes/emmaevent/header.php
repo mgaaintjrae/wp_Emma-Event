@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html <?php language_attributes();?>>
+<html <?php language_attributes(); ?>>
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <!-- cdn Cookies Consent -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <!-- End Cookies Consent -->
     <?php wp_head(); ?>
 </head>
 
@@ -21,7 +24,7 @@
     <!-- ====== button-top ======  -->
     <div class="button-top" data-scroll-nav="0">
         <svg class="icon">
-            <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#arrow-up">
+            <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#arrow-up">
             </use>
         </svg>
     </div>
@@ -36,19 +39,18 @@
                     <ul class="topbar__infos">
                         <li>
                             <svg class="icon">
-                                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#phone">
+                                <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#phone">
                                 </use>
                             </svg>06 25 37 34 34
                         </li>
                         <li>
                             <svg class="icon">
-                                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#map">
+                                <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#map">
                                 </use>
                             </svg>Paris & Région Parisienne</li>
                         <li>
                             <svg class="icon">
-                                <use
-                                    xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#envelop">
+                                <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#envelop">
                                 </use>
                             </svg>
                             <a href=" mailto:emma@event.com" title="me contacter">emmanuelle.berthereau@emma-event.fr</a>
@@ -57,31 +59,25 @@
                     <ul class="topbar__socials">
                         <li class="topbar__links">Me suivre :</li>
                         <li>
-                            <a href="https://www.facebook.com/Emma-Event-114495040301571" target="_blank" rel="noopener noreferrer"
-                                title="Facebook">
+                            <a href="https://www.facebook.com/Emma-Event-114495040301571" target="_blank" rel="noopener noreferrer" title="Facebook">
                                 <svg class="icon">
-                                    <use
-                                        xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#facebook">
+                                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#facebook">
                                     </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/emma_event/?hl=fr" target="_blank" rel="noopener noreferrer"
-                                title="Instagram">
+                            <a href="https://www.instagram.com/emma_event/?hl=fr" target="_blank" rel="noopener noreferrer" title="Instagram">
                                 <svg class="icon">
-                                    <use
-                                        xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#instagram">
+                                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#instagram">
                                     </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.pinterest.fr/emmanuelleberthereau/" target="_blank" rel="noopener noreferrer"
-                                title="Pinterest">
+                            <a href="https://www.pinterest.fr/emmanuelleberthereau/" target="_blank" rel="noopener noreferrer" title="Pinterest">
                                 <svg class="icon">
-                                    <use
-                                        xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#pinterest">
+                                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#pinterest">
                                     </use>
                                 </svg>
                             </a>
@@ -102,12 +98,12 @@
                     <div class="position__center">
                         <nav class="nav">
                             <?php
-            wp_nav_menu([
-              'theme_location' => 'header',
-              'container' => false,
-              'menu_class' => 'nav__menu'              
-             ]);
-            ?>
+                            wp_nav_menu([
+                                'theme_location' => 'header',
+                                'container' => false,
+                                'menu_class' => 'nav__menu'
+                            ]);
+                            ?>
                         </nav>
                     </div>
                 </div>
@@ -117,7 +113,7 @@
         <div class="header__title">
             <h1>Emma Event <br> Wedding & Event Planner</h1>
             <svg class="icon">
-                <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_coeur">
+                <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>
             </svg>
         </div>
@@ -128,7 +124,7 @@
     </header>
 
     <?php
-if ( function_exists('yoast_breadcrumb') ) {
-yoast_breadcrumb('<div class="container" id="breadcrumbs"> Vous êtes ici : ','</div>');
-}
-?>
+    if (function_exists('yoast_breadcrumb')) {
+        yoast_breadcrumb('<div class="container" id="breadcrumbs"> Vous êtes ici : ', '</div>');
+    }
+    ?>
