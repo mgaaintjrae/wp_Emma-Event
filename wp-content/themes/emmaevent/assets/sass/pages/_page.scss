@@ -11,6 +11,8 @@
   @extend %big-title;
   margin-bottom: space(6);
 }
+.single .page-sidebar,
+.blog .page-sidebar,
 .page-about .page-sidebar,
 .archive .page-sidebar,
 .sitemap__content {
@@ -19,6 +21,21 @@
 @include down(400) {
   .single-events .event-body {
     padding: 0;
+  }
+}
+.single .page-sidebar,
+.category .page-sidebar,
+.blog .page-sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: space(10);
+  align-items: flex-start;
+}
+@include up(1030) {
+  .single .page-sidebar,
+  .category .page-sidebar,
+  .blog .page-sidebar {
+    grid-template-columns: 1fr 300px;
   }
 }
 .page-sidebar__galery {
@@ -353,8 +370,8 @@ figure.effect-lily:hover p {
 }
 .news-list .news {
   position: relative;
-  margin: 0 0 0 25px;
-  padding: 0;
+  // margin: 0 0 0 25px;
+  // padding: 0;
 }
 .news__image {
   max-width: 300px;

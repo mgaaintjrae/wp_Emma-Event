@@ -106,17 +106,27 @@
 .nav a[aria-current] {
   color: $dore;
 }
+.blog .menu-item-433,
+.archive .menu-item-object-events,
+.archive .menu-item-object-custom,
+.archive .menu-item-433,
 .archive .sticky .menu-item-object-events,
 .archive .sticky .menu-item-object-custom,
+.archive .sticky .menu-item-433,
 .page-template .sticky .menu-item-object-events,
 .page-template .sticky .menu-item-object-custom,
+.page-template .sticky .menu-item-433,
 .page-template .menu-item-object-custom,
-.page-template .menu-item-object-events,
+// .page-template .menu-item-object-events,
 .home .menu-item-object-events,
 .home .menu-item-object-custom,
-.menu-item-object-events,
-.menu-item-object-custom
- {
+.home .menu-item-433,
+.services .sticky .menu-item-object-events,
+.services .sticky .menu-item-object-custom,
+.services .sticky .menu-item-433,
+// .menu-item-object-events,
+.menu-item-object-custom,
+.menu-item-433 {
   > a {
     &::before {
       content: "";
@@ -129,9 +139,13 @@
     }
   }
 }
+
+.menu-item-object-events,
 .archive .menu-item-object-events,
 .archive .menu-item-object-custom,
+.archive .menu-item-433,
 .archive .events .menu-item-object-events,
+.archive .events .menu-item-433,
 .page .contact .menu-item-object-events,
 .page .about .menu-item-object-events,
 .page .sitemap .menu-item-object-events,
@@ -145,14 +159,20 @@
 .page .mentions .menu-item-object-custom,
 .page .galery .menu-item-object-custom,
 .single .menu-item-object-custom,
-.page-template-service-complete .menu-item-object-custom,
-.page-template-service-complete .menu-item-object-events,
+.page-template .about .menu-item-433,
+.page-template .menu-item-object-events,
+.page-template-service-turnkey .menu-item-object-custom,
+.page-template-service-turnkey .menu-item-object-events,
+.page-template-service-turnkey .menu-item-433,
 .page-template-service-partiel .menu-item-object-custom,
 .page-template-service-partiel .menu-item-object-events,
+.page-template-service-partiel .menu-item-433,
 .page-template-service-day-j .menu-item-object-custom,
 .page-template-service-day-j .menu-item-object-events,
-.page-template-service-card .menu-item-object-custom,
-.page-template-service-card .menu-item-object-events {
+.page-template-service-day-j .menu-item-433,
+.page-template-service-advice .menu-item-object-custom,
+.page-template-service-advice .menu-item-object-events,
+.page-template-service-advice .menu-item-433 {
   > a {
     &::before {
       content: "";
@@ -173,11 +193,13 @@ ul {
 
 // Nav Header special
 // ==================
+.blog .menu__area .nav__menu,
 .about .menu__area .nav__menu,
 .contact .menu__area .nav ul,
 .events .menu__area .nav ul,
 .galery .menu__area .nav ul,
 .archive .menu__area .nav ul,
+.archive .events .menu__area .nav ul,
 .sitemap .menu__area .nav ul,
 .mentions .menu__area .nav ul,
 .single .menu__area .nav ul,

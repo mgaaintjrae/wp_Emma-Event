@@ -1,6 +1,6 @@
 // Header Home
 //================
-.home {
+.page-template .home {
     // padding: 1px;
     width: 100%;
     height: 1080px;
@@ -12,10 +12,32 @@
             rgba(255, 255, 255, 0) 75%
         ),
         url('assets/img/jez-timms_home.jpg');
-    // background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: bottom;    
+}
+// Header Blog
+//================
+.search .blogNews,
+.single-post .blogNews,
+.category .blogNews,
+.blog .blogNews {
+    padding: 1px;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    background: rgb(214, 168, 89);
+    background-image: radial-gradient(
+            circle,
+            rgba(214, 168, 89, 0.5) 0%,
+            rgba(2, 61, 43, 1) 100%
+        ),
+        url('assets/img/mitchell-orr_header_about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 2px solid $dore;   
 }
 
 // Header Page
@@ -268,6 +290,8 @@
 // }
 
 
+.search .menu__area,
+.blogNews .menu__area,
 .about .menu__area,
 .contact .menu__area,
 .events .menu__area,
@@ -283,6 +307,8 @@
 .service-card .menu__area {
     background-color: transparent;
 }
+.search .header__title h1,
+.blogNews .header__title h1,
 .about .header__title h1,
 .contact .header__title h1,
 .events .header__title h1,
@@ -304,6 +330,8 @@
 .header__title h1 {
 padding-top: 300px;    
 }
+.search .header__content,
+.blogNews .header__content,
 .about .header__content,
 .contact .header__content,
 .events .header__content,
@@ -323,6 +351,8 @@ padding-top: 300px;
     padding: 0 69px;
     margin-top: 45px;
 }
+.search .header__content p,
+.blogNews .header__content p,
 .about .header__content p,
 .contact .header__content p,
 .events .header__content p,
@@ -340,6 +370,8 @@ padding-top: 300px;
 }
 
 @include down(720) {
+    .search .header__content,
+    .blogNews .header__content,
     .about .header__content,
     .contact .header__content,
     .events .header__content,

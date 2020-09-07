@@ -10,7 +10,7 @@
  * @since Emma Event 1.0
  * @version 1.0
  */
-get_header(); ?>
+get_header('search'); ?>
 
 <main class="container" role="main">
 

@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <!-- cdn Cookies Consent -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-    <!-- End Cookies Consent -->
     <?php wp_head(); ?>
 </head>
 
@@ -120,7 +117,6 @@
         <div class="header__cta">
             <a href="<?php the_permalink(17) ?>" class="cta__btn-white btn">CONTACTEZ-MOI</a>
         </div>
-
     </header>
 
     <?php

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Home 
+ * Template Name: Accueil
  * Template Post Type: page
  *
  * @package WordPress

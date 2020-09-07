@@ -135,11 +135,6 @@
 
 // Listing
 // =============
-.news-list {
-  // display: grid;
-  // grid-gap: space(6);
-  // grid-template-columns: 1fr;
-}
 .news__body {
   display: grid;
   grid-gap: space(2);
@@ -179,6 +174,7 @@
     height: 16px;
     margin-left: 16px;
     transition: transform 0.3s;
+    fill: $dore;
   }
 
   &:hover svg {

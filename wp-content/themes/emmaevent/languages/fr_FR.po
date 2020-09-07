@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Emma Event\n"
-"POT-Creation-Date: 2020-08-31 17:45+0200\n"
-"PO-Revision-Date: 2020-08-31 17:47+0200\n"
+"POT-Creation-Date: 2020-09-03 14:58+0200\n"
+"PO-Revision-Date: 2020-09-03 14:58+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -31,6 +31,14 @@ msgstr "Retour à la page d'accueil"
 msgid "More events +"
 msgstr "Plus d'événements +"
 
+#: category.php:41 home.php:40 index.php:31
+#: taxonomy-events_category-mariages.php:44
+#: taxonomy-events_category-prives.php:39
+#: taxonomy-events_category-professionnels.php:39
+#: taxonomy-events_category.php:20
+msgid "No posts found"
+msgstr "Post non trouvée"
+
 #: comments.php:8
 #, php-format
 msgid "%d Commentaire"
@@ -47,11 +55,16 @@ msgstr "Laisser un commentaire"
 msgid "Homepage"
 msgstr "Page d'accueil"
 
-#: header-about.php:37 header-service-advice.php:37 header-service-day-j.php:37
-#: header-service-partiel.php:37 header-service-turnkey.php:37
-#: header-services.php:37 header.php:97
+#: header-about.php:37 header-home.php:37 header-service-advice.php:37
+#: header-service-day-j.php:37 header-service-partiel.php:37
+#: header-service-turnkey.php:37 header-services.php:37 header.php:93
 msgid "Emma-Event"
 msgstr ""
+
+#: home.php:15 index.php:10
+#, php-format
+msgid "Search results for \"%s\""
+msgstr "Résultats de recherche pour \"%s\""
 
 #: inc/apparence.php:5 inc/apparence.php:22
 msgid "Theme appearance"
@@ -101,18 +114,6 @@ msgstr ""
 msgid "Title"
 msgstr "Titre"
 
-#: index.php:10
-#, php-format
-msgid "Search results for \"%s\""
-msgstr "Résultats de recherche pour \"%s\""
-
-#: index.php:31 taxonomy-events_category-mariages.php:44
-#: taxonomy-events_category-prives.php:39
-#: taxonomy-events_category-professionnels.php:39
-#: taxonomy-events_category.php:20
-msgid "No posts found"
-msgstr "Post non trouvée"
-
 #: search.php:21
 #, php-format
 msgid "Search Results for: %s"
@@ -132,7 +133,7 @@ msgstr ""
 
 #: searchform.php:2
 msgid "Search post"
-msgstr "Rechercher des événements"
+msgstr "Rechercher..."
 
 #: single-events.php:46 templates/about.php:41 templates/contact.php:106
 #: templates/galery.php:43 templates/legal.php:44
@@ -142,7 +143,7 @@ msgstr "Rechercher des événements"
 msgid "Edit post"
 msgstr "Modifier la page"
 
-#: single.php:14 template-parts/post.php:19
+#: single.php:14 template-parts/post.php:20
 #, php-format
 msgid "Published on %s"
 msgstr "Publié le %s"

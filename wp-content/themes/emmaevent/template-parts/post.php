@@ -10,10 +10,13 @@
     </a>
     <div class="news__body">
         <div class="news__header">
-            <?php $categories = get_the_category();
+            <?php $categories = get_the_category(); 
+
+
       if (!empty($categories)) :
       ?>
-            <a class="news__tag" href="<?php get_term_link($categories[0]) ?>"><?= $categories[0]->name ?></a>
+            <a class="news__tag" href="<?= get_category_link($categories[0]); ?>"><?= $categories[0]->name ?> </a>
+            
             <?php endif ?>
             <a class="news__title" href="<?php the_permalink() ?>"><?php the_title() ?></a>
             <div class="news__date"><?= sprintf(__('Published on %s', 'emmaevent'), get_the_date()) ?></div>
@@ -23,7 +26,7 @@
         </div>
         <a href="<?php the_permalink() ?>" class="news__action">
             Lire la suite
-            <?= emmaevent_icon('arrow') ?>
+            <?= emmaevent_icon('next') ?>
         </a>
     </div>
 </article>
