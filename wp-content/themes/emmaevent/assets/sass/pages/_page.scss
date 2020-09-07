@@ -13,6 +13,7 @@
 }
 .single .page-sidebar,
 .blog .page-sidebar,
+.search .page-sidebar,
 .page-about .page-sidebar,
 .archive .page-sidebar,
 .sitemap__content {
@@ -25,6 +26,7 @@
 }
 .single .page-sidebar,
 .category .page-sidebar,
+.search .page-sidebar,
 .blog .page-sidebar {
   display: grid;
   grid-template-columns: 1fr;
@@ -34,6 +36,7 @@
 @include up(1030) {
   .single .page-sidebar,
   .category .page-sidebar,
+  .search .page-sidebar,
   .blog .page-sidebar {
     grid-template-columns: 1fr 300px;
   }

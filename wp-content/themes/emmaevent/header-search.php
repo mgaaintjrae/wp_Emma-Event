@@ -54,7 +54,7 @@
         </div>
 
         <div class="header__title">
-            <h1>Rechercher un mariage, un événement privé ou professionnel, un article...</h1>
+            <h1>Rechercher un événement...</h1>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>

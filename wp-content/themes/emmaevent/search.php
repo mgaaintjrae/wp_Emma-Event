@@ -41,11 +41,12 @@ get_header('search'); ?>
                 get_search_form();
             endif; ?>
         </div>
+
+        <aside class="sidebar">
+            <?php dynamic_sidebar('blog'); ?>
+        </aside>
     </div>
 
-    <!-- <aside class="sidebar">
-        <?php //get_sidebar(); ?>
-    </aside> -->
 </main><!-- #main -->
 
 <?php get_footer(); ?>

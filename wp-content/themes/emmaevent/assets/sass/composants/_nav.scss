@@ -107,9 +107,6 @@
   color: $dore;
 }
 .blog .menu-item-433,
-.archive .menu-item-object-events,
-.archive .menu-item-object-custom,
-.archive .menu-item-433,
 .archive .sticky .menu-item-object-events,
 .archive .sticky .menu-item-object-custom,
 .archive .sticky .menu-item-433,
@@ -117,14 +114,12 @@
 .page-template .sticky .menu-item-object-custom,
 .page-template .sticky .menu-item-433,
 .page-template .menu-item-object-custom,
-// .page-template .menu-item-object-events,
 .home .menu-item-object-events,
 .home .menu-item-object-custom,
 .home .menu-item-433,
 .services .sticky .menu-item-object-events,
 .services .sticky .menu-item-object-custom,
 .services .sticky .menu-item-433,
-// .menu-item-object-events,
 .menu-item-object-custom,
 .menu-item-433 {
   > a {
@@ -139,7 +134,22 @@
     }
   }
 }
-
+.search .sticky .menu-item-object-events,
+.search .sticky .menu-item-object-custom,
+.search .sticky .menu-item-433,
+.search .menu-item-object-events,
+.search .menu-item-object-custom,
+.search .menu-item-433,
+.blog .menu-item-433,
+.blog .menu-item-object-custom,
+.blog .menu-item-object-events,
+.single .menu-item-433,
+.category .sticky .menu-item-object-events,
+.category .sticky .menu-item-object-custom,
+.category .sticky .menu-item-433,
+.category .menu-item-433,
+.category .menu-item-object-custom,
+.category .menu-item-object-events,
 .menu-item-object-events,
 .archive .menu-item-object-events,
 .archive .menu-item-object-custom,
@@ -160,6 +170,10 @@
 .page .galery .menu-item-object-custom,
 .single .menu-item-object-custom,
 .page-template .about .menu-item-433,
+.page-template .galery .menu-item-433,
+.page-template .contact .menu-item-433,
+.page-template .sitemap .menu-item-433,
+.page-template .mentions .menu-item-433,
 .page-template .menu-item-object-events,
 .page-template-service-turnkey .menu-item-object-custom,
 .page-template-service-turnkey .menu-item-object-events,
@@ -195,6 +209,7 @@ ul {
 // ==================
 .blog .menu__area .nav__menu,
 .about .menu__area .nav__menu,
+.search .menu__area .nav__menu,
 .contact .menu__area .nav ul,
 .events .menu__area .nav ul,
 .galery .menu__area .nav ul,
