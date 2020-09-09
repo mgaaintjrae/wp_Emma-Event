@@ -74,6 +74,9 @@ $f-raleway: 'Raleway', sans-serif;
     line-height: 1.15;
     text-shadow: 0px 0px 4px white;
 
+    @include down(1024){
+        padding-top:130px;
+    }
     @include down(900) {
         font-size: 100px;
     }
