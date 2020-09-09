@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 Template Name: Mariages
 */
@@ -11,15 +11,13 @@ get_header('events-mariages'); ?>
     <section>
         <div class="container">
             <div class="company__title">
-                <img src="<?= get_stylesheet_directory_uri();?>/assets/img/courone_fleurs.png" loading="lazy" alt="couronne de fleurs"
-                    height="575" width="575">
-                <h2 class="page-title"><?= get_queried_object()->name ?>
+                <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/courone_fleurs.png" loading="lazy" alt="couronne de fleurs" height="575" width="575">
+                <div class="page-title"><?= get_queried_object()->name ?>
                     <svg class="icon">
-                        <use
-                            xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_trefle">
+                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle">
                         </use>
                     </svg>
-                </h2>
+                </div>
             </div>
         </div>
     </section>
@@ -34,14 +32,14 @@ get_header('events-mariages'); ?>
         <div class="container page-sidebar">
             <div class="news-list">
                 <?php if (have_posts()) : ?>
-                <?php while (have_posts()) : the_post(); ?>
-                <?php get_template_part('template-parts/post'); ?>
-                <?php endwhile; ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                        <?php get_template_part('template-parts/post'); ?>
+                    <?php endwhile; ?>
 
-                <?= emmaevent_paginate() ?>
+                    <?= emmaevent_paginate() ?>
 
                 <?php else : ?>
-                <h2><?= __('No posts found', 'emmaevent') ?></h2>
+                    <h2><?= __('No posts found', 'emmaevent') ?></h2>
                 <?php endif; ?>
             </div>
         </div>
@@ -49,9 +47,16 @@ get_header('events-mariages'); ?>
 
     <section>
         <!-- <aside class="sidebar">
-                <?php //dynamic_sidebar('blog'); ?>
+                <?php //dynamic_sidebar('blog'); 
+                ?>
             </aside> -->
     </section>
+
+    <div class="edit__post">
+        <?php if (current_user_can('manage_options')) { ?>
+            <a href="<?php echo get_edit_post_link(); ?>"><?php _e('Edit post', 'emmaevent'); ?></a>
+        <?php } ?>
+    </div>
 </main>
 
 <?php get_footer(); ?>

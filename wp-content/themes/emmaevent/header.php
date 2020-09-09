@@ -50,7 +50,7 @@
                                 <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#envelop">
                                 </use>
                             </svg>
-                            <a href=" mailto:emma@event.com" title="me contacter">emmanuelle.berthereau@emma-event.fr</a>
+                            <a href=" mailto:emmanuelle.berthereau@emma-event.fr" title="me contacter">Emma-Event</a>
                         </li>
                     </ul>
                     <ul class="topbar__socials">
@@ -108,12 +108,14 @@
         </div>
 
         <div class="header__title">
-            <h1>Emma Event <br> Wedding & Event Planner</h1>
+            <div class="big-title">Emma Event <br> Wedding & Event Planner</div>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>
             </svg>
+            <h1>Organisation de mariage et évènements professionnels</h1>
         </div>
+        
         <div class="header__cta">
             <a href="<?php the_permalink(17) ?>" class="cta__btn-white btn">CONTACTEZ-MOI</a>
         </div>

@@ -19,12 +19,12 @@ get_header(); ?>
             while (have_posts()) : the_post() ?>
                 <div class="company__title">
                     <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/courone_fleurs.png" loading="lazy" alt="couronne de fleurs" height="575" width="575">
-                    <h2 class="page-title"><?php the_title(); ?>
+                    <div class="page-title"><?php the_title(); ?>
                         <svg class="icon">
                             <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle">
                             </use>
                         </svg>
-                    </h2>
+                    </div>
                 </div>
                 <?php the_post_thumbnail('event-thumbnail-large'); ?>
 
@@ -51,15 +51,14 @@ get_header(); ?>
             <!-- PRESTATIONS -->
             <div class="prestation">
                 <div class="presta__title">
-                    <h2><?php the_title(); ?></h2>
-                    <?php //the_sub_field('image') 
-                    ?>
+                    <h2><?php the_title(); ?></h2>                   
                     <svg class="icon">
                         <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle">
                         </use>
                     </svg>
                 </div>
                 <div class="presta__content">
+                <?php //the_sub_field('image')?>
                     <?php the_content(); ?>
                 </div>
 
@@ -175,8 +174,7 @@ get_header(); ?>
 
         <!-- Slider -->
         <section>
-            <div class="slider__container">
-                <?php// masterslider(1); ?>
+            <div class="slider__container">                
                 <?php echo do_shortcode('[metaslider id="29"]'); ?>
                 <div class="slider__content">
                     <div class="slider__title">

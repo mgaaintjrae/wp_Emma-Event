@@ -20,13 +20,13 @@ get_header('contact'); ?>
                     <div class="company">
                         <div class="company__title">
                             <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/courone_fleurs.png" alt="couronne de fleurs" loading="lazy" height="575" width="575">
-                            <h2 class="page-title">
-                                <?php the_title(); ?>
+                            <div class="page-title">
+                                Me contacter
                                 <svg class="icon">
                                     <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle">
                                     </use>
                                 </svg>
-                            </h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -38,6 +38,7 @@ get_header('contact'); ?>
                         <?php the_post_thumbnail('event-thumbnail-large'); ?>
                     </div>
                     <div class="content">
+                        <h1><?php the_title(); ?></h1>
                         <?php the_content(); ?>
                     </div>
                     <div class="news-list">

@@ -52,14 +52,14 @@
         </div>
 
         <div class="header__title">
-            <h1>Plan du site</h1>
+            <h1 class="big-title">Plan du site</h1>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>
             </svg>
         </div>
         <div class="header__content">
-            <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>
+            <!-- <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p> -->
         </div>
 
     </header>
@@ -69,8 +69,4 @@ if ( function_exists('yoast_breadcrumb') ) {
 yoast_breadcrumb('<div class="container" id="breadcrumbs"> Vous êtes ici : ','</div>');
 }
 ?>
-
-    <!-- <svg class="icon">
-        <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#home">
-        </use>
-    </svg> -->
+    

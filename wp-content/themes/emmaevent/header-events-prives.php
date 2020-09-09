@@ -54,7 +54,7 @@
         </div>
 
         <div class="header__title">
-            <h1>Evénements Privés</h1>
+            <div class="big-title-page">Evénements Privés</div>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>

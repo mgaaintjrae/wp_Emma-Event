@@ -1,5 +1,13 @@
-.page-about {
-  // padding-bottom: 150px;
+.page-about h1{  
+  color: #D6A859;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.page-about h2{  
+  font-size: 40px;
+  @include down(400){
+    font-size: 30px;
+  }
 }
 .page-about .thumbnail {
   display: flex;

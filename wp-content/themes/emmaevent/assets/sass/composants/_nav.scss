@@ -150,7 +150,6 @@
 .category .menu-item-433,
 .category .menu-item-object-custom,
 .category .menu-item-object-events,
-.menu-item-object-events,
 .archive .menu-item-object-events,
 .archive .menu-item-object-custom,
 .archive .menu-item-433,
@@ -174,7 +173,6 @@
 .page-template .contact .menu-item-433,
 .page-template .sitemap .menu-item-433,
 .page-template .mentions .menu-item-433,
-.page-template .menu-item-object-events,
 .page-template-service-turnkey .menu-item-object-custom,
 .page-template-service-turnkey .menu-item-object-events,
 .page-template-service-turnkey .menu-item-433,
@@ -303,13 +301,15 @@ ul {
   }
   .page button#responsive-menu-button,
   .archive button#responsive-menu-button,
+  .blog button#responsive-menu-button,
+  .search button#responsive-menu-button,
   .single-event button#responsive-menu-button {
     top: 10px !important;
   }
   .home button#responsive-menu-button {
     top: 55px !important;
     @include down(600) {
-      top: 93px !important;
+      top: 70px !important;
     }
   }
   #responsive-menu-container {

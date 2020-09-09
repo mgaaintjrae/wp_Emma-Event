@@ -54,7 +54,7 @@
         </div>
 
         <div class="header__title">
-            <h1>Organisation Partielle</h1>
+            <div class="big-title-page">Organisation Partielle</div>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>

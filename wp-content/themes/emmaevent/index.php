@@ -33,9 +33,9 @@
       </div>
     </div>
 
-    <!--<aside class="sidebar">
-      <?php //dynamic_sidebar('blog'); ?>     
-    </aside>-->
+    <aside class="sidebar">
+      <?php dynamic_sidebar('blog'); ?>     
+    </aside>
   </div>
 
 </main>

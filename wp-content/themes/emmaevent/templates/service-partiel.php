@@ -22,7 +22,7 @@ get_header('service-partiel'); ?>
                         <div class="company__title">
                             <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/courone_fleurs.png" loading="lazy" alt="couronne de fleurs" height="575" width="575">
                             <h2 class="page-title">
-                                <?php the_title(); ?>
+                                Partielle
                                 <svg class="icon">
                                     <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle">
                                     </use>
@@ -35,6 +35,7 @@ get_header('service-partiel'); ?>
 
             <section class="page-service container">
                 <div class="page-sidebar prestation">
+                    <h1><?php the_title(); ?></h1>
                     <div class="news-list excerpt">
                         <?php the_excerpt(); ?>
                     </div>
@@ -49,6 +50,7 @@ get_header('service-partiel'); ?>
                     </div>
                 </div>
             </section>
+            
             <div class="edit__post">
                 <?php if (current_user_can('manage_options')) { ?>
                     <a href="<?php echo get_edit_post_link(); ?>"><?php _e('Edit post', 'emmaevent'); ?></a>

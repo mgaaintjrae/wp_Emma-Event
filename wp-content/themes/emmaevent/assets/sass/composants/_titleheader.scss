@@ -1,12 +1,13 @@
-.header__title {
+.header__title {    
     text-align: center;
 
-    h1 {
+    .big-title {
         width: 100%;
         // margin: 120px auto 25px;
         color: #ffffff;
         font-weight: 400;
         text-align: center;
+        padding-top: 300px; 
     }
 }
 .header__title svg {

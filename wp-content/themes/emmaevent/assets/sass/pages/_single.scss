@@ -2,9 +2,9 @@
 // ==========================================================================
 .event-header .event__title,
 .presta__title {
-    @extend %big-title;
+    // @extend %big-title;
     margin-bottom: space(6);
-    margin-top: space(10);
+    // margin-top: space(10);
     text-align: center;
 }
 .event__type {

@@ -1,12 +1,28 @@
 // Pages Prestations ( lé en main | partielle | jour j | conseil )
 //===================
+.page-service {
+  padding: 0 69px;
+}
+.page-service h1 {
+  color: $dore;
+  margin-bottom: 30px;
+}
 .page-service .excerpt {
-    font-weight: 500;
-    margin-bottom: 50px;
-  }
-  .page-service .thumbnail {
-    margin: 70px 0;
-  }
-  .page-service .news-list li {
-    line-height: 2em;
-  }
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.page-service .thumbnail {
+  margin: 70px 0;
+}
+.page-service .news-list li {
+  line-height: 2em;
+}
+.page-service .grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+}
+.page-service li:before {
+  content: "→ ";
+}

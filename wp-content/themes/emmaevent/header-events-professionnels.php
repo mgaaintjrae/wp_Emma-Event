@@ -54,14 +54,14 @@
         </div>
 
         <div class="header__title">
-            <h1>Evénements Professionnels</h1>
+            <div class="big-title-page">Evénements Professionnels</div>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>
             </svg>
         </div>
         <div class="header__content">
-            <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p>
+            <!-- <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p> -->
         </div>
 
     </header>

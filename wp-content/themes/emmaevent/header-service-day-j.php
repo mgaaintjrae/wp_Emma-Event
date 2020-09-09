@@ -54,7 +54,7 @@
         </div>
 
         <div class="header__title">
-            <h1>Coordination du Jour J</h1>
+            <div class="big-title-page">Coordination du Jour J</div>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>

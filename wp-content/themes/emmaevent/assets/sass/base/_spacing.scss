@@ -1,7 +1,13 @@
 p {
   line-height: 1.7;
 }
+.home p {
+  line-height: 2.2;
+  padding: 0 200px;
+  @include down(1024) {
+    padding: 0;
+  }
+}
 .is-style-dots {
   margin: 1.5em 0;
 }
-

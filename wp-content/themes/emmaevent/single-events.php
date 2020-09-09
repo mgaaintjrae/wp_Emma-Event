@@ -6,8 +6,8 @@
         <section>
             <div class="container">
                 <div class="event-header">
-                    <h2 class="event__title"><?php the_title(); ?></h2>
-                    <h3 class="event__type">
+                    <h1 class="event__title"><?php the_title(); ?></h1>
+                    <h2 class="event__type">
                         <?php the_terms($post->ID, 'events_category', 'Événement : '); ?>
                         <div class="thumbnail event__photos">
                             <?php the_post_thumbnail('event-thumbnail-large'); ?>

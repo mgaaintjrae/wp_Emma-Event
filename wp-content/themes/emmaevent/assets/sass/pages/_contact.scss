@@ -2,6 +2,23 @@
     @extend %big-title;
     margin-bottom: space(6);
 }
+.contact__form .content h1{
+    color: $dore;
+    padding-bottom: 30px;
+}
+.contact__form .content {
+    position: relative;
+    width: 100%;
+    max-width: 840px;
+    margin: auto;
+    overflow: hidden;
+    font-weight: 500;
+}
+@include down(900) {
+    .contact__form .content {
+        max-width: 400px;
+    }
+}
 // Form
 //==============
 form .form-group .form-control {
