@@ -19,7 +19,7 @@ get_header('about'); ?>
             <section>
                 <div class="container company">
                     <div class="company__title">
-                        <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/courone_fleurs.png" loading="lazy" alt="couronne de fleurs" height="575" width="575">
+                        <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" loading="lazy" alt="couronne de fleurs" height="575" width="575">
                         <div class="page-title">
                         Qui suis-je ?
                             <svg class="icon">
