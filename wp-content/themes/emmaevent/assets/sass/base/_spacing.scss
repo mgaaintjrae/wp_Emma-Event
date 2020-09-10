@@ -1,7 +1,8 @@
 p {
   line-height: 1.7;
 }
-.home .sections p {
+.home .event-body p,
+.home .presta__content p{
   line-height: 2.2;
   padding: 0 200px;
   @include down(1024) {
