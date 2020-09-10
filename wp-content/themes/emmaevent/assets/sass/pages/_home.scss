@@ -68,7 +68,7 @@
     width: 48%;
     background: #fff;
     text-align: center;
-    cursor: pointer;
+    // cursor: pointer;
 }
 .grid figure img {
     position: relative;
@@ -122,11 +122,11 @@
     font-size: 44.5%;
 }
 figure.effect-bubba {
-    background: #023d2b;
+    background: $emeraude;
     box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.5);
 }
 figure.effect-bubba img {
-    opacity: 0.7;
+    opacity: 0.9;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
 }
@@ -148,14 +148,14 @@ figure.effect-bubba figcaption::after {
     transition: opacity 0.35s, transform 0.35s;
 }
 figure.effect-bubba figcaption::before {
-    border-top: 1px solid #d6a859;
-    border-bottom: 1px solid #d6a859;
+    border-top: 1px solid $dore;
+    border-bottom: 1px solid $dore;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
 }
 figure.effect-bubba figcaption::after {
-    border-right: 1px solid #d6a859;
-    border-left: 1px solid #d6a859;
+    border-right: 1px solid $dore;
+    border-left: 1px solid $dore;
     -webkit-transform: scale(1, 0);
     transform: scale(1, 0);
 }
