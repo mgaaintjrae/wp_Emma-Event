@@ -2,7 +2,7 @@
 Contributors: matchalabs, DavidAnderson, dnutbourne, kbat82
 Tags: slideshow, slider, image slider, carousel, gallery, flexslider, wordpress slider, nivoslider, rotating banner, responsive slideshow, seo slideshow, unsplash
 Requires at least: 3.5
-Stable tag: 3.17.4
+Stable tag: 3.18.0
 Requires PHP: 5.2
 Tested up to: 5.5
 License: GPLv2 or later
@@ -167,6 +167,18 @@ See https://www.metaslider.com/documentation/image-cropping/
 
 == Changelog ==
 
+= 3.18.0 - 2020/Sept/05 =
+
+* FEATURE/FIX: Updates UI elements and updates icon set (FA was causing issues on some hosts)
+
+= 3.17.6 - 2020/Aug/31 =
+
+* FIX: Fixes issue with build script and script version number
+
+= 3.17.5 - 2020/Aug/31 =
+
+* FIX: Fixes bug where the notices nonce script loading relied on jQuery
+
 = 3.17.4 - 2020/Aug/29 =
 
 * FIX: Adds extra check for HTML Purify class (fixes conflict with CiviCRM)
@@ -178,7 +190,7 @@ See https://www.metaslider.com/documentation/image-cropping/
 * TWEAK: Limits loading admin specific code from the front end
 * TWEAK: Switches to a new CI and build process (report any issues to our support channel)
 * TWEAK: Adds extra permission_callback check to settings routes
-* SECURITY: Adds extra filtering of captions using HTML Purifier (http://htmlpurifier.org/). Reminder: Only users with `edit_others_posts` capability can edit slideshows, which is a role that may be added by third party plugins (ex. Shop Managers from WooCommerce have this role). If you need to limit who can edit your slideshows, then you can update this with the filter `metaslider_capability`, for example to `manage_options`. Contact us in support for more information.
+* SECURITY: Adds extra filtering of captions using HTML Purifier (http://htmlpurifier.org/). Reminder: Only users with `edit_others_posts` capability can edit slideshows, which is a role that may be added by third party plugins (ex. Shop Managers from WooCommerce have this role). If you need to limit who can edit your slideshows, then you can update this with the filter `metaslider_capability`, for example to `manage_options`. Contact us in support for more information. (Thanks to Fortinet Fortiguard Labs)
 
 = 3.17.1 - 2020/Aug/13 =
 
