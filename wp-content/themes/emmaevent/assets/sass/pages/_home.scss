@@ -272,6 +272,7 @@ figure.effect-bubba img {
     top: 0;
     right: 0;
     left: 42%;
+    transform: scaleX(-1);
 }
 @include down(900) {
     .fantasy .deco__left {

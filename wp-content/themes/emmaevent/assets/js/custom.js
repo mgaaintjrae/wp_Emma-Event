@@ -25,6 +25,7 @@ jQuery(document).ready(function (jQuery) {
 
 // Sticky menu
 document.addEventListener('DOMContentLoaded',function(){
+    'use strict';
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollpos = window.pageYOffset;

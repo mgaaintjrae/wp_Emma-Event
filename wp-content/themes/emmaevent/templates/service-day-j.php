@@ -20,7 +20,7 @@ get_header('service-day-j'); ?>
                 <div class="container">
                     <div class="company">
                         <div class="company__title">
-                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" loading="lazy" alt="couronne de fleurs" height="575" width="575">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" loading="lazy" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
                             <div class="page-title">
                                 Jour J
                                 <svg class="icon">

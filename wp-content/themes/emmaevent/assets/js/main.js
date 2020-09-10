@@ -1,5 +1,6 @@
 // Form
 jQuery(document).ready(function () {
+    'use strict';
     jQuery('input[type="text"]').focus(function () {
         if (this.value == this.defaultValue) {
             this.value = '';

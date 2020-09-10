@@ -65,7 +65,7 @@
                 votre
                 évènement dans votre région natale, à l'étranger ou encore à Paris, nous vous proposons des
                 prestations
-                adaptées à vos besoins. <br><strong>Nous créerons pour vous l'unique.</strong></p>
+                adaptées à vos besoins. </br><strong>Nous créerons pour vous l'unique.</strong></p>
         </div>
 
     </header>

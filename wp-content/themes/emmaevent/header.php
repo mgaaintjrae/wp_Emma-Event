@@ -108,7 +108,7 @@
         </div>
 
         <div class="header__title">
-            <div class="big-title">Emma Event <br> Wedding & Event Planner</div>
+            <div class="big-title">Emma Event </br> Wedding & Event Planner</div>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>

@@ -19,7 +19,7 @@ get_header('contact'); ?>
                 <div class="container">
                     <div class="company">
                         <div class="company__title">
-                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="couronne de fleurs" loading="lazy" height="575" width="575">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" loading="lazy" height="575" width="575">
                             <div class="page-title">
                                 Me contacter
                                 <svg class="icon">
@@ -39,65 +39,65 @@ get_header('contact'); ?>
                     </div>
                     <div class="content">
                         <h1><?php the_title(); ?></h1>
-                        <?php the_content(); ?>
-                    </div>
-                    <div class="news-list">
-                        <?php echo do_shortcode('[contact-form-7 id="161" title="Formulaire de contact"]'); ?>
-
-                        <div class="info">
-                            <div class="item">
-                                <svg class="icon">
-                                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#phoneGold">
-                                    </use>
-                                </svg>
-                                <h6>Téléphone :
-                                    </br>
-                                    <span>06 25 37 34 34</span>
-                                </h6>
-                            </div>
-                            <div class="item">
-                                <svg class="icon">
-                                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#mapGold">
-                                    </use>
-                                </svg>
-                                <h6>Adresse :
-                                    </br>
-                                    <span>72000
+                        <div class="news-list">
+                            <?php the_content(); ?>
+                            <?php //echo do_shortcode('[contact-form-7 id="161" title="Formulaire de contact"]'); ?>
+                            <div class="info">
+                                <div class="item">
+                                    <svg class="icon">
+                                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#phoneGold">
+                                        </use>
+                                    </svg>
+                                    <h6>Téléphone :
                                         </br>
-                                        Paris
-                                    </span>
-                                </h6>
-                            </div>
-                            <div class="item">
-                                <svg class="icon">
-                                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#envelopGold">
-                                    </use>
-                                </svg>
-                                <h6>Mail :
-                                    </br>
-                                    <span>emmaevent@odns.fr</span>
-                                </h6>
-                            </div>
-                            <!-- Social icon-->
-                            <div class="social-icon">
-                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
+                                        <span>06 25 37 34 34</span>
+                                    </h6>
+                                </div>
+                                <div class="item">
                                     <svg class="icon">
-                                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#fbGold">
+                                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#mapGold">
                                         </use>
                                     </svg>
-                                </a>
-                                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                    <h6>Adresse :
+                                        </br>
+                                        <span>Paris</br>
+                                        &
+                                            </br>
+                                            Région Parisienne
+                                        </span>
+                                    </h6>
+                                </div>
+                                <div class="item">
                                     <svg class="icon">
-                                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#instaGold">
+                                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#envelopGold">
                                         </use>
                                     </svg>
-                                </a>
-                                <a href="https://pinterest.fr/" target="_blank" rel="noopener noreferrer" title="Pinterest">
-                                    <svg class="icon">
-                                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#pinteGold">
-                                        </use>
-                                    </svg>
-                                </a>
+                                    <h6>Mail :
+                                        </br>
+                                        <span><a href=" mailto:emmanuelle.berthereau@emma-event.fr" title="me contacter">Emma-Event</a></span>
+                                    </h6>
+                                </div>
+                                <!-- Social icon-->
+                                <div class="social-icon">
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
+                                        <svg class="icon">
+                                            <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#fbGold">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                        <svg class="icon">
+                                            <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#instaGold">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://pinterest.fr/" target="_blank" rel="noopener noreferrer" title="Pinterest">
+                                        <svg class="icon">
+                                            <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#pinteGold">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
