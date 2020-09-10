@@ -66,10 +66,10 @@
                     <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#quote">
                     </use>
                 </svg>
-                <p>La philosophie n’est rien d’autre que l’amour de la sagesse.</p>
+                <p>L’amour de la vie est la véritable force à protéger.</p>
             </div>
             <div class="header__author">
-                <p> - Cicéron </p>
+                <p> - Ikimo </p>
             </div>
         </div>
 

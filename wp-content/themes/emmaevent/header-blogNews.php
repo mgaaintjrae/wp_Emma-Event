@@ -66,10 +66,10 @@
                     <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#quote">
                     </use>
                 </svg>
-                <p>S’aimer soi-même est le début d’une histoire d’amour qui durera toute une vie.</p>
+                <p>Un mariage heureux est une longue conversation qui semble toujours trop brève.</p>
             </div>
             <div class="header__author">
-                <p> - Oscar Wilde </p>
+                <p> - André Maurois </p>
             </div>
         </div>
 

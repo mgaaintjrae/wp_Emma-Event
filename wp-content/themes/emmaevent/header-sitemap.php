@@ -59,7 +59,16 @@
             </svg>
         </div>
         <div class="header__content">
-            <!-- <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p> -->
+            <div class="header__citation">
+                <svg class="icon">
+                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#quote">
+                    </use>
+                </svg>
+                <p>Nous avons inventé autrui comme autrui nous a inventé. Nous avons besoin l’un de l’autre.</p>
+            </div>
+            <div class="header__author">
+                <p> - Paul Eluard </p>
+            </div>
         </div>
 
     </header>

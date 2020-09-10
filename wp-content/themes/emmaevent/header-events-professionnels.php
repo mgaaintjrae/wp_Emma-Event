@@ -61,7 +61,16 @@
             </svg>
         </div>
         <div class="header__content">
-            <!-- <p>Laissez votre entreprise se développer grâce à ce thème étonnant</p> -->
+            <div class="header__citation">
+                <svg class="icon">
+                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#quote">
+                    </use>
+                </svg>
+                <p>La sagesse qu’un sage cherche à communiquer a toujours un air de folie.</p>
+            </div>
+            <div class="header__author">
+                <p> - Hermann Hesse </p>
+            </div>
         </div>
 
     </header>

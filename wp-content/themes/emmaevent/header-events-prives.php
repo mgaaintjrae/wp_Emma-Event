@@ -61,11 +61,16 @@
             </svg>
         </div>
         <div class="header__content">
-            <p>Que vous soyez super organisé, très vite débordé ou totalement paniqué, que vous vouliez organiser
-                votre
-                évènement dans votre région natale, à l'étranger ou encore à Paris, nous vous proposons des
-                prestations
-                adaptées à vos besoins. </br><strong>Nous créerons pour vous l'unique.</strong></p>
+            <div class="header__citation">
+                <svg class="icon">
+                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#quote">
+                    </use>
+                </svg>
+                <p>La sagesse écoute en souriant les réprimandes de la folie.</p>
+            </div>
+            <div class="header__author">
+                <p> - Pierre-Claude-Victor Boiste </p>
+            </div>
         </div>
 
     </header>
