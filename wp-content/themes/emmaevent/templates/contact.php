@@ -49,7 +49,7 @@ get_header('contact'); ?>
                                         </use>
                                     </svg>
                                     <h6>Téléphone :
-                                        </br>
+                                        <br>
                                         <span>06 25 37 34 34</span>
                                     </h6>
                                 </div>
@@ -59,10 +59,10 @@ get_header('contact'); ?>
                                         </use>
                                     </svg>
                                     <h6>Adresse :
-                                        </br>
-                                        <span>Paris</br>
+                                        <br>
+                                        <span>Paris<br>
                                         &
-                                            </br>
+                                            <br>
                                             Région Parisienne
                                         </span>
                                     </h6>
@@ -73,7 +73,7 @@ get_header('contact'); ?>
                                         </use>
                                     </svg>
                                     <h6>Mail :
-                                        </br>
+                                        <br>
                                         <span><a href=" mailto:emmanuelle.berthereau@emma-event.fr" title="me contacter">Emma-Event</a></span>
                                     </h6>
                                 </div>

@@ -18,7 +18,7 @@
                                 </h3>
                                 <p>
                                     <?= $excerpt1 ?>
-                                    </br></br>
+                                    <br><br>
                                     <a class="hover" href="<?= $lien1 ?>" title="En savoir plus">En savoir +</a>
                                 </p>
                             </figcaption>
@@ -44,7 +44,7 @@
                                 </h3>
                                 <p>
                                     <?= $excerpt2 ?>
-                                    </br></br>
+                                    <br><br>
                                     <a class="hover" href="<?= $lien2 ?>" title="En savoir plus">En savoir +</a>
                                 </p>
                             </figcaption>
@@ -70,7 +70,7 @@
                                 </h3>
                                 <p>
                                     <?= $excerpt3 ?>
-                                    </br></br>
+                                    <br><br>
                                     <a class="hover" href="<?= $lien3 ?>" title="En savoir plus">En savoir +</a>
                                 </p>
                             </figcaption>
@@ -96,7 +96,7 @@
                                 </h3>
                                 <p>
                                     <?= $excerpt4 ?>
-                                    </br></br>
+                                    <br><br>
                                     <a class="hover" href="<?= $lien4 ?>" title="En savoir plus">En savoir +</a>
                                 </p>
                             </figcaption>
