@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded',function(){
 document.querySelector('.sub-menu').classList.add('height');
 });
 
-
+//slider
+document.querySelector('.slider-29').setAttribute('loading', 'lazy');
 
 
 

@@ -22,15 +22,16 @@
 
 .notfound .notfound-404 {
   height: 200px;
-  line-height: 200px;
+  line-height: 200px; 
+    
 }
 
-.notfound .notfound-404 h1 {
+.notfound .notfound-404 .big-title-page {
   font-family: $f-alex cursive;
   font-size: 168px;
-  margin: 0px;
+  padding: 0px;
   color: #d6a859;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 
 .notfound h2 {

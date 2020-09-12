@@ -54,7 +54,7 @@
         </div>
 
         <div class="header__title">
-            <h1 class="big-title-page">Rechercher un événement...</h1>
+            <div class="big-title-page">Rechercher un événement...</div>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>

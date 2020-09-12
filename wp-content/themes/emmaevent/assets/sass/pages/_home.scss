@@ -174,7 +174,7 @@ figure.effect-bubba p {
     -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0);
 }
-@include up(900) {
+
     figure.effect-bubba:hover figcaption::before,
     figure.effect-bubba:hover figcaption::after {
         opacity: 1;
@@ -187,7 +187,7 @@ figure.effect-bubba p {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
-}
+
 figure.effect-bubba {
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -198,7 +198,7 @@ figure.effect-bubba img {
     -webkit-transform: translate3d(0, 0, 300px);
     transform: translate3d(0, 0, 300px);
 }
-@include up(900) {
+// @include up(900) {
     figure.effect-bubba:hover img {
         opacity: 0.6;
         -webkit-transform: translate3d(0, 0, 0);
@@ -208,8 +208,7 @@ figure.effect-bubba img {
         color: $dore;
         transition: 0.5s;
     }
-}
-@include down(900) {
+
     figure.effect-bubba:active img {
         opacity: 0.4;
     }
@@ -234,7 +233,6 @@ figure.effect-bubba img {
         color: $dore;
         transition: 0.5s;
     }
-}
 // Fantasy
 //=========
 .fantasy {

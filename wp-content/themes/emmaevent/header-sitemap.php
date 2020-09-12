@@ -52,7 +52,7 @@
         </div>
 
         <div class="header__title">
-            <h1 class="big-title">Plan du site</h1>
+            <div class="big-title-page">Plan du site</div>
             <svg class="icon">
                 <use xlink:href="<?= get_stylesheet_directory_uri();?>/assets/img/svg/sprite.svg#divider_coeur">
                 </use>

@@ -5,7 +5,7 @@
 
         <div class="error-404 notfound">
             <header class="notfound-404">
-                <h1 class="page-title"><?php _e( '404', 'emmaevent' ); ?></h1>
+                <div class="big-title-page"><?php _e( '404', 'emmaevent' ); ?></div>
             </header><!-- .page-header -->
 
             <div class="page-content">

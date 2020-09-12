@@ -1,5 +1,3 @@
-</main>
-
 <footer class="footer">
 
     <section class="footer__up">
@@ -49,7 +47,7 @@
 <!-- Vous pourriez ajouter votre script Google Analytics ici -->
 
 <!-- Cookie Consent -->
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="true"></script>
 <script>
 window.cookieconsent.initialise({
   "palette": {

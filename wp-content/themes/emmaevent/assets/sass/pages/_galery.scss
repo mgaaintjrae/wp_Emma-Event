@@ -1,3 +1,6 @@
+.page-template-galery h1{
+  text-shadow: none;
+}
 .blocks-gallery-grid .blocks-gallery-item figure,
 .wp-block-gallery .blocks-gallery-item figure {
   margin-left: auto;
@@ -25,7 +28,6 @@
     padding: 0 !important;
   }
 }
-
 .blocks-gallery-grid figcaption .social-icon a:hover {
   color: $dore;
   transition: 0.3s;
