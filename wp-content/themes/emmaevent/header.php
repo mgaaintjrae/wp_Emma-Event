@@ -11,21 +11,7 @@
 
 <body <?php body_class(); ?>>
 
-    <!-- ====== Preloader ======  -->
-    <div class="loading">
-        <div class="load-circle">
-        </div>
-    </div>
-    <!-- ====== End Preloader ======  -->
-
-    <!-- ====== button-top ======  -->
-    <div class="button-top" data-scroll-nav="0">
-        <svg class="icon">
-            <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#arrow-up">
-            </use>
-        </svg>
-    </div>
-    <!-- ======End button-top ======  -->
+    <?php get_template_part('/template-parts/preloader-top'); ?>
 
     <?php wp_body_open(); ?>
     <header class="home">
@@ -84,7 +70,7 @@
             </nav>
 
             <div class="menu__area">
-            <?php get_template_part('/template-parts/header'); ?> 
+                <?php get_template_part('/template-parts/header'); ?>
             </div>
         </div>
 
@@ -96,7 +82,7 @@
             </svg>
             <h1>Organisation de mariage et évènements professionnels</h1>
         </div>
-        
+
         <div class="header__cta">
             <a href="<?php the_permalink(17) ?>" class="cta__btn-white btn">CONTACTEZ-MOI</a>
         </div>

@@ -11,42 +11,18 @@
 
 <body <?php body_class(); ?>>
 
-    <!-- ====== Preloader ======  -->
-    <div class="loading">
-        <div class="load-circle">
-        </div>
-    </div>
-    <!-- ====== End Preloader ======  -->
-
-    <!-- ====== button-top ======  -->
-    <div class="button-top" data-scroll-nav="0">
-        <svg class="icon">
-            <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#arrow-up">
-            </use>
-        </svg>
-    </div>
-    <!-- ======End button-top ======  -->
+    <?php get_template_part('/template-parts/preloader-top'); ?>
 
     <?php wp_body_open(); ?>
     <header class="blogNews">
 
         <div class="navhome menu__area" id="nav">
-        <?php get_template_part('/template-parts/header'); ?> 
+            <?php get_template_part('/template-parts/header'); ?>
         </div>
 
         <div class="header__title">
             <div class="big-title-page">Actualités d'Emma Event</div>
-            <svg class="icon">
-                <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
-                </use>
-            </svg>
-        </div>
-        <div class="header__content">
-            <div class="header__citation">
-                <svg class="icon">
-                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#quote">
-                    </use>
-                </svg>
+            <?php get_template_part('/template-parts/quote'); ?>
                 <p>Un mariage heureux est une longue conversation qui semble toujours trop brève.</p>
             </div>
             <div class="header__author">

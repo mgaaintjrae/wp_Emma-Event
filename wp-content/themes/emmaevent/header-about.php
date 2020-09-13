@@ -11,21 +11,7 @@
 
 <body <?php body_class(); ?>>
 
-    <!-- ====== Preloader ======  -->
-    <div class="loading">
-        <div class="load-circle">
-        </div>
-    </div>
-    <!-- ====== End Preloader ======  -->
-
-    <!-- ====== button-top ======  -->
-    <div class="button-top" data-scroll-nav="0">
-        <svg class="icon">
-            <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#arrow-up">
-            </use>
-        </svg>
-    </div>
-    <!-- ======End button-top ======  -->
+<?php get_template_part('/template-parts/preloader-top'); ?>
 
     <?php wp_body_open(); ?>
     <header class="about">
@@ -36,17 +22,7 @@
 
         <div class="header__title">
             <div class="big-title-page">À propos</div>
-            <svg class="icon">
-                <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_coeur">
-                </use>
-            </svg>
-        </div>
-        <div class="header__content">
-            <div class="header__citation">
-                <svg class="icon">
-                    <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#quote">
-                    </use>
-                </svg>
+            <?php get_template_part('/template-parts/quote'); ?>
                 <p>S’aimer soi-même est le début d’une histoire d’amour qui durera toute une vie.</p>
             </div>
             <div class="header__author">
