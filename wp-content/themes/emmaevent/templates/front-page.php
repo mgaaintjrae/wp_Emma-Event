@@ -11,14 +11,14 @@
 
 get_header(); ?>
 
-<main class="sections" role="main">
+<main class="sections">
 
     <section class="container">
         <div class="company">
             <?php
             while (have_posts()) : the_post() ?>
                 <div class="company__title">
-                    <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" loading="lazy" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
+                    <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
                     <div class="page-title"><?php the_title(); ?>
                         <svg class="icon">
                             <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle" width="100" height="15">

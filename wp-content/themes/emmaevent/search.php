@@ -12,7 +12,7 @@
  */
 get_header('search'); ?>
 
-<main class="container" role="main">
+<main class="container" >
 
     <?php if (have_posts()) : ?>
         <h2 class="page-title">

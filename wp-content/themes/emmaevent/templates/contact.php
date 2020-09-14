@@ -19,7 +19,7 @@ get_header('contact'); ?>
                 <div class="container">
                     <div class="company">
                         <div class="company__title">
-                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" loading="lazy" height="575" width="575">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
                             <div class="page-title">
                                 Me contacter
                                 <svg class="icon">
@@ -41,7 +41,8 @@ get_header('contact'); ?>
                         <h1><?php the_title(); ?></h1>
                         <div class="news-list">
                             <?php the_content(); ?>
-                            <?php //echo do_shortcode('[contact-form-7 id="161" title="Formulaire de contact"]'); ?>
+                            <?php //echo do_shortcode('[contact-form-7 id="161" title="Formulaire de contact"]'); 
+                            ?>
                             <div class="info">
                                 <div class="item">
                                     <svg class="icon">
@@ -61,7 +62,7 @@ get_header('contact'); ?>
                                     <h6>Adresse :
                                         <br>
                                         <span>Paris<br>
-                                        &
+                                            &
                                             <br>
                                             Région Parisienne
                                         </span>

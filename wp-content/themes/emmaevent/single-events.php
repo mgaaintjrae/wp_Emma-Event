@@ -1,7 +1,7 @@
 <?php get_header('single--event'); ?>
 
 
-<main class="sections" role="main">
+<main class="sections" >
     <?php while (have_posts()) : the_post(); ?>
         <section>
             <div class="container">

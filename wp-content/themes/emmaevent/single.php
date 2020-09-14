@@ -5,7 +5,7 @@
 <!-- Single post -->
 <div class="container page-sidebar">
     <?php while (have_posts()) : the_post(); ?>
-        <main class="sections" role="main">
+        <main class="sections">
             <header class="news-single__header">
                 <h1><?php the_title(); ?></h1>
                 <div class="news-single__meta">

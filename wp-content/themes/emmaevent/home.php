@@ -1,12 +1,12 @@
 <?php get_header('blogNews'); ?>
 
-<main class="sections" role="main">
+<main class="sections">
 
     <!-- Blog -->
     <section>
         <div class="container company">
             <div class="company__title">
-                <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" loading="lazy" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
+                <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
                 <h2 class="page-title">
                     <?php get_the_category(); ?>
                     <?php if (is_category()) : ?>
@@ -16,7 +16,7 @@
                     <?php else : ?>
                         <?php single_post_title() ?>
                     <?php endif ?>
-                    
+
                     <svg class="icon">
                         <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle">
                         </use>
@@ -41,7 +41,7 @@
             <?php endif; ?>
         </div>
 
-        
+
         <aside class="sidebar">
             <?php dynamic_sidebar('blog'); ?>
         </aside>

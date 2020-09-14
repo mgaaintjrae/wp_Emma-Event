@@ -13,13 +13,13 @@ get_header('service-advice'); ?>
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-        <main class="sections" role="main">
+        <main class="sections">
             <!-- Service Card -->
             <section>
                 <div class="container">
                     <div class="company">
                         <div class="company__title">
-                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" loading="lazy" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
                             <div class="page-title">
                                 Conseils
                                 <svg class="icon">
@@ -32,7 +32,7 @@ get_header('service-advice'); ?>
                 </div>
             </section>
 
-            <?php get_template_part('/template-parts/service'); ?>  
+            <?php get_template_part('/template-parts/service'); ?>
 
             <div class="edit__post">
                 <?php if (current_user_can('manage_options')) { ?>

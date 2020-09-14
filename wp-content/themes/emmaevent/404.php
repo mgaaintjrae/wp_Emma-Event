@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="notfound" class="site-main" role="main">
+    <main id="notfound" class="site-main">
 
         <div class="error-404 notfound">
             <header class="notfound-404">

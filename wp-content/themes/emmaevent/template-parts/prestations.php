@@ -11,7 +11,7 @@
                         $urlImage1 = wp_get_attachment_image_src($urlImage1, 'service-thumbnail');
                         $urlImage1 = $urlImage1[0];
                         ?>
-                        <figure class="effect-bubba"><img src="<?= $urlImage1 ?>" alt="emma-event-organisation-de-mariage-ile-de france-paris-prestation-cle-en main" loading="lazy" width="500" height="750"/>
+                        <figure class="effect-bubba"><img src="<?= $urlImage1 ?>" alt="emma-event-organisation-de-mariage-ile-de france-paris-prestation-cle-en main" width="500" height="750"/>
                             <figcaption>
                                 <h3>
                                     <?= $title1 ?>
@@ -37,7 +37,7 @@
                         $urlImage2 = wp_get_attachment_image_src($urlImage2, 'service-thumbnail');
                         $urlImage2 = $urlImage2[0];
                         ?>
-                        <figure class="effect-bubba"><img src="<?= $urlImage2 ?>" alt="emma-event-organisation-de-mariage-ile-de-france-paris-prestation-partielle" loading="lazy" width="500" height="750"/>
+                        <figure class="effect-bubba"><img src="<?= $urlImage2 ?>" alt="emma-event-organisation-de-mariage-ile-de-france-paris-prestation-partielle" width="500" height="750"/>
                             <figcaption>
                                 <h3>
                                     <?= $title2 ?>
@@ -63,7 +63,7 @@
                         $urlImage3 = wp_get_attachment_image_src($urlImage3, 'service-thumbnail');
                         $urlImage3 = $urlImage3[0];
                         ?>
-                        <figure class="effect-bubba"><img src="<?= $urlImage3 ?>" alt="emma-event-organisation-de-mariage-ile-de-france-paris- prestation-jour-j" loading="lazy" width="500" height="673"/>
+                        <figure class="effect-bubba"><img src="<?= $urlImage3 ?>" alt="emma-event-organisation-de-mariage-ile-de-france-paris- prestation-jour-j" width="500" height="673"/>
                             <figcaption>
                                 <h3>
                                     <?= $title3 ?>
@@ -89,7 +89,7 @@
                         $urlImage4 = wp_get_attachment_image_src($urlImage4, 'service-thumbnail');
                         $urlImage4 = $urlImage4[0];
                         ?>
-                        <figure class="effect-bubba"><img src="<?= $urlImage4 ?>" alt="emma-event-organisation-de-mariage-ile-de-france-paris-prestation-conseil" loading="lazy" width="634" height="951"/>
+                        <figure class="effect-bubba"><img src="<?= $urlImage4 ?>" alt="emma-event-organisation-de-mariage-ile-de-france-paris-prestation-conseil" width="634" height="951"/>
                             <figcaption>
                                 <h3>
                                     <?= $title4 ?>

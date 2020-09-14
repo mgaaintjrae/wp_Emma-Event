@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="container" role="main">
+<main class="container" >
 
   <h2 class="page-title">
   <?php get_the_category(); ?>
