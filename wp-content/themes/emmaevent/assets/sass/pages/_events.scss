@@ -1,148 +1,154 @@
-.single-events .event-header h1{
-    color: $dore;
-    margin-top: 30px;
+.single-events .event-header h1 {
+  color: $dore;
+  margin-top: 30px;
 }
-.events__content h1{
-    color: $dore;
-    margin-top: 30px;
+.events__content h1 {
+  color: $dore;
+  margin-top: 30px;
 }
 /* Common style */
-.content figure {
-    position: relative;
-    overflow: hidden;
-    min-width: 244px;
-    max-width: 100%;
-    max-height: 360px;
-    width: 100%;    
-    text-align: center;    
-    box-shadow: -10px 5px 13px rgba(0, 0, 0, 0.35);
-  }
-  .content figure img {
-    position: relative;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    // opacity: 0.8;
-  }
-  .content figure figcaption {
-    padding: 2.5em;
-    color: #fff;
-    font-size: 1.5em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    @include down(1024) {
-      padding: 1em;
-    }
-  }
-  .content figure figcaption::before,
-  .content figure figcaption::after {
-    pointer-events: none;
-  }
-  .content figure figcaption,
-  .content figure figcaption > a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .content figure figcaption > a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-  }
-  .content figure h3 {
-    word-spacing: -0.15em;
-    font-weight: 800;
-  }
-  @include down(400) {
-    .content figure p.event {
-      display: block;
-    }
-  }
-  .content figure h3,
-  .content figure p {
-    margin: 0;
-    @include down(500) {
-      margin: -5px;
-    }
-  }
-  .content figure p {
-    letter-spacing: 1px;
-    font-size: 68.5%;
-    margin-top: 50px;
-    box-shadow: 1px 0px 2px 200px #d6a85985;
-    text-shadow: 0px 0px 3px white;
-    background-color: #d6a85985;
-    padding: 8px;
-    @include down(1300) {
-      font-size: 50%;
-      margin-top: 20px;
-    }
-    @include down(900) {
-      font-size: 42.5%;
-      margin-top: 0px;
-    }
-  }
-  @include down(760) {
-    .content figure p:nth-child(2) {
-      display: none;
-    }
+.page-events .content {
+  display: flex;
+  justify-content: center;
 }
-  
-  /*---------------*/
-  /***** Lily *****/
-  /*---------------*/
-  
-  figure.effect-lily img {
-    max-width: none;
-    width: -webkit-calc(100% + 50px);
-    width: calc(100% + 50px);
-    // opacity: 0.7;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-40px, 0, 0);
-    transform: translate3d(-40px, 0, 0);
+.content figure {
+  position: relative;
+  overflow: hidden;
+  min-width: 290px;
+  max-width: 100%;
+  max-height: 360px;
+  width: 100%;
+  text-align: center;
+  box-shadow: -10px 5px 13px rgba(0, 0, 0, 0.35);
+  @include down(900) {
+    width: 80%;
   }
-  figure.effect-lily figcaption > div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 2em;
-    width: 100%;
-    height: 50%;
+}
+
+.content figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%; 
+}
+.content figure figcaption {
+  padding: 2.5em;
+  color: #fff;
+  font-size: 1.5em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  @include down(1024) {
+    padding: 1em;
   }
-  figure.effect-lily h3,
-  figure.effect-lily p {
-    -webkit-transform: translate3d(0, 40px, 0);
-    transform: translate3d(0, 40px, 0);
+}
+.content figure figcaption::before,
+.content figure figcaption::after {
+  pointer-events: none;
+}
+.content figure figcaption,
+.content figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.content figure h3 {
+  word-spacing: -0.15em;
+  font-weight: 800;
+}
+@include down(400) {
+  .content figure p.event {
+    display: block;
   }
-  figure.effect-lily h3 {
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
+}
+.content figure h3,
+.content figure p {
+  margin: 0;
+  @include down(500) {
+    margin: -10px;
   }
-  figure.effect-lily p {
-    color: rgba(255, 255, 255, 0.8);
-    opacity: 0;
-    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
-    transition: opacity 0.2s, transform 0.35s;
+}
+.content figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  margin-top: 50px;
+  box-shadow: 1px 0px 2px 200px #d6a85985;
+  text-shadow: 0px 0px 3px white;
+  background-color: #d6a85985;
+  padding: 8px;
+  @include down(1300) {
+    font-size: 50%;
+    margin-top: 20px;
   }
-  figure.effect-lily:hover img,
-  figure.effect-lily:hover p {
-    opacity: 1;
+  @include down(900) {
+    font-size: 42.5%;
+    margin-top: 0px;
   }
-  figure.effect-lily:hover img,
-  figure.effect-lily:hover h3,
-  figure.effect-lily:hover p {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+}
+@include down(760) {
+  .content figure p:nth-child(2) {
+    display: none;
   }
-  figure.effect-lily:hover p {
-    -webkit-transition-delay: 0.05s;
-    transition-delay: 0.05s;
-    -webkit-transition-duration: 0.35s;
-    transition-duration: 0.35s;
-  }
-  
+}
+
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.effect-lily img {
+  max-width: none;
+  width: -webkit-calc(100% + 50px);
+  width: calc(100% + 50px);
+  // opacity: 0.7;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+}
+figure.effect-lily figcaption > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  height: 50%;
+}
+figure.effect-lily h3,
+figure.effect-lily p {
+  -webkit-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
+}
+figure.effect-lily h3 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+figure.effect-lily p {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+}
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+  opacity: 1;
+}
+figure.effect-lily:hover img,
+figure.effect-lily:hover h3,
+figure.effect-lily:hover p {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.effect-lily:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}

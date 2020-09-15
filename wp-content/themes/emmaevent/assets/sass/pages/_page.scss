@@ -30,8 +30,8 @@
 }
 .single .page-sidebar,
 .category .page-sidebar,
-.search .page-sidebar,
-.blog .page-sidebar {
+.search .page-sidebar{
+// .blog .page-sidebar {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: space(10);
@@ -246,6 +246,9 @@ header .news_header {
   background: #fff;
   overflow: hidden;
   box-shadow: 0 6px 13px rgba(0, 0, 0, 0.35);
+  @include down(1200){
+    box-shadow: none;
+  }
 }
 /* Zoom In */
 .news-list .news__image img {
