@@ -16,9 +16,3 @@ add_filter('upload_mimes', function ($mimes) {
   return $mimes;
 });
 
-
-add_filter('script_loader_tag', 'clean_script_tag');
-  function clean_script_tag($input) {
-  $input = str_replace("type='text/javascript' ", '', $input);
-  return str_replace("'", '"', $input);
-}

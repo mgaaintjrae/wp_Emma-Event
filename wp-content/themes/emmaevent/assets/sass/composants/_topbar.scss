@@ -25,6 +25,7 @@
     width: 12px;
     height: 12px;
     margin-right: 4px;
+    fill: currentColor;
 }
 .topbar__socials .topbar__links {
     margin-left: auto;
@@ -33,10 +34,7 @@
 .topbar__socials li a:hover {
     color: $dore;
 }
-.topbar .icon use {
-    fill: currentColor;
-}
-.topbar .icon use:hover {
+.topbar svg:hover {
     fill: $dore;
 }
 
@@ -58,6 +56,7 @@
         width: 16px;
         height: 16px;
         margin-right: 5px;
+        fill: currentColor;
     }
     .topbar .topbar__infos li {
         margin: 0 30px;

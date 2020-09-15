@@ -19,7 +19,7 @@ get_header('contact'); ?>
                 <div class="container">
                     <div class="company">
                         <div class="company__title">
-                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
+                        <?php get_template_part('template-parts/couronne-flower'); ?>
                             <div class="page-title">
                                 Me contacter
                                 <?php get_template_part('template-parts/divider-trefle'); ?>
