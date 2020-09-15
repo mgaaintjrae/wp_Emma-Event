@@ -20,10 +20,7 @@ get_header(); ?>
                 <div class="company__title">
                     <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
                     <div class="page-title"><?php the_title(); ?>
-                        <svg class="icon">
-                            <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle" width="100" height="15">
-                            </use>
-                        </svg>
+                    <?php get_template_part('template-parts/divider-trefle'); ?>
                     </div>
                 </div>
                 <?php the_post_thumbnail('event-thumbnail-large'); ?>
@@ -52,10 +49,7 @@ get_header(); ?>
             <div class="prestation">
                 <div class="presta__title">
                     <h2><?php the_title(); ?></h2>                   
-                    <svg class="icon">
-                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle">
-                        </use>
-                    </svg>
+                    <?php get_template_part('template-parts/divider-trefle'); ?>
                 </div>
                 <div class="presta__content">
                 <?php //the_sub_field('image')?>

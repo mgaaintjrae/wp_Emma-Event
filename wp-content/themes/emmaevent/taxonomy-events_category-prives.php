@@ -8,10 +8,7 @@
             <div class="company__title">
                 <img src="<?= get_stylesheet_directory_uri(); ?>/assets/img/emma-event-organisation-evenement-mariage-couronne-fleurs-champetre.png" alt="emma-event-organisation-evenement-mariage-couronne-fleurs-champetre" height="575" width="575">
                 <div class="page-title"><?= get_queried_object()->name ?>
-                    <svg class="icon">
-                        <use xlink:href="<?= get_stylesheet_directory_uri(); ?>/assets/img/svg/sprite.svg#divider_trefle">
-                        </use>
-                    </svg>
+                <?php get_template_part('template-parts/divider-trefle'); ?>
                 </div>
             </div>
         </div>
