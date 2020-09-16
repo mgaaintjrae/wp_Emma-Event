@@ -30,11 +30,7 @@
 
 // Body
 // ==========================================================================
-.event-body {
-  margin-top: space(6);
-  padding: 0 69px;
-}
-.single-event .event-body {
+.single-events .event-body {
   margin-top: space(6);
   padding: 30px 70px;
   @include down(900) {
